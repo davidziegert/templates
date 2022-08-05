@@ -1,0 +1,483 @@
+/* themes */
+
+/* colors */
+
+/* tags */
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: yellow;
+    color: black;
+    grid-area: nav;
+    width: 100%;
+}
+
+header {
+    background-color: red;
+    color: white;
+    grid-area: header;
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    color: black;
+    grid-area: main;
+    width: 100%;
+}
+
+aside {
+    background-color: fuchsia;
+    color: white;
+    grid-area: aside;
+    width: 100%;
+}
+
+footer {
+    background-color: burlywood;
+    color: white;
+    grid-area: footer;
+    width: 100%;
+}
+
+/* smartphone */
+
+@media only screen and (max-width: 767px) {
+    body {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto 100vh auto auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+}
+
+/* tablet vertical */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto 100vh auto auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+}
+
+/* tablet horizontal */
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    body {
+        display: grid;
+        grid-template-columns: 30vw 70vw;
+        grid-template-rows: 100vh auto auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "nav header"
+            "nav main"
+            "nav aside"
+            "nav footer";
+    }
+}
+
+/* desktop */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: 100vh auto auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer";
+    }
+}
+
+/* fonts */
+
+body {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 1.1rem;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* tags */
+
+a {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 1.0rem;
+}
+
+ul {
+    margin-bottom: 1.0rem;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+ol {
+    margin-bottom: 1.0rem;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+figure {
+    width: 100%;
+    margin-bottom: 1.0rem;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+figure iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+figure figcaption {
+    opacity: 0.5;
+    text-align: center;
+    font-style: italic;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+
+figure audio {    
+    width: 100%;
+}
+
+figure video {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+table {
+    margin-bottom: 1.0rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table caption {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #78C0A8;
+}
+
+table tr {}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #EDEDED;
+}
+
+table thead {}
+
+table tr th {
+    border: 1px solid #EDEDED;
+    padding: 1rem;
+    background-color: #78C0A8;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table tbody {}
+
+table tr td {
+    padding: 1rem;
+}
+
+table tbody {}
+
+table tfoot {}
+
+blockquote {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2.0rem;
+    margin-top: 2.0rem;
+    font-size: .9rem;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-bottom: 0rem;
+}
+
+blockquote cite {
+    display: block;
+    font-style: normal;
+    opacity: .5;
+}
+
+dl {
+    margin-bottom: 1.0rem;
+}
+
+dl dt {
+    font-weight: bold;
+    float: left;
+    clear: left;
+    margin-right: .5rem;
+}
+
+dl dt::after {
+    content: ":";
+}
+
+dl dd {
+    font-style: italic;
+}
+
+dl dd::before {
+    content: "\201E";
+}
+
+dl dd::after {
+    content: "\201D";
+}
+
+details {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.0rem;
+    overflow: hidden;
+}
+
+details summary {
+    background-color: #78C0A8;
+    color: white;
+    padding: 1rem;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+details p {
+    background-color: #EDEDED;
+    padding: 1rem;
+    margin-bottom: 0rem;
+}
+
+details summary:before {
+    content: '\2023';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+details[open]>summary:before {
+    transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+code {
+    width: 100%;
+    font-family: monospace;
+    font-size: .75rem;
+    display: block;
+    background-color: #f2f2f2;
+    border: 1px solid #EDEDED;
+    padding: 1rem;
+    margin-bottom: 1.0rem;
+    word-wrap: break-word;
+    line-height: normal;
+}
+
+meter {}
+
+progress {}
+
+form {}
+
+form fieldset {}
+
+form fieldset label {}
+
+form fieldset select {}
+
+form fieldset input {}
+
+form fieldset button {}
+
+form fieldset legend {}
+
+form fieldset output {}
+
+/* classes */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 111;
+}
+
+.responsive_table_1 {
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .responsive_table_2 {
+        border: 0;
+    }
+
+    .responsive_table_2 thead {
+        display: none;
+    }
+
+    .responsive_table_2 tr {
+        display: block;
+
+        border-top: 3px solid #EDEDED;
+        border-bottom: 3px solid #EDEDED;
+        margin-bottom: .625em;
+    }
+
+    .responsive_table_2 td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #EDEDED;
+
+    }
+
+    .responsive_table_2 td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .responsive_table_2 td:last-child {
+        border-bottom: 0;
+    }
+
+    .responsive_table_2 tfoot {
+        display: none;
+    }
+}
+
+.map {}
+
+.blockquote_1 {
+    padding: 1rem 4rem;
+    border-left: 8px solid #78C0A8;
+    position: relative;
+    background: #EDEDED;
+    color: #000000;
+}
+
+.blockquote_1::before {
+    content: "\201D";
+    color: #78C0A8;
+    font-size: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+}
+
+.blockquote_2 {
+    text-align: center;
+    border-top: 1px solid #78C0A8;
+    border-bottom: 1px solid #78C0A8;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.blockquote_2::before {
+    content: "\201D";
+    font-size: 4rem;
+    color: #78C0A8;
+    font-size: 4rem;
+    background-color: white;
+    height: 2rem;
+    width: 3.4rem;
+    padding-top: 1rem;
+    text-align: left;
+    position: absolute;
+    left: calc(50% - 1.7rem);
+    bottom: calc(100% - 1rem)
+}
+
+@media screen and (min-width: 1200px) {
+    blockquote {
+        width: 50%;
+    }
+
+    figure {
+        width: 50%;
+        margin: auto;
+    }
+}
