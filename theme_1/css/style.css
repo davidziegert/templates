@@ -20,8 +20,6 @@ nav {
 }
 
 header {
-    background-color: red;
-    color: white;
     grid-area: header;
     width: 100%;
 }
@@ -204,7 +202,7 @@ figure figcaption {
     margin-bottom: 1rem;
 }
 
-figure audio {    
+figure audio {
     width: 100%;
 }
 
@@ -385,6 +383,35 @@ form fieldset output {}
     z-index: 111;
 }
 
+.header_image {
+    background-image: url("https://picsum.photos/3840/2160?grayscale");
+    height: 100%;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_slogan {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_slogan span {
+    background-color: #78C0A8;
+    color: #EDEDED;
+    text-transform: uppercase;
+
+    padding: 1rem;
+    letter-spacing: .75rem;
+}
+
+
 .responsive_table_1 {
     overflow-x: auto;
 }
@@ -428,8 +455,6 @@ form fieldset output {}
         display: none;
     }
 }
-
-.map {}
 
 .blockquote_1 {
     padding: 1rem 4rem;
@@ -481,3 +506,5 @@ form fieldset output {}
         margin: auto;
     }
 }
+
+.map {}
