@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SKELETON</title>
+    <title>THEME SWITCHER</title>
 
     <meta name="author" content="AUTHOR">
     <meta name="description" content="DESCRIPTION">
@@ -22,26 +22,39 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <nav id="myNav" class="sticky">
-        <div class="laterally">
-
-            Logos
-            name
-            hamburger
-            menu
-
-            <ul id="main-menu">
-
-            </ul> 
-
-            <ul id="sub-menu">
-
-            </ul> 
-
-        </div>
+    <nav id="main-nav">
+        <span id="mobile-bar">
+            <span>Menu</span>
+            <button id="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </span>
+        <ul id="main-menu">
+            <li><a target="_blank" rel="noopener noreferrer" href="https://google.com">Link</a></li>
+            <li class="menu-item-has-children">
+                <a rel="noopener noreferrer" href="#">Sub-Menu</a>
+                <ul class="sub-menu">
+                    <li><a class="current" href="https://google.com">Link</a></li>
+                    <li><a class="disabled" href="https://google.com">Link</a></li>
+                </ul>
+            </li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://google.com">Link</a></li>
+            <li class="menu-item-has-children">
+                <a rel="noopener noreferrer" href="#">Mega-Menu</a>
+                <div class="mega-menu">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua ...</div>
+            </li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://google.com">Link</a></li>
+        </ul>
     </nav>
 
     <header class="header_image">
@@ -56,7 +69,9 @@
             <h1>1. Title</h1>
             <h2>2. Text</h2>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                labore et dolore magna aliquyam erat, <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.w3schools.com">MYLINK</a> sed diam voluptua.
+                At vero eos et accusam et justo duo dolores
                 et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             <blockquote cite="http://developer.mozilla.org" class="blockquote_1">
                 <p>That's a blockquote</p>
@@ -87,6 +102,7 @@
                 print( x )<br>
                 x += 1<br>
             </code>
+
             <h3>3. List</h3>
             <ol>
                 <li>First Entry</li>
@@ -106,9 +122,68 @@
                 <dt>third item</dt>
                 <dd>definition for third item in list</dd>
             </dl>
+
+            <h4>4. Table</h4>
+            <div class="responsive_table">
+                <table>
+                    <caption>Points Summary</caption>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="First Name">Jill</td>
+                            <td data-label="Last Name">Smith</td>
+                            <td data-label="Points">50</td>
+                            <td data-label="Points">50</td>
+                            <td data-label="Points">50</td>
+                            <td data-label="Points">50</td>
+                            <td data-label="Points">50</td>
+                        </tr>
+                        <tr>
+                            <td data-label="First Name">Eve</td>
+                            <td data-label="Last Name">Jackson</td>
+                            <td data-label="Points">94</td>
+                            <td data-label="Points">94</td>
+                            <td data-label="Points">94</td>
+                            <td data-label="Points">94</td>
+                            <td data-label="Points">94</td>
+                        </tr>
+                        <tr>
+                            <td data-label="First Name">Adam</td>
+                            <td data-label="Last Name">Johnson</td>
+                            <td data-label="Points">67</td>
+                            <td data-label="Points">67</td>
+                            <td data-label="Points">67</td>
+                            <td data-label="Points">67</td>
+                            <td data-label="Points">67</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
             <h5>5. Media</h5>
             <figure>
-                <img src="https://picsum.photos/300" alt="test" loading="lazy">
+                <img src="https://picsum.photos/300" alt="image loading" loading="lazy">
                 <figcaption>A random Image</figcaption>
             </figure>
             <figure>
@@ -129,6 +204,7 @@
                 </video>
                 <figcaption>A random Video</figcaption>
             </figure>
+
             <h6>6. Form</h6>
             <form action="action_page.php" method="get">
                 <fieldset>
@@ -231,10 +307,57 @@
 
     <aside>
         <article>
-            <h2>Contact</h2>
+            <h2>Themes</h2>
         </article>
         <article>
             <h2>News</h2>
+            <div id="blog">
+                <div class="post">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/640" alt="image loading" loading="lazy">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Politics</span>
+                        <h3 class="post-title">The $80 billion question</h3>
+                        <span class="post-info">
+                            <span class="post-author">Kiana Kelley</span>
+                            <span class="post-date">June 02, 2022</span>                      
+                        </span>
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/641" alt="image loading" loading="lazy">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Celebrities</span>
+                        <h3 class="post-title">Are John and Jessi still a couple?</h3>
+                        <span class="post-info">
+                            <span class="post-author">Francis Fisher</span>
+                            <span class="post-date">June 11, 2022</span>
+                        </span>
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/642" alt="image loading" loading="lazy">
+                    </div>
+                    <div class="post-content">
+                        <span class="post-tag">Fashion</span>
+                        <h3 class="post-title">The latest winter fashion</h3>
+                        <span class="post-info">
+                            <span class="post-author">Susi Summer</span>
+                            <span class="post-date">June 24, 2022</span>
+                        </span>
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
+                    </div>
+                </div>
+            </div>
         </article>
     </aside>
 
@@ -247,41 +370,87 @@
             USA
         </address>
         <div class="map">
-            <iframe src="https://maps.google.com/maps?q=1981%20Landings%20Drive&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
-        </div> 
+            <iframe src="https://maps.google.com/maps?q=1981%20Landings%20Drive&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"></iframe>
+        </div>
         <ul class="footer-logos">
             <p>Logos:</p>
-            <li><img src="https://picsum.photos/100/50" alt="test" loading="lazy"></li>
-            <li><img src="https://picsum.photos/100/50" alt="test" loading="lazy"></li>
-            <li><img src="https://picsum.photos/100/50" alt="test" loading="lazy"></li>
-        </ul> 
+            <li><img src="https://picsum.photos/200/100" alt="image loading" loading="lazy"></li>
+            <li><img src="https://picsum.photos/201/100" alt="image loading" loading="lazy"></li>
+            <li><img src="https://picsum.photos/202/100" alt="image loading" loading="lazy"></li>
+        </ul>
         <ul class="footer-menu">
             <p>Company:</p>
-            <li><a href="https://www.w3schools.com">Imprint</a></li>
-            <li><a href="https://www.w3schools.com">Data Protection Declaration</a></li>
-            <li><a href="https://www.w3schools.com">Contact</a></li>
-        </ul> 
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Imprint</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Data Protection
+                    Declaration</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Contact</a></li>
+        </ul>
         <ul class="footer-social">
             <p>Social Media:</p>
-            <li><a href="#" class="fa fa-facebook"></a></li>
-            <li><a href="#" class="fa fa-twitter"></a></li>
-            <li><a href="#" class="fa fa-google"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
-        </ul> 
+            <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-facebook"></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-twitter"></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-google"></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-linkedin"></a></li>
+        </ul>
     </footer>
 
     <script>
-        window.onscroll = function () { myFunction() };
+        function toggleMobileMenu() {
 
-        var nav = document.getElementById("myNav");
-        var scrolly = nav.offsetTop;
+            if (window.matchMedia("(max-width: 1023px)").matches) {
 
-        function myFunction() {
-            if (window.pageYOffset> scrolly) {
+                const hamburger = document.getElementById("hamburger");
+                const mobile = document.getElementById("main-menu");
+
+                hamburger.classList.toggle('open');
+                mobile.classList.toggle('menu-open');
+
+            }
+
+        }
+    </script>
+
+    <script>
+        $('.menu-item-has-children').click(function (e) {
+
+            if (window.matchMedia("(max-width: 1199px)").matches) {
+
+                e.stopPropagation();
+                $(this).toggleClass('sub-menu-open');
+                let $sub = $('ul', this);
+                $(this).toggleClass('mega-menu-open');
+                let $mega = $('div', this);
+                $('.sub-menu').not($sub).slideUp();
+                $('.sub-menu').not($sub).parent().parent('li').removeClass('sub-menu-open');
+                $('.mega-menu').not($mega).slideUp();
+                $('.mega-menu').not($mega).parent().parent('li').removeClass('mega-menu-open');
+                $sub.stop(true, true).slideToggle(400);
+                $mega.stop(true, true).slideToggle(400);
+
+            }
+
+        });
+    </script>
+
+    <script>
+        const nav = document.getElementById("main-nav");
+        const scrolly = nav.offsetTop;
+
+        function scrollNavBar() {
+            if (window.pageYOffset > scrolly) {
                 nav.classList.add("scrolly");
-            } else {
+            }
+            else {
                 nav.classList.remove("scrolly");
             }
+        }
+
+        if (window.matchMedia("(min-width: 1200px)").matches) {
+            window.onscroll = function () {
+                scrollNavBar();
+            }
+
         }
     </script>
 </body>
