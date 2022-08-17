@@ -23,6 +23,11 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elsie&family=Lato&family=Merriweather&family=Montserrat&family=Oswald&family=Raleway&family=Roboto&display=swap" rel="stylesheet"> 
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -308,6 +313,14 @@
     <aside>
         <article>
             <h2>Themes</h2>
+            <div id="theme-switcher">
+                <button data-theme="" class="theme-switch">Default</button>
+                <button data-theme="theme-light" class="theme-switch">Light</button>
+                <button data-theme="theme-dark" class="theme-switch">Dark</button>
+                <button data-theme="theme-yellow" class="theme-switch">Yellow</button>
+                <button data-theme="theme-party" class="theme-switch">Party</button>
+                <button data-theme="theme-blue" class="theme-switch">Blue</button>
+            </div>
         </article>
         <article>
             <h2>News</h2>
@@ -321,9 +334,10 @@
                         <h3 class="post-title">The $80 billion question</h3>
                         <span class="post-info">
                             <span class="post-author">Kiana Kelley</span>
-                            <span class="post-date">June 02, 2022</span>                      
+                            <span class="post-date">June 02, 2022</span>
                         </span>
-                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy
                             eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
                     </div>
                 </div>
@@ -338,7 +352,8 @@
                             <span class="post-author">Francis Fisher</span>
                             <span class="post-date">June 11, 2022</span>
                         </span>
-                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy
                             eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
                     </div>
                 </div>
@@ -353,7 +368,8 @@
                             <span class="post-author">Susi Summer</span>
                             <span class="post-date">June 24, 2022</span>
                         </span>
-                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        <span class="post-trimmed">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            nonumy
                             eirmod tempor invidunt ut labore et dolore magna aliquyam.</span>
                     </div>
                 </div>
@@ -374,20 +390,20 @@
                 loading="lazy"></iframe>
         </div>
         <ul class="footer-logos">
-            <p>Logos:</p>
+            <h3>Logos:</h3>
             <li><img src="https://picsum.photos/200/100" alt="image loading" loading="lazy"></li>
             <li><img src="https://picsum.photos/201/100" alt="image loading" loading="lazy"></li>
             <li><img src="https://picsum.photos/202/100" alt="image loading" loading="lazy"></li>
         </ul>
         <ul class="footer-menu">
-            <p>Company:</p>
+            <h3>Company:</h3>
             <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Imprint</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Data Protection
                     Declaration</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3schools.com">Contact</a></li>
         </ul>
         <ul class="footer-social">
-            <p>Social Media:</p>
+            <h3>Social Media:</h3>
             <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-facebook"></a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-twitter"></a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="#" class="fa fa-google"></a></li>
@@ -451,6 +467,18 @@
                 scrollNavBar();
             }
 
+        }
+    </script>
+
+    <script>
+        const buttons = document.querySelectorAll('.theme-switch');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', setTheme);
+        });
+
+        function setTheme($event) {
+            document.body.dataset.theme = $event.target.dataset.theme;
         }
     </script>
 </body>

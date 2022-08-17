@@ -1,8 +1,69 @@
 /* THEMES */
 
-/* VARIABLES */
+body {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
 
-:root {
+    --linebreak: 1rem;
+    --opac: 0.65;
+
+    --primary_1: #212121;
+    --primary_2: #FFFFFF;
+
+    --background: #FFFFFF;
+    --foreground: #212121;
+
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Montserrat', sans-serif;
+    --textline: 'Oswald', sans-serif;
+}
+
+body[data-theme='theme-light'] {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.65;
+
+    --primary_1: #212121;
+    --primary_2: #FFFFFF;
+
+    --background: #FFFFFF;
+    --foreground: #212121;
+
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Montserrat', sans-serif;
+    --textline: 'Oswald', sans-serif;
+}
+
+body[data-theme='theme-dark'] {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.65;
+
+    --primary_1: #FFFFFF;
+    --primary_2: #212121;
+
+    --background: #212121;
+    --foreground: #FFFFFF;
+
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Merriweather', serif;
+    --textline: 'Oswald', sans-serif;
+}
+
+body[data-theme='theme-yellow'] {
     --frame_vh: 4vh;
     --frame_vw: 4vw;
 
@@ -12,11 +73,59 @@
     --primary_1: #212121;
     --primary_2: #FDCE00;
 
-    --background: #EFEFEF;
+    --background: #FFFFFF;
     --foreground: #212121;
 
-    --secondary_1: #ededed;
-    --secondary_2: #f2f2f2;
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Montserrat', sans-serif;
+    --textline: 'Merriweather', serif;
+}
+
+body[data-theme='theme-party'] {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.65;
+
+    --primary_1: #5ebec4;
+    --primary_2: #f92c85;
+
+    
+    
+    --background: #fdf5df;
+    --foreground: #212121;
+
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Elsie', cursive;
+    --textline: 'Roboto', sans-serif;
+}
+
+body[data-theme='theme-blue'] {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.65;
+
+    --primary_1: #161f6d;
+    --primary_2: #00abe1;
+
+    --background: #FFFFFF;
+    --foreground: #212121;
+
+    --secondary_1: whitesmoke;
+    --secondary_2: lightgray;
+    --secondary_3: #212121;
+
+    --headline: 'Raleway', sans-serif;
+    --textline: 'Lato', sans-serif;
 }
 
 /* TAGS */
@@ -135,17 +244,18 @@ footer {
 body {
     font-size: calc(15px + 0.390625vw);
     line-height: 150%;
+    font-family: var(--textline);
 }
 
 main h1 {
     font-size: 1.8rem;
     margin-bottom: 1.8rem;
     text-transform: uppercase;
-
     background-color: var(--primary_1);
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
 }
 
 main h2 {
@@ -156,50 +266,73 @@ main h2 {
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
 }
 
 main h3 {
     font-size: 1.4rem;
     margin-bottom: 1.4rem;
     text-transform: uppercase;
-
     background-color: var(--primary_1);
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
 }
 
 main h4 {
     font-size: 1.3rem;
     margin-bottom: 1.3rem;
     text-transform: uppercase;
-
     background-color: var(--primary_1);
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
 }
 
 main h5 {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
     text-transform: uppercase;
-
     background-color: var(--primary_1);
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
 }
 
 main h6 {
     font-size: 1.1rem;
     margin-bottom: 1.1rem;
     text-transform: uppercase;
-
     background-color: var(--primary_1);
     color: var(--primary_2);
     display: table;
     padding: var(--linebreak);
+    font-family: var(--headline);
+}
+
+aside h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--primary_1);
+    color: var(--primary_2);
+    display: table;
+    padding: var(--linebreak);
+    font-family: var(--headline);
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+    text-transform: uppercase;
+    background-color: var(--primary_2);
+    color: var(--primary_1);
+    display: table;
+    padding: var(--linebreak);
+    font-family: var(--headline);   
 }
 
 /* NAV */
@@ -862,11 +995,13 @@ main table caption {
 }
 
 main table tr:nth-child(even) {
-    background-color: var(--secondary_2);
+    background-color: var(--secondary_1);
+    color: var(--secondary_3);
 }
 
 main table tr:hover {
-    background-color: var(--secondary_1);
+    background-color: var(--secondary_2);
+    color: var(--secondary_3);
 }
 
 main table tr th {
@@ -901,7 +1036,6 @@ main table tr td {
         display: block;
         text-align: right;
         border-bottom: 1px solid var(--secondary_1);
-
     }
 
     main .responsive_table td::before {
@@ -910,6 +1044,18 @@ main table tr td {
         font-weight: bold;
         text-transform: uppercase;
         color: var(--primary_1);
+    }
+
+    main table tr:nth-child(even) td {
+        border-bottom: 1px solid var(--secondary_3);
+    }
+
+    main table tr:nth-child(even) td::before {
+        color: var(--secondary_3);
+    }
+
+    main table tr:hover td::before {
+        color: var(--secondary_3);
     }
 
     main .responsive_table td:last-child {
@@ -962,12 +1108,12 @@ main .blockquote_1 {
     border-left: 8px solid var(--primary_1);
     position: relative;
     background: var(--secondary_1);
-    color: var(--foreground)
+    color: var(--secondary_3)
 }
 
 main .blockquote_1::before {
     content: "\201D";
-    color: var(--primary_1);
+    color: var(--secondary_3);
     font-size: 4rem;
     position: absolute;
     left: var(--linebreak);
@@ -1044,7 +1190,8 @@ main code {
     font-family: monospace;
     font-size: 1rem;
     display: block;
-    background-color: var(--secondary_2);
+    background-color: var(--secondary_1);
+    color: var(--secondary_3);
     border: 1px solid var(--foreground);
     padding: var(--linebreak);
     margin-bottom: var(--linebreak);
@@ -1332,7 +1479,7 @@ main input[type=range] {
     -webkit-appearance: none;
     width: 100%;
     height: var(--linebreak);
-    background: var(--secondary_2);
+    background: var(--secondary_1);
     border: 1px solid var(--foreground);
     outline: none;
     -webkit-transition: .2s;
@@ -1417,17 +1564,6 @@ main input[type=url] {
 
 aside {
     padding: var(--frame_vh) var(--frame_vw);
-}
-
-aside h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.6rem;
-    text-transform: uppercase;
-
-    background-color: var(--primary_1);
-    color: var(--primary_2);
-    display: table;
-    padding: var(--linebreak);
 }
 
 @media screen and (max-width: 1023px) {
@@ -1610,7 +1746,7 @@ aside h2 {
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: var(--linebreak);
+        gap: calc(var(--linebreak)*2);
     }
 
     .post {
@@ -1688,6 +1824,33 @@ aside h2 {
     }
 }
 
+/* theme-switcher */
+
+#theme-switcher {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--linebreak);
+    margin-bottom: var(--linebreak);
+}
+
+.theme-switch {
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--foreground);
+    padding: var(--linebreak);
+    text-align: center;
+    border-radius: var(--linebreak);
+    border: 1px solid var(--foreground);
+}
+
+.theme-switch:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
 /* FOOTER */
 
 footer {
@@ -1711,12 +1874,6 @@ footer a:hover {
     color: var(--primary_2);
 }
 
-footer p {
-    margin-bottom: var(--linebreak);
-    font-weight: bold;
-    color: var(--primary_2);
-}
-
 .footer-logos {
     list-style-type: none;
     margin-bottom: 0;
@@ -1736,9 +1893,14 @@ footer p {
 }
 
 address {
-    font-style: italic;
-    margin-bottom: 0;
     width: auto;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    background-color: var(--primary_2);
+    color: var(--primary_1);
+    padding: var(--linebreak);
+    font-family: var(--headline); 
 }
 
 .map {
