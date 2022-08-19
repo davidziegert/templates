@@ -1,0 +1,22 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    font-size: calc(15px + .390625vw);
+    line-height: 150%;
+
+    background-color: #292423;
+    color: #f87f73;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+}
