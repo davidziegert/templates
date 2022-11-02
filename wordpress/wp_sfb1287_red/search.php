@@ -20,16 +20,16 @@
         <title>Search | <?php bloginfo('name'); ?></title>
     <?php endif; ?>
 
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto&display=swap" rel="stylesheet"> 
+
     <!-- Styles -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('template_directory'); ?>/img/favicon.ico">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
-
-    <!-- GoogleFonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo&family=Palanquin&family=Roboto&display=swap">
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

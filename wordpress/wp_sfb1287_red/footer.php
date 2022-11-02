@@ -11,7 +11,7 @@
             <?php wp_nav_menu(array('theme_location' => 'my-extern-menu', 'container_class' => 'my-extern-menu')); ?>
         </div>
         <div class="footer-link">
-            <h3>weitere Links:</h3>
+            <h3>Vorstand:</h3>
             <!-- Custom-Navigation () from functions.php (WITH container_id OR container_class) -->
             <?php wp_nav_menu(array('theme_location' => 'my-websites-menu', 'container_class' => 'my-websites-menu')); ?>
         </div>
@@ -41,7 +41,7 @@
             <?php wp_nav_menu(array('theme_location' => 'my-extern-menu', 'container_class' => 'my-extern-menu')); ?>
         </div>
         <div class="footer-link">
-            <h3>more links:</h3>
+            <h3>executive board:</h3>
             <!-- Custom-Navigation () from functions.php (WITH container_id OR container_class) -->
             <?php wp_nav_menu(array('theme_location' => 'my-websites-menu', 'container_class' => 'my-websites-menu')); ?>
         </div>
