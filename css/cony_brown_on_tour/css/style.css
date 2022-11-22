@@ -65,7 +65,7 @@ footer {
 
 /* smartphone */
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -116,7 +116,7 @@ footer {
 
 /* desktop */
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -133,7 +133,7 @@ footer {
 
 /* large desktop */
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -192,7 +192,7 @@ nav {
     padding: calc(var(--frame_vh)) calc(var(--frame_vw));
 }
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     nav {
         padding: calc(var(--frame_vh)) calc(var(--frame_vw)*2);
     }
@@ -213,7 +213,7 @@ main {
     padding: calc(var(--frame_vh)) calc(var(--frame_vw));
 }
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     main {
         padding: calc(var(--frame_vh)) calc(var(--frame_vw)*2);
     }
@@ -265,13 +265,13 @@ footer {
     text-align: center;
 }
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     footer {
         padding: calc(var(--frame_vh)) calc(var(--frame_vw)*2);
     }
 }
 
-@media only screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     #icon_brown {
         display: none;
     }
@@ -281,7 +281,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #icon_brown {
         position: fixed;
         bottom: 0;

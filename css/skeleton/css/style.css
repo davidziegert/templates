@@ -65,7 +65,7 @@ footer {
 
 /* smartphone */
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -116,7 +116,7 @@ footer {
 
 /* desktop */
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -133,7 +133,7 @@ footer {
 
 /* large desktop */
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100%;

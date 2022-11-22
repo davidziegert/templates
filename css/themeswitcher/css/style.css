@@ -83,7 +83,7 @@ footer {
 
 /* smartphone */
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     #wrapper {
         display: grid;
         grid-template-columns: 100vw;
@@ -131,7 +131,7 @@ footer {
 
 /* desktop */
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #wrapper {
         display: grid;
         grid-template-columns: 15vw 85vw;
@@ -146,7 +146,7 @@ footer {
 
 /* large desktop */
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     #wrapper {
         display: grid;
         grid-template-columns: 15vw 70vw 15vw;
@@ -256,7 +256,7 @@ main h6 {
     padding: var(--linebreak);
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     main h1 {
         font-size: 1.4rem;
         margin-bottom: 1.4rem;
@@ -339,7 +339,7 @@ header {
     font-size: 2.6rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .header_slogan span {
         font-size: 1.8rem;
     }
@@ -706,7 +706,7 @@ nav {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     #nav_bar {
         display: none;
     }
@@ -1604,13 +1604,13 @@ aside {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .post-trimmed {
         display: block;
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
     aside {
         padding: var(--frame_vh) var(--frame_vw) var(--frame_vh) 0;
     }
