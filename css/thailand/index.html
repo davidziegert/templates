@@ -2,842 +2,1803 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Thailand</title>
+  <title>thailand.tmp</title>
 
-    <meta name="author" content="AUTHOR">
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="KEYWORD, KEYWORD">
-    <meta name="robots" content="index, follow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="AUTHOR" />
+  <meta name="description" content="DESCRIPTION" />
+  <meta name="keywords" content="KEYWORD, KEYWORD" />
+  <meta name="robots" content="index, follow" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans&display=swap" rel="stylesheet" />
 
-    <!-- dataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+  <!-- dataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
-    <div id="wrapper">
-        <nav>
-            <a href="#Phrasen"><span>💬</span></a>
-            <a href="#Orte"><span>🏢</span></a>
-            <a href="#Zahlen"><span>🔢</span></a>
-            <a href="#Kalender"><span>📆</span></a>
-            <a href="#Essen"><span>🍜</span></a>
-            <a href="#Trinken"><span>🥤</span></a>
-        </nav>
+  <nav>
+    <section>
+      <button id="hamburger" class="" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div id="menu">
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Zahlen"><span class="icons"><i class="fa fa-list-ol"
+                aria-hidden="true"></i></span><span>Zahlen</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Kalender"><span class="icons"><i class="fa fa-calendar"
+                aria-hidden="true"></i></span><span>Kalender</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Uhrzeit"><span class="icons"><i class="fa fa-clock-o"
+                aria-hidden="true"></i></span><span>Uhrzeit</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Essen"><span class="icons"><i class="fa fa-cutlery"
+                aria-hidden="true"></i></span><span>Essen</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Trinken"><span class="icons"><i class="fa fa-beer"
+                aria-hidden="true"></i></span><span>Trinken</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Phrasen"><span class="icons"><i class="fa fa-comments"
+                aria-hidden="true"></i></span><span>Phrasen</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Verben"><span class="icons"><i class="fa fa-text-height"
+                aria-hidden="true"></i></span><span>Verben</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Fragen"><span class="icons"><i class="fa fa-question-circle"
+                aria-hidden="true"></i></span><span>Fragen</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Orte"><span class="icons"><i class="fa fa-home" aria-hidden="true"></i></span><span>Orte</span></a>
+        </button>
+        <button class="links" onclick="toggleMenu()">
+          <a href="#Massage"><span class="icons"><i class="fa fa-hand-paper-o"
+                aria-hidden="true"></i></span><span>Massage</span></a>
+        </button>
+      </div>
+    </section>
+  </nav>
+  <header>
+    <section>
+      <img src="./img/logo.png" alt="buddha logo">
+    </section>
+  </header>
+  <main>
 
-        <header>
-        </header>
+    <section id="Zahlen">
+      <h1 style="color: var(--orange);">Zahlen | นับ</h1>
+      <div class="responsive_table">
+        <table id="datatable1" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>Sŏon</td>
+              <td>ศูนย์</td>
+            </tr>
+            <tr>
+              <td>1 / ๑</td>
+              <td>Nèung</td>
+              <td>หนึ่ง</td>
+            </tr>
+            <tr>
+              <td>2 / ๒</td>
+              <td>Sŏng</td>
+              <td>สอง</td>
+            </tr>
+            <tr>
+              <td>3 / ๓</td>
+              <td>Săam</td>
+              <td>สาม</td>
+            </tr>
+            <tr>
+              <td>4 / ๔</td>
+              <td>Sèe</td>
+              <td>สี่</td>
+            </tr>
+            <tr>
+              <td>5 / ๕</td>
+              <td>Hâa</td>
+              <td>ห้า</td>
+            </tr>
+            <tr>
+              <td>6 / ๖</td>
+              <td>Hòk</td>
+              <td>หก</td>
+            </tr>
+            <tr>
+              <td>7 / ๗</td>
+              <td>Jèt</td>
+              <td>เจ็ด</td>
+            </tr>
+            <tr>
+              <td>8 / ๘</td>
+              <td>Bpàet</td>
+              <td>แปด</td>
+            </tr>
+            <tr>
+              <td>9 / ๙</td>
+              <td>Gâo</td>
+              <td>เก้า</td>
+            </tr>
+            <tr>
+              <td>10 / ๑๐</td>
+              <td>Sìp</td>
+              <td>สิบ</td>
+            </tr>
+            <tr>
+              <td>11 / ๑๑</td>
+              <td>Sìp Èt</td>
+              <td>สิบเอ็ด</td>
+            </tr>
+            <tr>
+              <td>12 / ๑๒</td>
+              <td>Sìp Sŏng</td>
+              <td>สิบสอง</td>
+            </tr>
+            <tr>
+              <td>13 / ๑๓</td>
+              <td>Sìp Săam</td>
+              <td>สิบสาม</td>
+            </tr>
+            <tr>
+              <td>14 / ๑๔</td>
+              <td>Sìp Sèe</td>
+              <td>สิบสี่</td>
+            </tr>
+            <tr>
+              <td>15 / ๑๕</td>
+              <td>Sìp Hâa</td>
+              <td>สิบห้า</td>
+            </tr>
+            <tr>
+              <td>16 / ๑๖</td>
+              <td>Sìp Hòk</td>
+              <td>สิบหก</td>
+            </tr>
+            <tr>
+              <td>17 / ๑๗</td>
+              <td>Sìp Jèt</td>
+              <td>สิบเจ็ด</td>
+            </tr>
+            <tr>
+              <td>18 / ๑๘</td>
+              <td>Sìp Bpàet</td>
+              <td>สิบแปด</td>
+            </tr>
+            <tr>
+              <td>19 / ๑๙</td>
+              <td>Sìp Gâo</td>
+              <td>สิบเก้า</td>
+            </tr>
+            <tr>
+              <td>20 / ๒๐</td>
+              <td>Yêe Sìp</td>
+              <td>ยี่สิบ</td>
+            </tr>
+            <tr>
+              <td>30 / ๓๐</td>
+              <td>Săam Sìp</td>
+              <td>สามสิบ</td>
+            </tr>
+            <tr>
+              <td>40 / ๔๐</td>
+              <td>Sèe Sìp</td>
+              <td>สี่สิบ</td>
+            </tr>
+            <tr>
+              <td>50 / ๕๐</td>
+              <td>Hâa Sìp</td>
+              <td>ห้าสิบ</td>
+            </tr>
+            <tr>
+              <td>60 / ๖๐</td>
+              <td>Hòk Sìp</td>
+              <td>หกสิบ</td>
+            </tr>
+            <tr>
+              <td>70 / ๗๐</td>
+              <td>Jèt Sìp</td>
+              <td>เจ็ดสิบ</td>
+            </tr>
+            <tr>
+              <td>80 / ๘๐</td>
+              <td>Bpàet Sìp</td>
+              <td>แปดสิบ</td>
+            </tr>
+            <tr>
+              <td>90 / ๙๐</td>
+              <td>Gâo Sìp</td>
+              <td>เก้าสิบ</td>
+            </tr>
+            <tr>
+              <td>100 / ๑๐๐</td>
+              <td>Nèung Rói</td>
+              <td>หนึ่งร้อย</td>
+            </tr>
+            <tr>
+              <td>200</td>
+              <td>Sŏng Rói</td>
+              <td>สองร้อย</td>
+            </tr>
+            <tr>
+              <td>300</td>
+              <td>Săam Rói</td>
+              <td>สามร้อย</td>
+            </tr>
+            <tr>
+              <td>400</td>
+              <td>Sèe Rói</td>
+              <td>สี่ร้อย</td>
+            </tr>
+            <tr>
+              <td>500</td>
+              <td>Hâa Rói</td>
+              <td>ห้าร้อย</td>
+            </tr>
+            <tr>
+              <td>600</td>
+              <td>Hòk Rói</td>
+              <td>หกร้อย</td>
+            </tr>
+            <tr>
+              <td>700</td>
+              <td>Jèt Rói</td>
+              <td>เจ็ดร้อย</td>
+            </tr>
+            <tr>
+              <td>800</td>
+              <td>Bpàet Rói</td>
+              <td>แปดร้อย</td>
+            </tr>
+            <tr>
+              <td>900</td>
+              <td>Gâo Rói</td>
+              <td>เก้าร้อย</td>
+            </tr>
+            <tr>
+              <td>1000 / ๑๐๐๐</td>
+              <td>Nèung Pan</td>
+              <td>หนึ่งพัน</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>Nâa Glìat</td>
+              <td>น่าเกลียด</td>
+            </tr>
+            <tr>
+              <td>3000</td>
+              <td>Săam Pan</td>
+              <td>สามพัน</td>
+            </tr>
+            <tr>
+              <td>1.</td>
+              <td>Tee-Nueng</td>
+              <td>ที่หนึ่ง</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Tee-Song</td>
+              <td>ที่สอง</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Tee-Saam</td>
+              <td>ที่สาม</td>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        <main>
-            <article id="Phrasen">
-                <h2>Phrasen | Phrases | วลี</h2>
+    <section id="Kalender">
+      <h1 style="color: var(--pink);">Kalender | ปฏิทิน</h1>
+      <div class="responsive_table">
+        <table id="datatable2" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Montag</td>
+              <td>Wan Chan</td>
+              <td>วันจันทร์</td>
+            </tr>
+            <tr>
+              <td>Dienstag</td>
+              <td>Wan Angkhan</td>
+              <td>วันอังคาร</td>
+            </tr>
+            <tr>
+              <td>Mittwoch</td>
+              <td>Wan Phut</td>
+              <td>วันพุธ</td>
+            </tr>
+            <tr>
+              <td>Donnerstag</td>
+              <td>Wan Pha-rue-hat</td>
+              <td>วันพฤหัส</td>
+            </tr>
+            <tr>
+              <td>Freitag</td>
+              <td>Wan Suk</td>
+              <td>วันศุกร์</td>
+            </tr>
+            <tr>
+              <td>Samstag</td>
+              <td>Wan Sao</td>
+              <td>วันเสาร์</td>
+            </tr>
+            <tr>
+              <td>Sonntag</td>
+              <td>Wan Athit</td>
+              <td>วันอาทิตย์</td>
+            </tr>
+            <tr>
+              <td>Januar</td>
+              <td>Mokaraakhom</td>
+              <td>มกราคม - ม.ค.</td>
+            </tr>
+            <tr>
+              <td>Februar</td>
+              <td>Kumphaphan</td>
+              <td>กุมภาพันธ์ - ก.พ.</td>
+            </tr>
+            <tr>
+              <td>März</td>
+              <td>Minakhom</td>
+              <td>มีนาคม - มี.ค.</td>
+            </tr>
+            <tr>
+              <td>April</td>
+              <td>Maesayon</td>
+              <td>เมษายน - เม.ย.</td>
+            </tr>
+            <tr>
+              <td>Mai</td>
+              <td>Phruesaphakhom</td>
+              <td>พฤษภาคม - พ.ค.</td>
+            </tr>
+            <tr>
+              <td>Juni</td>
+              <td>Mithunayon</td>
+              <td>มิถุนายน - มิ.ย.</td>
+            </tr>
+            <tr>
+              <td>Juli</td>
+              <td>Karakkadakhom</td>
+              <td>กรกฎาคม - ก.ค.</td>
+            </tr>
+            <tr>
+              <td>August</td>
+              <td>Singhakhom</td>
+              <td>สิงหาคม - ส.ค.</td>
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>Kanyayon</td>
+              <td>กันยายน - ก.ย.</td>
+            </tr>
+            <tr>
+              <td>Oktober</td>
+              <td>Tulakhom</td>
+              <td>ตุลาคม - ต.ค.</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>Phruesachikhayon - พ.ย.</td>
+              <td>พฤศจิกายน</td>
+            </tr>
+            <tr>
+              <td>Dezember</td>
+              <td>Thanwakhom</td>
+              <td>ธันวาคม - ธ.ค.</td>
+            </tr>
+            <tr>
+              <td>Schütze</td>
+              <td>Raa See Ta Nuu</td>
+              <td>ราศีธนู</td>
+            </tr>
+            <tr>
+              <td>Skorpion</td>
+              <td>Raa See Pi Jik</td>
+              <td>ราศีพิจิก</td>
+            </tr>
+            <tr>
+              <td>Waage</td>
+              <td>Raa See Ttun</td>
+              <td>ราศีตุลย์</td>
+            </tr>
+            <tr>
+              <td>Jungfrau</td>
+              <td>Raa See Gan</td>
+              <td>ราศีกันย์</td>
+            </tr>
+            <tr>
+              <td>Löwe</td>
+              <td>Raa See Sing</td>
+              <td>ราศีสิงห์</td>
+            </tr>
+            <tr>
+              <td>Krebs</td>
+              <td>Raa See Kko Ra Kkod</td>
+              <td>ราศีกรกฎ</td>
+            </tr>
+            <tr>
+              <td>Zwillinge</td>
+              <td>Raa See Mi Tun</td>
+              <td>ราศีมิถุน</td>
+            </tr>
+            <tr>
+              <td>Stier</td>
+              <td>Raa See Preud Sop</td>
+              <td>ราศีพฤษภ</td>
+            </tr>
+            <tr>
+              <td>Widder</td>
+              <td>Raa See Mayd</td>
+              <td>ราศีเมษ</td>
+            </tr>
+            <tr>
+              <td>Fische</td>
+              <td>Raa See Meen</td>
+              <td>ราศีมีน</td>
+            </tr>
+            <tr>
+              <td>Wassermann</td>
+              <td>Raa See Kkum</td>
+              <td>ราศีกุมภ์</td>
+            </tr>
+            <tr>
+              <td>Steinbock</td>
+              <td>Raa See Mang Kkorn</td>
+              <td>ราศีมังกร</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable1" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Hallo!</td>
-                                <td>Sà-Wàt-Dee Khrap</td>
-                                <td>สวัสดี</td>
-                            </tr>
-                            <tr>
-                                <td>Guten Morgen!</td>
-                                <td>A-Run Sà-Wàt</td>
-                                <td>อรุณสวัสดิ์</td>
-                            </tr>
-                            <tr>
-                                <td>Guten Abend!</td>
-                                <td>Sà-Wàt-Dee Dton-Kâm</td>
-                                <td>สวัสดีตอนค่ำ</td>
-                            </tr>
-                            <tr>
-                                <td>Gute Nacht!</td>
-                                <td>Raa-Dtree Sà-Wàt</td>
-                                <td>ราตรีสวัสดิ์</td>
-                            </tr>
-                            <tr>
-                                <td>Schlaf gut!</td>
-                                <td>Làp Făn Dee</td>
-                                <td>หลับฝันดี</td>
-                            </tr>
-                            <tr>
-                                <td>Tschüss!</td>
-                                <td>Bāy</td>
-                                <td>บาย</td>
-                            </tr>
-                            <tr>
-                                <td>Auf Wiedersehen!</td>
-                                <td>Laa Gòn</td>
-                                <td>ลาก่อน</td>
-                            </tr>
-                            <tr>
-                                <td>Ja</td>
-                                <td>Châi</td>
-                                <td>ใช่</td>
-                            </tr>
-                            <tr>
-                                <td>Nein</td>
-                                <td>Mâi Châi</td>
-                                <td>ไม่ใช่</td>
-                            </tr>
-                            <tr>
-                                <td>Danke</td>
-                                <td>Kòp Kun Khrap</td>
-                                <td>ขอบคุณ</td>
-                            </tr>
-                            <tr>
-                                <td>Keine Ursache</td>
-                                <td>Mâi Bpen Rai</td>
-                                <td>ไม่เป็นไร</td>
-                            </tr>
-                            <tr>
-                                <td>Entschuldigung</td>
-                                <td>Kŏr Tôht</td>
-                                <td>ขอโทษ</td>
-                            </tr>
-                            <tr>
-                                <td>Wie geht’s?</td>
-                                <td>Sabai Dee Mâi?</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Gut, danke!</td>
-                                <td>Sabai Dii Khrap</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Was kostet das?</td>
-                                <td>Raka Tao Rai?</td>
-                                <td>ราคาเท่าไหร่</td>
-                            </tr>
-                            <tr>
-                                <td>Rechnung (Bar)</td>
-                                <td>Check Bin</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Rechnung</td>
-                                <td>Kep Tang</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Darf ich das?</td>
-                                <td>Dâi Mâi?</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Nicht dürfen!</td>
-                                <td>Mâi Dâi</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Hast du Spaß?</td>
-                                <td>Sanuk Mâi?</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Viel Glück!</td>
-                                <td>Chok Dee</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>hübsch</td>
-                                <td>Suay</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>niedlich</td>
-                                <td>Narak</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-            <article id="Orte">
-                <h2>Orte | Places | สถานที่</h2>
+    <section id="Uhrzeit">
+      <h1 style="color: var(--orange);">Uhrzeit | เวลา</h1>
+      <div class="responsive_table">
+        <table id="datatable3" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Morgens</td>
+              <td>Ttawn Chao</td>
+              <td>ตอนเช้า</td>
+            </tr>
+            <tr>
+              <td>Mittags</td>
+              <td>Ttawn Tee-Ang</td>
+              <td>ตอนเที่ยง</td>
+            </tr>
+            <tr>
+              <td>früher Nachmittag</td>
+              <td>Ttawn Baai</td>
+              <td>ตอนบ่าย</td>
+            </tr>
+            <tr>
+              <td>später Nachmittag</td>
+              <td>Ttawn Yen</td>
+              <td>ตอนเย็น</td>
+            </tr>
+            <tr>
+              <td>früher Abend</td>
+              <td>Ttawn Kham</td>
+              <td>ตอนค่ำ</td>
+            </tr>
+            <tr>
+              <td>später Abend</td>
+              <td>Ttawn Duek</td>
+              <td>ตอนดึก</td>
+            </tr>
+            <tr>
+              <td>Mitternacht</td>
+              <td>Thii-Ang Koen</td>
+              <td>เที่ยงคืน</td>
+            </tr>
+            <tr>
+              <td>Sekunden</td>
+              <td>Wi-Naatii</td>
+              <td>วินาที</td>
+            </tr>
+            <tr>
+              <td>Minuten</td>
+              <td>Naatii</td>
+              <td>นาที</td>
+            </tr>
+            <tr>
+              <td>Stunden</td>
+              <td>Chua Mong</td>
+              <td>ชั่วโมง</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable2" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Restaurant</td>
-                                <td>Ranahan</td>
-                                <td>ร้านอาหาร</td>
-                            </tr>
-                            <tr>
-                                <td>Bar</td>
-                                <td>Bar</td>
-                                <td>บาร์</td>
-                            </tr>
-                            <tr>
-                                <td>Café</td>
-                                <td>Kafe</td>
-                                <td>คาเฟ่</td>
-                            </tr>
-                            <tr>
-                                <td>Bäckerei</td>
-                                <td>Ranbaekoeri</td>
-                                <td>ร้านเบเกอรี่</td>
-                            </tr>
-                            <tr>
-                                <td>Markt</td>
-                                <td>Talat</td>
-                                <td>ตลาด</td>
-                            </tr>
-                            <tr>
-                                <td>Kino</td>
-                                <td>Rongnang</td>
-                                <td>โรงหนัง</td>
-                            </tr>
-                            <tr>
-                                <td>Hotel</td>
-                                <td>Rongraem</td>
-                                <td>โรงแรม</td>
-                            </tr>
-                            <tr>
-                                <td>Bank</td>
-                                <td>Thanakhan</td>
-                                <td>ธนาคาร</td>
-                            </tr>
-                            <tr>
-                                <td>Apotheke</td>
-                                <td>Rankhaiya</td>
-                                <td>ร้ายขายยา</td>
-                            </tr>
-                            <tr>
-                                <td>Krankenhaus</td>
-                                <td>Rongphayaban</td>
-                                <td>โรงพยาบาล</td>
-                            </tr>
-                            <tr>
-                                <td>Bahnhof</td>
-                                <td>Sathanilak</td>
-                                <td>สถานีหลัก</td>
-                            </tr>
-                            <tr>
-                                <td>Station</td>
-                                <td>Sathani</td>
-                                <td>สถานี</td>
-                            </tr>
-                            <tr>
-                                <td>Auto</td>
-                                <td>Rotyon</td>
-                                <td>รถยนต์</td>
-                            </tr>
-                            <tr>
-                                <td>Zug</td>
-                                <td>Rotfai</td>
-                                <td>รถไฟ</td>
-                            </tr>
-                            <tr>
-                                <td>Bus</td>
-                                <td>Rót May</td>
-                                <td>รถเมล์</td>
-                            </tr>
-                            <tr>
-                                <td>Metro</td>
-                                <td>Rotfaitaidin</td>
-                                <td>รถไฟใต้ดิน</td>
-                            </tr>
-                            <tr>
-                                <td>Taxi</td>
-                                <td>Rottaeksi</td>
-                                <td>รถแท๊กซี่</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-            <article id="Zahlen">
-                <h2>Zahlen | Numbers | นับ</h2>
+    <section id="Essen">
+      <h1 style="color: var(--pink);">Essen | กิน</h1>
+      <div class="responsive_table">
+        <table id="datatable4" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>hungrig</td>
+              <td>Hiu</td>
+              <td>หิว</td>
+            </tr>
+            <tr>
+              <td>köstlich</td>
+              <td>Aroi</td>
+              <td>อร่อย</td>
+            </tr>
+            <tr>
+              <td>scharf</td>
+              <td>Phet</td>
+              <td>เผ็ด</td>
+            </tr>
+            <tr>
+              <td>Guten Appetit</td>
+              <td>Dī Māk</td>
+              <td>ดีมาก</td>
+            </tr>
+            <tr>
+              <td>Brot</td>
+              <td>Khanompang</td>
+              <td>ขนมปัง</td>
+            </tr>
+            <tr>
+              <td>Butter</td>
+              <td>Noei</td>
+              <td>เนย</td>
+            </tr>
+            <tr>
+              <td>Marmelade</td>
+              <td>Yaem</td>
+              <td>แยม</td>
+            </tr>
+            <tr>
+              <td>Ei</td>
+              <td>Khai</td>
+              <td>ไข่</td>
+            </tr>
+            <tr>
+              <td>Nudeln</td>
+              <td>Kuaitiaw</td>
+              <td>ก๋วยเตี๋ยว</td>
+            </tr>
+            <tr>
+              <td>Reis</td>
+              <td>Kaao</td>
+              <td>ข้าว</td>
+            </tr>
+            <tr>
+              <td>Huhn</td>
+              <td>Gai</td>
+              <td>ไก่</td>
+            </tr>
+            <tr>
+              <td>Schwein</td>
+              <td>Moo</td>
+              <td>หมู</td>
+            </tr>
+            <tr>
+              <td>Rind</td>
+              <td>Nuea</td>
+              <td>เนื้อวัว</td>
+            </tr>
+            <tr>
+              <td>Shrimps</td>
+              <td>Goong</td>
+              <td>กุ้ง</td>
+            </tr>
+            <tr>
+              <td>Fisch</td>
+              <td>Pla</td>
+              <td>ปลา</td>
+            </tr>
+            <tr>
+              <td>Gemüse</td>
+              <td>Pak</td>
+              <td>ผัก</td>
+            </tr>
+            <tr>
+              <td>zum Mitnehmen</td>
+              <td>Ow Glap Baan</td>
+              <td>เอากลับบ้าน</td>
+            </tr>
+            <tr>
+              <td>hier essen</td>
+              <td>Thaan Thee Nee</td>
+              <td>ทานที่นี่</td>
+            </tr>
+            <tr>
+              <td>Frühstück</td>
+              <td>Aahaan Chao</td>
+              <td>อาหารเช้า</td>
+            </tr>
+            <tr>
+              <td>Rotes Schweinefleisch</td>
+              <td>Moo Daeng</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Knuspriges Schweinefleisch</td>
+              <td>Moo Grob</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fleischbällchen</td>
+              <td>Luk Chin</td>
+              <td></td>
+            </tr>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable3" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0</td>
-                                <td>Sŏon</td>
-                                <td>ศูนย์</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Nèung</td>
-                                <td>หนึ่ง</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Sŏng</td>
-                                <td>สอง</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Săam</td>
-                                <td>สาม</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Sèe</td>
-                                <td>สี่</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Hâa</td>
-                                <td>ห้า</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Hòk</td>
-                                <td>หก</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Jèt</td>
-                                <td>เจ็ด</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Bpàet</td>
-                                <td>แปด</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>Gâo</td>
-                                <td>เก้า</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Sìp</td>
-                                <td>สิบ</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>Sìp Èt</td>
-                                <td>สิบเอ็ด</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>Sìp Sŏng</td>
-                                <td>สิบสอง</td>
-                            </tr>
-                            <tr>
-                                <td>13</td>
-                                <td>Sìp Săam</td>
-                                <td>สิบสาม</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>Sìp Sèe</td>
-                                <td>สิบสี่</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>Sìp Hâa</td>
-                                <td>สิบห้า</td>
-                            </tr>
-                            <tr>
-                                <td>16</td>
-                                <td>Sìp Hòk</td>
-                                <td>สิบหก</td>
-                            </tr>
-                            <tr>
-                                <td>17</td>
-                                <td>Sìp Jèt</td>
-                                <td>สิบเจ็ด</td>
-                            </tr>
-                            <tr>
-                                <td>18</td>
-                                <td>Sìp Bpàet</td>
-                                <td>สิบแปด</td>
-                            </tr>
-                            <tr>
-                                <td>19</td>
-                                <td>Sìp Gâo</td>
-                                <td>สิบเก้า</td>
-                            </tr>
-                            <tr>
-                                <td>20</td>
-                                <td>Yêe Sìp</td>
-                                <td>ยี่สิบ</td>
-                            </tr>
-                            <tr>
-                                <td>30</td>
-                                <td>Săam Sìp</td>
-                                <td>สามสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>40</td>
-                                <td>Sèe Sìp</td>
-                                <td>สี่สิบ</td>
-                            </tr>
-                            <tr>
-                                <td>50</td>
-                                <td>Hâa Sìp</td>
-                                <td>ห้าสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>60</td>
-                                <td>Hòk Sìp</td>
-                                <td>หกสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>70</td>
-                                <td>Jèt Sìp</td>
-                                <td>เจ็ดสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>80</td>
-                                <td>Bpàet Sìp</td>
-                                <td>แปดสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>90</td>
-                                <td>Gâo Sìp</td>
-                                <td>เก้าสิบ</td>
-                            </tr>
-                            <tr>
-                                <td>100</td>
-                                <td>Nèung Rói</td>
-                                <td>หนึ่งร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>200</td>
-                                <td>Sŏng Rói</td>
-                                <td>สองร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>300</td>
-                                <td>Săam Rói</td>
-                                <td>สามร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>400</td>
-                                <td>Sèe Rói</td>
-                                <td>สี่ร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>500</td>
-                                <td>Hâa Rói</td>
-                                <td>ห้าร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>600</td>
-                                <td>Hòk Rói</td>
-                                <td>หกร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>700</td>
-                                <td>Jèt Rói</td>
-                                <td>เจ็ดร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>800</td>
-                                <td>Bpàet Rói</td>
-                                <td>แปดร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>900</td>
-                                <td>Gâo Rói</td>
-                                <td>เก้าร้อย</td>
-                            </tr>
-                            <tr>
-                                <td>1000</td>
-                                <td>Nèung Pan</td>
-                                <td>หนึ่งพัน</td>
-                            </tr>
-                            <tr>
-                                <td>2000</td>
-                                <td>Nâa Glìat</td>
-                                <td>น่าเกลียด</td>
-                            </tr>
-                            <tr>
-                                <td>3000</td>
-                                <td>Săam Pan</td>
-                                <td>สามพัน</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-            <article id="Kalender">
-                <h2>Kalender | Calendar | ปฏิทิน</h2>
+    <section id="Nudeln">
+      <h1 style="color: var(--orange);">Nudeln | พาสต้า</h1>
+      <div class="responsive_table">
+        <table id="" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="./img/vermicelli.jpg"></td>
+              <td>(Rice Vermicelli) Sen Mee</td>
+              <td>เส้นหมี่</td>
+            </tr>
+            <tr>
+              <td><img src="./img/rice.jpg"></td>
+              <td>(Rice Stick Noodles) Sen Lek</td>
+              <td>เส้นเล็ก</td>
+            </tr>
+            <tr>
+              <td><img src="./img/wide.jpg"></td>
+              <td>(Wide Rice Noodles) Sen Yai</td>
+              <td>เส้นใหญ่</td>
+            </tr>
+            <tr>
+              <td><img src="./img/glas.jpg"></td>
+              <td>(Glass Noodles) Wun Sen</td>
+              <td>วุ้นเส้น</td>
+            </tr>
+            <tr>
+              <td><img src="./img/egg.jpg"></td>
+              <td>(Egg Noodles) Sen Ba-Mee</td>
+              <td>เส้นบะหมี่</td>
+            </tr>
+            <tr>
+              <td><img src="./img/instant.jpg"></td>
+              <td>(Instant Noodles)</td>
+              <td>บะหมี่กึ่งสำเร็จรูป</td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable4" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Montag</td>
-                                <td>Wan Chan</td>
-                                <td>วันจันทร์</td>
-                            </tr>
-                            <tr>
-                                <td>Dienstag</td>
-                                <td>Wan Angkhan</td>
-                                <td>วันอังคาร</td>
-                            </tr>
-                            <tr>
-                                <td>Mittwoch</td>
-                                <td>Wan Phut</td>
-                                <td>วันพุธ</td>
-                            </tr>
-                            <tr>
-                                <td>Donnerstag</td>
-                                <td>Wan Pharuehatsabodi</td>
-                                <td>วันพฤหัสบดี</td>
-                            </tr>
-                            <tr>
-                                <td>Freitag</td>
-                                <td>Wan Suk</td>
-                                <td>วันศุกร์</td>
-                            </tr>
-                            <tr>
-                                <td>Samstag</td>
-                                <td>Wan Sao</td>
-                                <td>วันเสาร์</td>
-                            </tr>
-                            <tr>
-                                <td>Sonntag</td>
-                                <td>Wan Athit</td>
-                                <td>วันอาทิตย์</td>
-                            </tr>
-                            <tr>
-                                <td>Januar</td>
-                                <td>Makarakhom</td>
-                                <td>มกราคม</td>
-                            </tr>
-                            <tr>
-                                <td>Februar</td>
-                                <td>Kumphaphan</td>
-                                <td>กุมภาพันธ์</td>
-                            </tr>
-                            <tr>
-                                <td>März</td>
-                                <td>Minakhom</td>
-                                <td>มีนาคม</td>
-                            </tr>
-                            <tr>
-                                <td>April</td>
-                                <td>Maesayon</td>
-                                <td>เมษายน</td>
-                            </tr>
-                            <tr>
-                                <td>Mai</td>
-                                <td>Phruesaphakhom</td>
-                                <td>พฤษภาคม</td>
-                            </tr>
-                            <tr>
-                                <td>Juni</td>
-                                <td>Mithunayon</td>
-                                <td>มิถุนายน</td>
-                            </tr>
-                            <tr>
-                                <td>Juli</td>
-                                <td>Karakadakhom</td>
-                                <td>กรกฎาคม</td>
-                            </tr>
-                            <tr>
-                                <td>August</td>
-                                <td>Singhakhom</td>
-                                <td>สิงหาคม</td>
-                            </tr>
-                            <tr>
-                                <td>September</td>
-                                <td>Kanyayon</td>
-                                <td>กันยายน</td>
-                            </tr>
-                            <tr>
-                                <td>Oktober</td>
-                                <td>Tulakhom</td>
-                                <td>ตุลาคม</td>
-                            </tr>
-                            <tr>
-                                <td>November</td>
-                                <td>Phruesachikhayon</td>
-                                <td>พฤศจิกายน</td>
-                            </tr>
-                            <tr>
-                                <td>Dezember</td>
-                                <td>Thanwakhom</td>
-                                <td>ธันวาคม</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-            <article id="Essen">
-                <h2>Essen | Food | กิน</h2>
+    <section id="Früchte">
+      <h1 style="color: var(--pink);">Früchte | ผลไม้</h1>
+      <div class="responsive_table">
+        <table id="" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="./img/mango.jpg"></td>
+              <td>(Mango) Mamuang</td>
+              <td>มะม่วง</td>
+            </tr>
+            <tr>
+              <td><img src="./img/ananas.jpg"></td>
+              <td>(Ananas) Sapparot</td>
+              <td>สับปะรด</td>
+            </tr>
+            <tr>
+              <td><img src="./img/melone.jpg"></td>
+              <td>(Wassermelone) Taeng Mo</td>
+              <td>แตงโม</td>
+            </tr>
+            <tr>
+              <td><img src="./img/papaya.jpg"></td>
+              <td>(Papaya) Malakor</td>
+              <td>มะละกอ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/kokosnuss.jpg"></td>
+              <td>(Kokosnuss) Maprau</td>
+              <td>มะพร้าว</td>
+            </tr>
+            <tr>
+              <td><img src="./img/banane.jpg"></td>
+              <td>(Banane) Gluay</td>
+              <td>กล้วย</td>
+            </tr>
+            <tr>
+              <td><img src="./img/durian.jpg"></td>
+              <td>(Durian) Turien</td>
+              <td>ทุเรียน</td>
+            </tr>
+            <tr>
+              <td><img src="./img/jack.jpg"></td>
+              <td>(Jackfrucht) Khanun</td>
+              <td>ขนุน</td>
+            </tr>
+            <tr>
+              <td><img src="./img/mangosteen.jpg"></td>
+              <td>(Mangosteen) Mangkut</td>
+              <td>มังคุด</td>
+            </tr>
+            <tr>
+              <td><img src="./img/salak.jpg"></td>
+              <td>(Salakfrucht) Sala</td>
+              <td>สละ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/orange.jpg"></td>
+              <td>(Thai-Orange) Som</td>
+              <td>ส้ม</td>
+            </tr>
+            <tr>
+              <td><img src="./img/drachen.jpg"></td>
+              <td>(Drachenfrucht) Gaew Mangkorn</td>
+              <td>แก้วมังกร</td>
+            </tr>
+            <tr>
+              <td><img src="./img/java.jpg"></td>
+              <td>(Javaapfel) Chompu</td>
+              <td>ชมพู่</td>
+            </tr>
+            <tr>
+              <td><img src="./img/guave.jpg"></td>
+              <td>(Guave) Farang</td>
+              <td>ฝรั่ง</td>
+            </tr>
+            <tr>
+              <td><img src="./img/rambutan.jpg"></td>
+              <td>(Rambutan) Ngo</td>
+              <td>เงาะ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/litschi.jpg"></td>
+              <td>(Litschi) Linchi</td>
+              <td>ลิ้นจี่</td>
+            </tr>
+            <tr>
+              <td><img src="./img/lamyai.webp"></td>
+              <td>(Longan) Lam Yai</td>
+              <td>ลำไย</td>
+            </tr>
+            <tr>
+              <td><img src="./img/zimtapfel.jpg"></td>
+              <td>(Zimtapfel) Noi Naa</td>
+              <td>น้อยหน่า</td>
+            </tr>
+            <tr>
+              <td><img src="./img/sapodilla.jpg"></td>
+              <td>(Sapodilla) Lamut</td>
+              <td>ละมุด</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable5" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>durstig</td>
-                                <td>Krah̄āy</td>
-                                <td>กระหาย</td>
-                            </tr>
-                            <tr>
-                                <td>hungrig</td>
-                                <td>Hiw</td>
-                                <td>หิว</td>
-                            </tr>
-                            <tr>
-                                <td>köstlich</td>
-                                <td>Aroi</td>
-                                <td>อร่อย</td>
-                            </tr>
-                            <tr>
-                                <td>scharf</td>
-                                <td>Phet</td>
-                                <td>เผ็ด</td>
-                            </tr>
-                            <tr>
-                                <td>Guten Appetit</td>
-                                <td>Dī Māk</td>
-                                <td>ดีมาก</td>
-                            </tr>
-                            <tr>
-                                <td>Brot</td>
-                                <td>Khanompang</td>
-                                <td>ขนมปัง</td>
-                            </tr>
-                            <tr>
-                                <td>Butter</td>
-                                <td>Noei</td>
-                                <td>เนย</td>
-                            </tr>
-                            <tr>
-                                <td>Marmelade</td>
-                                <td>Yaem</td>
-                                <td>แยม</td>
-                            </tr>
-                            <tr>
-                                <td>Ei</td>
-                                <td>Khai</td>
-                                <td>ไข่</td>
-                            </tr>
-                            <tr>
-                                <td>Nudeln</td>
-                                <td>Kuaitiaw</td>
-                                <td>ก๋วยเตี๋ยว</td>
-                            </tr>
-                            <tr>
-                                <td>Reis</td>
-                                <td>Khaw</td>
-                                <td>ข้าว</td>
-                            </tr>
-                            <tr>
-                                <td>Huhn</td>
-                                <td>Gai</td>
-                                <td>ไก่</td>
-                            </tr>
-                            <tr>
-                                <td>Schwein</td>
-                                <td>Moo</td>
-                                <td>หมู</td>
-                            </tr>
-                            <tr>
-                                <td>Rind</td>
-                                <td>Nuea</td>
-                                <td>เนื้อวัว</td>
-                            </tr>
-                            <tr>
-                                <td>Shrimps</td>
-                                <td>Goong</td>
-                                <td>กุ้ง</td>
-                            </tr>
-                            <tr>
-                                <td>Fisch</td>
-                                <td>Pla</td>
-                                <td>ปลา</td>
-                            </tr>
-                            <tr>
-                                <td>Gemüse</td>
-                                <td>Pak</td>
-                                <td>ผัก</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-            <article id="Trinken">
-                <h2>Trinken | Drink | ดื่ม</h2>
+    <section id="Gerichte">
+      <h1 style="color: var(--orange);">Gerichte | จาน</h1>
+      <div class="responsive_table">
+        <table id="" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="./img/khaopad.jpg"></td>
+              <td>Khao Pad</td>
+              <td>ข้าวผัด</td>
+            </tr>
+            <tr>
+              <td><img src="./img/padkrapao.jpg"></td>
+              <td>Pad Kra Pao</td>
+              <td>ผัดกะเพรา</td>
+            </tr>
+            <tr>
+              <td><img src="./img/padthai.jpg"></td>
+              <td>Pad Thai</td>
+              <td>ผัดไทย</td>
+            </tr>
+            <tr>
+              <td><img src="./img/somtam.jpg"></td>
+              <td>Som Tam</td>
+              <td>ส้มตำ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/hellesuppe.jpg"></td>
+              <td>Kuai Tiao Nam Sai</td>
+              <td>ก๋วยเตี๋ยวน้ำใส</td>
+            </tr>
+            <tr>
+              <td><img src="./img/dunklesuppe.jpg"></td>
+              <td>Kuai Tiao Nam Tok</td>
+              <td>ก๋วยเตี๋ยวเรือ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/larb.jpg"></td>
+              <td>Larb</td>
+              <td>ลาบ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/padkana.jpg"></td>
+              <td>Pad Kana Moo Grob</td>
+              <td>ผัดคะน้าหมูกรอบ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/yamwoonsen.jpg"></td>
+              <td>Yam Woonsen</td>
+              <td>ยำวุ้นเส้น</td>
+            </tr>
+            <tr>
+              <td><img src="./img/padprik.jpg"></td>
+              <td>Pad Prik Gaeng</td>
+              <td>ผัดพริกแกง</td>
+            </tr>
+            <tr>
+              <td><img src="./img/tomyam.jpg"></td>
+              <td>Tom Yam</td>
+              <td>ต้มยำ</td>
+            </tr>
+            <tr>
+              <td><img src="./img/gaengkiaw.jpg"></td>
+              <td>Gaeng Kiaw Wan</td>
+              <td>แกงเขียวหวาน</td>
+            </tr>
+            <tr>
+              <td><img src="./img/gaengpan.jpg"></td>
+              <td>Gaeng Panaeng</td>
+              <td>แกงพะแนง</td>
+            </tr>
+            <tr>
+              <td><img src="./img/massaman.jpg"></td>
+              <td>Gaeng Massaman</td>
+              <td>แกงมัสมั่น</td>
+            </tr>
+            <tr>
+              <td><img src="./img/padpak.jpg"></td>
+              <td>Pad Pak Bung</td>
+              <td>ผัดผักบุ้ง</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-                <div class="responsive_table">
-                    <table id="datatable6" class="display">
-                        <thead>
-                            <tr>
-                                <th>Deutsch</th>
-                                <th>Thai</th>
-                                <th>ไทย</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Wasser</td>
-                                <td>Nam</td>
-                                <td>ใช่</td>
-                            </tr>
-                            <tr>
-                                <td>Soda</td>
-                                <td>Sodā</td>
-                                <td>โซดา</td>
-                            </tr>
-                            <tr>
-                                <td>Saft</td>
-                                <td>Namphonlamai</td>
-                                <td>น้ำผลไม้</td>
-                            </tr>
-                            <tr>
-                                <td>Bier</td>
-                                <td>Bia</td>
-                                <td>เบียร์</td>
-                            </tr>
-                            <tr>
-                                <td>Cocktail</td>
-                                <td>Koktel</td>
-                                <td>ค็อกเทล</td>
-                            </tr>
-                            <tr>
-                                <td>Milch</td>
-                                <td>Nom</td>
-                                <td>นม</td>
-                            </tr>
-                            <tr>
-                                <td>Kaffee</td>
-                                <td>Kafe</td>
-                                <td>กาแฟ</td>
-                            </tr>
-                            <tr>
-                                <td>Tee</td>
-                                <td>Cha</td>
-                                <td>ชา</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
-        </main>
+    <section id="Trinken">
+      <h1 style="color: var(--pink);">Trinken | ดื่ม</h1>
+      <div class="responsive_table">
+        <table id="datatable5" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>durstig</td>
+              <td>Krah̄āy</td>
+              <td>กระหาย</td>
+            </tr>
+            <tr>
+              <td>Wasser</td>
+              <td>Nam</td>
+              <td>ใช่</td>
+            </tr>
+            <tr>
+              <td>Soda</td>
+              <td>Sodā</td>
+              <td>โซดา</td>
+            </tr>
+            <tr>
+              <td>Saft</td>
+              <td>Namphonlamai</td>
+              <td>น้ำผลไม้</td>
+            </tr>
+            <tr>
+              <td>Bier</td>
+              <td>Bia</td>
+              <td>เบียร์</td>
+            </tr>
+            <tr>
+              <td>Cocktail</td>
+              <td>Koktel</td>
+              <td>ค็อกเทล</td>
+            </tr>
+            <tr>
+              <td>Milch</td>
+              <td>Nom</td>
+              <td>นม</td>
+            </tr>
+            <tr>
+              <td>Kaffee</td>
+              <td>Kafe</td>
+              <td>กาแฟ</td>
+            </tr>
+            <tr>
+              <td>Tee</td>
+              <td>Cha</td>
+              <td>ชา</td>
+            </tr>
+            <tr>
+              <td>kalt</td>
+              <td>Yen</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>heiss</td>
+              <td>Rone</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Eiswürfel</td>
+              <td>Nam Khaeng</td>
+              <td>น้ำแข็ง</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        <aside>
+    <section id="Verben">
+      <h1 style="color: var(--orange);">Verben | คำกริยา</h1>
+      <div class="responsive_table">
+        <table id="datatable7" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>dürfen</td>
+              <td>Dâi</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>haben</td>
+              <td>Mee</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>tun</td>
+              <td>Tam</td>
+              <td>ทำ</td>
+            </tr>
+            <tr>
+              <td>spielen</td>
+              <td>Lehn</td>
+              <td>เล่น</td>
+            </tr>
+            <tr>
+              <td>rein tun | rauf tun</td>
+              <td>Sai</td>
+              <td>ใส่</td>
+            </tr>
+            <tr>
+              <td>geben</td>
+              <td>Hai</td>
+              <td>ให้</td>
+            </tr>
+            <tr>
+              <td>sprechen</td>
+              <td>Puud</td>
+              <td>พูด</td>
+            </tr>
+            <tr>
+              <td>wollen</td>
+              <td>Ao</td>
+              <td>เอา</td>
+            </tr>
+            <tr>
+              <td>essen</td>
+              <td>Kin</td>
+              <td>กิน</td>
+            </tr>
+            <tr>
+              <td>denken</td>
+              <td>Kít</td>
+              <td>คิด</td>
+            </tr>
+            <tr>
+              <td>ankommen</td>
+              <td>Tĕung</td>
+              <td>ถึง</td>
+            </tr>
+            <tr>
+              <td>gehen</td>
+              <td>Ppai</td>
+              <td>ไป</td>
+            </tr>
+            <tr>
+              <td>kommen</td>
+              <td>Maa</td>
+              <td>มา</td>
+            </tr>
+            <tr>
+              <td>öffnen</td>
+              <td>Ppued</td>
+              <td>เปิด</td>
+            </tr>
+            <tr>
+              <td>mögen</td>
+              <td>Chorp</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        </aside>
+    <section id="Phrasen">
+      <h1 style="color: var(--pink);">Phrasen | วลี</h1>
+      <div class="responsive_table">
+        <table id="datatable6" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hallo!</td>
+              <td>Sàwàtdee</td>
+              <td>สวัสดี</td>
+            </tr>
+            <tr>
+              <td>Guten Morgen!</td>
+              <td>A-Run Sà-Wàt</td>
+              <td>อรุณสวัสดิ์</td>
+            </tr>
+            <tr>
+              <td>Guten Abend!</td>
+              <td>Sà-Wàt-Dee Dton-Kâm</td>
+              <td>สวัสดีตอนค่ำ</td>
+            </tr>
+            <tr>
+              <td>Gute Nacht!</td>
+              <td>Raa-Dtree Sà-Wàt</td>
+              <td>ราตรีสวัสดิ์</td>
+            </tr>
+            <tr>
+              <td>Schlaf gut!</td>
+              <td>Làp Făn Dee</td>
+              <td>หลับฝันดี</td>
+            </tr>
+            <tr>
+              <td>Tschüss!</td>
+              <td>Bāy</td>
+              <td>บาย</td>
+            </tr>
+            <tr>
+              <td>Auf Wiedersehen!</td>
+              <td>Laa Gòn</td>
+              <td>ลาก่อน</td>
+            </tr>
+            <td>Machs gut</td>
+            <td>Wái Jur Gan</td>
+            <td>ไว้เจอกัน</td>
+            </tr>
+            <tr>
+              <td>Bye Bye</td>
+              <td>Báai Baai</td>
+              <td>ไว้เจอกัน</td>
+            </tr>
+            <tr>
+              <td>Good Bye</td>
+              <td>Gút Baai</td>
+              <td>กุ๊ดบาย</td>
+            </tr>
+            <tr>
+              <td>Glückwunsch</td>
+              <td>Dee Jai Doo-Ay</td>
+              <td>ดีใจด้วย</td>
+            </tr>
+            <tr>
+              <td>Ja</td>
+              <td>Châi</td>
+              <td>ใช่</td>
+            </tr>
+            <tr>
+              <td>Nein</td>
+              <td>Mâi Châi</td>
+              <td>ไม่ใช่</td>
+            </tr>
+            <tr>
+              <td>Auf keinen Fall</td>
+              <td>Mai leoi</td>
+              <td>ไม่เลย</td>
+            </tr>
+            <tr>
+              <td>Danke</td>
+              <td>Kòp Kun Khrap</td>
+              <td>ขอบคุณ</td>
+            </tr>
+            <tr>
+              <td>Keine Ursache</td>
+              <td>Mâi Bpen Rai</td>
+              <td>ไม่เป็นไร</td>
+            </tr>
+            <tr>
+              <td>Entschuldigung</td>
+              <td>Kŏr Tôht</td>
+              <td>ขอโทษ</td>
+            </tr>
+            <tr>
+              <td>Mir geht es gut, danke!</td>
+              <td>Sabai Dii Khrap</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Rechnung (Bar)</td>
+              <td>Check Bin</td>
+              <td>เช็คบิล</td>
+            </tr>
+            <tr>
+              <td>Rechnung</td>
+              <td>Kep Tang</td>
+              <td>เก็บตังค์</td>
+            </tr>
+            <tr>
+              <td>Viel Glück!</td>
+              <td>Chok Dee</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>hübsch</td>
+              <td>Suay</td>
+              <td>สวยๆ</td>
+            </tr>
+            <tr>
+              <td>niedlich</td>
+              <td>Narak</td>
+              <td>น่ารักๆ</td>
+            </tr>
+            <tr>
+              <td>Prost</td>
+              <td>Chon Kaew</td>
+              <td>ชนแก้ว</td>
+            </tr>
+            <tr>
+              <td>Happy New Year</td>
+              <td>Sawad Dee Ppee Mai</td>
+              <td>สวัสดีปีใหม่</td>
+            </tr>
+            <tr>
+              <td>Frohe Weinachten</td>
+              <td>Suk-San Wan khrit-Maat</td>
+              <td>สุขสันต์วันคริสต์มาส</td>
+            </tr>
+            <tr>
+              <td>Das da!</td>
+              <td>Annii</td>
+              <td>อันนี้</td>
+            </tr>
+            <tr>
+              <td>gutaussehend</td>
+              <td>Lawh</td>
+              <td>หล่อ</td>
+            </tr>
+            <tr>
+              <td>ähnlich</td>
+              <td>klaai klaai</td>
+              <td>คล้ายๆ</td>
+            </tr>
+            <tr>
+              <td>geradeaus</td>
+              <td>Dtrong bpai</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>nach links</td>
+              <td>Leo Saai</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>nach rechts</td>
+              <td>Leo Kwaa</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Stop</td>
+              <td>Yut</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ich</td>
+              <td>Pŏm / Chán</td>
+              <td>ผม / ...</td>
+            </tr>
+            <tr>
+              <td>Du</td>
+              <td>Khun</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Er / Sie</td>
+              <td>Kao</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>schnell</td>
+              <td>Raew Raew</td>
+              <td>เร็วๆ</td>
+            </tr>
+            <tr>
+              <td>sanft</td>
+              <td>Bao Bao</td>
+              <td>เบาๆ</td>
+            </tr>
+            <tr>
+              <td>Sprache</td>
+              <td>Phaa-Saa</td>
+              <td>ภาษา</td>
+            </tr>
+            <tr>
+              <td>Stunde</td>
+              <td>Chua Mong</td>
+              <td>ชั่วโมง</td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>Chue</td>
+              <td>ชื่อ</td>
+            </tr>
+            <tr>
+              <td>klein</td>
+              <td>Lek</td>
+              <td>เล็ก</td>
+            </tr>
+            <tr>
+              <td>mittel</td>
+              <td>Glaang</td>
+              <td>กลาง</td>
+            </tr>
+            <tr>
+              <td>groß</td>
+              <td>Yai</td>
+              <td>ใหญ่</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        <footer>
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up fa-2x"
-                    aria-hidden="true"></i></button>
-        </footer>
-    </div>
+    <section id="Orte">
+      <h1 style="color: var(--orange);">Orte | สถานที่</h1>
+      <div class="responsive_table">
+        <table id="datatable8" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hostel</td>
+              <td>Hoh-Stel</td>
+              <td>โฮสเทล</td>
+            </tr>
+            <tr>
+              <td>Guesthouse</td>
+              <td>Gaest-Hao</td>
+              <td>เกสต์เฮาส์</td>
+            </tr>
+            <tr>
+              <td>Homestay</td>
+              <td>Hohm-Sttae</td>
+              <td>โฮมสเตย์</td>
+            </tr>
+            <tr>
+              <td>Bungalow</td>
+              <td>Bang-Kka-loh</td>
+              <td>บังกะโล</td>
+            </tr>
+            <tr>
+              <td>Camping</td>
+              <td>Caem-Pping</td>
+              <td>แคมป์ปิ้ง</td>
+            </tr>
+            <tr>
+              <td>Airbnb</td>
+              <td>Aeh Bii En Bii</td>
+              <td>แอร์บีเอ็นบี</td>
+            </tr>
+            <tr>
+              <td>Badezimmer</td>
+              <td>Hawng Nam</td>
+              <td>ห้องน้ำ</td>
+            </tr>
+            <tr>
+              <td>Restaurant</td>
+              <td>Raan Aahaan</td>
+              <td>ร้านอาหาร</td>
+            </tr>
+            <tr>
+              <td>Bar</td>
+              <td>Bar</td>
+              <td>บาร์</td>
+            </tr>
+            <tr>
+              <td>Café</td>
+              <td>Raan Kafe</td>
+              <td>ร้านกาแฟ</td>
+            </tr>
+            <tr>
+              <td>Bäckerei</td>
+              <td>Ranbaekoeri</td>
+              <td>ร้านเบเกอรี่</td>
+            </tr>
+            <tr>
+              <td>Markt</td>
+              <td>Talat</td>
+              <td>ตลาด</td>
+            </tr>
+            <tr>
+              <td>Kino</td>
+              <td>Rongnang</td>
+              <td>โรงหนัง</td>
+            </tr>
+            <tr>
+              <td>Hotel</td>
+              <td>Rongraem</td>
+              <td>โรงแรม</td>
+            </tr>
+            <tr>
+              <td>Bank</td>
+              <td>Thanakhan</td>
+              <td>ธนาคาร</td>
+            </tr>
+            <tr>
+              <td>Apotheke</td>
+              <td>Rankhaiya</td>
+              <td>ร้านขายยา</td>
+            </tr>
+            <tr>
+              <td>Krankenhaus</td>
+              <td>Rongphayaban</td>
+              <td>โรงพยาบาล</td>
+            </tr>
+            <tr>
+              <td>Bahnhof</td>
+              <td>Sathanilak</td>
+              <td>สถานีหลัก</td>
+            </tr>
+            <tr>
+              <td>Station</td>
+              <td>Sathani</td>
+              <td>สถานี</td>
+            </tr>
+            <tr>
+              <td>Auto</td>
+              <td>Rotyon</td>
+              <td>รถยนต์</td>
+            </tr>
+            <tr>
+              <td>Zug</td>
+              <td>Rotfai</td>
+              <td>รถไฟ</td>
+            </tr>
+            <tr>
+              <td>Bus</td>
+              <td>Rót May</td>
+              <td>รถเมล์</td>
+            </tr>
+            <tr>
+              <td>Metro</td>
+              <td>Rotfaitaidin</td>
+              <td>รถไฟใต้ดิน</td>
+            </tr>
+            <tr>
+              <td>Taxi</td>
+              <td>Rottaeksi</td>
+              <td>รถแท๊กซี่</td>
+            </tr>
+            <tr>
+              <td>Boot</td>
+              <td>Rua</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Motorrad</td>
+              <td>Moodteesai</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Bicycle</td>
+              <td>Jakgrayaan</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Minibus</td>
+              <td>Rot Dtuu</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Flughafen</td>
+              <td>Sanam Bin</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Skytrain</td>
+              <td>Rodfai Faa</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable1').DataTable();
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable2').DataTable();
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable3').DataTable();
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable4').DataTable();
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable5').DataTable();
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable6').DataTable();
-        });
-    </script>
+    <section id="Fragen">
+      <h1 style="color: var(--pink);">Fragen | ถาม</h1>
+      <div class="responsive_table">
+        <table id="datatable9" class="display">
+          <thead style="background-color: var(--pink);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wo?</td>
+              <td>Tiinai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wer?</td>
+              <td>Krai?</td>
+              <td>ใคร</td>
+            </tr>
+            <tr>
+              <td>Was?</td>
+              <td>Arai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wann?</td>
+              <td>Muarai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wie?</td>
+              <td>Yangngai?</td>
+              <td>ยังไง</td>
+            </tr>
+            <tr>
+              <td>Warum?</td>
+              <td>Tum Mai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wieviel? (numeric)</td>
+              <td>Tao Rai?</td>
+              <td>เท่าไหร่</td>
+            </tr>
+            <tr>
+              <td>Wieviel? (non numeric)</td>
+              <td>Kaeh Nai?</td>
+              <td>แค่ไหน</td>
+            </tr>
+            <tr>
+              <td>Wie ist dein Name?</td>
+              <td>Kun Chuu Arai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Woher kommst du?</td>
+              <td>Kun Maa Jaak Bprateet Arai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Was ist das?</td>
+              <td>Annii Arai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Was kostet das?</td>
+              <td>Annii Tao Rai?</td>
+              <td>อันนี้เท่าไหร่</td>
+            </tr>
+            <tr>
+              <td>Wie geht es dir?</td>
+              <td>Sabai Dee Mâi?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Hast du Spaß?</td>
+              <td>Sanuk Mâi?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Haben Sie ein Zimmer frei?</td>
+              <td>Mee Hawng Waang Mai?</td>
+              <td>มีห้องว่างมั้ย</td>
+            </tr>
+            <tr>
+              <td>Kann ich meine Tasche hierlassen?</td>
+              <td>Faak Kkra-Ppao Wai Tii Nii Dai Mai?</td>
+              <td>ฝากกระเป๋าไว้ที่นี่ได้มั้ย</td>
+            </tr>
+            <tr>
+              <td>Gibt es Wifi?</td>
+              <td>Mee Wai Fai Mai?</td>
+              <td>มีไวไฟมั้ย</td>
+            </tr>
+            <tr>
+              <td>Kann ich die Speisekarte haben?</td>
+              <td>Khaw Meh-Nuu Noi?</td>
+              <td>ขอเมนูหน่อย</td>
+            </tr>
+            <tr>
+              <td>Wo ist die Polizei?</td>
+              <td>Sataanii Dtamruat Yoo Tiinai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wo ist das Krankenhaus?</td>
+              <td>Rongpayaabaan Yoo Tiinai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kannst du Englisch sprechen?</td>
+              <td>Khun Puud Paasaa Anggrit Dai Mai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Kannst du Thai sprechen?</td>
+              <td>Khun Puud Paasaa Tai Yangngai?</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Wie sagt man das auf Thai?</td>
+              <td>Annii Paasaa Tai Puud Yangngai?</td>
+              <td>อันนี้ภาษาไทยพูดว่ายังไง</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-    <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
+    <section id="Massage">
+      <h1 style="color: var(--orange);">Massage | นวดไทย</h1>
+      <div class="responsive_table">
+        <table id="datatable10" class="display">
+          <thead style="background-color: var(--orange);">
+            <tr>
+              <th>Deutsch</th>
+              <th>Thai</th>
+              <th>ไทย</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Thai Massage</td>
+              <td>Nuad Thai</td>
+              <td>นวดไทย</td>
+            </tr>
+            <tr>
+              <td>Kopf</td>
+              <td>hua</td>
+              <td>หัว</td>
+            </tr>
+            <tr>
+              <td>Nacken</td>
+              <td>khaw</td>
+              <td>คอ</td>
+            </tr>
+            <tr>
+              <td>Brust</td>
+              <td>Naa Ohk</td>
+              <td>หน้าอก</td>
+            </tr>
+            <tr>
+              <td>Arme</td>
+              <td>Khaen</td>
+              <td>แขน</td>
+            </tr>
+            <tr>
+              <td>Elbogen</td>
+              <td>Sawk</td>
+              <td>ศอก</td>
+            </tr>
+            <tr>
+              <td>Schulter</td>
+              <td>Lai</td>
+              <td>ไหล่</td>
+            </tr>
+            <tr>
+              <td>Rücken</td>
+              <td>Lang</td>
+              <td>หลัง</td>
+            </tr>
+            <tr>
+              <td>Taille</td>
+              <td>Ehw</td>
+              <td>เอว</td>
+            </tr>
+            <tr>
+              <td>Hüfte</td>
+              <td>Sa-Pohk</td>
+              <td>สะโพก</td>
+            </tr>
+            <tr>
+              <td>Schenkel</td>
+              <td>Tton Khaa</td>
+              <td>ต้นขา</td>
+            </tr>
+            <tr>
+              <td>Knöchel</td>
+              <td>Khaw Thao</td>
+              <td>ข้อเท้า</td>
+            </tr>
+            <tr>
+              <td>Füsse</td>
+              <td>Thao</td>
+              <td>เท้า</td>
+            </tr>
+            <tr>
+              <td>einränken lassen</td>
+              <td>duht ttua</td>
+              <td>ดัดตัว</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
+  </main>
+  <footer>
+    <section>
+    </section>
+  </footer>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+  <script>
+    function toggleMenu() {
+      if (window.matchMedia("(max-width: 1279px)").matches) {
+        const hamburger = document.getElementById("hamburger");
+        hamburger.classList.toggle('open-menu');
+        const menu = document.getElementById("menu");
+        menu.classList.toggle('open-menu');
+      }
+    }
+  </script>
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable1").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable2").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable3").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable4").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable5").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable6").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable7").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable8").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable9").DataTable();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#datatable10").DataTable();
+    });
+  </script>
+
 </body>
-
-</html>
