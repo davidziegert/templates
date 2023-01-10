@@ -1,0 +1,84 @@
+/* fonts */
+
+body {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 150%;
+    font-family: 'Cardo', serif;
+}
+
+/* tags */
+
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.gallery_column {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+}
+
+.gallery_item {
+    position: relative;
+    margin: 2px;
+    overflow: hidden;
+}
+
+.gallery_image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gallery_caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery:hover .gallery_image {
+    filter: grayscale(100%);
+}
+
+.gallery_item:hover>.gallery_image {
+    filter: grayscale(0%);
+}
+
+.gallery_item:hover>.gallery_caption {
+    opacity: 1;
+}
+
+.gallery_image:hover {
+    transform: scale(1.1);
+}
