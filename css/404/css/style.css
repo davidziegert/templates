@@ -1,0 +1,65 @@
+/* THEMES */
+
+body {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --primary: #FEE600;
+    --secondary: #22B5FE;
+    --tertiary: #FE6EBC;
+    --nothing: #42004C;
+}
+
+/* TAGS */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--frame_vh) var(--frame_vw);
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(15px + 0.390625vw);
+    font-family: 'Creepster', cursive;;
+}
+
+h1 {
+    font-size: 3.0rem;
+    padding-top: 0.67rem;
+    padding-bottom: 0.67rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-top: 0.83rem;
+    padding-bottom: 0.83rem;
+    font-weight: bold;
+    color: var(--tertiary);
+}
+
+/* COLORS */
+
+body {
+    background-color: var(--primary);
+    color: var(--nothing);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
