@@ -1,0 +1,159 @@
+/* THEMES */
+
+body {
+    --frame_vh: 2vh;
+    --frame_vw: 2vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --darkturtle: #283739;
+    --lightturtle: #2C5D63;
+    --green: #A9C52F;
+    --white: #F5F5F5;
+
+    --scale75: rgba(28, 28, 28, .75);
+    --scale50: rgba(28, 28, 28, .5);
+    --scale25: rgba(28, 28, 28, .25);
+}
+
+/* TAGS */
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(15px + 0.390625vw);
+}
+
+h1 {
+    font-size: 2.0rem;
+    padding-top: 0.67rem;
+    padding-bottom: 0.67rem;
+    font-weight: bold;
+}
+
+/* COLORS */
+
+body {
+    background-color: var(--white);
+    color: var(--darkturtle);
+}
+
+/* TEMPLATE */
+
+.row {
+    max-width: 1000px;
+    padding: var(--frame_vh) var(--frame_vw);
+    margin: auto;
+}
+
+/* FIRST GALLERY */
+
+.first .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    gap: var(--frame_vw)
+}
+
+.first .lightbox {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    box-shadow: 0px 0px 8px var(--scale50);
+}
+
+.first img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.first figcaption {
+    opacity: 0;
+    display: none;
+}
+
+.first .gallery:hover img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.first .lightbox:hover>img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+}
+
+/* SECOND GALLERY */
+
+.second .gallery {
+    width: 100%;
+    display: flex;
+    gap: var(--frame_vw);
+}
+
+.second .gallery-column {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    gap: var(--frame_vw);
+}
+
+.second .lightbox {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px var(--scale50);
+}
+
+.second img {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.second figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5%;
+
+    background-color: var(--darkturtle);
+    color: var(--white);
+    opacity: 0;
+}
+
+.second .gallery:hover img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.second .lightbox:hover>img {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+}
+
+.second .lightbox:hover>figcaption {
+    opacity: 1;
+}
+
+.second img:hover {
+    transform: scale(1.1);
+}
