@@ -255,16 +255,16 @@
             });
         });
     </script>
-        <script>
-            $(function()
+    <script>
+        $(function()
+        {
+            $('.scroll-up').click (function() 
             {
-                $('.scroll-up').click (function() 
-                {
-                    $('html, body').animate({scrollTop: $('header').offset().top }, 'slow');
-                    return false;
-                });
+                $('html, body').animate({scrollTop: $('header').offset().top }, 'slow');
+                return false;
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>

@@ -27,11 +27,19 @@
     <!-- Academicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
-
 <body>
     <div class="wrapper">
-        <nav id="menu">
-            <div class="row">
+        <nav>
+            <div class="row first">
+                <button id="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <img class="logo" src="./img/touch.png" alt="no logo found">
+            </div>
+            <div class="row second" id="menu">
                 <div class="main-menu">
                     <ul class="menu">
                         <li class="menu-item current_page_item"><a href="https://www.google.com">Item</a></li>
@@ -56,22 +64,11 @@
         </nav>
         <header>
             <div class="row">
-                <div class="first">
-                    <button id="hamburger" onclick="toggleMobileMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <img class="logo" src="./img/touch.png" alt="no logo found">
-                    <span class="title">skeleton.tmp</span>
-                </div>
-                <div class="second">
-                    <form class="search-menu" method="get" action="#">
-                        <input type="text" placeholder="Search..">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
+                <span class="title">Title</span>
+                <form class="search-menu" method="get" action="#">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </header>
         <main>
@@ -129,13 +126,8 @@
                     <section>
                         <h2>blocks</h2>
 
-                        <blockquote class="blockquote_1" cite="http://developer.mozilla.org">
+                        <blockquote cite="http://developer.mozilla.org">
                             <p>That's a quote</p>
-                            <cite>vom Mozilla Developer Center.</cite>
-                        </blockquote>
-
-                        <blockquote class="blockquote_2" cite="http://developer.mozilla.org">
-                            <p>That's another quote</p>
                             <cite>vom Mozilla Developer Center.</cite>
                         </blockquote>
 
@@ -475,5 +467,4 @@
         crawler.parentNode.parentNode.parentNode.parentNode.classList.add('active');
     </script>
 </body>
-
 </html>
