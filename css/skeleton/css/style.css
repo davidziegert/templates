@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    grid-area: header;
+    grid-area: nav;
     width: 100%;
 }
 
