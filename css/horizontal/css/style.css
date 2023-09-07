@@ -1,0 +1,171 @@
+/* THEMES */
+
+body {
+    --frame_vh: 2vh;
+    --frame_vw: 2vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --black: #000000;
+    --white: #FFFFFF;
+    --silver: #D4D9E2;
+    --red: #C3393F;
+
+    --headline: 'Rye', cursive;
+    --textline: 'Lora', serif;
+
+    --scale75: rgba(28, 28, 28, .75);
+    --scale50: rgba(28, 28, 28, .5);
+    --scale25: rgba(28, 28, 28, .25);
+}
+
+/* TAGS */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--red);
+    color: var(--white);
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(15px + 0.390625vw);
+    font-family: var(--textline);
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    font-family: var(--headline);
+}
+
+/* MAIN ELEMENTS */
+
+main p {
+    margin-bottom: var(--linebreak);
+}
+
+main a {
+    text-decoration: underline;
+}
+
+main a:hover {
+    text-decoration: none;
+}
+
+main ul {
+    list-style-type: "\2713\0020";
+    list-style-position: inside;
+    margin-bottom: var(--linebreak);
+}
+
+main img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Full-HD 1080p */
+@media only screen and (max-width: 1919px) {
+    body {
+        padding: 5vh 5vw;
+    }
+
+    main .row {
+        display: grid;
+        grid-template-rows: 40vh 40vh;
+        gap: 5vh;
+    }
+
+    main .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #minus {
+        color: var(--silver);
+        position: absolute;
+        bottom: 5vh;
+        left: 100px;
+        font-size: 5vh;
+        cursor: pointer;
+    }
+
+    #plus {
+        color: var(--silver);
+        position: absolute;
+        bottom: 5vh;
+        right: 100px;
+        font-size: 5vh;
+        cursor: pointer;
+    }
+}
+
+/* from Full-HD 1080p */
+@media only screen and (min-width: 1920px) {
+    body {
+        padding: 10vh 10vw;
+    }
+
+    main .row {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 35vw 35vw;
+        gap: 10vw;
+    }
+
+    main .left {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .right {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #minus {
+        color: var(--silver);
+        position: absolute;
+        bottom: 40vh;
+        left: 3vw;
+        font-size: 10vh;
+        cursor: pointer;
+    }
+
+    #plus {
+        color: var(--silver);
+        position: absolute;
+        bottom: 40vh;
+        right: 3vw;
+        font-size: 10vh;
+        cursor: pointer;
+    }
+}
