@@ -1,21 +1,8 @@
 /* THEMES */
 
 body {
-    --frame_vh: 10%;
-    --frame_vw: 10%;
-
     --linebreak: 1rem;
     --opac: 0.5;
-
-    --lightwhite: #F7F7F7;
-    --darkwhite: #EEEEEE;
-    --lightgrey: #929AAB;
-    --darkgrey: #393E46;
-    --red: #EE2B47;
-
-    --scale75: rgba(28, 28, 28, .75);
-    --scale50: rgba(28, 28, 28, .5);
-    --scale25: rgba(28, 28, 28, .25);
 }
 
 /* TAGS */
@@ -26,15 +13,10 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-
-    background-color: var(--lightwhite);
-    color: var(--darkgrey);
 }
 
 #wrapper {
     width: 100%;
-    max-width: 1000px;
-    margin: auto;
 }
 
 nav {
@@ -72,42 +54,36 @@ h1 {
     font-size: 2rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 h2 {
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 h3 {
-    font-size: 1.17rem;
+    font-size: 1.25rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 h4 {
     font-size: 1.12rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 h5 {
     font-size: .83rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 h6 {
     font-size: .75rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: var(--red);
 }
 
 /* MAIN ELEMENTS */
@@ -120,7 +96,8 @@ main a {
     text-decoration: underline;
 }
 
-main a:hover {
+main a:hover,
+main a:focus {
     text-decoration: none;
 }
 
@@ -169,25 +146,18 @@ main blockquote {
     margin-bottom: var(--linebreak);
     margin-right: auto;
     margin-left: auto;
-    font-size: 1rem;
     font-style: italic;
-}
-
-main blockquote {
-    padding: 1rem 4rem;
-    border-left: 8px solid var(--darkgrey);
+    border-left: 2px solid;
     position: relative;
-    background: var(--darkwhite);
-    color: var(--darkgrey);
+    padding: var(--linebreak) var(--linebreak) var(--linebreak) calc(var(--linebreak)*4);
 }
 
 main blockquote::before {
     content: "\201D";
-    color: var(--darkgrey);
-    font-size: 3rem;
+    font-size: 2rem;
     position: absolute;
     left: var(--linebreak);
-    top: calc(var(--linebreak) * 2);
+    top: calc(var(--linebreak)*2);
 }
 
 main blockquote p {
@@ -203,27 +173,12 @@ main blockquote cite {
 
 main details {
     width: 100%;
+    overflow: hidden;
     margin-top: auto;
     margin-bottom: var(--linebreak);
     margin-right: auto;
     margin-left: auto;
-    overflow: hidden;
-}
-
-main details summary {
-    background: var(--darkwhite);
-    color: var(--darkgrey);
-    padding: var(--linebreak);
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding-left: calc(var(--linebreak) * 2);
-}
-
-main details p {
-    border: 1px solid var(--red);
-    padding: var(--linebreak);
-    margin-bottom: 0rem;
+    border: 1px solid;
 }
 
 main details summary:before {
@@ -240,6 +195,19 @@ main details[open]>summary:before {
     transform: rotate(90deg);
 }
 
+main details summary {
+    padding: var(--linebreak);
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: calc(var(--linebreak) * 2);
+}
+
+main details p {
+    padding: var(--linebreak);
+    margin-bottom: 0rem;
+}
+
 main details summary::-webkit-details-marker {
     display: none;
 }
@@ -249,9 +217,7 @@ main code {
     font-family: monospace;
     font-size: 0.83rem;
     display: block;
-    background: var(--darkwhite);
-    color: var(--darkgrey);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     padding: var(--linebreak);
     margin-bottom: var(--linebreak);
     word-wrap: break-word;
@@ -270,41 +236,44 @@ main table caption {
     opacity: var(--opac);
     text-align: center;
     font-style: italic;
-    font-size: 85%;
+    font-size: 75%;
     margin-bottom: var(--linebreak);
 }
 
-main table thead tr th,
-main table tfoot tr th {
-    border-bottom: 1px solid var(--darkgrey);
-    color: var(--darkgrey);
-    font-size: 0.9em;
+main table thead tr th {
+    border-bottom: 1px solid;
+    font-size: 75%;
     font-weight: bold;
     text-align: left;
-    padding: 10px 18px;
+    padding: calc(var(--linebreak) / 2);
 }
 
-main table tbody tr {
-    border-bottom: 1px solid var(--lightgrey);
-    color: var(--lightgrey);
-}
-
-main table tbody tr:last-of-type {
-    border-bottom: 1px solid var(--darkgrey);
+main table tfoot tr th {
+    border-top: 1px solid;
+    font-size: 75%;
+    font-weight: bold;
+    text-align: left;
+    padding: calc(var(--linebreak) / 2);
 }
 
 main table tbody tr td {
-    padding: 8px 10px;
+    padding: calc(var(--linebreak) / 2);
+}
+
+main table tbody tr {
+    border-bottom: 1px solid;
+}
+
+main table tbody tr:last-of-type {
+    border-bottom: none;
 }
 
 main table tbody tr:nth-child(odd) {
-    background-color: var(--darkwhite);
-    color: var(--lightgrey);
+    opacity: var(--opac);
 }
 
 main table tbody tr:hover {
-    background-color: var(--darkwhite);
-    color: var(--lightgrey);
+    opacity: var(--opac);
 }
 
 main figure {
@@ -331,7 +300,6 @@ main figure iframe {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
-
     overflow: hidden;
     border: none;
 }
@@ -346,12 +314,40 @@ main figure video {
     aspect-ratio: 16 / 9;
 }
 
+main strong {
+    font-weight: bold;
+}
+
+main em,
+main i {
+    font-style: italic;
+}
+
+main sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+main sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+main s {
+    text-decoration: line-through;
+}
+
+main hr {
+    border-top: 1px dotted;
+    margin: calc(var(--linebreak)*2) 0;
+}
+
 main form {
     margin-bottom: var(--linebreak);
 }
 
 main form fieldset {
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     padding: var(--linebreak);
     margin-bottom: var(--linebreak);
     display: flex;
@@ -368,33 +364,31 @@ main form fieldset:last-of-type {
 
 main form fieldset legend {
     font-style: italic;
-    color: var(--red);
+    font-weight: bold;
 }
 
 main form fieldset select {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 4);
-    background-color: var(--darkwhite);
-    color: var(--darkgrey);
+    padding: calc(var(--linebreak) / 2);
+    border: 1px solid;
 }
 
 main form fieldset textarea {
     display: block;
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main form fieldset button {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 4);
+    padding: calc(var(--linebreak) / 2);
     text-align: center;
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
+    border: 1px solid;
 }
 
 main form fieldset button:hover {
@@ -402,35 +396,19 @@ main form fieldset button:hover {
 }
 
 main form fieldset label {
-    font-weight: bold;
+    font-style: italic;
 }
 
 main form fieldset meter {
     display: block;
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     width: 100%;
-}
-
-main form fieldset meter::-moz-meter-bar {
-    background: var(--darkgrey);
-}
-
-main form fieldset meter::-webkit-meter-bar {
-    background: var(--darkgrey);
 }
 
 main form fieldset progress {
     display: block;
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     width: 100%;
-}
-
-main form fieldset progress::-moz-progress-bar {
-    background: var(--darkgrey);
-}
-
-main form fieldset progress::-webkit-progress-bar {
-    background: var(--darkgrey);
 }
 
 main form fieldset input {
@@ -441,10 +419,9 @@ main input[type=button] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 4);
+    padding: calc(var(--linebreak) / 2);
     text-align: center;
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
+    border: 1px solid;
 }
 
 main input[type=button]:hover {
@@ -474,9 +451,7 @@ main input[type="checkbox"] {
     appearance: none;
     outline: 0;
     cursor: pointer;
-    border: 1px solid var(--darkgrey);
-    background-color: var(--lightwhite);
-    color: var(--darkgrey);
+    border: 1px solid;
 }
 
 main input[type="checkbox"]::before {
@@ -494,7 +469,7 @@ main input[type="checkbox"]::before {
 }
 
 main input[type="checkbox"]:checked {
-    background-color: var(--darkgrey);
+    filter: invert(1);
 }
 
 main input[type="checkbox"]:checked::before {
@@ -504,7 +479,6 @@ main input[type="checkbox"]:checked::before {
 main input[type="checkbox"]:disabled {
     opacity: var(--opac);
     cursor: not-allowed;
-    border: 1px solid var(--darkgrey);
 }
 
 main .color-container {
@@ -539,21 +513,19 @@ main input[type=date] {
     cursor: pointer;
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
-
+    border: 1px solid;
 }
 
 main input[type=email] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
-
+    border: 1px solid;
 }
 
 main input[type=file] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main input[type=hidden] {
@@ -563,13 +535,13 @@ main input[type=hidden] {
 main input[type=number] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main input[type=password] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main .radio-container {
@@ -595,29 +567,23 @@ main input[type="radio"] {
     outline: 0;
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid var(--darkgrey);
-    background-color: var(--lightwhite);
+    border: 1px solid;
 }
 
 main input[type="radio"]:checked {
-    background-color: var(--darkgrey);
+    background-color: currentcolor;
 }
 
 main input[type="radio"]:disabled {
     opacity: var(--opac);
     cursor: not-allowed;
-    border: 1px solid var(--darkgrey);
-    background-color: var(--darkwhite);
 }
 
 main input[type=range] {
     width: 100%;
     height: var(--linebreak);
-    background: var(--darkwhite);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     outline: none;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
     opacity: 1;
 }
 
@@ -626,18 +592,16 @@ main input[type=range]:hover {
 }
 
 main input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
     width: calc(var(--linebreak) * 2);
     height: calc(var(--linebreak) * 2);
-    background: var(--darkgrey);
     cursor: pointer;
 }
 
 main input[type=range]::-moz-range-thumb {
+    appearance: none;
     width: calc(var(--linebreak) * 2);
     height: calc(var(--linebreak) * 2);
-    background: var(--darkgrey);
     cursor: pointer;
 }
 
@@ -645,10 +609,9 @@ main input[type=reset] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 4);
+    padding: calc(var(--linebreak) / 2);
     text-align: center;
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
+    border: 1px solid;
 }
 
 main input[type=reset]:hover {
@@ -658,17 +621,16 @@ main input[type=reset]:hover {
 main input[type=search] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main input[type=submit] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 4);
+    padding: calc(var(--linebreak) / 2);
     text-align: center;
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
+    border: 1px solid;
 }
 
 main input[type=submit]:hover {
@@ -678,89 +640,92 @@ main input[type=submit]:hover {
 main input[type=tel] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
-
+    border: 1px solid;
 }
 
 main input[type=text] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
 }
 
 main input[type=url] {
     width: 100%;
     padding: calc(var(--linebreak) / 2);
-    border: 1px solid var(--darkgrey);
+    border: 1px solid;
     font-style: italic;
-}
-
-main strong {
-    font-weight: bold;
-}
-
-main em {
-    font-style: italic;
-}
-
-main sub {
-    vertical-align: sub;
-    font-size: smaller;
-}
-
-main sup {
-    vertical-align: super;
-    font-size: smaller;
-}
-
-main s {
-    text-decoration: line-through;
-}
-
-main hr {
-    border-top: 1px solid var(--red);
-    margin: calc(var(--linebreak)*2) 0;
 }
 
 /* OTHER ELEMENTS */
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: calc(var(--linebreak) * 2) 0;
+}
+
+nav section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: calc(var(--linebreak) * 2);
+}
+
+nav a {
+    font-style: italic;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: overline;
+}
+
+nav .current-page
+{
+    text-decoration: overline; 
+}
 
 #title {
     font-size: 3rem;
     font-style: italic;
 }
 
-#search-menu {
-    border: 1px solid var(--darkgrey);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#search-menu button {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--darkgrey);
-    color: var(--lightwhite);
-}
-
-#search-menu button:hover {
-    opacity: var(--opac);
-}
-
-#search-menu input {
-    padding: calc(var(--linebreak) / 2);
-    width: 75%;
-}
-
-#search-menu button {
-    padding: calc(var(--linebreak) / 2);
-    width: 25%;
-}
-
 #map {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
+}
+
+address {
+    font-style: italic;
+}
+
+address p::first-letter {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#search-menu {
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+#search-menu input {
+    padding: calc(var(--linebreak) / 2);
+    width: auto;
+}
+
+#search-menu button {
+    padding: calc(var(--linebreak) / 2);
+    width: fit-content;
+    cursor: pointer;
+    text-align: center;
+    background-color: currentColor;
+}
+
+#search-menu button:hover {
+    opacity: var(--opac);
 }
