@@ -1,0 +1,23 @@
+<BLOG>
+    <POST>
+        <AUTHOR>John Doe</AUTHOR>
+        <PUBLISHED>01 / 10 / 2023</PUBLISHED>
+        <TITLE>myTitle</TITLE>
+        <CONTENT>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sint facilis explicabo voluptatum exercitationem earum. Quibusdam vitae, iusto temporibus corrupti tempore distinctio soluta reiciendis. Ab aspernatur facilis autem temporibus veniam.</CONTENT>
+        <LINK>myLink</LINK>
+    </POST>
+    <POST>
+        <AUTHOR>John Doe</AUTHOR>
+        <PUBLISHED>01 / 10 / 2023</PUBLISHED>
+        <TITLE>myTitle</TITLE>
+        <CONTENT>Multi-line text truncation is a common design pattern that allows designers to show a limited amount of text on a web page or application, while still giving users the ability to see more if they desire.</CONTENT>
+        <LINK>myLink</LINK>
+    </POST>
+    <POST>
+        <AUTHOR>John Doe</AUTHOR>
+        <PUBLISHED>01 / 10 / 2023</PUBLISHED>
+        <TITLE>myTitle</TITLE>
+        <CONTENT>In CSS, there are several ways to truncate multi-line text, including using the text-overflow property in combination with display, white-space, and overflow.</CONTENT>
+        <LINK>test</LINK>
+    </POST>
+</BLOG>
