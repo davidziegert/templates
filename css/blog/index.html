@@ -20,112 +20,155 @@
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
         <link rel="apple-touch-icon" href="./img/touch.png" />
 
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Academicons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+   
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Quattrocento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="wrapper">
             <header>
-                <section>
-                    <span id="title">blog.tmp</span>                   
-                </section>
+                <div class="row" >
+                    <div id="slogan">
+                        <img id="logo" src="./img/touch.png" alt="no logo found">
+                        <h1>.tmp</h1>
+                    </div>
+                    <button id="btn_hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="social">
+                        <a href="#"><i class="ai ai-acm ai-2x"></i></a>
+                        <a href="#"><i class="ai ai-coursera ai-2x"></i></a>
+                        <a href="#"><i class="ai ai-open-materials ai-2x"></i></a>
+                    </div>
+                </div>
             </header>
-            <nav>
-                <section>
-					<a href="#" class="current-page">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                    <a href="#">Link</a>
-                </section>
+            <nav id="menu">
+                <div class="row" >
+                    <div class="main-menu">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">Home</a></li>
+                            <li class="menu-item"><a href="#news">News</a></li>
+                            <li class="menu-item"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+            <aside>
+                <div class="row">
+                    <div class="ticker-wrap">
+                        <div class="ticker">
+                            <div class="ticker_item">Elon Musk Takes over the world</div>
+                            <div class="ticker_item">Scientists find that AI is very clever but has no common sense!!</div>
+                            <div class="ticker_item">Tim Berners-Lee wins virtual egg and spoon race</div>
+                            <div class="ticker_item">Internet officially renamed "T'internet" in Yorkshire.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row first-news">
+                    <article>
+                        <img src="https://picsum.photos/id/11/1920/540" alt="image loading" loading="lazy">
+                        <div class="feed">
+                            <h3>Headline</h3>
+                            <p>Post Date</p>
+                        </div>
+                    </article>
+                </div>
+            </aside>
             <main>
-                <section>                   
-                    <div id="top-article">
+                <div class="row">
+                    <h2>Featured Posts</h2>
+                    <div class="second-news" id="news">    
                         <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/11/600/400" alt="image loading" loading="lazy">
+                            <img src="https://picsum.photos/id/22/1000/1000" alt="image loading" loading="lazy">
+                            <div class="feed">
+                                <h3>Headline</h3>
+                                <p>Post Date</p>
                             </div>
-                            <div class="article-content">
-                                <h1>Headline Level 1</h1>
-                                <h2>Headline Level 2</h2>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
+                        </article>
+                        <article>
+                            <img src="https://picsum.photos/id/33/1000/1000" alt="image loading" loading="lazy">
+                            <div class="feed">
+                                <h3>Headline</h3>
+                                <p>Post Date</p>
                             </div>
                         </article>
                     </div>
-                    <div id="rest-article">
+                    <h2>Recent Posts</h2>
+                    <div class="third-news">
                         <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/22/600/400?grayscale" alt="image loading" loading="lazy">
-                            </div>
-                            <div class="article-content">
-                                <h2>Headline Level 1</h2>
-                                <h3>Headline Level 2</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
+                            <img src="https://picsum.photos/id/44/1000/1000?grayscale" alt="image loading" loading="lazy">
+                            <div class="feed">
+                                <h3>Headline</h3>
+                                <p>Post Date</p>
                             </div>
                         </article>
                         <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/33/600/400?grayscale" alt="image loading" loading="lazy">
-                            </div>
-                            <div class="article-content">
-                                <h2>Headline Level 1</h2>
-                                <h3>Headline Level 2</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
+                            <img src="https://picsum.photos/id/55/1000/1000?grayscale" alt="image loading" loading="lazy">
+                            <div class="feed">
+                                <h3>Headline</h3>
+                                <p>Post Date</p>
                             </div>
                         </article>
                         <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/44/600/400?grayscale" alt="image loading" loading="lazy">
-                            </div>
-                            <div class="article-content">
-                                <h2>Headline Level 1</h2>
-                                <h3>Headline Level 2</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/55/600/400?grayscale" alt="image loading" loading="lazy">
-                            </div>
-                            <div class="article-content">
-                                <h2>Headline Level 1</h2>
-                                <h3>Headline Level 2</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="article-img">
-                                <img src="https://picsum.photos/id/66/600/400?grayscale" alt="image loading" loading="lazy">
-                            </div>
-                            <div class="article-content">
-                                <h2>Headline Level 1</h2>
-                                <h3>Headline Level 2</h3>
-                                <hr>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                                <button type="button">read more</button>
+                            <img src="https://picsum.photos/id/66/1000/1000?grayscale" alt="image loading" loading="lazy">
+                            <div class="feed">
+                                <h3>Headline</h3>
+                                <p>Post Date</p>
                             </div>
                         </article>
                     </div>
-                </section>
+                </div>
             </main>
             <footer>
-                <section>
-                    <img src="./img/touch.png" alt="image loading" loading="lazy">
-                    <span id="subtitle">blog.tmp</span>  
-                </section>
+                <div class="row">
+                    <div id="contact">
+                        <figure>
+                            <img src="./img/monkey.png" alt="image loading" loading="lazy">
+                            <figcaption><a href="https://www.freepik.com/free-vector/cute-monkey-working-laptop_15769558.htm#page=4&query=funny&position=34&from_view=search&track=sph">Image by catalyststuff</a> on Freepik</figcaption>
+                        </figure>
+                        <div id="mail">
+                            <h2>Let´s get in contact</h2>
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="yourname@domain.net">
+                                <label for="tel">Telephone</label>
+                                <input type="tel" id="tel" name="tel" placeholder="+12 34 56789012">
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="ai ai-acm ai-2x"></i></a>
+                        <a href="#"><i class="ai ai-coursera ai-2x"></i></a>
+                        <a href="#"><i class="ai ai-open-materials ai-2x"></i></a>
+                    </div>
+                </div>
             </footer>
         </div>
+
+        <script>
+            function toggleMobileMenu() {
+                if (window.matchMedia("(max-width: 1279px)").matches) {
+                    const btn_hamburger = document.getElementById("btn_hamburger");
+                    const menu = document.getElementById("menu");
+                    btn_hamburger.classList.toggle('open');
+                    menu.classList.toggle('open');
+                }
+            } 
+        </script>
     </body>
 </html>
