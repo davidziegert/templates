@@ -1,11 +1,11 @@
 # Numpy
-# import numpy as np
+# import numpy
 
 # Numpy - Arrays (1, 2, 3 Dimensions)
-# arr0 = np.array(1)
-# arr1 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
-# arr2 = np.array([[1, 2, 3], [4, 5, 6]])
-# arr3 = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+# arr0 = numpy.array(1)
+# arr1 = numpy.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+# arr2 = numpy.array([[1, 2, 3], [4, 5, 6]])
+# arr3 = numpy.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 # print(arr1)
 # print(type(arr1))
 # print(arr3)
@@ -33,7 +33,7 @@
 # print(arr1[1:7:2])
 
 # sort an array
-# arr4 = np.array([1, 3, 5, 2, 0, 8, 6, 9, 7])
-# print(np.sort(arr4))
-# arr5 = np.array(['banana', 'cherry', 'apple'])
-# print(np.sort(arr5))
+# arr4 = numpy.array([1, 3, 5, 2, 0, 8, 6, 9, 7])
+# print(numpy.sort(arr4))
+# arr5 = numpy.array(['banana', 'cherry', 'apple'])
+# print(numpy.sort(arr5))
