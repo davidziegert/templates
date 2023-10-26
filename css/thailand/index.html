@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>thailand.tmp</title>
+
+        <meta name="author" content="AUTHOR">
+        <meta name="description" content="DESCRIPTION">
+        <meta name="keywords" content="KEYWORD, KEYWORD">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="apple-touch-icon" href="./img/touch.png" />
+
+        <!-- GoogleFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    <span class="cam"></span>
+                    <span class="sound"></span>
+                </div>
+            </header>
+            <main>
+                <div id="top" class="row logo">
+                    <button class="btn-hamburger" id="btn-hamburger" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <img id="random-image" src="" alt="image loading" loading="lazy">
+                </div>
+                <div id="menu" class="row menu">
+                    <a class="menu-item" href="food.html">Food</a>
+                    <a class="menu-item" href="questions.html">Questions</a>
+                    <a class="menu-item" href="calendar.html">Calendar</a>
+                    <a class="menu-item" href="massage.html">Massage</a>
+                    <a class="menu-item" href="phrases.html">Phrases</a>                    
+                    <a class="menu-item" href="places.html">Places</a>
+                    <a class="menu-item" href="drinks.html">Drinks</a>
+                    <a class="menu-item" href="time.html">Time</a>
+                    <a class="menu-item" href="verbs.html">Verbs</a>
+                    <a class="menu-item" href="numbers.html">Numbers</a>
+                    <a class="menu-item empty" href="">-</a>
+                    <a class="menu-item" href="index.html">Route</a>
+                    <a class="menu-item" href="reviews.html">Reviews</a>
+                    <a class="menu-item" href="bangkok.html">Map - Bangkok</a>
+                </div>
+                <div class="row content">
+                    <h1>Route</h1>
+                    <figure>
+                        <img src="./data/map_thailand.png" alt="image loading" loading="lazy" />
+                        <figcaption>Map of Thailand</figcaption>
+                    </figure>
+                    <h1>Links</h1>
+                    <ul>
+                        <li><a href="https://www.lingohut.com/de/l73/thail%C3%A4ndisch-lernen" target="_blank">LingoHut</a></li>
+                        <li><a href="https://learnthaifromawhiteguy.com/learn-thai-blog/" target="_blank">LearnThaiFromAWhiteGuy</a></li>
+                        <li><a href="./data/bahnhof.pdf" target="_blank">Flyer - Krung Thep Aphiwat Central Terminal</a></li>
+                        <li><a href="./data/broschure.pdf" target="_blank">Flyer - A Guide To 60 Powerspots</a></li>
+                        <li><a href="https://ttsview.railway.co.th/" target="_blank">Train Tracking System</a></li>
+                        <li><a href="https://railway.co.th/Station/StationList" target="_blank">Train Schedule System</a></li>
+                        <li><a href="https://try-thai.de/nudelsuppen-thailand/" target="_blank">Noodle Soup Guide</a></li>
+                    </ul>
+                </div>
+                <img class="bottom" src="./img/bottom.png" alt="image loading" loading="lazy">
+            </main>
+            <footer>
+                <div class="row">
+                    <a class="home" href="#top"></a>
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            function toggleMobileMenu() {
+                const hamburger = document.getElementById("btn-hamburger");
+                const menu = document.getElementById("menu");
+                hamburger.classList.toggle('open');
+                menu.classList.toggle('open');
+            } 
+        </script>
+        <script>
+            const IMAGE = document.getElementById('random-image');
+            const SOURCE = [
+                './img/header1.jpg',
+                './img/header2.jpg',
+                './img/header3.jpg'
+            ];
+
+            function randomImage() {
+
+                const randomIndex = Math.floor(Math.random() * SOURCE.length);
+
+                if (localStorage.getItem('currentIndex') !== String(randomIndex)) {
+                    IMAGE.src = SOURCE[randomIndex];
+                    localStorage.setItem('currentIndex', randomIndex);
+                } else {
+                    randomImage();
+                }
+            }   
+            
+            randomImage();
+        </script>
+    </body>
+</html>

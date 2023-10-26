@@ -1,23 +1,10 @@
 /* THEMES */
 
-body {
-    --frame_vh: 2vh;
-    --frame_vw: 2vw;
-
-    --linebreak: 1rem;
-    --opac: 0.5;
-
+:root {
     --black: #000000;
     --white: #FFFFFF;
     --silver: #D4D9E2;
     --red: #C3393F;
-
-    --headline: 'Rye', cursive;
-    --textline: 'Lora', serif;
-
-    --scale75: rgba(28, 28, 28, .75);
-    --scale50: rgba(28, 28, 28, .5);
-    --scale25: rgba(28, 28, 28, .25);
 }
 
 /* TAGS */
@@ -25,34 +12,42 @@ body {
 body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
-    background-color: var(--red);
-    color: var(--white);
-
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+main {
+    grid-area: main;
+    width: 100%;
 }
 
 /* FONTS */
 
 html {
     font-size: calc(15px + 0.390625vw);
-    font-family: var(--textline);
+    font-family: 'Lora', serif;
 }
 
 h1 {
     font-size: 2rem;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    font-family: var(--headline);
+    font-family: 'Rye', cursive;
 }
 
 /* MAIN ELEMENTS */
 
 main p {
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main a {
@@ -66,7 +61,7 @@ main a:hover {
 main ul {
     list-style-type: "\2713\0020";
     list-style-position: inside;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main img {
@@ -102,7 +97,7 @@ main img {
         text-align: center;
     }
 
-    #minus {
+    .btn-minus {
         color: var(--silver);
         position: absolute;
         bottom: 5vh;
@@ -111,7 +106,7 @@ main img {
         cursor: pointer;
     }
 
-    #plus {
+    .btn-plus {
         color: var(--silver);
         position: absolute;
         bottom: 5vh;
@@ -128,7 +123,6 @@ main img {
     }
 
     main .row {
-        height: 100vh;
         display: grid;
         grid-template-columns: 35vw 35vw;
         gap: 10vw;
@@ -151,7 +145,7 @@ main img {
         text-align: center;
     }
 
-    #minus {
+    .btn-minus {
         color: var(--silver);
         position: absolute;
         bottom: 40vh;
@@ -160,7 +154,7 @@ main img {
         cursor: pointer;
     }
 
-    #plus {
+    .btn-plus {
         color: var(--silver);
         position: absolute;
         bottom: 40vh;

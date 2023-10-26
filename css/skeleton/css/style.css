@@ -1,6 +1,6 @@
 /* THEMES */
 
-body {
+:root {
     --linebreak: 1rem;
     --opac: 0.5;
 }
@@ -15,7 +15,7 @@ body {
     scroll-behavior: smooth;
 }
 
-#wrapper {
+.wrapper {
     width: 100%;
 }
 
@@ -659,7 +659,7 @@ main input[type=url] {
 /* OTHER ELEMENTS */
 
 section {
-    max-width: 1000px;
+    max-width: 50vw;
     margin: auto;
     padding: calc(var(--linebreak) * 2) 0;
 }
@@ -685,12 +685,12 @@ nav .current-page
     text-decoration: overline; 
 }
 
-#title {
+.title {
     font-size: 3rem;
     font-style: italic;
 }
 
-#map {
+.map {
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 9;
@@ -705,7 +705,7 @@ address p::first-letter {
     font-weight: bold;
 }
 
-#search-menu {
+.search-menu {
     border: 1px solid;
     display: flex;
     flex-direction: row;
@@ -713,12 +713,12 @@ address p::first-letter {
     width: fit-content;
 }
 
-#search-menu input {
+.search-menu input {
     padding: calc(var(--linebreak) / 2);
     width: auto;
 }
 
-#search-menu button {
+.search-menu button {
     padding: calc(var(--linebreak) / 2);
     width: fit-content;
     cursor: pointer;
@@ -726,6 +726,6 @@ address p::first-letter {
     background-color: currentColor;
 }
 
-#search-menu button:hover {
+.search-menu button:hover {
     opacity: var(--opac);
 }

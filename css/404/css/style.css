@@ -1,12 +1,6 @@
 /* THEMES */
 
-body {
-    --frame_vh: 4vh;
-    --frame_vw: 4vw;
-
-    --linebreak: 1rem;
-    --opac: 0.5;
-
+:root {
     --primary: #FEE600;
     --secondary: #22B5FE;
     --tertiary: #FE6EBC;
@@ -18,12 +12,17 @@ body {
 body {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
 
     background-color: var(--primary);
     color: var(--nothing);
+}
 
+.wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

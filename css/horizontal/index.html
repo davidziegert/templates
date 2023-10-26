@@ -10,7 +10,7 @@
         <meta name="author" content="AUTHOR">
         <meta name="description" content="DESCRIPTION">
         <meta name="keywords" content="KEYWORD, KEYWORD">
-        <meta name="robots" content="index, follow">
+        <meta name="robots" content="noindex, nofollow">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Rye&display=swap" />
     </head>
     <body>
-        <div id="wrapper">
+        <div class="wrapper">
             <main>
                 <div class="row mySlides">
                     <div class="left">
@@ -62,35 +62,33 @@
                         <p>Opening Hours: 10am to 5pm</p>
                     </div>
                 </div>
-                <button id="minus" onclick="plusDivs(-1)">&#10094;</button>
-                <button id="plus" onclick="plusDivs(1)">&#10095;</button>
             </main>
         </div>
+
+        <button class="btn-minus" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="btn-plus" onclick="plusDivs(1)">&#10095;</button>
 
         <script>
             let slideIndex = 1;
             showDivs(slideIndex);
-    
+
             function plusDivs(n) {
                 showDivs(slideIndex += n);
             }
-    
+
             function showDivs(n) {
                 let i;
                 let x = document.getElementsByClassName("mySlides");
 
-                if (n > x.length)
-                { 
-                    slideIndex = 1 
+                if (n > x.length) {
+                    slideIndex = 1
                 }
 
-                if (n < 1) 
-                { 
-                    slideIndex = x.length 
+                if (n < 1) {
+                    slideIndex = x.length
                 }
-                
-                for (i = 0; i < x.length; i++) 
-                {
+
+                for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
 
