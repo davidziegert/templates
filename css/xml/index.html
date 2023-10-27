@@ -26,7 +26,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
     </head>
     <body onload="loadXMLDoc()">
-        <div class="wrapper" id="xml-container"></div>
+        <div class="wrapper" id="xml-container">
+
+        </div>
 
         <script>
             function loadXMLDoc() {
@@ -47,7 +49,7 @@
                 var mycontainer = "";
     
                 for (i = 0; i < x.length; i++) { 
-                    mycontainer += "<article><section><section><span class='author'>" + x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</span><span class='published'>" + x[i].getElementsByTagName("PUBLISHED")[0].childNodes[0].nodeValue + "</span></section><section><span class='title'>" + x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</span><span class='content'>" + x[i].getElementsByTagName("CONTENT")[0].childNodes[0].nodeValue + "</span></section></section><section><span class='link'><a href='" + x[i].getElementsByTagName("LINK")[0].childNodes[0].nodeValue + "' target='_blank'>read more</a></span></section></article>";
+                    mycontainer += "<article><section><span class='author'>" + x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</span><span class='published'>" + x[i].getElementsByTagName("PUBLISHED")[0].childNodes[0].nodeValue + "</span></section><section><span class='title'>" + x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</span><span class='content'>" + x[i].getElementsByTagName("CONTENT")[0].childNodes[0].nodeValue + "</span></section><section><span class='link'><a href='" + x[i].getElementsByTagName("LINK")[0].childNodes[0].nodeValue + "' target='_blank'>read more</a></span></section></article>";
                 }
     
                 document.getElementById("xml-container").innerHTML = mycontainer;

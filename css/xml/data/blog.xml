@@ -1,10 +1,10 @@
 <BLOG>
     <POST>
-        <AUTHOR>@chadwickboseman</AUTHOR>
-        <PUBLISHED>August 28, 2020</PUBLISHED>
-        <TITLE>Colon cancer</TITLE>
-        <CONTENT>[It is with immeasurable grief that we confirm the passing of Chadwick Boseman. Chadwick was diagnosed with stage III colon cancer in 2016, and battled with it these last 4 years as it progressed to stage IV... ]</CONTENT>
-        <LINK>https://en.wikipedia.org/wiki/Chadwick_Boseman</LINK>
+        <AUTHOR>@BarackObama</AUTHOR>
+        <PUBLISHED>August 12, 2017</PUBLISHED>
+        <TITLE>Long Walk to Freedom</TITLE>
+        <CONTENT>"No one is born hating another person because of the color of his skin or his background or his religion..."</CONTENT>
+        <LINK>https://en.wikipedia.org/wiki/Barack_Obama</LINK>
     </POST>
     <POST>
         <AUTHOR>@elonmusk</AUTHOR>
@@ -14,18 +14,18 @@
         <LINK>https://en.wikipedia.org/wiki/Elon_Musk</LINK>
     </POST>
     <POST>
-        <AUTHOR>@BarackObama</AUTHOR>
-        <PUBLISHED>August 12, 2017</PUBLISHED>
-        <TITLE>Long Walk to Freedom</TITLE>
-        <CONTENT>"No one is born hating another person because of the color of his skin or his background or his religion..."</CONTENT>
-        <LINK>https://en.wikipedia.org/wiki/Barack_Obama</LINK>
-    </POST>
-    <POST>
         <AUTHOR>@GretaThunberg</AUTHOR>
         <PUBLISHED>December 28, 2022</PUBLISHED>
         <TITLE>Andrew Tate's car</TITLE>
         <CONTENT>yes, please do enlighten me. email me at smalldickenergy@getalife.com</CONTENT>
         <LINK>https://en.wikipedia.org/wiki/Greta_Thunberg</LINK>
+    </POST>
+    <POST>
+        <AUTHOR>@chadwickboseman</AUTHOR>
+        <PUBLISHED>August 28, 2020</PUBLISHED>
+        <TITLE>Colon cancer</TITLE>
+        <CONTENT>[It is with immeasurable grief that we confirm the passing of Chadwick Boseman. Chadwick was diagnosed with stage III colon cancer in 2016, and battled with it these last 4 years as it progressed to stage IV... ]</CONTENT>
+        <LINK>https://en.wikipedia.org/wiki/Chadwick_Boseman</LINK>
     </POST>
     <POST>
         <AUTHOR>@JoeBiden</AUTHOR>
