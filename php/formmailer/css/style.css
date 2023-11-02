@@ -1,0 +1,126 @@
+/* THEMES */
+
+:root {
+    --black: #000000;
+    --red: #FF1E00;
+    --green: #59CE8F;
+    --white: #F5F5F5;
+}
+
+/* TAGS */
+
+body {
+    max-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(12px + 0.390625vw);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* ELEMENTS */
+
+.mail-form {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.mail-form form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.mail-form input[type=text] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.mail-form input[type=email] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.mail-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.mail-form input[type=file] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+}
+
+.mail-form input[type=submit] {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.mail-form input[type=submit]:hover {
+    opacity: 0.5;
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.success {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.failed {
+    background-color: var(--red);
+    color: var(--black);
+}
+
+.danger {
+    background-color: var(--red);
+    color: var(--black);
+}
