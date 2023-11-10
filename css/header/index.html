@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>header.tmp</title>
+
+    <meta name="author" content="AUTHOR">
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORD, KEYWORD">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/touch.png" />
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Titan+One&display=swap" rel="stylesheet">
+
+    <!-- ForkAwesome -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="indicator-bar" id="indicator-bar"></div>
+
+            <div class="row" id="galaxy">
+                <img class="galaxy-back" src="./img/galaxy.jpg" />
+                <span class="galaxy-title"><h1 id="galaxy-h1">Lost in Space</h1></span>
+                <img class="galaxy-front" id="galaxy-front" src="./img/astronaud.png" />
+            </div>
+
+            <div class="row" id="mountains">
+                <span class="mountains-title"><h1>Adventure Club</h1></span>
+                <img class="mountains-front" src="./img/mountains.webp" />
+            </div>
+
+            <div class="row" id="skull">
+                <span class="skull-title"><h1>Scrolling Headline</h1></span>
+                <img class="skull-front" src="./img/skull.png" />
+            </div>
+        </header>
+    </div>
+
+    <script>
+        function moveElementOnScroll(elementId) {
+            const element = document.getElementById(elementId);
+
+            function handleScrollMove() {
+                element.style.transform = `translate(-${window.scrollY}px, -${window.scrollY}px)`;
+            }
+
+            window.addEventListener('scroll', handleScrollMove);
+        }
+        moveElementOnScroll('galaxy-front');
+    </script>
+
+    <script>
+        function zoomElementOnScroll(elementId) {
+            const element = document.getElementById(elementId);
+
+            function handleScrollZoom() {
+                let zoom = Math.min(20, 1 + 0.005 * $(this).scrollTop());
+
+                if ( (zoom >= 1.0) && (zoom <= 2.0) ) {
+                    element.style.transform = 'scale(' + zoom + ')';
+                }
+            }
+
+            window.addEventListener('scroll', handleScrollZoom);
+        }
+        zoomElementOnScroll('galaxy-h1');
+    </script> 
+    
+    <script>
+        function fillIndicator(elementId) {
+            const element = document.getElementById(elementId);
+
+            function handleScrollIndicator() {
+                let scrolling = document.body.scrollTop || document.documentElement.scrollTop;
+                let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrolled = (scrolling / height) * 100;
+
+                element.style.width = scrolled + "%";
+            }
+
+            window.addEventListener('scroll', handleScrollIndicator);
+        }
+        fillIndicator('indicator-bar');
+    </script>
+</body>
+
+</html>

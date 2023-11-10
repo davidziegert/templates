@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>nav.tmp</title>
+
+    <meta name="author" content="AUTHOR">
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORD, KEYWORD">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/touch.png" />
+
+    <!-- ForkAwesome -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="row first">
+                <div class="nav-1">
+                    <div class="logo-1">Logo</div>
+                    <div class="menu-1">
+                        <div class="indicator-1" id="indicator-1"></div>
+                        <a>Home</a>
+                        <a>About</a>
+                        <a>Portfolio</a>
+                        <a>Team</a>
+                        <a>Contact</a>
+                    </div>
+                </div>
+                <div class="content-1">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row second">
+                <div class="nav-2">
+                    <div class="menu-2">
+                        <a>Home</a>
+                        <a>About</a>
+                        <a>Portfolio</a>
+                        <a>Team</a>
+                        <a>Contact</a>
+                    </div>
+                </div>
+                <div class="content-2">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row third">
+                <div class="nav-3">
+                    <div class="menu-3">
+                        <a class="active" onclick="setActive(this)">Home</a>
+                        <a onclick="setActive(this)">About</a>
+                        <a onclick="setActive(this)">Portfolio</a>
+                        <a onclick="setActive(this)">Team</a>
+                        <a onclick="setActive(this)">Contact</a>
+                    </div>
+                </div>
+                <div class="content-3">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row fourth">
+                <div class="nav-4">
+                    <ul class="menu-4">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li>
+                            <a>Portfolio</a>
+                            <ul class="mega-menu-4">
+                                <div class="mega-menu-4-content">
+                                    <div class="column">
+                                        <img src="https://picsum.photos/id/119/200" alt="image loading" loading="lazy">
+                                    </div>
+                                    <div class="column">
+                                        <li><a>Design Services</a></li>
+                                        <li><a>Graphics</a></li>
+                                        <li><a>Business Cards</a></li>
+                                    </div>
+                                    <div class="column">
+                                        <img src="https://picsum.photos/id/180/200" alt="image loading" loading="lazy">
+                                    </div>
+                                    <div class="column">
+                                        <li><a>Email Services</a></li>
+                                        <li><a>Business Email</a></li>
+                                        <li><a>Web Marketing</a></li>
+                                    </div>
+                                    <div class="column">
+                                        <img src="https://picsum.photos/id/336/200" alt="image loading" loading="lazy">
+                                    </div>
+                                    <div class="column">
+                                        <li><a>Security Services</a></li>
+                                        <li><a>VPS Hosting</a></li>
+                                        <li><a>Site Seal</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Team</a>
+                            <ul class="sub-menu-4">
+                                <li><a>I'm the Boss</a></li>
+                                <li><a>My Staff</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="content-4">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row fifth">
+                <div class="nav-5">
+                    <div class="menu-5">
+                        <div class="link">
+                            <figure class="front"><a>Home</a></figure>
+                            <figure class="back"><a>Home</a></figure>
+                        </div>
+                        <div class="link">
+                            <figure class="front"><a>About</a></figure>
+                            <figure class="back"><a>About</a></figure>
+                        </div>
+                        <div class="link">
+                            <figure class="front"><a>Portfolio</a></figure>
+                            <figure class="back"><a>Portfolio</a></figure>
+                        </div>
+                        <div class="link">
+                            <figure class="front"><a>Team</a></figure>
+                            <figure class="back"><a>Team</a></figure>
+                        </div>
+                        <div class="link">
+                            <figure class="front"><a>Contact</a></figure>
+                            <figure class="back"><a>Contact</a></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-5">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row sixth">
+                <div class="nav-6">
+                    <div class="menu-6">
+                        <a><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                        <a><i class="fa fa-heart" aria-hidden="true"></i><span>About</span></a>
+                        <a><i class="fa fa-folder-open" aria-hidden="true"></i><span>Portfolio</span></a>
+                        <a><i class="fa fa-users" aria-hidden="true"></i><span>Team</span></a>
+                        <a><i class="fa fa-whatsapp" aria-hidden="true"></i><span>Contact</span></a>
+                    </div>
+                </div>
+                <div class="content-6">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="row seventh">
+                <div class="column-7">
+                    <div class="nav-7">
+                        <div class="bar-7">
+                            <button id="hamburger-7" onclick="toggleMenu7()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div id="menu-7">
+                            <a>Home</a>
+                            <a>About</a>
+                            <a>Portfolio</a>
+                            <a>Team</a>
+                            <a>Contact</a>
+                        </div>
+                    </div>
+                    <div class="content-7">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="column-8">
+                    <div class="nav-8">
+                        <div class="bar-8">
+                            <button id="hamburger-8" onclick="toggleMenu8()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div id="menu-8">
+                            <a>Home</a>
+                            <a>About</a>
+                            <a>Portfolio</a>
+                            <a>Team</a>
+                            <a>Contact</a>
+                        </div>
+                    </div>
+                    <div class="content-8">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                            sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                            ipsum dolor sit amet.</p>
+                    </div>                
+                </div>
+            </div>
+            <div class="row ninth">
+                <div class="nav-9">
+                    <ul class="menu-9">
+                        <li><a data-text="Home">Home</a></li>
+                        <li><a data-text="About">About</a></li>
+                        <li><a data-text="Portfolio">Portfolio</a></li>
+                        <li><a data-text="Team">Team</a></li>
+                        <li><a data-text="Contact">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div>           
+        </nav>
+    </div>
+
+    <script>
+        const indicator = document.getElementById("indicator-1");
+        let items = document.querySelectorAll(".menu-1 a");
+
+        function marker(e) {
+            indicator.style.left = e.offsetLeft + "px";
+            indicator.style.right = e.offsetRight + "px";
+        }
+
+        items.forEach(link => {
+            link.addEventListener('click', (e) => { marker(e.target); })
+        }) 
+    </script>
+
+    <script>
+        function setActive(element) {
+            var a = document.getElementsByTagName('a')
+
+            for (i = 0; i < a.length; i++) {
+                a[i].classList.remove('active');
+            }
+
+            element.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function toggleMenu7() {
+            const hamburger = document.getElementById('hamburger-7');
+            const menu = document.getElementById('menu-7');
+
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('open');
+        } 
+    </script>
+
+    <script>
+        function toggleMenu8() {
+            const hamburger = document.getElementById('hamburger-8');
+            const menu = document.getElementById('menu-8');
+
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('open');
+        } 
+    </script>
+
+
+
+
+
+</body>
+
+</html>
