@@ -1,10 +1,3 @@
-/* THEMES */
-
-:root {
-    --linebreak: 1rem;
-    --opac: 0.5;
-}
-
 /* TAGS */
 
 html {
@@ -92,7 +85,7 @@ h6 {
 /* MAIN ELEMENTS */
 
 main p {
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main a {
@@ -107,24 +100,24 @@ main a:focus {
 main ul {
     list-style-type: square;
     list-style-position: inside;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main ol {
     list-style-type: upper-roman;
     list-style-position: inside;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main dl {
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main dl dt {
     font-weight: bold;
     float: left;
     clear: left;
-    margin-right: calc(var(--linebreak) / 2);
+    margin-right: calc(1rem / 2);
 }
 
 main dl dt::after {
@@ -145,22 +138,22 @@ main dl dd::after {
 
 main blockquote {
     width: 100%;
-    margin-top: var(--linebreak);
-    margin-bottom: var(--linebreak);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
     font-style: italic;
     border-left: 2px solid;
     position: relative;
-    padding: var(--linebreak) var(--linebreak) var(--linebreak) calc(var(--linebreak)*4);
+    padding: 1rem 1rem 1rem calc(1rem*4);
 }
 
 main blockquote::before {
     content: "\201D";
     font-size: 2rem;
     position: absolute;
-    left: var(--linebreak);
-    top: calc(var(--linebreak)*2);
+    left: 1rem;
+    top: calc(1rem*2);
 }
 
 main blockquote p {
@@ -170,7 +163,7 @@ main blockquote p {
 main blockquote cite {
     display: block;
     font-style: normal;
-    opacity: var(--opac);
+    opacity: 0.5;
     font-size: .83rem;
 }
 
@@ -178,7 +171,7 @@ main details {
     width: 100%;
     overflow: hidden;
     margin-top: auto;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid;
@@ -187,8 +180,8 @@ main details {
 main details summary:before {
     content: '\2023';
     position: absolute;
-    top: var(--linebreak);
-    left: var(--linebreak);
+    top: 1rem;
+    left: 1rem;
     transform: rotate(0);
     transform-origin: .2rem 50%;
     transition: .25s transform ease;
@@ -199,15 +192,15 @@ main details[open]>summary:before {
 }
 
 main details summary {
-    padding: var(--linebreak);
+    padding: 1rem;
     display: block;
     position: relative;
     cursor: pointer;
-    padding-left: calc(var(--linebreak) * 2);
+    padding-left: calc(1rem * 2);
 }
 
 main details p {
-    padding: var(--linebreak);
+    padding: 1rem;
     margin-bottom: 0rem;
 }
 
@@ -221,8 +214,8 @@ main code {
     font-size: 0.83rem;
     display: block;
     border: 1px solid;
-    padding: var(--linebreak);
-    margin-bottom: var(--linebreak);
+    padding: 1rem;
+    margin-bottom: 1rem;
     word-wrap: break-word;
     line-height: normal;
 }
@@ -231,16 +224,16 @@ main table {
     border-collapse: collapse;
     width: 100%;
     overflow-x: auto;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
     font-size: 0.83rem !important;
 }
 
 main table caption {
-    opacity: var(--opac);
+    opacity: 0.5;
     text-align: center;
     font-style: italic;
     font-size: 75%;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main table thead tr th {
@@ -248,7 +241,7 @@ main table thead tr th {
     font-size: 75%;
     font-weight: bold;
     text-align: left;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
 }
 
 main table tfoot tr th {
@@ -256,11 +249,11 @@ main table tfoot tr th {
     font-size: 75%;
     font-weight: bold;
     text-align: left;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
 }
 
 main table tbody tr td {
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
 }
 
 main table tbody tr {
@@ -272,36 +265,56 @@ main table tbody tr:last-of-type {
 }
 
 main table tbody tr:nth-child(odd) {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main table tbody tr:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
+}
+
+main picture {
+    width: 100%;
+}
+
+main picture img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+main figure figcaption {
+    opacity: 0.5;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.83rem;
+    margin-bottom: 1rem;
 }
 
 main figure {
     width: 100%;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main figure img {
     height: auto;
-	width: 100%;
-	max-width: 100%;
+    width: 100%;
+    max-width: 100%;
     vertical-align: middle;
-	font-style: italic;
-	background-repeat: no-repeat;
-	background-size: cover;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
 main figure figcaption {
-    opacity: var(--opac);
+    opacity: 0.5;
     text-align: center;
     font-style: italic;
     font-size: 0.83rem;
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main figure iframe {
@@ -347,23 +360,23 @@ main s {
 
 main hr {
     border-top: 1px dotted;
-    margin: calc(var(--linebreak)*2) 0;
+    margin: calc(1rem*2) 0;
 }
 
 main form {
-    margin-bottom: var(--linebreak);
+    margin-bottom: 1rem;
 }
 
 main form fieldset {
     border: 1px solid;
-    padding: var(--linebreak);
-    margin-bottom: var(--linebreak);
+    padding: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: var(--linebreak);
+    gap: 1rem;
 }
 
 main form fieldset:last-of-type {
@@ -379,14 +392,14 @@ main form fieldset select {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main form fieldset textarea {
     display: block;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
@@ -394,29 +407,48 @@ main form fieldset button {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     text-align: center;
     border: 1px solid;
 }
 
 main form fieldset button:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main form fieldset label {
     font-style: italic;
 }
 
+
 main form fieldset meter {
     display: block;
     border: 1px solid;
     width: 100%;
+    color: currentColor;
+}
+
+main form fieldset meter::-moz-meter-bar {
+    background: currentColor;
+}
+
+main form fieldset meter::-webkit-meter-value {
+    background: currentColor;
 }
 
 main form fieldset progress {
     display: block;
     border: 1px solid;
     width: 100%;
+    color: currentColor;
+}
+
+main form fieldset progress::-moz-progress-bar {
+    background: currentColor;
+}
+
+main form fieldset progress::-webkit-progress-value {
+    background: currentColor;
 }
 
 main form fieldset input {
@@ -427,13 +459,13 @@ main input[type=button] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     text-align: center;
     border: 1px solid;
 }
 
 main input[type=button]:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main .checkbox-container {
@@ -442,7 +474,7 @@ main .checkbox-container {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: var(--linebreak);
+    gap: 1rem;
 }
 
 main .checkbox-label {
@@ -454,8 +486,8 @@ main .checkbox-label {
 
 main input[type="checkbox"] {
     position: relative;
-    width: calc(var(--linebreak) * 2);
-    height: calc(var(--linebreak) * 2);
+    width: calc(1rem * 2);
+    height: calc(1rem * 2);
     appearance: none;
     outline: 0;
     cursor: pointer;
@@ -470,14 +502,14 @@ main input[type="checkbox"]::before {
     left: 0;
     top: 0;
     background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPmljb25fYnlfUG9zaGx5YWtvdjEwPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjZmZmZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4wMDAwMDAsIDI2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xNy45OTk5ODc4LDMyLjQgTDEwLjk5OTk4NzgsMjUuNCBDMTAuMjI2Nzg5MSwyNC42MjY4MDE0IDguOTczMTg2NDQsMjQuNjI2ODAxNCA4LjE5OTk4Nzc5LDI1LjQgTDguMTk5OTg3NzksMjUuNCBDNy40MjY3ODkxNCwyNi4xNzMxOTg2IDcuNDI2Nzg5MTQsMjcuNDI2ODAxNCA4LjE5OTk4Nzc5LDI4LjIgTDE2LjU4NTc3NDIsMzYuNTg1Nzg2NCBDMTcuMzY2ODIyOCwzNy4zNjY4MzUgMTguNjMzMTUyOCwzNy4zNjY4MzUgMTkuNDE0MjAxNCwzNi41ODU3ODY0IEw0MC41OTk5ODc4LDE1LjQgQzQxLjM3MzE4NjQsMTQuNjI2ODAxNCA0MS4zNzMxODY0LDEzLjM3MzE5ODYgNDAuNTk5OTg3OCwxMi42IEw0MC41OTk5ODc4LDEyLjYgQzM5LjgyNjc4OTEsMTEuODI2ODAxNCAzOC41NzMxODY0LDExLjgyNjgwMTQgMzcuNzk5OTg3OCwxMi42IEwxNy45OTk5ODc4LDMyLjQgWiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==");
-    background-size: calc(var(--linebreak) * 4);
+    background-size: calc(1rem * 4);
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
 }
 
 main input[type="checkbox"]:checked {
-    filter: invert(1);
+	background-color: currentColor;
 }
 
 main input[type="checkbox"]:checked::before {
@@ -485,7 +517,7 @@ main input[type="checkbox"]:checked::before {
 }
 
 main input[type="checkbox"]:disabled {
-    opacity: var(--opac);
+    opacity: 0.5;
     cursor: not-allowed;
 }
 
@@ -495,7 +527,7 @@ main .color-container {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: var(--linebreak);
+    gap: 1rem;
 }
 
 main .color-label {
@@ -512,27 +544,27 @@ main input[type="color"] {
     background: none;
     border: 0;
     cursor: pointer;
-    height: calc(var(--linebreak) * 2);
-    width: calc(var(--linebreak) * 2);
+    height: calc(1rem * 2);
+    width: calc(1rem * 2);
     padding: 0;
 }
 
 main input[type=date] {
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main input[type=email] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main input[type=file] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
@@ -542,13 +574,13 @@ main input[type=hidden] {
 
 main input[type=number] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main input[type=password] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
@@ -558,7 +590,7 @@ main .radio-container {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    gap: var(--linebreak);
+    gap: 1rem;
 }
 
 main .radio-label {
@@ -569,8 +601,8 @@ main .radio-label {
 }
 
 main input[type="radio"] {
-    width: calc(var(--linebreak) * 2);
-    height: calc(var(--linebreak) * 2);
+    width: calc(1rem * 2);
+    height: calc(1rem * 2);
     appearance: none;
     outline: 0;
     cursor: pointer;
@@ -583,33 +615,33 @@ main input[type="radio"]:checked {
 }
 
 main input[type="radio"]:disabled {
-    opacity: var(--opac);
+    opacity: 0.5;
     cursor: not-allowed;
 }
 
 main input[type=range] {
     width: 100%;
-    height: var(--linebreak);
+    height: 1rem;
     border: 1px solid;
     outline: none;
     opacity: 1;
 }
 
 main input[type=range]:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main input[type=range]::-webkit-slider-thumb {
     appearance: none;
-    width: calc(var(--linebreak) * 2);
-    height: calc(var(--linebreak) * 2);
+    width: calc(1rem * 2);
+    height: calc(1rem * 2);
     cursor: pointer;
 }
 
 main input[type=range]::-moz-range-thumb {
     appearance: none;
-    width: calc(var(--linebreak) * 2);
-    height: calc(var(--linebreak) * 2);
+    width: calc(1rem * 2);
+    height: calc(1rem * 2);
     cursor: pointer;
 }
 
@@ -617,18 +649,18 @@ main input[type=reset] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     text-align: center;
     border: 1px solid;
 }
 
 main input[type=reset]:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main input[type=search] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
@@ -636,30 +668,30 @@ main input[type=submit] {
     display: block;
     cursor: pointer;
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     text-align: center;
     border: 1px solid;
 }
 
 main input[type=submit]:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
 
 main input[type=tel] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main input[type=text] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
 }
 
 main input[type=url] {
     width: 100%;
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     border: 1px solid;
     font-style: italic;
 }
@@ -669,14 +701,14 @@ main input[type=url] {
 section {
     max-width: 50vw;
     margin: auto;
-    padding: calc(var(--linebreak) * 2) 0;
+    padding: calc(1rem * 2) 0;
 }
 
 nav section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: calc(var(--linebreak) * 2);
+    gap: calc(1rem * 2);
 }
 
 nav a {
@@ -722,12 +754,12 @@ address p::first-letter {
 }
 
 .search-menu input {
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     width: auto;
 }
 
 .search-menu button {
-    padding: calc(var(--linebreak) / 2);
+    padding: calc(1rem / 2);
     width: fit-content;
     cursor: pointer;
     text-align: center;
@@ -735,5 +767,5 @@ address p::first-letter {
 }
 
 .search-menu button:hover {
-    opacity: var(--opac);
+    opacity: 0.5;
 }
