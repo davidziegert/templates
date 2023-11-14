@@ -270,7 +270,37 @@
                         <li><a data-text="Contact">Contact</a></li>                        
                     </ul>
                 </div>
-            </div>           
+            </div>
+            <div class="row tenth">
+                <div class="nav-10">
+                    <ul class="menu-10">
+                        <li class="menu-item"><a href="#">Item</a></li>
+                        <li class="menu-item"><a href="#">Item</a></li>
+                        <li class="menu-item menu-item-has-children"><a href="#">Sub-Menu</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Item</a></li>
+                                <li class="menu-item"><a href="#">Item</a></li>
+                                <li class="menu-item menu-item-has-children"><a href="#">Sub-Menu</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item current-page-item"><a href="#">Current-Item</a></li>
+                                        <li class="menu-item"><a href="#">Item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#">Item</a></li>
+                    </ul>
+                </div>
+                <div class="content-10">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>   
         </nav>
     </div>
 
@@ -320,9 +350,38 @@
         } 
     </script>
 
+    <script>
+        if (window.matchMedia('(max-width: 9999px)').matches) {
+            let list = document.querySelectorAll('.menu-item-has-children');
+            let crawler = document.querySelector('.current-page-item')
 
+            function accordion(e) {
+                e.stopPropagation();
 
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                }
+                else {
+                    if (this.parentElement.parentElement.classList.contains('active')) {
+                        this.classList.add('active');
+                    }
+                    else {
+                        for (i = 0; i < list.length; i++) {
+                            list[i].classList.remove('active');
+                        }
+                        this.classList.add('active');
+                    }
+                }
+            }
 
+            for (i = 0; i < list.length; i++) {
+                list[i].addEventListener('click', accordion);
+            }
+
+            crawler.parentNode.parentNode.classList.add('active');
+            crawler.parentNode.parentNode.parentNode.parentNode.classList.add('active');
+        }
+    </script>
 
 </body>
 

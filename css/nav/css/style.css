@@ -778,3 +778,120 @@ html {
 .menu-9 li:nth-child(5n + 5) a:before {
     background: #fd79a8;
 }
+
+/* TENTH */
+
+.tenth {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.nav-10 {
+    background-color: #0A2647;
+    color: #2C74B3;
+    padding: 1rem;
+}
+
+.nav-10 .menu-10 {
+    width: 100%;
+    overflow-y: auto;
+    height: max-content;
+    display: table;
+}
+
+.nav-10 .menu-10 .menu-item {
+    position: relative;
+    width: 100%;
+    vertical-align: sub;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.nav-10 .menu-10 .menu-item a {
+    display: block;
+}
+
+.nav-10 .menu-10 .menu-item-has-children>a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.nav-10 .menu-10 .menu-item-has-children>a:after {
+    content: "\f107";
+    font-family: ForkAwesome;
+    font-size: 1.0rem;
+    font-style: normal;
+
+    transform: rotate(0deg);
+    transition: 0.25s all ease-in-out;
+}
+
+.nav-10 .menu-10 .active>a:after {
+    transform: rotate(180deg);
+}
+
+.nav-10 .menu-10 .sub-menu {
+    height: 0px;
+    overflow: hidden;
+}
+
+.nav-10 .menu-10 .active>.sub-menu {
+    display: block;
+    height: auto;
+    transition: 0.25s all ease-in-out;
+}
+
+.nav-10 .menu-10 .current-page-item a:before {
+    content: "\f101";
+    font-family: ForkAwesome;
+    font-size: 1.0rem;
+    font-style: normal;
+    padding-right: 0.5rem;
+}
+
+.nav-10 .menu-10 .sub-menu .menu-item {
+    font-weight: normal;
+    padding: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.nav-10 .menu-10-item-has-children {
+    font-weight: bold !important;
+}
+
+.nav-10 .menu-10 li {
+    border-top: 1px dotted #2C74B3;
+}
+
+.nav-10 .menu-10 li:last-of-type {
+    border-bottom: 1px dotted #2C74B3;
+}
+
+.nav-10 .menu-10 .sub-menu {
+    font-size: 0.83rem;
+}
+
+.nav-10 .menu-10 .sub-menu li {
+    border-top: none;
+}
+
+.nav-10 .menu-10 .sub-menu li:last-of-type {
+    border-bottom: none;
+}
+
+.nav-10 .menu-10 .menu-item-has-children>a:after {
+    color:  #2C74B3;
+}
+
+.nav-10 .menu-10 .current-page-item {
+    color:  #fefefe;
+}
+
+.content-10 {
+    background-color: #144272;
+    color: #fefefe;
+    padding: 1rem 2rem;
+}
