@@ -1,0 +1,167 @@
+/* TAGS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.row {
+    height: 100vh;
+}
+
+.row.extend {
+    height: auto;
+    min-height: 100vh;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+}
+
+/* COUNTDOWN TIMER */
+
+.countdown {
+    width: 100%;
+    height: 100%;
+    background-color: #F5EDFF;
+    color: #8072C4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.countdown h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.countdown .timer {
+    display: flex;
+    flex-direction: row;
+}
+
+.countdown .timer li:first-of-type {
+    margin-right: 2rem;
+}
+
+.countdown .timer li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown .timer span,
+.countdown .timer .seperator {
+    font-size: 4rem;
+    color: #1B0C7D;
+}
+
+/* INFLUENCER FOLLOWER BOARD */
+
+.influencer {
+    width: 100%;
+    height: 100%;
+    background-color: #1EAFED;
+    color: #EEF2F5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.influencer h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.influencer .follower-board {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.influencer .follower-board .follower {
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+
+    background-color: #EEF2F5;
+    color: #EA168E;
+}
+
+.influencer .follower-board .follower .follower-counter {
+    font-size: 2rem;
+    color: #612570;
+}
+
+/* IMAGE GALLERY */
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    background-color: #025464;
+    color: #E8AA42;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 2rem;
+}
+
+.gallery h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.gallery .gallery-container {
+    max-width: 65vw;
+    margin: 0 auto;
+    columns: 3;
+    gap: 1rem;
+}
+
+.gallery .gallery-container .item {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery .gallery-container .item img {
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.gallery .gallery-container .item:hover>img {
+    cursor: pointer;
+    transform: scale(1.1);
+}

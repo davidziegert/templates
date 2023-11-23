@@ -1,0 +1,38 @@
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background-color: #0E21A0;
+    color: #EC53B0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+code {
+    width: 100%;
+    font-family: monospace;
+    font-size: 0.83rem;
+    display: block;
+    border: 1px solid;
+    padding: 1rem;
+    word-wrap: break-word;
+    line-height: normal;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+}

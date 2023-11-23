@@ -16,7 +16,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css" media="screen">
+        <link rel="stylesheet" href="./css/print.css" media="print">		
+		
         <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
         <link rel="apple-touch-icon" href="./img/touch.png" />
 
@@ -86,6 +88,10 @@
                             <span class="icon"><i id="i-theme" class="fa fa-moon-o" aria-hidden="true"></i></span>
                             <span class="text">Mode</span>
                         </button>
+                        <button onclick="window.print()">
+                            <span class="icon"><i id="i-theme" class="fa fa-print" aria-hidden="true"></i></span>
+                            <span class="text">Print</span>
+                        </button>						
                         <button id="btn-gototop" onclick="gotoTop()">
                             <span class="icon"><i id="i-theme" class="fa fa-chevron-up" aria-hidden="true"></i></span>
                             <span class="text">Up</span>
