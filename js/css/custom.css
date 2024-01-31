@@ -1,0 +1,167 @@
+/* TRANSLATOR */
+
+#translator {
+    display: grid; 
+    grid-template-columns: 3fr 1fr 3fr; 
+    grid-template-rows: auto auto auto; 
+    gap: 1rem; 
+    grid-template-areas: 
+      "one two three"
+      "four five six"
+      "seven seven seven"; 
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#five {
+    grid-area: five;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#six {
+    grid-area: six;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seven {
+    grid-area: seven;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+}
+
+/* WEATHER */
+
+.weather-widget {
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 1rem; 
+}
+
+/* CALENDAR */
+
+#calendar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 2rem;
+}
+
+#options {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#options>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#options button {
+    width: max-content;
+    padding: 1rem;
+}
+
+#timetable {
+    display: grid;
+    grid-template-columns: auto repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    font-size: 0.6rem;
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    border-left: 1px solid lightgray;
+}
+
+.headline {
+    padding: 10px;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.entry {
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.entry:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
