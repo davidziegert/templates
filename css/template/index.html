@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>template.tmp</title>
+
+    <meta name="author" content="AUTHOR">
+    <meta name="description" content="DESCRIPTION">
+    <meta name="keywords" content="KEYWORD, KEYWORD">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css" media="screen">
+    <link rel="stylesheet" href="./css/style.css" media="screen">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/touch.png">
+
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fork Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <section>
+                <picture class="header-logo">
+                    <source media="(max-width:1199px)" srcset="https://placehold.co/64x64/4BCE97/000000">
+                    <source media="(max-width:1799px)" srcset="https://placehold.co/96x96/4BCE97/000000">
+                    <img src="https://placehold.co/128x128/4BCE97/000000" alt="image loading" loading="lazy">
+                </picture>
+    
+                <span class="header-title">Lore Title</span>
+    
+                <!-- https://codepen.io/ainalem/pen/LJYRxz -->
+                <!-- https://jonsuh.com/hamburgers/ -->
+                <svg class="header-hamburger" id="hamburger" viewBox="0 0 100 100" width="80" onclick="toggleMenu()">
+                    <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </section>
+        </header>
+        <nav id="menu">
+            <section>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Link</a></li>
+                    
+                    <li class="menu-item menu-item-has-children"><a href="#">Sub-Menu</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item current-page-item"><a href="#">Link</a></li>
+                            <li class="menu-item menu-item-has-children"><a href="#">Sub-Sub-Menu</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="#">Link</a></li>
+                                    <li class="menu-item"><a href="#">Link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li class="menu-item"><a href="#">Link</a></li>
+                </ul>
+            </section>
+        </nav>
+        <main>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            
+                <div class="hideme">
+                    <a href="URL" target="_blank" rel="noopener" title="Linktitle">Defines a hyperlink</a>
+    
+                    <abbr title="World Health Organization">WHO</abbr> was founded in 1948. This defines an abbreviation or an acronym.
+    
+                    <address>
+                        Defines contact information:<br>
+                        Example.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                    </address> 
+    
+                    <figure>
+                        <audio controls>
+                            <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mp3">
+                            <p>Your browser does not support the element.</p>
+                        </audio>
+                        <figcaption>Defines embedded sound content</figcaption>
+                    </figure>
+    
+                    <b>Defines bold text</b>
+    
+                    <blockquote cite="http://developer.mozilla.org">
+                        <p>Defines a section that is quoted from another source</p>
+                        <cite>Defines the title of a work</cite>
+                    </blockquote>
+    
+                    <button>Defines a clickable button</button>
+    
+                    <code>Defines a piece of computer code</code>
+    
+                    <del>Defines text that has been deleted from a document.</del> and <ins>Defines a text that has been inserted into a document.</ins>
+    
+                    <details>
+                        <summary>Defines a visible heading for a "details" element</summary>
+                        <p>Defines additional details that the user can view or hide</p>
+                    </details>
+    
+                    <dfn>the "dfn" element</dfn> specifies a term that is going to be defined within the content.
+    
+                    <dialog open>Defines a dialog box or window</dialog>
+    
+                    <dl>
+                        <dt>Defines a term/name in a description list</dt>
+                        <dd>Defines a description/value of a term in a description list</dd>
+                    </dl>
+    
+                    <em>Defines emphasized text</em>
+    
+                    <h1>Headline Level 1</h1>
+                    <h2>Headline Level 2</h2>
+                    <h3>Headline Level 3</h3>
+                    <h4>Headline Level 4</h4>
+                    <h5>Headline Level 5</h5>
+                    <h6>Headline Level 6</h6>
+    
+                    <hr>
+    
+                    <i>Defines a part of text in an alternate voice or mood</i>
+    
+                    Defines keyboard input: Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).
+    
+                    <mark>Defines marked/highlighted text</mark>
+    
+                    <ol>
+                        <li>First Entry</li>
+                        <li>Second Entry</li>
+                        <li>Third Entry</li>
+                    </ol>
+    
+                    <p>Defines a paragraph</p>
+    
+                    <figure>
+                        <iframe src="https://youtu.be/embed/tgbNymZ7vqY" frameborder="0" loading="lazy"></iframe>
+                        <figcaption>A random Youtube</figcaption>
+                    </figure>
+    
+                    <figure>
+                        <img src="https://placehold.co/400x400/34374C/F6F6F6" alt="image loading" loading="lazy">
+                        <figcaption>A random Image</figcaption>
+                    </figure>
+    
+                    <figure>
+                        <picture>
+                            <source media="(max-width:300px)" srcset="https://placehold.co/400x200/34374C/F6F6F6">
+                            <source media="(max-width:500px)" srcset="https://placehold.co/400x300/34374C/F6F6F6">
+                            <img src="https://placehold.co/400x400/34374C/F6F6F6" alt="image loading" loading="lazy">
+                        </picture> 
+                        <figcaption>A random Picture</figcaption>
+                    </figure>
+    
+                    <figure>
+                        <video controls>
+                            <source src="https://northatlanticaviationmuseum.com/wp-content/uploads/2020/10/Lorem-ipsum-video-Dummy-video-for-your-website.mp4" type="video/mp4">
+                            <p>Your browser does not support the element.</p>
+                        </video>
+                        <figcaption>Defines embedded video content</figcaption>
+                    </figure>
+    
+                    <pre>
+                        Text in a pre element
+                        is displayed in a fixed-width
+                        font, and it preserves
+                        both     spaces and
+                        line breaks
+                    </pre>
+    
+                    <q>Defines a short quotation</q>
+    
+                    <s>Defines text that is no longer correct</s>
+    
+                    <samp>Defines sample output from a computer program</samp>
+    
+                    <small>Defines smaller text</small>
+    
+                    <strong>Defines important text</strong>
+    
+                    Defines <sub>subscripted</sub> text
+    
+                    Defines <sup>superscripted</sup> text
+    
+                    <u>Defines some text that is unarticulated and styled differently from normal text</u>
+    
+                    <ul>
+                        <li>First Entry</li>
+                        <li>Second Entry</li>
+                        <li>Third Entry</li>
+                    </ul>
+    
+                    <table>
+                        <caption>Defines a table caption</caption>
+                        <thead>
+                            <tr>
+                                <th>Groups the header content in a table</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data 1</td>
+                            </tr>
+                            <tr>
+                                <td>Data 2</td>
+                            </tr>
+                            <tr>
+                                <td>Data 3</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Groups the footer content in a table</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+    
+                    <form action="#" method="">
+                        <fieldset>
+                            <legend>Defines a caption for a "fieldset" element</legend>
+                            <label>Defines a label for an "input" element</label>
+                            <meter id="meter" name="meter" value="50" min="0" max="100" low="33" high="66" optimum="80" ></meter>
+                            <progress id="progress" name="progress" value="70" max="100"></progress>
+                            <select id="select" name="select">
+                                <optgroup label="Group 1">
+                                    <option value="1.1">Option 1.1</option>
+                                </optgroup>
+                                <optgroup label="Group 2">
+                                    <option value="2.1">Option 2.1</option>
+                                    <option value="2.2">Option 2.2</option>
+                                </optgroup>
+                                <optgroup label="Group 3" disabled>
+                                    <option value="3.1">Option 3.1</option>
+                                    <option value="3.2">Option 3.2</option>
+                                    <option value="3.3">Option 3.3</option>
+                                </optgroup>
+                            </select>
+                            <textarea id="textarea" name="textarea" rows="5" cols="33">It was a dark and stormy night...</textarea>
+                            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                            <input type="checkbox" id="checkbox-checked" name="checkbox-checked" value="checkbox-checked" checked>
+                            <input type="checkbox" id="checkbox-disabled" name="checkbox-disabled" value="checkbox-disabled" disabled>
+                            <input type="checkbox" id="checkbox-disabled-checked" name="checkbox-disabled-checked" value="checkbox-disabled-checked" checked disabled>
+                            <input type="color" id="color" name="color">
+                            <input type="date" id="date" name="date">
+                            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <input type="file" id="file" name="file">
+                            <input type="hidden" id="hidden" name="hidden" value="hidden">
+                            <input type="number" id="number" name="number" min="1" max="5">
+                            <input type="password" id="password" name="password" pattern=".{8,}" title="Eight or more characters">
+                            <input type="radio" id="radio" name="radio" value="radio">
+                            <input type="radio" id="radio-checked" name="radio" value="radio-checked" checked>
+                            <input type="radio" id="radio-disabled" name="radio" value="radio-disabled" disabled>
+                            <input type="range" id="range" name="range" min="0" max="10">
+                            <input type="tel" id="tel" name="tel">
+                            <input type="text" id="text" name="text">
+                            <input type="url" id="url" name="url">
+                            <output>Defines the result of a calculation</output>
+                            <input type="reset">
+                            <input type="search" id="search" name="search">
+                            <input type="submit" id="submit" name="submit">
+                            <input type="button" value="Input-Button" onclick="function1()">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>  
+        </main>
+        <aside>
+            <section>
+                <picture>
+                    <source media="(max-width: 1199px)" srcset="https://placehold.co/1200x600/4BCE97/000000">
+                    <source media="(max-width: 1799px)" srcset="https://placehold.co/1800x900/4BCE97/000000">
+                    <img src="https://placehold.co/2000x1000/4BCE97/000000" alt="No image found!" loading="lazy">
+                </picture>
+                <address>
+                    <p>Address:</p>
+                    <span>1407 Graymalkin Lane</span>
+                    <span>Salem Center</span>
+                    <span>New York</span>
+                </address>
+            </section>
+        </aside>
+        <footer>
+            <section>
+                <div class="row">
+                    <div class="column">
+                        <picture class="header-logo">
+                            <source media="(max-width:1199px)" srcset="https://placehold.co/64x64/4BCE97/000000">
+                            <source media="(max-width:1799px)" srcset="https://placehold.co/96x96/4BCE97/000000">
+                            <img src="https://placehold.co/128x128/4BCE97/000000" alt="image loading" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="column">
+                        <p>Company:</p>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">Contact</a></span>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">News</a></span>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">Careers</a></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <p>Quick Links:</p>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">Support Center</a></span>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">Security</a></span>
+                        <span><a href="xxxxx" target="_blank" rel="noopener noreferrer">Service Status</a></span>
+                    </div>
+                    <div class="column">
+                        <p>Follow Us:</p>
+                        <span class="footer-social"><a href="xxxxx" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></span>
+                        <span class="footer-social"><a href="xxxxx" target="_blank" rel="noopener noreferrer"><i class="fa fa-xing-square fa-2x" aria-hidden="true"></i></a></span>
+                        <span class="footer-social"><a href="xxxxx" target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></span>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./js/responsive.js"></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+
+</html>
