@@ -4,7 +4,7 @@ let output_city = document.getElementById("output-city");
 let output_temperature = document.getElementById("output-temperature");
 let output_wind = document.getElementById("output-wind");
 let output_description = document.getElementById("output-description");
-const apikey = "eca08dadd4391adcab4b926ecc46b5e2";
+const apikey = "xxxxxxxxxxxxx";
 
 function kelvinToCelcious(kelvin) {
     return (kelvin - 273).toFixed(2)
