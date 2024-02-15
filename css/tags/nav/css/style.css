@@ -1,0 +1,228 @@
+/* BROWSER-MODE */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #000000;
+        --foreground-color: #000000;
+        --shadow-color: #000000;
+        --primary-color: #000000;
+        --secondary-color: #000000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000000;
+        --foreground-color: #000000;
+        --shadow-color: #000000;
+        --primary-color: #000000;
+        --secondary-color: #000000;
+    }
+}
+
+/* THEMES */
+
+html,
+html[data-theme="light"] {
+    --background-color: #000000;
+    --foreground-color: #000000;
+    --shadow-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+}
+
+html[data-theme="dark"] {
+    --background-color: #000000;
+    --foreground-color: #000000;
+    --shadow-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+main h4 {
+    font-size: 1.12rem;
+    margin-bottom: 1.0rem;
+}
+
+main h5 {
+    font-size: 0.83rem;
+    margin-bottom: 1.0rem;
+}
+
+main h6 {
+    font-size: 0.75rem;
+    margin-bottom: 1.0rem;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* MEDIA QUERIES */
+
+/* phones */
+@media (width <=767px) {
+
+    /* NAV */
+
+    @layer nav {}
+
+    /* HEADER */
+
+    @layer header {}
+
+    /* MAIN */
+
+    @layer main {}
+
+    /* ASIDE */
+
+    @layer aside {}
+
+    /* FOOTER */
+
+    @layer footer {}
+
+    /* COLORS */
+
+    @layer colors {}
+}
+
+/* tablets */
+@media (768px <=width <=1279px) {
+    /* NAV */
+
+    @layer nav {}
+
+    /* HEADER */
+
+    @layer header {}
+
+    /* MAIN */
+
+    @layer main {}
+
+    /* ASIDE */
+
+    @layer aside {}
+
+    /* FOOTER */
+
+    @layer footer {}
+
+    /* COLORS */
+
+    @layer colors {}
+}
+
+/* laptops */
+@media (1280px <=width <=1919px) {
+    /* NAV */
+
+    @layer nav {}
+
+    /* HEADER */
+
+    @layer header {}
+
+    /* MAIN */
+
+    @layer main {}
+
+    /* ASIDE */
+
+    @layer aside {}
+
+    /* FOOTER */
+
+    @layer footer {}
+
+    /* COLORS */
+
+    @layer colors {}
+}
+
+/* desktops */
+@media (width >=1920px) {
+    /* NAV */
+
+    @layer nav {}
+
+    /* HEADER */
+
+    @layer header {}
+
+    /* MAIN */
+
+    @layer main {}
+
+    /* ASIDE */
+
+    @layer aside {}
+
+    /* FOOTER */
+
+    @layer footer {}
+
+    /* COLORS */
+
+    @layer colors {}
+}

@@ -1,0 +1,142 @@
+/* THEME */
+
+:root {
+    --background-color: #95BAA8;
+    --foreground-color: #363636;
+    --primary-color: #6B4521;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    line-height: 1.4;
+
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100vw;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    grid-template-areas:
+        "left right";
+}
+
+.left {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right {
+    grid-area: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    padding-right: 10vw;
+}
+
+@media (width <=767px) {
+    .wrapper {
+        min-height: 100vh;
+        width: 100vw;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+        grid-template-areas:
+            "right"
+            "left";
+    }
+
+    .left {
+        grid-area: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 2rem;
+    }
+
+    .right {
+        grid-area: right;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        padding: 0 2rem;
+    }
+}
+
+/* ELEMENTS */
+
+.error-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.error-status {
+    font-weight: 700;
+}
+
+.error-link {
+    border: 2px solid currentColor;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.error-link:hover {
+    opacity: 0.5;
+}
+
+.attribute-link {
+    font-size: smaller;
+    opacity: 0.5;
+    padding-left: 2rem;
+}
+
+/* COLORS */
+
+html {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+.error-title {
+    color: var(--primary-color);
+}
+
+.error-link {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}

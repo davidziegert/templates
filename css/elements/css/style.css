@@ -1,0 +1,159 @@
+/* BROWSER-MODE */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #ffffff;
+        --foreground-color: #111111;
+        --shadow-color: #737373;
+        --primary-color: #007fc6;
+        --secondary-color: #00a0f9;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #111111;
+        --foreground-color: #ffffff;
+        --shadow-color: #424242;
+        --primary-color: #ae63e4;
+        --secondary-color: #c58eec;
+    }
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+main h4 {
+    font-size: 1.12rem;
+    margin-bottom: 1.0rem;
+}
+
+main h5 {
+    font-size: 0.83rem;
+    margin-bottom: 1.0rem;
+}
+
+main h6 {
+    font-size: 0.75rem;
+    margin-bottom: 1.0rem;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 65vw, 70rem);
+    margin: auto;
+}
+
+/* COLORS */
+
+html {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    color: var(--primary-color);
+}
+
+main a {
+    color: var(--secondary-color);
+}
+
+main mark {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+main form fieldset meter {
+    color: var(--primary-color);
+}
+
+main form fieldset meter::-moz-meter-bar {
+    background: var(--primary-color);
+}
+
+main form fieldset meter::-webkit-meter-value {
+    background: var(--primary-color);
+}
+
+main form fieldset progress {
+    color: var(--primary-color);
+}
+
+main form fieldset progress::-moz-progress-bar {
+    background: var(--primary-color);
+}
+
+main form fieldset progress::-webkit-progress-value {
+    background: var(--primary-color);
+}
+
+main input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+}
+
+main input[type="radio"]:checked {
+    background-color: var(--primary-color);
+}
+
+main input[type="range"] {
+    background-color: var(--primary-color);
+}
+
+main input[type=reset] {
+    background-color: var(--primary-color);
+}
+
+main input[type=search] {
+    background-color: var(--primary-color);
+}
+
+main input[type=submit] {
+    background-color: var(--primary-color);
+}
+
+main button {
+    background-color: var(--primary-color);
+}
+
+main input[type=button] {
+    background-color: var(--primary-color);
+}
