@@ -32,69 +32,16 @@ body {
 
 .wrapper {
     min-height: 100vh;
-    width: 100vw;
+    width: clamp(16rem, 90vw, 70rem);
     margin: auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr;
-    gap: 2rem;
-    grid-template-areas:
-        "left right";
-}
-
-.left {
-    grid-area: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 2rem;
-}
-
-.right {
-    grid-area: right;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
 
-    padding-right: 10vw;
-}
-
-@media (width <=767px) {
-    .wrapper {
-        min-height: 100vh;
-        width: 100vw;
-        margin: auto;
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        gap: 2rem;
-        grid-template-areas:
-            "right"
-            "left";
-    }
-
-    .left {
-        grid-area: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        gap: 2rem;
-    }
-
-    .right {
-        grid-area: right;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-
-        padding: 0 2rem;
-    }
+    text-align: center;
 }
 
 /* ELEMENTS */
@@ -103,6 +50,11 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.error-image {
+    max-height: 40vh !important;
+    width: auto;
 }
 
 .error-status {
@@ -122,7 +74,6 @@ body {
 .attribute-link {
     font-size: smaller;
     opacity: 0.5;
-    padding-left: 2rem;
 }
 
 /* COLORS */

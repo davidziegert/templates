@@ -1,0 +1,214 @@
+/* THEMES */
+
+:root {
+    --background-color: #F6F6F6;
+    --foreground-color: #2C2E3E;
+    --shadow-color: #34374C;
+    --primary-color: #EE2B47;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+/* MEDIA QUERIES */
+
+/* phones */
+@media (width <=767px) {
+
+    /* GRID */
+
+    .wrapper {}
+
+    /* HEADER */
+
+    header {}
+
+    header section {}
+
+    header section .title {}
+
+    header section .hamburger {}
+
+    /* NAV */
+
+    nav {}
+
+    nav .main-menu {}
+
+    nav .main-menu .menu {}
+
+    .menu {}
+
+    .menu .menu-item {}
+
+    .menu .menu-item-has-children {}
+
+    .menu .menu-item a {}
+
+    .menu .sub-menu {}
+
+    .menu .current-page-item {}
+
+    .menu .current-page-item {}
+
+}
+
+/* tablets */
+@media (768px <=width <=1279px) {
+
+    /* GRID */
+
+    .wrapper {}
+
+    /* HEADER */
+
+    header {}
+
+    header section {}
+
+    header section .title {}
+
+    header section .hamburger {}
+
+    /* NAV */
+
+    nav {}
+
+    nav .main-menu {}
+
+    nav .main-menu .menu {}
+
+    .menu {}
+
+    .menu .menu-item {}
+
+    .menu .menu-item-has-children {}
+
+    .menu .menu-item a {}
+
+    .menu .sub-menu {}
+
+    .menu .current-page-item {}
+
+    .menu .current-page-item {}
+
+}
+
+/* laptops */
+@media (1280px <=width <=1919px) {
+
+    /* GRID */
+
+    .wrapper {}
+
+    /* HEADER */
+
+    header {}
+
+    header section {}
+
+    header section .title {}
+
+    header section .hamburger {}
+
+    /* NAV */
+
+    nav {}
+
+    nav .main-menu {}
+
+    nav .main-menu .menu {}
+
+    .menu {}
+
+    .menu .menu-item {}
+
+    .menu .menu-item-has-children {}
+
+    .menu .menu-item a {}
+
+    .menu .sub-menu {}
+
+    .menu .current-page-item {}
+
+    .menu .current-page-item {}
+
+}
+
+/* desktops */
+@media (width >=1920px) {
+
+    /* GRID */
+
+    .wrapper {}
+
+    /* HEADER */
+
+    header {}
+
+    header section {}
+
+    header section .title {}
+
+    header section .hamburger {}
+
+    /* NAV */
+
+    nav {}
+
+    nav .main-menu {}
+
+    nav .main-menu .menu {}
+
+    .menu {}
+
+    .menu .menu-item {}
+
+    .menu .menu-item-has-children {}
+
+    .menu .menu-item a {}
+
+    .menu .sub-menu {}
+
+    .menu .current-page-item {}
+
+    .menu .current-page-item {}
+
+}
