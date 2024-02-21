@@ -1,0 +1,122 @@
+/* THEMES */
+
+:root {
+    --background-color: #E5E9EC;
+    --foreground-color: #000000;
+    --primary-color: #5B7C99;
+    --secondary-color: #FDE74C;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "main aside";
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+/* MAIN */
+
+main section {
+    padding: 2rem;
+}
+
+/* ASIDE */
+
+aside {
+    position: sticky;
+    align-self: start;
+    top: 0;
+}
+
+aside section {
+    padding: 2rem 0 2rem 2rem;
+}
+
+aside section .sidebar {
+    position: fixed;
+}
+
+aside section .sidebar .social {
+    margin-left: -3rem;
+    display: inline-table;
+
+    transition-property: margin-left;
+    transition-duration: 0.25s;
+    transition-delay: 0.25s;
+
+    -moz-transition-property: margin-left;
+    -moz-transition-duration: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-property: margin-left;
+    -ms-transition-duration: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -o-transition-property: margin-left;
+    -o-transition-duration: 0.25s;
+    -o-transition-delay: 0.25s;
+    -webkit-transition-property: margin-left;
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-delay: 0.25s;
+
+    cursor: pointer;
+    z-index: 111;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+aside section .social:hover {
+    margin-left: -15rem;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+aside section .social a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+aside section .social span {
+    text-align: center;
+    width: 12rem;
+}
+
+aside section .social i {
+    text-align: center;
+    width: 3rem;
+}

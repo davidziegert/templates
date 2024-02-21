@@ -58,16 +58,29 @@ main h1 {
 }
 
 main .countdown {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0.5rem;
-
-    list-style-type: none;
-    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
-main .countdown span {
-    margin-right: 0.5rem;
+main .countdown .timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+main .countdown .timer span:first-of-type {
+    font-size: 2rem;
+}
+
+main .countdown .seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .attribute {
