@@ -1,0 +1,79 @@
+/* THEMES */
+
+:root {
+    --background-color: #F5F5F5;
+    --foreground-color: #0E2240;
+    --primary-color: #228896;
+    --secondary-color: #A9C52F;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+/* HEADER */
+
+header section {
+    height: 100vh;
+}
+
+header .mountain-title {
+    width: 100%;
+
+    position: fixed;
+    top: 2rem;
+    z-index: 1;
+
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+}
+
+header .mountain-front {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* MAIN */
+
+main section {
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}

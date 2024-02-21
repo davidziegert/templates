@@ -1,0 +1,83 @@
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+}
+
+/* MAIN */
+
+main section {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.follower-board {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.follower-board .follower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 10vw;
+    border: 1px solid currentColor;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.follower-board .follower:nth-of-type(1) {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.follower-board .follower:nth-of-type(2) {
+    background-color: #6441a5;
+    color: #FFFFFF;
+}
+
+.follower-board .follower:nth-of-type(3) {
+    background-color: #E1306C;
+    color: #FFFFFF;
+}
+
+.follower-board .follower:nth-of-type(4) {
+    background-color: #1DA1F2;
+    color: white;
+}

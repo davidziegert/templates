@@ -1,0 +1,65 @@
+/* THEMES */
+
+:root {
+    --background-color: #000000;
+    --foreground-color: #000000;
+    --shadow-color: #000000;
+    --primary-color: #000000;
+    --secondary-color: #000000;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 90vw, 70rem);
+    margin: 2rem auto;
+}
+
+/* MAIN */
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    columns: 3;
+    gap: 1rem;
+}
+
+.gallery .item {
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.gallery .item img {
+    display: block;
+    object-fit: contain;
+    transition: 1s ease-in-out;
+}
+
+.gallery .item:hover>img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
