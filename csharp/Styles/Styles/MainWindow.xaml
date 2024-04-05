@@ -1,0 +1,108 @@
+﻿<Window x:Class="Styles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Styles"
+        mc:Ignorable="d"
+        Height="768" Width="1024"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent">
+
+    <!-- Window -->
+    <Border Style="{StaticResource Border_Window}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Margin="10">
+                <DockPanel LastChildFill="False" VerticalAlignment="Center">
+                    <Label Content="Title" VerticalContentAlignment="Center" DockPanel.Dock="Left" Style="{StaticResource Label_Title}"></Label>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                        <Button x:Name="btn_Minimize" Click="btn_Minimize_Click" Style="{StaticResource Button_Window}">
+                            <Image Source="/Icons/minimize.png"></Image>
+                        </Button>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <Button x:Name="btn_Close" Click="btn_Close_Click" Style="{StaticResource Button_Window}">
+                            <Image Source="/Icons/close.png"></Image>
+                        </Button>
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical">
+                    <TextBlock Text="Fonts" Style="{StaticResource TextBlock_Headline}"></TextBlock>
+                    <TextBlock Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Vertical">
+                    <TextBlock Text="Buttons and Inputs" Style="{StaticResource TextBlock_Headline}"></TextBlock>
+                    <Button Content="Button" Style="{StaticResource Button_Regular}"></Button>
+                    <Separator Height="22" Opacity="0"></Separator>
+                    <TextBox Style="{StaticResource TextBox_Regular}" Text="Textbox"></TextBox>
+                    <Separator Height="22" Opacity="0"></Separator>
+                    <ComboBox Style="{StaticResource ComboBox_Regular}">
+                        <ComboBoxItem IsSelected="True">ComboBox Item #1</ComboBoxItem>
+                        <ComboBoxItem>ComboBox Item #2</ComboBoxItem>
+                    </ComboBox>
+                    <Separator Height="22" Opacity="0"></Separator>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Style="{StaticResource CheckBox_Regular}" IsChecked="True"></CheckBox>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Style="{StaticResource TextBlock_Regular}" Text="TextBlock"></TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="4" Orientation="Vertical">
+                    <TextBlock Text="Others" Style="{StaticResource TextBlock_Headline}"></TextBlock>
+                    <Border Style="{StaticResource Border_Info}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                <ColumnDefinition Width="10"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/info_black.png"></Image>
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." Style="{StaticResource TextBlock_Info}"></TextBlock>
+                        </Grid>                        
+                    </Border>
+                    <Separator Height="22" Opacity="0"></Separator>
+                    <Border Style="{StaticResource Border_Box}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                <ColumnDefinition Width="10"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/info_green.png"></Image>
+                            <TextBlock Grid.Row="0" Grid.Column="2" Text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." Style="{StaticResource TextBlock_Box}"></TextBlock>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+   
+</Window>
