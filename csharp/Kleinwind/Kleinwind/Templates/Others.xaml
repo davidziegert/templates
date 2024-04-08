@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="Border_Window" TargetType="Border">
+        <Setter Property="CornerRadius" Value="20"></Setter>
+        <Setter Property="Background" Value="#e7eaf6"></Setter>
+    </Style>
+
+    <Style x:Key="Border_Info" TargetType="Border">
+        <Setter Property="CornerRadius" Value="5"></Setter>
+        <Setter Property="Background" Value="#38598b"></Setter>
+        <Setter Property="Padding" Value="10"></Setter>
+    </Style>
+
+</ResourceDictionary>

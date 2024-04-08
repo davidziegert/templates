@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Kleinwind.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kleinwind.View"
+             xmlns:vm="clr-namespace:Kleinwind.ViewModel"
+             mc:Ignorable="d"
+             Height="710" Width="1000">
+
+    <UserControl.DataContext>
+        <vm:HomeViewModel></vm:HomeViewModel>
+    </UserControl.DataContext>
+
+    <Grid Margin="20,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel>
+                <TextBlock Text="HomeScreen" Style="{StaticResource TextBlock_Headline}"></TextBlock>
+                <TextBlock Text="Das Programm zur Einschätzung der Wirtschaftlichkeit eines Kleinwindanlagenprojektes wurde mit größter Sorgfalt erstellt." Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="Für die Richtigkeit, Vollständigkeit und Aktualität der angegebenen Inhalte, insbesondere für die Anlagendaten der jeweiligen Hersteller, können wir jedoch keine Gewähr übernehmen." Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="Ebenfalls wird keine Gewähr für die Richtigkeit der Berechnungsmethode sowie der Ergebnisse übernommen." Style="{StaticResource TextBlock_Regular}"></TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Image Source="/Images/homescreen.png"></Image>
+        </Grid>
+    </Grid>
+</UserControl>

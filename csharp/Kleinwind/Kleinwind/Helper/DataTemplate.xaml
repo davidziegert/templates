@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vw="clr-namespace:Kleinwind.View"
+                    xmlns:vm="clr-namespace:Kleinwind.ViewModel">
+
+    <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+        <vw:HomeView></vw:HomeView>
+    </DataTemplate>
+    
+</ResourceDictionary>
