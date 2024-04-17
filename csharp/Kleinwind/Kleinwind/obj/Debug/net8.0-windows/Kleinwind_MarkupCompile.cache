@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\toor\Documents\GitHub\templates\csharp\Kleinwind\Kleinwind\App.xaml
-7-775414025
+13-2083085666
 11762862393
-101578402327
-198915248976
-Helper\DataTemplate.xaml;MainWindow.xaml;Templates\Buttons.xaml;Templates\Fonts.xaml;Templates\Inputs.xaml;Templates\Others.xaml;View\HomeView.xaml;
+22963511613
+201-1515508729
+Helper\DataTemplate.xaml;MainWindow.xaml;Templates\Buttons.xaml;Templates\Fonts.xaml;Templates\Inputs.xaml;Templates\Others.xaml;View\EnergieView.xaml;View\GlossarView.xaml;View\HomeView.xaml;View\InputView.xaml;View\OutputView.xaml;View\PerformanceView.xaml;View\WindView.xaml;
 
 False
 

@@ -1,8 +1,8 @@
 ﻿<UserControl x:Class="MVVM.View.DataView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:MVVM.View"
              xmlns:vm="clr-namespace:MVVM.ViewModel"
              mc:Ignorable="d">
@@ -17,6 +17,7 @@
             <TextBox Text="{Binding Zahl1, Mode=TwoWay}"></TextBox>
             <TextBox Text="{Binding Zahl2, Mode=TwoWay}"></TextBox>
             <TextBox Text="{Binding Zahl3, Mode=OneWay}" IsReadOnly="True"></TextBox>
+            <Button Content="Random Numbers" Command="{Binding RandomNumberCommand}"></Button>
             <Button Content="Read Json" Command="{Binding ReadJsonCommand}"></Button>
             <Button Content="Update Json" Command="{Binding UpdateJsonCommand}"></Button>
             <Button Content="Delete Json" Command="{Binding DeleteJsonCommand}"></Button>

@@ -6,5 +6,16 @@
     <DataTemplate DataType="{x:Type vm:HomeViewModel}">
         <vw:HomeView></vw:HomeView>
     </DataTemplate>
-
+    <DataTemplate DataType="{x:Type vm:KinectViewModel}">
+        <vw:KinectView></vw:KinectView>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:SpeechViewModel}">
+        <vw:SpeechView></vw:SpeechView>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:StroopViewModel}">
+        <vw:StroopView></vw:StroopView>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type vm:TextViewModel}">
+        <vw:TextView></vw:TextView>
+    </DataTemplate>
 </ResourceDictionary>

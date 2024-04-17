@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Tools.ViewModel;
 
 namespace Tools.Helper
@@ -11,6 +6,7 @@ namespace Tools.Helper
     public class NavigationViewModel : BaseViewModel
     {
         private object _currentViewModel;
+
         public object CurrentViewModel
         {
             get { return _currentViewModel; }
@@ -18,16 +14,36 @@ namespace Tools.Helper
         }
 
         #region Commands
+
         public ICommand HomeCommand { get; set; }
-        #endregion
+        public ICommand KinectCommand { get; set; }
+        public ICommand SpeechCommand { get; set; }
+        public ICommand StroopCommand { get; set; }
+        public ICommand TextCommand { get; set; }
+
+        #endregion Commands
 
         #region ViewModels
+
         private void Home(object obj) => CurrentViewModel = new HomeViewModel();
-        #endregion
+
+        private void Kinect(object obj) => CurrentViewModel = new KinectViewModel();
+
+        private void Speech(object obj) => CurrentViewModel = new SpeechViewModel();
+
+        private void Stroop(object obj) => CurrentViewModel = new StroopViewModel();
+
+        private void Text(object obj) => CurrentViewModel = new TextViewModel();
+
+        #endregion ViewModels
 
         public NavigationViewModel()
         {
             HomeCommand = new RelayCommand(Home);
+            KinectCommand = new RelayCommand(Kinect);
+            SpeechCommand = new RelayCommand(Speech);
+            StroopCommand = new RelayCommand(Stroop);
+            TextCommand = new RelayCommand(Text);
 
             CurrentViewModel = new HomeViewModel();
         }

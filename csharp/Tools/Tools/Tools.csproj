@@ -10,23 +10,38 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\close.png" />
-    <None Remove="Images\homescreen.png" />
-    <None Remove="Images\minimize.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Images\icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Microsoft.Ink">
+      <HintPath>..\..\..\..\..\..\..\..\Windows\assembly\GAC_64\Microsoft.Ink\6.1.0.0__31bf3856ad364e35\Microsoft.Ink.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\blue.png" />
     <Resource Include="Images\close.png" />
+    <Resource Include="Images\colorizer.png" />
+    <Resource Include="Images\counter.png" />
+    <Resource Include="Images\fish.png" />
+    <Resource Include="Images\green.png" />
     <Resource Include="Images\homescreen.png" />
+    <Resource Include="Images\ladybug.png" />
     <Resource Include="Images\minimize.png" />
+    <Resource Include="Images\notes.png" />
+    <Resource Include="Images\orange.png" />
+    <Resource Include="Images\penguin.png" />
+    <Resource Include="Images\pig.png" />
+    <Resource Include="Images\red.png" />
+    <Resource Include="Images\rubber.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\snail.png" />
   </ItemGroup>
 
 </Project>

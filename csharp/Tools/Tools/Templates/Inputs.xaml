@@ -59,18 +59,18 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="ItemsControl.HasItems" Value="False">
-                            <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95"/>
+                            <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95" />
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
-                            <Setter Property="TextElement.Foreground" Value="DarkGray"/>
+                            <Setter Property="TextElement.Foreground" Value="DarkGray" />
                         </Trigger>
                         <Trigger Property="ItemsControl.IsGrouping" Value="True">
-                            <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+                            <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
                         </Trigger>
                         <Trigger Property="ComboBox.IsEditable" Value="True">
-                            <Setter Property="KeyboardNavigation.IsTabStop" Value="False"/>
-                            <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible"/>
-                            <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden"/>
+                            <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+                            <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible" />
+                            <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -174,5 +174,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

@@ -11,5 +11,4 @@
         <Setter Property="Background" Value="#38598b"></Setter>
         <Setter Property="Padding" Value="10"></Setter>
     </Style>
-
 </ResourceDictionary>

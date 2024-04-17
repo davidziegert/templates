@@ -10,6 +10,18 @@
     <Compile Update="View\HomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\KinectView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SpeechView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\StroopView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TextView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Helper\DataTemplate.xaml">
@@ -31,6 +43,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\KinectView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SpeechView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\StroopView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TextView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

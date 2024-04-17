@@ -38,7 +38,7 @@
                             <ContentPresenter x:Name="ContentSite" Grid.Column="0" IsHitTestVisible="False" HorizontalAlignment="Left" VerticalAlignment="Center" Content="{TemplateBinding ComboBox.SelectionBoxItem}" ContentTemplate="{TemplateBinding ComboBox.SelectionBoxItemTemplate}" ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}" Margin="5"></ContentPresenter>
 
                             <ToggleButton x:Name="ToggleButton" Style="{StaticResource ToggleButton_Regular}" Grid.Column="1" ClickMode="Press" Focusable="False" IsChecked="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"></ToggleButton>
-                            
+
                             <TextBox x:Name="PART_EditableTextBox" IsReadOnly="{TemplateBinding IsReadOnly}" Visibility="Hidden" Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center" Focusable="True">
                                 <TextBox.Template>
                                     <ControlTemplate TargetType="TextBox">
@@ -46,7 +46,7 @@
                                     </ControlTemplate>
                                 </TextBox.Template>
                             </TextBox>
-                            
+
                             <Popup x:Name="Popup" Placement="Bottom" Focusable="False" AllowsTransparency="True" IsOpen="{TemplateBinding ComboBox.IsDropDownOpen}" PopupAnimation="Slide">
                                 <Grid x:Name="DropDown" SnapsToDevicePixels="True" MinWidth="{TemplateBinding FrameworkElement.ActualWidth}" MaxHeight="{TemplateBinding ComboBox.MaxDropDownHeight}">
                                     <Border x:Name="DropDownBorder" Margin="0,1,0,0" CornerRadius="0" BorderThickness="1,1,1,1" BorderBrush="#0c775c" Background="#424242"></Border>
@@ -59,18 +59,18 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="ItemsControl.HasItems" Value="False">
-                            <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95"/>
+                            <Setter Property="FrameworkElement.MinHeight" TargetName="DropDownBorder" Value="95" />
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
-                            <Setter Property="TextElement.Foreground" Value="Yellow"/>
+                            <Setter Property="TextElement.Foreground" Value="Yellow" />
                         </Trigger>
                         <Trigger Property="ItemsControl.IsGrouping" Value="True">
-                            <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+                            <Setter Property="ScrollViewer.CanContentScroll" Value="False" />
                         </Trigger>
                         <Trigger Property="ComboBox.IsEditable" Value="True">
-                            <Setter Property="KeyboardNavigation.IsTabStop" Value="False"/>
-                            <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible"/>
-                            <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden"/>
+                            <Setter Property="KeyboardNavigation.IsTabStop" Value="False" />
+                            <Setter Property="UIElement.Visibility" TargetName="PART_EditableTextBox" Value="Visible" />
+                            <Setter Property="UIElement.Visibility" TargetName="ContentSite" Value="Hidden" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -174,5 +174,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3vsEB+BLGhC84CYKl0AUd7VZDtVctKg34hN0wHpd2iMYzwf6Bjt8GOrqPjLGEyWSUitWb2TlGmdQ5sskhFNv2Q==",
+  "dgSpecHash": "WWdYu9gMDAKOofaItFJ+C9n0pXnaS7ucAi+GtlygiV6/9jK0bGXH6fpk5S/LCEf7qHZyouPSZNM2R2uow8EmKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\Kleinwind\\Kleinwind\\Kleinwind.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\toor\\.nuget\\packages\\oxyplot.core\\2.1.2\\oxyplot.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\toor\\.nuget\\packages\\oxyplot.wpf\\2.1.2\\oxyplot.wpf.2.1.2.nupkg.sha512",
+    "C:\\Users\\toor\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.2\\oxyplot.wpf.shared.2.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

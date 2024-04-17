@@ -9,12 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\Data.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="Data\Data.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

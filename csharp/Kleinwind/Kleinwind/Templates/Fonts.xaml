@@ -4,33 +4,48 @@
     <Style x:Key="TextBlock_Title" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Cambria"></Setter>
         <Setter Property="Foreground" Value="#113f67"></Setter>
-        <Setter Property="FontSize" Value="25"></Setter>
+        <Setter Property="FontSize" Value="21"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
     </Style>
 
     <Style x:Key="TextBlock_Headline" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Cambria"></Setter>
         <Setter Property="Foreground" Value="#113f67"></Setter>
-        <Setter Property="FontSize" Value="32"></Setter>
+        <Setter Property="FontSize" Value="28"></Setter>
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
         <Setter Property="FontWeight" Value="Bold"></Setter>
         <Setter Property="TextDecorations" Value="Underline"></Setter>
-        <Setter Property="Margin" Value="0,0,0,25"></Setter>
+        <Setter Property="Margin" Value="0,0,0,21"></Setter>
+    </Style>
+
+    <Style x:Key="TextBlock_Note" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Calibri"></Setter>
+        <Setter Property="Foreground" Value="#113f67"></Setter>
+        <Setter Property="FontSize" Value="21"></Setter>
+        <Setter Property="TextWrapping" Value="Wrap"></Setter>
+        <Setter Property="Margin" Value="0,0,0,14"></Setter>
     </Style>
 
     <Style x:Key="TextBlock_Regular" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Calibri"></Setter>
         <Setter Property="Foreground" Value="#020205"></Setter>
-        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="FontSize" Value="14"></Setter>
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
-        <Setter Property="Margin" Value="0,0,0,18"></Setter>
+        <Setter Property="Margin" Value="0,0,0,14"></Setter>
+    </Style>
+
+    <Style x:Key="TextBlock_Table" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Calibri"></Setter>
+        <Setter Property="Foreground" Value="#020205"></Setter>
+        <Setter Property="FontSize" Value="14"></Setter>
+        <Setter Property="TextWrapping" Value="Wrap"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
     </Style>
 
     <Style x:Key="TextBlock_Info" TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Cambria"></Setter>
         <Setter Property="Foreground" Value="#e7eaf6"></Setter>
-        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="FontSize" Value="14"></Setter>
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
     </Style>
-
 </ResourceDictionary>

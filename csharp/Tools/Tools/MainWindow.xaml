@@ -52,13 +52,13 @@
                     <StackPanel>
                         <Button Height="50" Content="Home" Command="{Binding HomeCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Text Recognition" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Text Recognition" Command="{Binding TextCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Speech Recognition" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Speech Recognition" Command="{Binding SpeechCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Painting" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Stroop Test" Command="{Binding StroopCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Stroop Test" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Kinect" Command="{Binding KinectCommand}" Style="{StaticResource Button_Regular}"></Button>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="1">

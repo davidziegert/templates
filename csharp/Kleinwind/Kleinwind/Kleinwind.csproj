@@ -10,13 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\close.png" />
-    <None Remove="Images\homescreen.png" />
-    <None Remove="Images\minimize.png" />
+    <Content Include="Images\icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Images\icon.ico" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.2" />
   </ItemGroup>
 
   <ItemGroup>

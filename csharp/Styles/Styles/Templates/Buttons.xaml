@@ -65,24 +65,23 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="UIElement.IsMouseOver" Value="True">
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#0c775c"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242"/>
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#0c775c" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242" />
                             <Setter Property="Cursor" Value="Hand" />
                         </Trigger>
                         <Trigger Property="ToggleButton.IsChecked" Value="True">
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#0c775c"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242"/>
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#0c775c" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242" />
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#E3E3E3"/>
-                            <Setter Property="Border.BorderBrush" TargetName="ButtonBorder" Value="#E3E3E3"/>
-                            <Setter Property="TextElement.Foreground" Value="#E3E3E3"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242"/>
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#E3E3E3" />
+                            <Setter Property="Border.BorderBrush" TargetName="ButtonBorder" Value="#E3E3E3" />
+                            <Setter Property="TextElement.Foreground" Value="#E3E3E3" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#424242" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

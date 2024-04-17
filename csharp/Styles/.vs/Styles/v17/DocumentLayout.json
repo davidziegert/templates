@@ -1,36 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\Styles\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0428A17D-A1C9-4C18-BDFF-A5226649E9C9}|Styles\\Styles.csproj|c:\\users\\toor\\documents\\github\\templates\\csharp\\styles\\styles\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0428A17D-A1C9-4C18-BDFF-A5226649E9C9}|Styles\\Styles.csproj|solutionrelative:styles\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\Styles\\Styles\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Styles\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\Styles\\Styles\\MainWindow.xaml",
-              "RelativeToolTip": "Styles\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T12:28:01.085Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -1,0 +1,213 @@
+﻿<UserControl x:Class="Kleinwind.View.OutputView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:oxy="http://oxyplot.org/wpf"
+             xmlns:local="clr-namespace:Kleinwind.View"
+             xmlns:vm="clr-namespace:Kleinwind.ViewModel"
+             mc:Ignorable="d"
+             Height="710" Width="1000">
+
+    <UserControl.DataContext>
+        <vm:OutputViewModel></vm:OutputViewModel>
+    </UserControl.DataContext>
+
+    <ScrollViewer Margin="20,0,0,0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="300"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="OutputView" Style="{StaticResource TextBlock_Headline}"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Auswertung des KWEA-Projektes" Style="{StaticResource TextBlock_Title}"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Projektlaufzeit:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Projektlaufzeit}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="a" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Nennleistung:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Nennleistung, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="kW" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Jährlich erzeugte Strommenge:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Realertragsumme, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="kWh/a" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Investitionskosten:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Investionskosten, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Eigenkapital:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Eigenkapital, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Fremdkapital (Kredit):" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Kredit, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kreditlaufzeit:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Kreditlaufzeit}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="a" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kreditzins:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Kreditzins, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="%" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Betriebskosten pro Jahr" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Betriebskosten, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Leistungsspezifischer Investitionskostenindex:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Leistungsinvestitionskostenindex, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€/kW" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Ertragsspezifischer Investitionskostenindex:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Ertragsinvestitionskostenindex, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€/kWh p.a." Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Mittlere Stromgestehungskosten:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Stromgestehungskosten, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€/kWh" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Volllaststunden" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Volllaststunden, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="h" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Jährliche Eigenkapitalrendite:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Eigenkapitalrendite, StringFormat=N3}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="% p.a." Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Eigenkapitalrendite am Ende der Projektlaufzeit:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Endeigenkapitalrendite, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="%" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Kapital am Ende der Projektlaufzeit:" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="{Binding Endkapital, StringFormat=N2}" Style="{StaticResource TextBlock_Table}" FontWeight="Bold"></TextBlock>
+                        <Separator Width="10" Opacity="0"></Separator>
+                        <TextBlock Text="€" Style="{StaticResource TextBlock_Table}"></TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Detailierte Auswertung des KWEA-Projektes" Style="{StaticResource TextBlock_Title}"></TextBlock>
+                        <StackPanel Orientation="Horizontal">
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_tabellenjahre}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Jahr" Binding="{Binding}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahresstrommenge}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Strommenge in kWh pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahreskredittilgung}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Kredittilgung in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahreskreditzinsen}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Kreditzins in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahreskreditrate}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Kreditrate in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahresbetriebskosten}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Betriebskosten in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahresausgaben}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Ausgaben in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahreseinnahmen}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Einnahmen in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahresgewinn}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Gewinn in € pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Liste_jahresgewinnkumuliert}" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Gewinn in € (kumuliert) pro Jahr" Binding="{Binding StringFormat=N2}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0">
+                <oxy:PlotView Model="{Binding MyPlot}"></oxy:PlotView>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,8 +1,8 @@
 ﻿<UserControl x:Class="Tools.View.HomeView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Tools.View"
              xmlns:vm="clr-namespace:Tools.ViewModel"
              mc:Ignorable="d"
@@ -23,11 +23,11 @@
         <Grid Grid.Row="0" Grid.Column="0">
             <StackPanel>
                 <TextBlock Text="HomeScreen" Style="{StaticResource TextBlock_Headline}"></TextBlock>
-                <TextBox Style="{StaticResource TextBox_Regular}"></TextBox>
-                <ComboBox Style="{StaticResource ComboBox_Regular}">
-                    <ComboBoxItem Content="Item1"></ComboBoxItem>
-                </ComboBox>
-                <CheckBox Style="{StaticResource CheckBox_Regular}" IsChecked="True"></CheckBox>
+                <TextBlock Text="Diese ToolBox enthält verschiedene kleine Programme zum Testen einigeer Funktionalitäten, wie z.B.:" Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="- Spracherkennung" Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="- Texterkennung" Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="- Randomisierte Bilder" Style="{StaticResource TextBlock_Regular}"></TextBlock>
+                <TextBlock Text="- Bewegungserkennung mit der Kinect" Style="{StaticResource TextBlock_Regular}"></TextBlock>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="0" Grid.Column="1">

@@ -30,7 +30,7 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Row="0" Grid.Column="0" Margin="10">
                 <DockPanel LastChildFill="False" VerticalAlignment="Center">
-                    <TextBlock DockPanel.Dock="Left" Text="KleinWind 1.0" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource TextBlock_Title}"></TextBlock>
+                    <TextBlock DockPanel.Dock="Left" Text="KleinWind 2.0" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource TextBlock_Title}"></TextBlock>
                     <Button x:Name="btn_Close" DockPanel.Dock="Right" Width="50" Height="50" Click="btn_Close_Click" Style="{StaticResource Button_Window}">
                         <Image Source="/Images/close.png"></Image>
                     </Button>
@@ -52,17 +52,17 @@
                     <StackPanel>
                         <Button Height="50" Content="Home" Command="{Binding HomeCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="KWEA-Daten" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="KWEA-Daten" Command="{Binding InputCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Leistungskurve" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Windhäufigkeit" Command="{Binding WindCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Windhäufigkeit" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Leistungskurve" Command="{Binding PerformanceCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Energieertrag" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Energieertrag" Command="{Binding EnergieCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Auswertung" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Auswertung" Command="{Binding OutputCommand}" Style="{StaticResource Button_Regular}"></Button>
                         <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Glossar" Style="{StaticResource Button_Regular}"></Button>
+                        <Button Height="50" Content="Glossar" Command="{Binding GlossarCommand}" Style="{StaticResource Button_Regular}"></Button>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="0" Grid.Column="1">

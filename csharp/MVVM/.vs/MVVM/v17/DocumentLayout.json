@@ -1,12 +1,69 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|c:\\users\\toor\\documents\\github\\templates\\csharp\\mvvm\\mvvm\\viewmodel\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodel\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|c:\\users\\toor\\documents\\github\\templates\\csharp\\mvvm\\mvvm\\view\\dataview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\view\\dataview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|c:\\users\\toor\\documents\\github\\templates\\csharp\\mvvm\\mvvm\\model\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5B35E8-6C15-4F6E-B885-6496AF72B36C}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\model\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataView.xaml",
+              "DocumentMoniker": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\View\\DataView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\View\\DataView.xaml",
+              "ToolTip": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\View\\DataView.xaml",
+              "RelativeToolTip": "MVVM\\View\\DataView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-12T10:56:55.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\ViewModel\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModel\\DataViewModel.cs",
+              "ToolTip": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\ViewModel\\DataViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModel\\DataViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:55:12.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataModel.cs",
+              "DocumentMoniker": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\Model\\DataModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\Model\\DataModel.cs",
+              "ToolTip": "C:\\Users\\toor\\Documents\\GitHub\\templates\\csharp\\MVVM\\MVVM\\Model\\DataModel.cs",
+              "RelativeToolTip": "MVVM\\Model\\DataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:54:24.501Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

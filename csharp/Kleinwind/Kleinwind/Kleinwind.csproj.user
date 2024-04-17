@@ -7,7 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\EnergieView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\GlossarView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InputView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OutputView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PerformanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\WindView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,7 +48,25 @@
     <Page Update="Templates\Others.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\EnergieView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\GlossarView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\HomeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InputView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OutputView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PerformanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\WindView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -25,6 +25,30 @@
         </Setter>
     </Style>
 
+    <Style x:Key="Button_Trans" TargetType="Button">
+        <Setter Property="Height" Value="50"></Setter>
+        <Setter Property="Width" Value="50"></Setter>
+        <Setter Property="Foreground" Value="Transparent"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="my_border" BorderThickness="0" Background="Transparent">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="my_border" Property="Background" Value="Transparent"></Setter>
+                            <Setter Property="Cursor" Value="Hand" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="my_border" Property="Background" Value="Transparent"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style x:Key="Button_Regular" TargetType="Button">
         <Setter Property="Height" Value="50"></Setter>
         <Setter Property="Width" Value="auto"></Setter>
@@ -65,24 +89,23 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="UIElement.IsMouseOver" Value="True">
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#90f6d7"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#263849"/>
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#90f6d7" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#263849" />
                             <Setter Property="Cursor" Value="Hand" />
                         </Trigger>
                         <Trigger Property="ToggleButton.IsChecked" Value="True">
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#90f6d7"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#263849"/>
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="#90f6d7" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="#263849" />
                         </Trigger>
                         <Trigger Property="UIElement.IsEnabled" Value="False">
-                            <Setter Property="Border.BorderBrush" TargetName="ButtonBorder" Value="DarkGray"/>
-                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="LightGray"/>
-                            <Setter Property="TextElement.Foreground" Value="DarkGray"/>
-                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="DarkGray"/>
+                            <Setter Property="Border.BorderBrush" TargetName="ButtonBorder" Value="DarkGray" />
+                            <Setter Property="Panel.Background" TargetName="ButtonBorder" Value="LightGray" />
+                            <Setter Property="TextElement.Foreground" Value="DarkGray" />
+                            <Setter Property="Shape.Fill" TargetName="Arrow" Value="DarkGray" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

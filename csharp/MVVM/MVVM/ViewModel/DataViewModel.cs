@@ -4,7 +4,6 @@ using System.IO;
 using System.Text.Json;
 using System.Windows;
 using System.Windows.Input;
-using System.Xml.Linq;
 
 namespace MVVM.ViewModel
 {
@@ -12,6 +11,8 @@ namespace MVVM.ViewModel
     public class DataViewModel : BaseViewModel
     {
         private DataModel _dataModel;
+        Random rnd = new Random();
+
         public int Zahl1
         {
             get { return _dataModel.Zahl1; }
@@ -25,6 +26,7 @@ namespace MVVM.ViewModel
                 }
             }
         }
+
         public int Zahl2
         {
             get { return _dataModel.Zahl2; }
@@ -38,18 +40,34 @@ namespace MVVM.ViewModel
                 }
             }
         }
+
         public int Zahl3
         {
             get { return Zahl1 + Zahl2; }
         }
+
+        public ICommand RandomNumberCommand
+        {
+            get;
+            set;
+        }
+
+        public void RandomNumber(object obj)
+        {
+            Zahl1 = rnd.Next();
+            Zahl2 = rnd.Next();
+        }
+
         public ICommand ReadJsonCommand
         {
             get;
             set;
         }
+
         public void ReadJson(object obj)
         {
-            try {
+            try
+            {
                 string _file = File.ReadAllText(@"./Data/Data.json");
                 var _data = JsonSerializer.Deserialize<DataModel>(_file);
 
@@ -59,18 +77,22 @@ namespace MVVM.ViewModel
                     Zahl2 = _data.Zahl2;
                 }
             }
-            catch {
+            catch
+            {
                 MessageBox.Show("Cannot READ Json");
             }
         }
+
         public ICommand UpdateJsonCommand
         {
             get;
             set;
         }
+
         public void UpdateJson(object obj)
         {
-            try {
+            try
+            {
                 string _file = "./Data/Data.json";
                 var _data = JsonSerializer.Serialize(_dataModel);
 
@@ -79,15 +101,18 @@ namespace MVVM.ViewModel
                     File.WriteAllText(_file, _data);
                 }
             }
-            catch {
+            catch
+            {
                 MessageBox.Show("Cannot UPDATE Json");
             }
         }
+
         public ICommand DeleteJsonCommand
         {
             get;
             set;
         }
+
         public void DeleteJson(object obj)
         {
             try
@@ -116,6 +141,7 @@ namespace MVVM.ViewModel
         {
             _dataModel = new DataModel();
 
+            RandomNumberCommand = new RelayCommand(RandomNumber);
             ReadJsonCommand = new RelayCommand(ReadJson);
             UpdateJsonCommand = new RelayCommand(UpdateJson);
             DeleteJsonCommand = new RelayCommand(DeleteJson);

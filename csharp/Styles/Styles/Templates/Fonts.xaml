@@ -38,5 +38,4 @@
         <Setter Property="FontSize" Value="18"></Setter>
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
     </Style>
-
 </ResourceDictionary>

@@ -33,4 +33,17 @@
         <Setter Property="TextWrapping" Value="Wrap"></Setter>
     </Style>
 
+    <Style x:Key="TextBlock_Label" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Cambria"></Setter>
+        <Setter Property="Foreground" Value="#35bcbf"></Setter>
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="TextWrapping" Value="Wrap"></Setter>
+    </Style>
+
+    <Style x:Key="TextBlock_Output" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Calibri"></Setter>
+        <Setter Property="Foreground" Value="#fbfcfd"></Setter>
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="TextWrapping" Value="Wrap"></Setter>
+    </Style>
 </ResourceDictionary>
