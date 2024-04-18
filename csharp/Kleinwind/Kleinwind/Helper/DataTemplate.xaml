@@ -2,7 +2,6 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:vw="clr-namespace:Kleinwind.View"
                     xmlns:vm="clr-namespace:Kleinwind.ViewModel">
-
     <DataTemplate DataType="{x:Type vm:EnergieViewModel}">
         <vw:EnergieView></vw:EnergieView>
     </DataTemplate>

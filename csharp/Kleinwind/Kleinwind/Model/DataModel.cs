@@ -133,28 +133,27 @@ namespace Kleinwind.Model
 
         #region Input-Variables
 
-        public string? projektname { get; set; }
-        public int projektlaufzeit { get; set; }
-        public double verfuegbarkeit { get; set; }
-        public int standortvorgabe { get; set; }
-        public double formfaktor { get; set; }
-        public double skalierungsfaktor { get; set; }
-        public double messhoehe { get; set; }
-        public double jahreswindgeschwindigkeit { get; set; }
-        public double rauhigkeitslaenge { get; set; }
-        public double nennleistung { get; set; }
-        public double nenngeschwindigkeit { get; set; }
-        public double nabenhoehe { get; set; }
-        public double einschaltgeschwindigkeit { get; set; }
         public double abschaltgeschwindigkeit { get; set; }
-        public double rotordurchmesser { get; set; }
+        public double betriebskosten { get; set; }
         public double eigenkapital { get; set; }
+        public double einschaltgeschwindigkeit { get; set; }
+        public double einspeiseverguetung { get; set; }
+        public double formfaktor { get; set; }
+        public double jahreswindgeschwindigkeit { get; set; }
         public double kredit { get; set; }
         public int kreditlaufzeit { get; set; }
         public double kreditzins { get; set; }
-        public double betriebskosten { get; set; }
-        public double einspeiseverguetung { get; set; }
-
+        public double messhoehe { get; set; }
+        public double nabenhoehe { get; set; }
+        public double nenngeschwindigkeit { get; set; }
+        public double nennleistung { get; set; }
+        public int projektlaufzeit { get; set; }
+        public string? projektname { get; set; }
+        public double rauhigkeitslaenge { get; set; }
+        public double rotordurchmesser { get; set; }
+        public double skalierungsfaktor { get; set; }
+        public int standortvorgabe { get; set; }
+        public double verfuegbarkeit { get; set; }
         #endregion Input-Variables
 
         #region WindVariables
@@ -173,38 +172,36 @@ namespace Kleinwind.Model
 
         #region EnergieVariables
 
-        public ObservableCollection<double> liste_theoertrag { get; set; }
-        public ObservableCollection<double> liste_realertrag { get; set; }
-        public double theoertragsumme { get; set; }
-        public double realertragsumme { get; set; }
         public double leistungsbeiwert { get; set; }
+        public ObservableCollection<double> liste_realertrag { get; set; }
+        public ObservableCollection<double> liste_theoertrag { get; set; }
         public double luftdichte { get; set; }
-
+        public double realertragsumme { get; set; }
+        public double theoertragsumme { get; set; }
         #endregion EnergieVariables
 
         #region OutputVariables
 
-        public double investitionskosten { get; set; }
-        public double leistungsinvestitionskostenindex { get; set; }
-        public double ertragsinvestitionskostenindex { get; set; }
-        public double stromgestehungskosten { get; set; }
-        public double endkapital { get; set; }
+        public double eigenkapitalrate { get; set; }
         public double eigenkapitalrendite { get; set; }
         public double endeigenkapitalrendite { get; set; }
-        public double volllaststunden { get; set; }
-        public double eigenkapitalrate { get; set; }
-        public ObservableCollection<double> liste_jahresstrommenge { get; set; }
-        public ObservableCollection<double> liste_jahreskredittilgung { get; set; }
-        public ObservableCollection<double> liste_jahreskreditzinsen { get; set; }
-        public ObservableCollection<double> liste_jahreskreditrate { get; set; }
-        public ObservableCollection<double> liste_jahresbetriebskosten { get; set; }
+        public double endkapital { get; set; }
+        public double ertragsinvestitionskostenindex { get; set; }
+        public double investitionskosten { get; set; }
+        public double leistungsinvestitionskostenindex { get; set; }
         public ObservableCollection<double> liste_jahresausgaben { get; set; }
+        public ObservableCollection<double> liste_jahresbetriebskosten { get; set; }
+        public ObservableCollection<double> liste_jahreseigenkapitalrendite { get; set; }
         public ObservableCollection<double> liste_jahreseinnahmen { get; set; }
         public ObservableCollection<double> liste_jahresgewinn { get; set; }
         public ObservableCollection<double> liste_jahresgewinnkumuliert { get; set; }
-        public ObservableCollection<double> liste_jahreseigenkapitalrendite { get; set; }
-        public ObservableCollection<int> liste_tabellenjahre { get; set; }
-
+        public ObservableCollection<double> liste_jahreskreditrate { get; set; }
+        public ObservableCollection<double> liste_jahreskredittilgung { get; set; }
+        public ObservableCollection<double> liste_jahreskreditzinsen { get; set; }
+        public ObservableCollection<double> liste_jahresstrommenge { get; set; }
+        public ObservableCollection<int> liste_projektjahre { get; set; }
+        public double stromgestehungskosten { get; set; }
+        public double volllaststunden { get; set; }
         #endregion OutputVariables
     }
 }

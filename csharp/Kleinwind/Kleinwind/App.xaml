@@ -1,15 +1,12 @@
 ﻿<Application x:Class="Kleinwind.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Kleinwind"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Helper/DataTemplate.xaml"></ResourceDictionary>
-                <ResourceDictionary Source="/Templates/Fonts.xaml"></ResourceDictionary>
-                <ResourceDictionary Source="/Templates/Buttons.xaml"></ResourceDictionary>
-                <ResourceDictionary Source="/Templates/Inputs.xaml"></ResourceDictionary>
-                <ResourceDictionary Source="/Templates/Others.xaml"></ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -4,71 +4,49 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kleinwind"
-        xmlns:vw="clr-namespace:Kleinwind.View"
-        xmlns:vm="clr-namespace:Kleinwind.ViewModel"
         xmlns:helper="clr-namespace:Kleinwind.Helper"
         mc:Ignorable="d"
+        Title="Kleinwind"
         Height="800" Width="1200"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None"
-        Background="Transparent">
+        WindowStyle="None">
 
-    <!--Import DataTemplate for switching the ViewModels/Views-->
     <Window.DataContext>
         <helper:NavigationViewModel></helper:NavigationViewModel>
     </Window.DataContext>
 
-    <Border Style="{StaticResource Border_Window}">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="70"></RowDefinition>
-                <RowDefinition Height="730"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1200"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Row="0" Grid.Column="0" Margin="10">
-                <DockPanel LastChildFill="False" VerticalAlignment="Center">
-                    <TextBlock DockPanel.Dock="Left" Text="KleinWind 2.0" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource TextBlock_Title}"></TextBlock>
-                    <Button x:Name="btn_Close" DockPanel.Dock="Right" Width="50" Height="50" Click="btn_Close_Click" Style="{StaticResource Button_Window}">
-                        <Image Source="/Images/close.png"></Image>
-                    </Button>
-                    <Separator DockPanel.Dock="Right" Width="10" Opacity="0"></Separator>
-                    <Button x:Name="btn_Minimize" DockPanel.Dock="Right" Width="50" Height="50" Click="btn_Minimize_Click" Style="{StaticResource Button_Window}">
-                        <Image Source="/Images/minimize.png"></Image>
-                    </Button>
-                </DockPanel>
-            </Grid>
-            <Grid Grid.Row="1" Grid.Column="0" Margin="10">
-                <Grid.RowDefinitions>
-                     <RowDefinition Height="710"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="180"></ColumnDefinition>
-                    <ColumnDefinition Width="1000"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Grid Grid.Row="0" Grid.Column="0">
-                    <StackPanel>
-                        <Button Height="50" Content="Home" Command="{Binding HomeCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="KWEA-Daten" Command="{Binding InputCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Windhäufigkeit" Command="{Binding WindCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Leistungskurve" Command="{Binding PerformanceCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Energieertrag" Command="{Binding EnergieCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Auswertung" Command="{Binding OutputCommand}" Style="{StaticResource Button_Regular}"></Button>
-                        <Separator Width="10" Opacity="0"></Separator>
-                        <Button Height="50" Content="Glossar" Command="{Binding GlossarCommand}" Style="{StaticResource Button_Regular}"></Button>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Row="0" Grid.Column="1">
-                    <ContentControl Content="{Binding CurrentViewModel}"></ContentControl>
-                </Grid>
-            </Grid>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="740"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="1000"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Kleinwind v.3"></TextBlock>
         </Grid>
-    </Border>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btn_Minimize" Click="btn_Minimize_Click">_</Button>
+                <Button x:Name="btn_Close" Click="btn_Close_Click">X</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <StackPanel Orientation="Vertical">
+                <ToggleButton x:Name="btn_Home" IsEnabled="True" IsChecked="True" Content="Start" Command="{Binding HomeCommand}" Click="btn_Home_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Input" IsEnabled="False" Content="Dateneingabe" Command="{Binding InputCommand}" Click="btn_Input_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Wind" IsEnabled="False" Content="Windhäufigkeitsberteilung"  Command="{Binding WindCommand}" Click="btn_Wind_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Performance" IsEnabled="False" Content="Leistungskurve" Command="{Binding PerformanceCommand}" Click="btn_Performance_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Energie" IsEnabled="False" Content="Energieertrag" Command="{Binding EnergieCommand}" Click="btn_Energie_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Output" IsEnabled="False" Content="Projektauswertung" Command="{Binding OutputCommand}" Click="btn_Output_Click"></ToggleButton>
+                <ToggleButton x:Name="btn_Glossar" IsEnabled="True" Content="Glossar" Command="{Binding GlossarCommand}" Click="btn_Glossar_Click"></ToggleButton>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ContentControl Content="{Binding CurrentViewModel}" Margin="20"></ContentControl>
+        </Grid>
+    </Grid>
 </Window>

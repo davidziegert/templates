@@ -36,18 +36,6 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Templates\Buttons.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Templates\Fonts.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Templates\Inputs.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Templates\Others.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="View\EnergieView.xaml">
       <SubType>Designer</SubType>
     </Page>

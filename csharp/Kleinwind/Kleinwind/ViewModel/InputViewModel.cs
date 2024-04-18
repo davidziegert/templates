@@ -1,5 +1,6 @@
 ﻿using Kleinwind.Helper;
 using Kleinwind.Model;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace Kleinwind.ViewModel
@@ -10,193 +11,41 @@ namespace Kleinwind.ViewModel
 
         #region Variables
 
-        public string Projektname
+        public double Abschaltgeschwindigkeit
         {
-            get { return _dataModel.projektname; }
+            get { return _dataModel.abschaltgeschwindigkeit; }
             set
             {
-                if (_dataModel.projektname != value)
+                if (_dataModel.abschaltgeschwindigkeit != value)
                 {
-                    _dataModel.projektname = value;
-                    RaisePropertyChanged("projektname");
+                    _dataModel.abschaltgeschwindigkeit = value;
+                    RaisePropertyChanged("abschaltgeschwindigkeit");
                 }
             }
         }
 
-        public int Projektlaufzeit
+        public double Betriebskosten
         {
-            get { return _dataModel.projektlaufzeit; }
+            get { return _dataModel.betriebskosten; }
             set
             {
-                if (_dataModel.projektlaufzeit != value)
+                if (_dataModel.betriebskosten != value)
                 {
-                    _dataModel.projektlaufzeit = value;
-                    RaisePropertyChanged("projektlaufzeit");
+                    _dataModel.betriebskosten = value;
+                    RaisePropertyChanged("betriebskosten");
                 }
             }
         }
 
-        public double Verfuegbarkeit
+        public double Eigenkapital
         {
-            get { return _dataModel.verfuegbarkeit; }
+            get { return _dataModel.eigenkapital; }
             set
             {
-                if (_dataModel.verfuegbarkeit != value)
+                if (_dataModel.eigenkapital != value)
                 {
-                    _dataModel.verfuegbarkeit = value;
-                    RaisePropertyChanged("verfuegbarkeit");
-                }
-            }
-        }
-
-        public int Standortvorgabe
-        {
-            get { return _dataModel.standortvorgabe; }
-            set
-            {
-                if (_dataModel.standortvorgabe != value)
-                {
-                    _dataModel.standortvorgabe = value;
-                    RaisePropertyChanged("standortvorgabe");
-
-                    switch (_dataModel.standortvorgabe)
-                    {
-                        case 1:
-                            Formfaktor = 0;
-                            Skalierungsfaktor = 0;
-                            Messhoehe = 0;
-                            Jahreswindgeschwindigkeit = 0;
-                            Rauhigkeitslaenge = 0;
-                            break;
-
-                        case 2:
-                            Formfaktor = 0;
-                            Skalierungsfaktor = 0;
-                            Messhoehe = 0;
-                            Jahreswindgeschwindigkeit = 0;
-                            Rauhigkeitslaenge = 0;
-                            break;
-
-                        case 3:
-                            Formfaktor = 2;
-                            Skalierungsfaktor = 0;
-                            Messhoehe = 30;
-                            Jahreswindgeschwindigkeit = 5.5;
-                            Rauhigkeitslaenge = 0.1;
-                            break;
-
-                        default:
-                            Formfaktor = 0;
-                            Skalierungsfaktor = 0;
-                            Messhoehe = 0;
-                            Jahreswindgeschwindigkeit = 0;
-                            Rauhigkeitslaenge = 0;
-                            break;
-                    }
-                }
-            }
-        }
-
-        public double Formfaktor
-        {
-            get { return _dataModel.formfaktor; }
-            set
-            {
-                if (_dataModel.formfaktor != value)
-                {
-                    _dataModel.formfaktor = value;
-                    RaisePropertyChanged("formfaktor");
-                }
-            }
-        }
-
-        public double Skalierungsfaktor
-        {
-            get { return _dataModel.skalierungsfaktor; }
-            set
-            {
-                if (_dataModel.skalierungsfaktor != value)
-                {
-                    _dataModel.skalierungsfaktor = value;
-                    RaisePropertyChanged("skalierungsfaktor");
-                }
-            }
-        }
-
-        public double Messhoehe
-        {
-            get { return _dataModel.messhoehe; }
-            set
-            {
-                if (_dataModel.messhoehe != value)
-                {
-                    _dataModel.messhoehe = value;
-                    RaisePropertyChanged("messhoehe");
-                }
-            }
-        }
-
-        public double Jahreswindgeschwindigkeit
-        {
-            get { return _dataModel.jahreswindgeschwindigkeit; }
-            set
-            {
-                if (_dataModel.jahreswindgeschwindigkeit != value)
-                {
-                    _dataModel.jahreswindgeschwindigkeit = value;
-                    RaisePropertyChanged("jahreswindgeschwindigkeit");
-                }
-            }
-        }
-
-        public double Rauhigkeitslaenge
-        {
-            get { return _dataModel.rauhigkeitslaenge; }
-            set
-            {
-                if (_dataModel.rauhigkeitslaenge != value)
-                {
-                    _dataModel.rauhigkeitslaenge = value;
-                    RaisePropertyChanged("rauhigkeitslaenge");
-                }
-            }
-        }
-
-        public double Nennleistung
-        {
-            get { return _dataModel.nennleistung; }
-            set
-            {
-                if (_dataModel.nennleistung != value)
-                {
-                    _dataModel.nennleistung = value;
-                    RaisePropertyChanged("nennleistung");
-                }
-            }
-        }
-
-        public double Nenngeschwindigkeit
-        {
-            get { return _dataModel.nenngeschwindigkeit; }
-            set
-            {
-                if (_dataModel.nenngeschwindigkeit != value)
-                {
-                    _dataModel.nenngeschwindigkeit = value;
-                    RaisePropertyChanged("nenngeschwindigkeit");
-                }
-            }
-        }
-
-        public double Nabenhoehe
-        {
-            get { return _dataModel.nabenhoehe; }
-            set
-            {
-                if (_dataModel.nabenhoehe != value)
-                {
-                    _dataModel.nabenhoehe = value;
-                    RaisePropertyChanged("nabenhoehe");
+                    _dataModel.eigenkapital = value;
+                    RaisePropertyChanged("eigenkapital");
                 }
             }
         }
@@ -214,41 +63,41 @@ namespace Kleinwind.ViewModel
             }
         }
 
-        public double Abschaltgeschwindigkeit
+        public double Einspeiseverguetung
         {
-            get { return _dataModel.abschaltgeschwindigkeit; }
+            get { return _dataModel.einspeiseverguetung; }
             set
             {
-                if (_dataModel.abschaltgeschwindigkeit != value)
+                if (_dataModel.einspeiseverguetung != value)
                 {
-                    _dataModel.abschaltgeschwindigkeit = value;
-                    RaisePropertyChanged("abschaltgeschwindigkeit");
+                    _dataModel.einspeiseverguetung = value;
+                    RaisePropertyChanged("einspeiseverguetung");
                 }
             }
         }
 
-        public double Rotordurchmesser
+        public double Formfaktor
         {
-            get { return _dataModel.rotordurchmesser; }
+            get { return _dataModel.formfaktor; }
             set
             {
-                if (_dataModel.rotordurchmesser != value)
+                if (_dataModel.formfaktor != value)
                 {
-                    _dataModel.rotordurchmesser = value;
-                    RaisePropertyChanged("rotordurchmesser");
+                    _dataModel.formfaktor = value;
+                    RaisePropertyChanged("formfaktor");
                 }
             }
         }
 
-        public double Eigenkapital
+        public double Jahreswindgeschwindigkeit
         {
-            get { return _dataModel.eigenkapital; }
+            get { return _dataModel.jahreswindgeschwindigkeit; }
             set
             {
-                if (_dataModel.eigenkapital != value)
+                if (_dataModel.jahreswindgeschwindigkeit != value)
                 {
-                    _dataModel.eigenkapital = value;
-                    RaisePropertyChanged("eigenkapital");
+                    _dataModel.jahreswindgeschwindigkeit = value;
+                    RaisePropertyChanged("jahreswindgeschwindigkeit");
                 }
             }
         }
@@ -292,28 +141,205 @@ namespace Kleinwind.ViewModel
             }
         }
 
-        public double Betriebskosten
+        public ObservableCollection<double> Liste_leistungskurve
         {
-            get { return _dataModel.betriebskosten; }
+            get { return _dataModel.liste_leistungskurve; }
             set
             {
-                if (_dataModel.betriebskosten != value)
+                if (_dataModel.liste_leistungskurve != value)
                 {
-                    _dataModel.betriebskosten = value;
-                    RaisePropertyChanged("betriebskosten");
+                    _dataModel.liste_leistungskurve = value;
+                    RaisePropertyChanged("liste_leistungskurve");
                 }
             }
         }
 
-        public double Einspeiseverguetung
+        public ObservableCollection<int> Liste_windgeschwindigkeit
         {
-            get { return _dataModel.einspeiseverguetung; }
+            get { return _dataModel.liste_windgeschwindigkeit; }
             set
             {
-                if (_dataModel.einspeiseverguetung != value)
+                if (_dataModel.liste_windgeschwindigkeit != value)
                 {
-                    _dataModel.einspeiseverguetung = value;
-                    RaisePropertyChanged("einspeiseverguetung");
+                    _dataModel.liste_windgeschwindigkeit = value;
+                    RaisePropertyChanged("liste_windgeschwindigkeit");
+                }
+            }
+        }
+
+        public double Messhoehe
+        {
+            get { return _dataModel.messhoehe; }
+            set
+            {
+                if (_dataModel.messhoehe != value)
+                {
+                    _dataModel.messhoehe = value;
+                    RaisePropertyChanged("messhoehe");
+                }
+            }
+        }
+
+        public double Nabenhoehe
+        {
+            get { return _dataModel.nabenhoehe; }
+            set
+            {
+                if (_dataModel.nabenhoehe != value)
+                {
+                    _dataModel.nabenhoehe = value;
+                    RaisePropertyChanged("nabenhoehe");
+                }
+            }
+        }
+
+        public double Nenngeschwindigkeit
+        {
+            get { return _dataModel.nenngeschwindigkeit; }
+            set
+            {
+                if (_dataModel.nenngeschwindigkeit != value)
+                {
+                    _dataModel.nenngeschwindigkeit = value;
+                    RaisePropertyChanged("nenngeschwindigkeit");
+                }
+            }
+        }
+
+        public double Nennleistung
+        {
+            get { return _dataModel.nennleistung; }
+            set
+            {
+                if (_dataModel.nennleistung != value)
+                {
+                    _dataModel.nennleistung = value;
+                    RaisePropertyChanged("nennleistung");
+                }
+            }
+        }
+
+        public int Projektlaufzeit
+        {
+            get { return _dataModel.projektlaufzeit; }
+            set
+            {
+                if (_dataModel.projektlaufzeit != value)
+                {
+                    _dataModel.projektlaufzeit = value;
+                    RaisePropertyChanged("projektlaufzeit");
+                }
+            }
+        }
+
+        public string Projektname
+        {
+            get { return _dataModel.projektname; }
+            set
+            {
+                if (_dataModel.projektname != value)
+                {
+                    _dataModel.projektname = value;
+                    RaisePropertyChanged("projektname");
+                }
+            }
+        }
+        public double Rauhigkeitslaenge
+        {
+            get { return _dataModel.rauhigkeitslaenge; }
+            set
+            {
+                if (_dataModel.rauhigkeitslaenge != value)
+                {
+                    _dataModel.rauhigkeitslaenge = value;
+                    RaisePropertyChanged("rauhigkeitslaenge");
+                }
+            }
+        }
+
+        public double Rotordurchmesser
+        {
+            get { return _dataModel.rotordurchmesser; }
+            set
+            {
+                if (_dataModel.rotordurchmesser != value)
+                {
+                    _dataModel.rotordurchmesser = value;
+                    RaisePropertyChanged("rotordurchmesser");
+                }
+            }
+        }
+
+        public double Skalierungsfaktor
+        {
+            get { return _dataModel.skalierungsfaktor; }
+            set
+            {
+                if (_dataModel.skalierungsfaktor != value)
+                {
+                    _dataModel.skalierungsfaktor = value;
+                    RaisePropertyChanged("skalierungsfaktor");
+                }
+            }
+        }
+
+        public int Standortvorgabe
+        {
+            get { return _dataModel.standortvorgabe; }
+            set
+            {
+                if (_dataModel.standortvorgabe != value)
+                {
+                    _dataModel.standortvorgabe = value;
+                    RaisePropertyChanged("standortvorgabe");
+
+                    switch (_dataModel.standortvorgabe)
+                    {
+                        case 0:
+                            Formfaktor = 0;
+                            Skalierungsfaktor = 0;
+                            Messhoehe = 0;
+                            Jahreswindgeschwindigkeit = 0;
+                            Rauhigkeitslaenge = 0;
+                            break;
+
+                        case 1:
+                            Formfaktor = 0;
+                            Skalierungsfaktor = 0;
+                            Messhoehe = 0;
+                            Jahreswindgeschwindigkeit = 0;
+                            Rauhigkeitslaenge = 0;
+                            break;
+
+                        case 2:
+                            Formfaktor = 2;
+                            Skalierungsfaktor = 0;
+                            Messhoehe = 30;
+                            Jahreswindgeschwindigkeit = 5.5;
+                            Rauhigkeitslaenge = 0.1;
+                            break;
+
+                        default:
+                            Formfaktor = 0;
+                            Skalierungsfaktor = 0;
+                            Messhoehe = 0;
+                            Jahreswindgeschwindigkeit = 0;
+                            Rauhigkeitslaenge = 0;
+                            break;
+                    }
+                }
+            }
+        }
+
+        public double Verfuegbarkeit
+        {
+            get { return _dataModel.verfuegbarkeit; }
+            set
+            {
+                if (_dataModel.verfuegbarkeit != value)
+                {
+                    _dataModel.verfuegbarkeit = value;
+                    RaisePropertyChanged("verfuegbarkeit");
                 }
             }
         }
@@ -322,41 +348,32 @@ namespace Kleinwind.ViewModel
 
         #region Methods
 
-        public void SwitchLocation()
+        public void CalcPerfomance()
         {
-            switch (Standortvorgabe)
+            int i = 0;
+            int x = 0;
+
+            while (i < 25)
             {
-                case 1:
-                    Formfaktor = 0;
-                    Skalierungsfaktor = 0;
-                    Messhoehe = 0;
-                    Jahreswindgeschwindigkeit = 0;
-                    Rauhigkeitslaenge = 0;
-                    break;
+                x = i + 1;
 
-                case 2:
-                    Formfaktor = 0;
-                    Skalierungsfaktor = 0;
-                    Messhoehe = 0;
-                    Jahreswindgeschwindigkeit = 0;
-                    Rauhigkeitslaenge = 0;
-                    break;
+                if (x < Einschaltgeschwindigkeit)
+                {
+                    Liste_leistungskurve[i] = 0;
+                }
+                else
+                {
+                    if (x >= Abschaltgeschwindigkeit)
+                    {
+                        Liste_leistungskurve[i] = 0;
+                    }
+                    else
+                    {
+                        if (x >= Nenngeschwindigkeit) { Liste_leistungskurve[i] = Nennleistung * 1000; } else { Liste_leistungskurve[i] = Nennleistung * 1000 * Math.Pow(x, 3) / Math.Pow(Nenngeschwindigkeit, 3); }
+                    }
+                }
 
-                case 3:
-                    Formfaktor = 2;
-                    Skalierungsfaktor = 0;
-                    Messhoehe = 30;
-                    Jahreswindgeschwindigkeit = 5.5;
-                    Rauhigkeitslaenge = 0.1;
-                    break;
-
-                default:
-                    Formfaktor = 0;
-                    Skalierungsfaktor = 0;
-                    Messhoehe = 0;
-                    Jahreswindgeschwindigkeit = 0;
-                    Rauhigkeitslaenge = 0;
-                    break;
+                i++;
             }
         }
 
@@ -364,15 +381,15 @@ namespace Kleinwind.ViewModel
 
         #region Commands
 
-        public ICommand StandortCommand
+        public ICommand LeistungskurveCommand
         {
             get;
             set;
         }
 
-        public void Standort(object obj)
+        public void Leistungskurve(object obj)
         {
-            SwitchLocation();
+            CalcPerfomance();
         }
 
         #endregion Commands
@@ -391,7 +408,7 @@ namespace Kleinwind.ViewModel
 
             #endregion SingletonMode
 
-            StandortCommand = new RelayCommand(Standort);
+            LeistungskurveCommand = new RelayCommand(Leistungskurve);
         }
     }
 }
