@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="DESCRIPTION" />
+    <meta name="keywords" content="KEYWORD, KEYWORD" />
+
+    <title>nav.tmp</title>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./img/touch.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <ul class="circle-container">
+        <li>
+          <a class="link" href="https://accountup.uni-potsdam.de/" title="Account.UP"><img src="https://www.iconarchive.com/download/i122447/pictogrammers/material-shield/shield-account.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://mailup.uni-potsdam.de/" title="Mail.UP"><img src="https://mailup.uni-potsdam.de/SkinFiles/uni-potsdam.de/Viewpoint/taeubchen.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://campusup.uni-potsdam.de/" title="Campus.UP"><img src="https://mailup.uni-potsdam.de/SkinFiles/uni-potsdam.de/Viewpoint/campusup.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://boxup.uni-potsdam.de/" title="Box.UP"><img src="https://boxup.uni-potsdam.de/themes/uptheme/core/img/kaenguruh.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://moodle2.uni-potsdam.de/" title="Moodle.UP"><img src="https://mailup.uni-potsdam.de/SkinFiles/uni-potsdam.de/Viewpoint/moodle.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://uni-potsdam.zoom.us/" title="Zoom.UP"><img src="https://www.iconarchive.com/download/i105245/papirus-team/papirus-apps/Zoom.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://videoup.uni-potsdam.de/" title="Video.UP"><img src="https://mailup.uni-potsdam.de/SkinFiles/uni-potsdam.de/Viewpoint/mediaup.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://gitup.uni-potsdam.de/" title="Git.UP"><img src="https://mailup.uni-potsdam.de/SkinFiles/uni-potsdam.de/Viewpoint/gitup.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://openup.uni-potsdam.de/" title="Open.UP"><img src="https://www.iconarchive.com/download/i107859/google/noto-emoji-objects/62859-open-book.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://umfragenup.uni-potsdam.de/" title="Umfragen.UP"><img src="https://www.iconarchive.com/download/i6196/custom-icon-design/pretty-office-5/surveys.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://rdmo.uni-potsdam.de/" title="Rdmo.UP"><img src="https://www.iconarchive.com/download/i18744/iconshock/real-vista-project-managment/data-management.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://mobileup.uni-potsdam.de/" title="Mobile.UP"><img src="https://www.iconarchive.com/download/i68242/ahdesign91/icloud/Mobile-Device.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://cert-manager.com/customer/DFN/ssl/uni-potsdam/login" title="Cert.UP"><img src="https://www.iconarchive.com/download/i105123/papirus-team/papirus-mimetypes/app-pkix-cert.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://puls.uni-potsdam.de/" title="Puls.UP"><img src="https://www.iconarchive.com/download/i75996/martz90/circle-addon1/pulse.128.png"/></a>
+        </li>
+        <li>
+          <a class="link" href="https://www.uni-potsdam.de/de/" title="Www.UP"><img src="https://www.uni-potsdam.de/fileadmin/projects/zim/migrated_contents/Unilogo_01.jpg"/></a>
+        </li>
+      </ul>
+      <div class="text-container">
+        <span class="texthere"></span>
+      </div>
+    </div>
+
+    <script>
+        let content = "";
+
+        $('.link').hover(
+          function () {
+            content = $('.texthere').text();
+            $('.texthere').text($(this).attr("title"));
+          }, function () {
+            $('.texthere').text(content);
+          }
+        );
+    </script>
+  </body>
+</html>

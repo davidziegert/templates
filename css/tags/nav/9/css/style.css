@@ -1,0 +1,136 @@
+/* FONTS */
+
+html {
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ededed;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  position: relative;
+  list-style: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+
+  width: 30em;
+  height: 30em;
+
+  border: solid 4px #004260;
+  background-color: #ffffff;
+}
+
+.circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 4em;
+  height: 4em;
+
+  margin: -2em;
+}
+
+.circle-container > *:nth-of-type(1) {
+  transform: rotate(0deg) translate(15em) rotate(0deg);
+}
+.circle-container > *:nth-of-type(2) {
+  transform: rotate(24deg) translate(15em) rotate(-24deg);
+}
+.circle-container > *:nth-of-type(3) {
+  transform: rotate(48deg) translate(15em) rotate(-48deg);
+}
+.circle-container > *:nth-of-type(4) {
+  transform: rotate(72deg) translate(15em) rotate(-72deg);
+}
+.circle-container > *:nth-of-type(5) {
+  transform: rotate(96deg) translate(15em) rotate(-96deg);
+}
+.circle-container > *:nth-of-type(6) {
+  transform: rotate(120deg) translate(15em) rotate(-120deg);
+}
+.circle-container > *:nth-of-type(7) {
+  transform: rotate(144deg) translate(15em) rotate(-144deg);
+}
+.circle-container > *:nth-of-type(8) {
+  transform: rotate(168deg) translate(15em) rotate(-168deg);
+}
+.circle-container > *:nth-of-type(9) {
+  transform: rotate(192deg) translate(15em) rotate(-192deg);
+}
+.circle-container > *:nth-of-type(10) {
+  transform: rotate(216deg) translate(15em) rotate(-216deg);
+}
+.circle-container > *:nth-of-type(11) {
+  transform: rotate(240deg) translate(15em) rotate(-240deg);
+}
+.circle-container > *:nth-of-type(12) {
+  transform: rotate(264deg) translate(15em) rotate(-264deg);
+}
+.circle-container > *:nth-of-type(13) {
+  transform: rotate(288deg) translate(15em) rotate(-288deg);
+}
+.circle-container > *:nth-of-type(14) {
+  transform: rotate(312deg) translate(15em) rotate(-312deg);
+}
+.circle-container > *:nth-of-type(15) {
+  transform: rotate(336deg) translate(15em) rotate(-336deg);
+}
+
+.circle-container img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  border: solid 2px #004260;
+  transition: 0.15s;
+  background-color: #ffffff;
+}
+
+.circle-container img:hover {
+  filter: grayscale(0);
+}
+
+.text-container {
+  position: absolute;
+  z-index: 111;
+  list-style: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+
+  width: 20em;
+  height: 20em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texthere {
+    font-size: 2rem;
+    color: #004260;
+}
