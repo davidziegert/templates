@@ -1,4 +1,0 @@
-Hello! Welcome to lesson_9.txt
-This file is for testing purposes.
-Good Luck!New content (same line)!
-New content (new line)!
