@@ -1,0 +1,87 @@
+/* THEME */
+
+:root {
+    --background-color: #ffffff;
+    --foreground-color: #000000;
+    --shadow-color: #808080;
+    --primary-color: #00a0f9;
+    --secondary-color: #005e93;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    text-align: center;
+}
+
+/* ELEMENTS */
+
+.error-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.error-image {
+    max-height: 40vh !important;
+    width: auto;
+}
+
+.error-status {
+    font-weight: 700;
+}
+
+.error-link {
+    border: 2px solid currentColor;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.error-link:hover {
+    opacity: 0.5;
+}
+
+/* COLORS */
+
+html {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+.error-title {
+    color: var(--primary-color);
+}
+
+.error-link {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}

@@ -1,0 +1,82 @@
+/* THEMES */
+
+:root {
+    --background-color: #060d36;
+    --foreground-color: #eaebef;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+/* HEADER */
+
+header section {
+    height: 100vh;
+}
+
+header .galaxy-back {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+header .galaxy-title {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-all;
+    font-size: 4rem;
+    z-index: 2;
+}
+
+header .galaxy-front {
+    height: 15vh;
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    z-index: 3;
+}
+
+/* MAIN */
+
+main section {
+    height: 100vh;
+    padding: 4rem;
+}

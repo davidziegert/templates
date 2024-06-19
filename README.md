@@ -2,7 +2,11 @@
 # :rocket: Templates
 
 - HTML & CSS
-    - [Project](/templates/html/xyz/)
+  - [elements](/templates/html/elements/)
+  - [errors](/templates/html/errors/)
+  - [mockups](/templates/html/mockups/)
+  - [skeleton](/templates/html/skeleton/)
+  - [tags](/templates/html/tags/)
 - JavaScript
     - [Project](/templates/js/xyz/)
 - Node.js
