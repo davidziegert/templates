@@ -8,7 +8,12 @@
   - [skeleton](/templates/html/skeleton/)
   - [tags](/templates/html/tags/)
 - JavaScript
-    - [Project](/templates/js/xyz/)
+  - [ColorSwitch](/templates/js/ColorSwitch/)
+  - [Counter](/templates/js/Counter/)
+  - [RSSFeed](/templates/js/RSSFeed/)
+  - [Timer](/templates/js/Timer/)
+  - [Translator](/templates/js/Translator/)
+  - [XMLBlog](/templates/js/XMLBlog/)
 - Node.js
     - [Project](/templates/nodejs/xyz/)
 - PHP
