@@ -1,0 +1,79 @@
+/* THEME */
+
+:root {
+    --background-color: #121212;
+    --foreground-color: #f1f1f1;
+    --shadow-color: #323232;
+    --primary-color: #DB61A2;
+    --secondary-color: #9a2362;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+main section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.countdown .timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.countdown .timer span:first-of-type {
+    font-size: 2rem;
+}
+
+.countdown .seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

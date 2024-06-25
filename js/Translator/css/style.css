@@ -1,0 +1,102 @@
+/* THEME */
+
+:root {
+    --background-color: #0a0a0a;
+    --foreground-color: #e9e9e9;
+    --shadow-color: #2a2a2a;
+    --primary-color: #388BFD;
+    --secondary-color: #024db4;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 65vw, 70rem);
+    margin: auto;
+}
+
+main section {
+    padding: 1rem;
+}
+
+/* TRANSLATOR */
+
+.input {
+    background-color: var(--shadow-color);
+    color: var(--foreground-color);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.options {
+    background-color: var(--shadow-color);
+    color: var(--foreground-color);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.output {
+    background-color: var(--shadow-color);
+    color: var(--foreground-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.input button,
+.output button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.input select,
+.output select {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.options button {
+    background-color: var(--secondary-color);
+    color: var(--foreground-color);
+}

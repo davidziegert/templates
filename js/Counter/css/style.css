@@ -1,0 +1,95 @@
+/* THEMES */
+
+:root {
+    --background-color: #121212;
+    --foreground-color: #f1f1f1;
+    --youtube-color: #FF0000;
+    --twitch-color: #6441a5;
+    --instagram-color: #E1306C;
+    --twitter-color: #1DA1F2;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    font-family: system-ui;
+    line-height: 1.4;
+}
+
+main h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: clamp(16rem, 80vw, 70rem);
+    margin: auto;
+}
+
+/* MAIN */
+
+main section {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* BOARD */
+
+.follower-board {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.follower-board .follower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border: 1px solid currentColor;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.follower-board .follower:nth-of-type(1) {
+    background-color: var(--youtube-color);
+}
+
+.follower-board .follower:nth-of-type(2) {
+    background-color: var(--twitch-color);
+}
+
+.follower-board .follower:nth-of-type(3) {
+    background-color: var(--instagram-color);
+}
+
+.follower-board .follower:nth-of-type(4) {
+    background-color: var(--twitter-color);
+}
