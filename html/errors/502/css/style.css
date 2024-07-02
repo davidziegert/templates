@@ -1,11 +1,23 @@
-/* THEME */
+/* BROWSER-MODE */
 
-:root {
-    --background-color: #ffffff;
-    --foreground-color: #000000;
-    --shadow-color: #808080;
-    --primary-color: #00a0f9;
-    --secondary-color: #005e93;
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #eeeeee;
+        --foreground-color: #222831;
+        --shadow-color: #393e46;
+        --primary-color: #0092ca;
+        --secondary-color: #004864;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #303841;
+        --foreground-color: #d3d6db;
+        --shadow-color: #3a4750;
+        --primary-color: #be3144;
+        --secondary-color: #dc7986;
+    }
 }
 
 /* FONTS */

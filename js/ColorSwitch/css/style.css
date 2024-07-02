@@ -1,15 +1,15 @@
 /* THEME */
 
 :root {
-    --light-background-color: #f1f1f1;
-    --light-foreground-color: #121212;
-    --light-primary-color: #388BFD;
-    --light-secondary-color: #024db4;
+    --light-background-color: #eeeeee;
+    --light-foreground-color: #222831;
+    --light-primary-color: #0092ca;
+    --light-secondary-color: #004864;
 
-    --dark-background-color: #121212;
-    --dark-foreground-color: #f1f1f1;
-    --dark-primary-color: #A371F7;
-    --dark-secondary-color: #5a0cdc;
+    --dark-background-color: #303841;
+    --dark-foreground-color: #d3d6db;
+    --dark-primary-color: #be3144;
+    --dark-secondary-color: #dc7986;
 
     --special-background-color: #15202b;
     --special-foreground-color: #FFFFFF;

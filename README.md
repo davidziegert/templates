@@ -1,4 +1,5 @@
 <!-- TEMPLATES -->
+
 # :rocket: Templates
 
 - HTML & CSS
@@ -8,96 +9,49 @@
   - [skeleton](/templates/html/skeleton/)
   - [tags](/templates/html/tags/)
 - JavaScript
-  - [ColorSwitch](/templates/js/ColorSwitch/)
-  - [Counter](/templates/js/Counter/)
-  - [RSSFeed](/templates/js/RSSFeed/)
-  - [Timer](/templates/js/Timer/)
-  - [Translator](/templates/js/Translator/)
-  - [XMLBlog](/templates/js/XMLBlog/)
+  - [colorswitch](/templates/js/colorswitch/)
+  - [counter](/templates/js/counter/)
+  - [rssfeed](/templates/js/rssfeed/)
+  - [timer](/templates/js/timer/)
+  - [translator](/templates/js/translator/)
+  - [xmlblog](/templates/js/xmlblog/)
 - Node.js
-    - [Project](/templates/nodejs/xyz/)
+  - [Project](/templates/nodejs/xyz/)
 - PHP
-    - [Project](/templates/php/xyz/)
+  - [Project](/templates/php/xyz/)
 - Python
-    - [Project](/templates/python/xyz/)
+  - [Project](/templates/python/xyz/)
 - C#
-    - [Project](/templates/csharp/xyz/)
+  - [Project](/templates/csharp/xyz/)
 - WordPress
-    - [Project](/templates/wordpress/xyz/)
+  - [Project](/templates/wordpress/xyz/)
 - Typo3
-    - [Project](/templates/typo3/xyz/)
+  - [Project](/templates/typo3/xyz/)
 - Grav
-    - [Project](/templates/grav/xyz/)
+  - [Project](/templates/grav/xyz/)
 
 <!-- THEMES -->
+
 # :chocolate_bar: Themes
 
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Background Color  | ![#121212](https://via.placeholder.com/10/121212?text=+) #121212 |
-| Shadow Color      | ![#323232](https://via.placeholder.com/10/323232?text=+) #323232 |
-| Foreground Color  | ![#f1f1f1](https://via.placeholder.com/10/f1f1f1?text=+) #f1f1f1 |
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Background Color | ![#eeeeee](https://via.placeholder.com/10/eeeeee?text=+) #eeeeee |
+| Shadow Color     | ![#393e46](https://via.placeholder.com/10/393e46?text=+) #393e46 |
+| Foreground Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
+| Primary Color    | ![#0092ca](https://via.placeholder.com/10/0092ca?text=+) #0092ca |
+| Secondary Color  | ![#004864](https://via.placeholder.com/10/004864?text=+) #004864 |
 
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Background Color  | ![#15202b](https://via.placeholder.com/10/15202b?text=+) #15202b |
-| Shadow Color      | ![#2a4056](https://via.placeholder.com/10/2a4056?text=+) #2a4056 |
-| Foreground Color  | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Background Color  | ![#18191a](https://via.placeholder.com/10/18191a?text=+) #18191a |
-| Shadow Color      | ![#37393b](https://via.placeholder.com/10/37393b?text=+) #37393b |
-| Foreground Color  | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Background Color  | ![#0a0a0a](https://via.placeholder.com/10/0a0a0a?text=+) #0a0a0a |
-| Shadow Color      | ![#2a2a2a](https://via.placeholder.com/10/2a2a2a?text=+) #2a2a2a |
-| Foreground Color  | ![#e9e9e9](https://via.placeholder.com/10/e9e9e9?text=+) #e9e9e9 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Background Color  | ![#181818](https://via.placeholder.com/10/181818?text=+) #181818 |
-| Shadow Color      | ![#383838](https://via.placeholder.com/10/383838?text=+) #383838 |
-| Foreground Color  | ![#f7f7f7](https://via.placeholder.com/10/f7f7f7?text=+) #f7f7f7 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#2EA043](https://via.placeholder.com/10/2EA043?text=+) #2EA043 |
-| Secondary Color   | ![#123d1a](https://via.placeholder.com/10/123d1a?text=+) #123d1a |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#BB800A](https://via.placeholder.com/10/BB800A?text=+) #BB800A |
-| Secondary Color   | ![#422d04](https://via.placeholder.com/10/422d04?text=+) #422d04 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#DB6D28](https://via.placeholder.com/10/DB6D28?text=+) #DB6D28 |
-| Secondary Color   | ![#713713](https://via.placeholder.com/10/713713?text=+) #713713 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#F85149](https://via.placeholder.com/10/F85149?text=+) #F85149 |
-| Secondary Color   | ![#ba0f07](https://via.placeholder.com/10/ba0f07?text=+) #ba0f07 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#DB61A2](https://via.placeholder.com/10/DB61A2?text=+) #DB61A2 |
-| Secondary Color   | ![#9a2362](https://via.placeholder.com/10/9a2362?text=+) #9a2362 |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#A371F7](https://via.placeholder.com/10/A371F7?text=+) #A371F7 |
-| Secondary Color   | ![#5a0cdc](https://via.placeholder.com/10/5a0cdc?text=+) #5a0cdc |
-
-| Color             | Hex                                                              |
-| ----------------- | ---------------------------------------------------------------- |
-| Primary Color     | ![#388BFD](https://via.placeholder.com/10/388BFD?text=+) #388BFD |
-| Secondary Color   | ![#024db4](https://via.placeholder.com/10/024db4?text=+) #024db4 |
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Background Color | ![#303841](https://via.placeholder.com/10/303841?text=+) #303841 |
+| Shadow Color     | ![#3a4750](https://via.placeholder.com/10/3a4750?text=+) #3a4750 |
+| Foreground Color | ![#d3d6db](https://via.placeholder.com/10/d3d6db?text=+) #d3d6db |
+| Primary Color    | ![#be3144](https://via.placeholder.com/10/be3144?text=+) #be3144 |
+| Secondary Color  | ![#dc7986](https://via.placeholder.com/10/dc7986?text=+) #dc7986 |
 
 <!-- BOOKMARKS -->
+
 # :bookmark: Bookmarks
 
 <details>

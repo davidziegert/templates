@@ -1,12 +1,25 @@
-/* THEMES */
+/* BROWSER-MODE */
 
-:root {
-    --background-color: #121212;
-    --foreground-color: #f1f1f1;
-    --youtube-color: #FF0000;
-    --twitch-color: #6441a5;
-    --instagram-color: #E1306C;
-    --twitter-color: #1DA1F2;
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #eeeeee;
+        --foreground-color: #222831;
+        --youtube-color: #FF0000;
+        --twitch-color: #6441a5;
+        --instagram-color: #E1306C;
+        --twitter-color: #1DA1F2;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #303841;
+        --foreground-color: #d3d6db;
+        --youtube-color: #FF0000;
+        --twitch-color: #6441a5;
+        --instagram-color: #E1306C;
+        --twitter-color: #1DA1F2;
+    }
 }
 
 /* FONTS */
