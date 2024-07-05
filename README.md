@@ -24,7 +24,8 @@
 - C#
   - [Project](/templates/csharp/xyz/)
 - WordPress
-  - [Project](/templates/wordpress/xyz/)
+  - [Classic Blog](/templates/wordpress/wp_classic_blog/)
+  - [Classic Site](/templates/wordpress/wp_classic_complex/)
 - Typo3
   - [Project](/templates/typo3/xyz/)
 - Grav

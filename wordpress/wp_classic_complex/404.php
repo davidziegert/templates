@@ -8,11 +8,11 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="<?php insert_author(); ?>">
+    <meta name="author" content="404">
     <meta name="description" content="<?php insert_meta_description(); ?>">
     <meta name="keywords" content="">
 
-    <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+    <title>404 | <?php bloginfo('name'); ?></title>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?php the_title(); ?>">
@@ -41,42 +41,11 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        <?php include 'header.php'; ?>
-
-        <!-- Nav -->
-        <?php include 'nav.php'; ?>
-
-        <!-- Main -->
-        <main>
-            <section>
-                <!-- If Content exists then post -->
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article class="post-single">
-                    <!-- Post-Title -->
-                    <h1><?php the_title(); ?></h1>
-                    <!-- Post-Content -->
-                    <?php the_content(); ?>
-                    <!-- Post-Last-Update -->
-                    <p class="post-update">Last update: <?php the_modified_date() ?></p>
-                    <!-- Post-Category -->
-                    <p class="post-category">Category: <?php the_category(', '); ?></p>
-                </article>
-                <?php endwhile;
-                endif; ?>
-            </section>
-        </main>
-
-        <!-- Sidebar -->
-        <?php include 'sidebar.php'; ?>
-
-        <!-- Footer -->
-        <?php include 'footer.php'; ?>
+    <div class="error">
+        <h1>404 - Error</h1>
+        <p>Sorry, but we can't find the page you are looking for.</p>
+        <a href="<?php echo home_url(); ?>" rel="nofollow">Go Back</a>
     </div>
-
-    <!-- Scripts -->
-    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/script.js"></script>
 
     <!-- WordPress-Specific-Elements -->
     <?php wp_footer(); ?>

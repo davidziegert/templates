@@ -12,7 +12,7 @@
     <meta name="description" content="<?php insert_meta_description(); ?>">
     <meta name="keywords" content="">
 
-    <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+    <title>Search | <?php bloginfo('name'); ?></title>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?php the_title(); ?>">
@@ -51,20 +51,38 @@
         <!-- Main -->
         <main>
             <section>
-                <!-- If Content exists then post -->
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article class="post-single">
-                    <!-- Post-Title -->
-                    <h1><?php the_title(); ?></h1>
-                    <!-- Post-Content -->
-                    <?php the_content(); ?>
-                    <!-- Post-Last-Update -->
-                    <p class="post-update">Last update: <?php the_modified_date() ?></p>
-                    <!-- Post-Category -->
-                    <p class="post-category">Category: <?php the_category(', '); ?></p>
-                </article>
-                <?php endwhile;
-                endif; ?>
+                <div class="row">
+                    <!-- Searchform -->
+                    <?php get_search_form(); ?>
+                </div>
+                <div class="row search-wrapper">
+                    <div class="search-query">
+                        <!-- Print Search-Term -->
+                        <p>Search results for: <strong><?php echo $s ?></strong></p>
+                    </div>
+                    <?php if (have_posts()) : ?>
+                    <!-- If have search match -->
+                    <div class="search-results">
+                        <!-- Loop prints all Sites and Post including the Search-Term -->
+                        <?php $i = 1;
+                            while (have_posts()) : the_post(); ?>
+                        <details>
+                            <!-- Title of Site or Post -->
+                            <summary><?php the_title(); ?></summary>
+                            <!-- Trimmed (20) Content of Post with Link -->
+                            <p><?php echo wp_trim_words(get_the_content(), 20); ?> | <a
+                                    href="<?php the_permalink(); ?>">read more</a></p>
+                        </details>
+                        <?php $i++;
+                            endwhile; ?>
+                    </div>
+                    <?php else : ?>
+                    <div class="search-fail">
+                        <!-- If no match found -->
+                        <p>Sorry, nothing found matching your search criteria!</p>
+                    </div>
+                    <?php endif; ?>
+                </div>
             </section>
         </main>
 

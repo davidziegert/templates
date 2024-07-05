@@ -12,7 +12,7 @@
     <meta name="description" content="<?php insert_meta_description(); ?>">
     <meta name="keywords" content="">
 
-    <title><?php the_title(); ?> | <?php bloginfo('name'); ?></title>
+    <title>Welcome! | <?php bloginfo('name'); ?></title>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="<?php the_title(); ?>">
@@ -41,42 +41,16 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        <?php include 'header.php'; ?>
+    <div class="front">
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <h1><?php the_title(); ?></h1>
+        <?php the_content(); ?>
+        <?php endwhile;
+        endif; ?>
 
-        <!-- Nav -->
-        <?php include 'nav.php'; ?>
-
-        <!-- Main -->
-        <main>
-            <section>
-                <!-- If Content exists then post -->
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article class="post-single">
-                    <!-- Post-Title -->
-                    <h1><?php the_title(); ?></h1>
-                    <!-- Post-Content -->
-                    <?php the_content(); ?>
-                    <!-- Post-Last-Update -->
-                    <p class="post-update">Last update: <?php the_modified_date() ?></p>
-                    <!-- Post-Category -->
-                    <p class="post-category">Category: <?php the_category(', '); ?></p>
-                </article>
-                <?php endwhile;
-                endif; ?>
-            </section>
-        </main>
-
-        <!-- Sidebar -->
-        <?php include 'sidebar.php'; ?>
-
-        <!-- Footer -->
-        <?php include 'footer.php'; ?>
+        <!-- Link to Random Page -->
+        <?php insert_random_link() ?>
     </div>
-
-    <!-- Scripts -->
-    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/script.js"></script>
 
     <!-- WordPress-Specific-Elements -->
     <?php wp_footer(); ?>

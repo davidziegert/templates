@@ -49,26 +49,9 @@
         <?php include 'nav.php'; ?>
 
         <!-- Main -->
-        <main>
-            <section>
-                <!-- If Content exists then post -->
-                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <article class="post-single">
-                    <!-- Post-Title -->
-                    <h1><?php the_title(); ?></h1>
-                    <!-- Post-Content -->
-                    <?php the_content(); ?>
-                    <!-- Post-Last-Update -->
-                    <p class="post-update">Last update: <?php the_modified_date() ?></p>
-                    <!-- Post-Category -->
-                    <p class="post-category">Category: <?php the_category(', '); ?></p>
-                </article>
-                <?php endwhile;
-                endif; ?>
-            </section>
-        </main>
+        <?php include 'main.php'; ?>
 
-        <!-- Sidebar -->
+        <!-- Aside -->
         <?php include 'sidebar.php'; ?>
 
         <!-- Footer -->
