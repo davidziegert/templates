@@ -128,12 +128,12 @@ nav .search-menu {
 
 nav .search-menu input {
   padding: 0.5rem;
-  width: 80%;
+  width: 75%;
   border: 1px solid currentColor;
 }
 
 nav .search-menu button {
-  width: 25%;
+  width: 25%;%;
   text-align: center;
   cursor: pointer;
   border: 1px solid currentColor;

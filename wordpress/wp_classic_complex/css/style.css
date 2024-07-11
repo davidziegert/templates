@@ -507,7 +507,7 @@ footer {
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 0;
   }
 
@@ -607,7 +607,7 @@ footer {
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 0;
   }
 
@@ -703,7 +703,7 @@ footer {
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 0;
   }
 
@@ -799,7 +799,7 @@ footer {
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     padding-right: 0;
   }
 
@@ -853,7 +853,7 @@ footer {
 
   main .search-menu input {
     padding: 0.5rem;
-    width: 80%;
+    width: 75%;
     border: 1px solid currentColor;
   }
 
@@ -907,7 +907,7 @@ footer {
 
   main .search-menu input {
     padding: 0.5rem;
-    width: 80%;
+    width: 75%;
     border: 1px solid currentColor;
   }
 
@@ -961,7 +961,7 @@ footer {
 
   main .search-menu input {
     padding: 0.5rem;
-    width: 80%;
+    width: 75%;
     border: 1px solid currentColor;
   }
 
@@ -1015,7 +1015,7 @@ footer {
 
   main .search-menu input {
     padding: 0.5rem;
-    width: 80%;
+    width: 75%;
     border: 1px solid currentColor;
   }
 

@@ -26,6 +26,7 @@
 - WordPress
   - [Classic Blog](/templates/wordpress/wp_classic_blog/)
   - [Classic Site](/templates/wordpress/wp_classic_complex/)
+  - [Classic CRC1287](/templates/wordpress/wp_classic_crc1287/)
 - Typo3
   - [Project](/templates/typo3/xyz/)
 - Grav
