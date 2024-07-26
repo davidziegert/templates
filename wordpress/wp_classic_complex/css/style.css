@@ -1,23 +1,14 @@
-/* BROWSER-MODE */
+/* THEME */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: #ffffff;
-    --foreground-color: #222222;
-    --shadow-color: #bfbfbf;
-    --primary-color: #4a8bdf;
-    --secondary-color: #1d59a6;
-  }
-}
+:root {
+  --background-color: #231f20;
+  --foreground-color: #efefef;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #03131a;
-    --foreground-color: #f8f8f8;
-    --shadow-color: #4e595e;
-    --primary-color: #a7ff37;
-    --secondary-color: #d4ff9d;
-  }
+  --shadow-1-color: #646368;
+  --shadow-2-color: #b3aea8;
+
+  --primary-color: #ff5001;
+  --secondary-color: #ff9667;
 }
 
 /* FONTS */
@@ -135,7 +126,7 @@ footer {
 
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto auto 1fr auto;
     gap: 0px 2rem;
     grid-template-areas:
       "header header"
@@ -662,8 +653,8 @@ footer {
     display: block;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .menu-item-has-children > a {
@@ -696,15 +687,15 @@ footer {
   nav .menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 0;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .active > .sub-menu {
@@ -758,8 +749,8 @@ footer {
     display: block;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .menu-item-has-children > a {
@@ -792,15 +783,15 @@ footer {
   nav .menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .sub-menu .sub-menu .menu-item a {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 0;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
   }
 
   nav .menu .active > .sub-menu {
@@ -1356,7 +1347,6 @@ html {
   background-color: var(--background-color);
   color: var(--foreground-color);
 }
-
 main h1,
 main h2,
 main h3,
@@ -1386,7 +1376,7 @@ header .header-description {
 main .search-menu button {
   background-color: var(--primary-color);
   color: var(--background-color);
-  border: 1px solid var(--foreground-color);
+  border: 1px solid var(--shadow-1-color);
 }
 
 main a,
@@ -1402,10 +1392,11 @@ main .search-query {
 }
 
 main .search-results details > summary {
-  background-color: var(--secondary-color);
-  color: var(--background-color);
+  background-color: var(--shadow-1-color);
+  border: 1px solid var(--shadow-2-color);
 }
 
 aside .post-item {
-  background-color: var(--shadow-color);
+  background-color: var(--shadow-1-color);
+  border: 1px solid var(--shadow-2-color);
 }

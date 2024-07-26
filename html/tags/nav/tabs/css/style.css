@@ -1,123 +1,113 @@
-/* THEMES */
-
-:root {
-    --background-color: #f7f7f7;
-    --foreground-color: #181818;
-    --primary-color: #DB61A2;
-}
-
 /* FONTS */
 
 html {
-    font-size: calc(14px + 0.390625vw);
-    font-family: system-ui;
-    line-height: 1.4;
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
 }
 
 /* TAGS */
 
 html {
-    scroll-behavior: smooth;
-    background-color: var(--background-color);
-    color: var(--foreground-color);
+  scroll-behavior: smooth;
 }
 
 body {
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .wrapper {
-    min-height: 100vh;
-    width: 100vw;
-    margin: auto;
+  min-height: 100vh;
+  width: 100vw;
+  margin: auto;
 }
 
 /* NAV */
 
 nav {
-    background-color: var(--foreground-color);
-    color: var(--primary-color);
+  background-color: #000000;
+  color: #f05252;
 }
 
 nav section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 0 4rem;
-    padding-top: 2rem;
+  padding: 0 4rem;
+  padding-top: 2rem;
 }
 
 nav .nav-logo {
-    font-size: 1.75rem;
-    font-weight: bold;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 nav .nav-menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }
 
 nav .nav-menu a {
-    height: 4rem;
-    width: 5rem;
-    position: relative;
-    text-align: center;
-    cursor: pointer;
+  height: 4rem;
+  width: 5rem;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .nav-indicator {
-    height: 4rem;
-    width: 5rem;
-    position: absolute;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
+  height: 4rem;
+  width: 5rem;
+  position: absolute;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 
-    transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
 
-    background-color: var(--background-color);
+  background-color: #ffffff;
 }
 
 nav .nav-indicator::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -1rem;
-    height: 1rem;
-    width: 1rem;
-    border-bottom-right-radius: 1rem;
-    background-color: transparent;
-    box-shadow: 5px 5px 0 5px var(--background-color);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  height: 1rem;
+  width: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: transparent;
+  box-shadow: 5px 5px 0 5px #ffffff;
 }
 
 nav .nav-indicator::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: -1rem;
-    height: 1rem;
-    width: 1rem;
-    border-bottom-left-radius: 1rem;
-    background-color: transparent;
-    box-shadow: -5px 5px 0 5px var(--background-color);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -1rem;
+  height: 1rem;
+  width: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: transparent;
+  box-shadow: -5px 5px 0 5px #ffffff;
 }
 
 /* MAIN */
 
 main section {
-    padding: 2rem 4rem;
+  padding: 2rem 4rem;
 }

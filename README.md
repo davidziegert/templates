@@ -27,6 +27,7 @@
   - [Classic Blog](/templates/wordpress/wp_classic_blog/)
   - [Classic Site](/templates/wordpress/wp_classic_complex/)
   - [Classic CRC1287](/templates/wordpress/wp_classic_crc1287/)
+  - [FSE Blog](/templates/wordpress/wp_block_fse_blog/)
 - Typo3
   - [Project](/templates/typo3/xyz/)
 - Grav
@@ -38,19 +39,39 @@
 
 | Color            | Hex                                                              |
 | ---------------- | ---------------------------------------------------------------- |
-| Background Color | ![#eeeeee](https://via.placeholder.com/10/eeeeee?text=+) #eeeeee |
-| Shadow Color     | ![#393e46](https://via.placeholder.com/10/393e46?text=+) #393e46 |
-| Foreground Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Primary Color    | ![#0092ca](https://via.placeholder.com/10/0092ca?text=+) #0092ca |
-| Secondary Color  | ![#004864](https://via.placeholder.com/10/004864?text=+) #004864 |
+| Background Color | ![#fefefe](https://via.placeholder.com/10/fefefe?text=+) #fefefe |
+| Shadow-1 Color   | ![#b2b2b2](https://via.placeholder.com/10/b2b2b2?text=+) #b2b2b2 |
+| Shadow-2 Color   | ![#656565](https://via.placeholder.com/10/656565?text=+) #656565 |
+| Foreground Color | ![#181818](https://via.placeholder.com/10/181818?text=+) #181818 |
+| Primary Color    | ![#ab0032](https://via.placeholder.com/10/ab0032?text=+) #ab0032 |
+| Secondary Color  | ![#e00f41](https://via.placeholder.com/10/e00f41?text=+) #e00f41 |
 
 | Color            | Hex                                                              |
 | ---------------- | ---------------------------------------------------------------- |
-| Background Color | ![#303841](https://via.placeholder.com/10/303841?text=+) #303841 |
-| Shadow Color     | ![#3a4750](https://via.placeholder.com/10/3a4750?text=+) #3a4750 |
-| Foreground Color | ![#d3d6db](https://via.placeholder.com/10/d3d6db?text=+) #d3d6db |
-| Primary Color    | ![#be3144](https://via.placeholder.com/10/be3144?text=+) #be3144 |
-| Secondary Color  | ![#dc7986](https://via.placeholder.com/10/dc7986?text=+) #dc7986 |
+| Background Color | ![#212121](https://via.placeholder.com/10/212121?text=+) #212121 |
+| Shadow-1 Color   | ![#3b3b3b](https://via.placeholder.com/10/3b3b3b?text=+) #3b3b3b |
+| Shadow-2 Color   | ![#6e6e6e](https://via.placeholder.com/10/6e6e6e?text=+) #6e6e6e |
+| Foreground Color | ![#ededed](https://via.placeholder.com/10/ededed?text=+) #ededed |
+| Primary Color    | ![#ec5367](https://via.placeholder.com/10/ec5367?text=+) #ec5367 |
+| Secondary Color  | ![#f1818b](https://via.placeholder.com/10/f1818b?text=+) #f1818b |
+
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Background Color | ![#282a36](https://via.placeholder.com/10/282a36?text=+) #282a36 |
+| Shadow-1 Color   | ![#44475a](https://via.placeholder.com/10/44475a?text=+) #44475a |
+| Shadow-2 Color   | ![#8be9fd](https://via.placeholder.com/10/8be9fd?text=+) #8be9fd |
+| Foreground Color | ![#f8f8f2](https://via.placeholder.com/10/f8f8f2?text=+) #f8f8f2 |
+| Primary Color    | ![#ffb86c](https://via.placeholder.com/10/ffb86c?text=+) #ffb86c |
+| Secondary Color  | ![#f1fa8c](https://via.placeholder.com/10/f1fa8c?text=+) #f1fa8c |
+
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Background Color | ![#231f20](https://via.placeholder.com/10/231f20?text=+) #231f20 |
+| Shadow-1 Color   | ![#646368](https://via.placeholder.com/10/646368?text=+) #646368 |
+| Shadow-2 Color   | ![#b3aea8](https://via.placeholder.com/10/b3aea8?text=+) #b3aea8 |
+| Foreground Color | ![#efefef](https://via.placeholder.com/10/efefef?text=+) #efefef |
+| Primary Color    | ![#ff5001](https://via.placeholder.com/10/ff5001?text=+) #ff5001 |
+| Secondary Color  | ![#ff9667](https://via.placeholder.com/10/ff9667?text=+) #ff9667 |
 
 <!-- BOOKMARKS -->
 

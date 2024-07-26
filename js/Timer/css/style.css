@@ -1,91 +1,95 @@
-/* BROWSER-MODE */
+/* THEME */
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #eeeeee;
-        --foreground-color: #222831;
-        --shadow-color: #393e46;
-        --primary-color: #0092ca;
-        --secondary-color: #004864;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #303841;
-        --foreground-color: #d3d6db;
-        --shadow-color: #3a4750;
-        --primary-color: #be3144;
-        --secondary-color: #dc7986;
-    }
+:root {
+  --background-color: #282a36;
+  --foreground-color: #f8f8f2;
+  --shadow-1-color: #44475a;
+  --shadow-2-color: #8be9fd;
+  --primary-color: #ffb86c;
+  --secondary-color: #f1fa8c;
 }
 
 /* FONTS */
 
 html {
-    font-size: calc(14px + 0.390625vw);
-    font-family: system-ui;
-    line-height: 1.4;
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
 }
 
 main h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 /* TAGS */
 
 html {
-    scroll-behavior: smooth;
-    background-color: var(--background-color);
-    color: var(--foreground-color);
+  scroll-behavior: smooth;
 }
 
 body {
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .wrapper {
-    height: 100vh;
-    width: 100vw;
-    margin: auto;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
 }
 
 main section {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .countdown {
-    width: 75%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .countdown .timer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .countdown .timer span:first-of-type {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .countdown .seperator {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COLORS */
+
+html {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+main h1 {
+  color: var(--primary-color);
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  color: var(--shadow-2-color);
 }

@@ -1,196 +1,217 @@
 /* THEME */
 
 :root {
-    --light-background-color: #eeeeee;
-    --light-foreground-color: #222831;
-    --light-primary-color: #0092ca;
-    --light-secondary-color: #004864;
+  --light-background-color: #fefefe;
+  --light-foreground-color: #181818;
+  --light-shadow-1-color: #b2b2b2;
+  --light-shadow-2-color: #656565;
+  --light-primary-color: #ab0032;
+  --light-secondary-color: #e00f41;
 
-    --dark-background-color: #303841;
-    --dark-foreground-color: #d3d6db;
-    --dark-primary-color: #be3144;
-    --dark-secondary-color: #dc7986;
+  --dark-background-color: #212121;
+  --dark-foreground-color: #ededed;
+  --dark-shadow-1-color: #3b3b3b;
+  --dark-shadow-2-color: #6e6e6e;
+  --dark-primary-color: #ec5367;
+  --dark-secondary-color: #f1818b;
 
-    --special-background-color: #15202b;
-    --special-foreground-color: #FFFFFF;
-    --special-primary-color: #ffb300;
-    --special-secondary-color: #bf8600;
+  --special-background-color: #282a36;
+  --special-foreground-color: #f8f8f2;
+  --special-shadow-1-color: #44475a;
+  --special-shadow-2-color: #8be9fd;
+  --special-primary-color: #ffb86c;
+  --special-secondary-color: #f1fa8c;
 }
 
 /* FONTS */
 
 html {
-    font-size: calc(14px + 0.390625vw);
-    font-family: system-ui;
-    line-height: 1.4;
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
 }
 
 h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
-/* TAGS */
-
-html {
-    scroll-behavior: smooth;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+/* GRID */
 
 body {
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .wrapper {
-    min-height: 100vh;
-    width: clamp(16rem, 75vw, 70rem);
-    margin: auto;
+  min-height: 100vh;
+  width: clamp(16rem, 75vw, 70rem);
+  margin: auto;
 }
 
 main section {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 2rem;
+main .grid {
+  padding: 1rem;
+  border: 1px solid currentColor;
 
-    padding: 2rem;
-    border: 2px solid currentColor;
-    border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
 }
 
-.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-select {
-    border: 1px solid currentColor;
-    border-radius: 10px;
+main select {
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
 }
 
 /* LIGHT */
 
 @media (prefers-color-scheme: light) {
-    body {
-        background-color: var(--light-background-color);
-        color: var(--light-foreground-color);
-    }
+  body {
+    background-color: var(--light-background-color);
+    color: var(--light-foreground-color);
+  }
 
-    h1 {
-        color: var(--light-primary-color);
-    }
+  h1 {
+    color: var(--light-primary-color);
+  }
 
-    h2 {
-        color: var(--light-secondary-color);
-    }
+  h2 {
+    color: var(--light-secondary-color);
+  }
 
-    .grid {
-        border: 2px solid var(--light-secondary-color);
-    }
+  .grid {
+    border: 1px solid var(--light-shadow-1-color);
+  }
+
+  main select {
+    background-color: var(--light-background-color);
+    color: var(--light-foreground-color);
+    border: 1px solid var(--light-shadow-1-color);
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23181818%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  }
 }
 
 html[data-theme="light"] {
-    body {
-        background-color: var(--light-background-color);
-        color: var(--light-foreground-color);
-    }
+  body {
+    background-color: var(--light-background-color);
+    color: var(--light-foreground-color);
+  }
 
-    h1 {
-        color: var(--light-primary-color);
-    }
+  h1 {
+    color: var(--light-primary-color);
+  }
 
-    h2 {
-        color: var(--light-secondary-color);
-    }
+  h2 {
+    color: var(--light-secondary-color);
+  }
 
-    .grid {
-        border: 2px solid var(--light-secondary-color);
-    }
+  .grid {
+    border: 1px solid var(--light-shadow-1-color);
+  }
+
+  main select {
+    background-color: var(--light-background-color);
+    color: var(--light-foreground-color);
+    border: 1px solid var(--light-shadow-1-color);
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23181818%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  }
 }
 
 /* DARK */
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--dark-background-color);
-        color: var(--dark-foreground-color);
-    }
+  body {
+    background-color: var(--dark-background-color);
+    color: var(--dark-foreground-color);
+  }
 
-    h1 {
-        color: var(--dark-primary-color);
-    }
+  h1 {
+    color: var(--dark-primary-color);
+  }
 
-    h2 {
-        color: var(--dark-secondary-color);
-    }
+  h2 {
+    color: var(--dark-secondary-color);
+  }
 
-    .grid {
-        border: 2px solid var(--dark-secondary-color);
-    }
+  .grid {
+    border: 1px solid var(--dark-shadow-1-color);
+  }
+
+  main select {
+    background-color: var(--dark-background-color);
+    color: var(--dark-foreground-color);
+    border: 1px solid var(--dark-shadow-1-color);
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ededed%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  }
 }
 
 html[data-theme="dark"] {
-    body {
-        background-color: var(--dark-background-color);
-        color: var(--dark-foreground-color);
-    }
+  body {
+    background-color: var(--dark-background-color);
+    color: var(--dark-foreground-color);
+  }
 
-    h1 {
-        color: var(--dark-primary-color);
-    }
+  h1 {
+    color: var(--dark-primary-color);
+  }
 
-    h2 {
-        color: var(--dark-secondary-color);
-    }
+  h2 {
+    color: var(--dark-secondary-color);
+  }
 
-    .grid {
-        border: 2px solid var(--dark-secondary-color);
-    }
+  .grid {
+    border: 1px solid var(--dark-shadow-1-color);
+  }
+
+  main select {
+    background-color: var(--dark-background-color);
+    color: var(--dark-foreground-color);
+    border: 1px solid var(--dark-shadow-1-color);
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23ededed%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  }
 }
 
 /* SPECIAL */
 
 html[data-theme="special"] {
-    body {
-        background-color: var(--special-background-color);
-        color: var(--special-foreground-color);
-    }
+  body {
+    background-color: var(--special-background-color);
+    color: var(--special-foreground-color);
+  }
 
-    h1 {
-        color: var(--special-primary-color);
-    }
+  h1 {
+    color: var(--special-primary-color);
+  }
 
-    h2 {
-        color: var(--special-secondary-color);
-    }
+  h2 {
+    color: var(--special-secondary-color);
+  }
 
-    .grid {
-        border: 2px solid var(--special-secondary-color);
-    }
+  .grid {
+    border: 1px solid var(--special-shadow-1-color);
+  }
+
+  main select {
+    background-color: var(--special-background-color);
+    color: var(--special-foreground-color);
+    border: 1px solid var(--special-shadow-1-color);
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f8f8f2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  }
 }

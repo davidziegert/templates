@@ -1,61 +1,58 @@
 /* FONTS */
 
 html {
-    font-size: calc(14px + 0.390625vw);
-    font-family: system-ui;
-    line-height: 1.4;
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
 }
 
 /* TAGS */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    height: auto;
-    width: 100vw;
-    overflow-x: hidden;
-    overflow-y: auto;
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .wrapper {
-    min-height: 100vh;
-    width: 100vw;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 /* HEADER */
 
 header section {
-    height: 100vh;
+  height: 100vh;
 }
 
 header .parallax-title {
-    width: 100%;
+  width: 100%;
 
-    position: fixed;
-    top: 2rem;
-    z-index: 1;
+  position: fixed;
+  top: 2rem;
+  z-index: 1;
 
-    text-transform: uppercase;
-    font-size: 4rem;
-    text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
 }
 
 header .parallax-front {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    object-fit: cover;
-    z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
 }
 
 /* MAIN */
 
 main section {
-    height: 100vh;
-    background: rgb(23, 91, 133);
-    background: linear-gradient(90deg, rgba(23, 91, 133, 1) 0%, rgba(18, 119, 167, 1) 100%);
-    color: ghostwhite;
-    padding: 4rem;
+  height: 100vh;
+  padding: 4rem;
 }
