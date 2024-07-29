@@ -1,0 +1,71 @@
+/* THEME */
+
+:root {
+  --background-color: #fcfdfe;
+  --foreground-color: #1f1d2a;
+  --shadow-1-color: #f1f6f9;
+  --shadow-2-color: #6a87a4;
+  --primary-color: #ff6347;
+  --secondary-color: #fcf1ef;
+}
+
+/* FONTS */
+
+html {
+  font-size: calc(14px + 0.390625vw);
+  font-family: system-ui;
+  line-height: 1.4;
+}
+
+main h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* TAGS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: clamp(16rem, 80vw, 70rem);
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* COLORS */
+
+html {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+main h1 {
+  color: var(--primary-color);
+}
+
+main .warning {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+main .success {
+  background-color: #bad8b6;
+  color: #01352c;
+}

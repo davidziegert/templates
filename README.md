@@ -18,7 +18,12 @@
 - Node.js
   - [Project](/templates/nodejs/xyz/)
 - PHP
-  - [Project](/templates/php/xyz/)
+  - [Project](/templates/php/cryptography/)
+  - [Project](/templates/php/formmailer/)
+  - [Project](/templates/php/imagegallery/)
+  - [Project](/templates/php/languagechanger/)
+  - [Project](/templates/php/ldap/)
+  - [Project](/templates/php/rssfeed/)
 - Python
   - [Project](/templates/python/xyz/)
 - C#
@@ -72,6 +77,15 @@
 | Foreground Color | ![#efefef](https://via.placeholder.com/10/efefef?text=+) #efefef |
 | Primary Color    | ![#ff5001](https://via.placeholder.com/10/ff5001?text=+) #ff5001 |
 | Secondary Color  | ![#ff9667](https://via.placeholder.com/10/ff9667?text=+) #ff9667 |
+
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Background Color | ![#fcfdfe](https://via.placeholder.com/10/fcfdfe?text=+) #fcfdfe |
+| Shadow-1 Color   | ![#f1f6f9](https://via.placeholder.com/10/f1f6f9?text=+) #f1f6f9 |
+| Shadow-2 Color   | ![#6a87a4](https://via.placeholder.com/10/6a87a4?text=+) #6a87a4 |
+| Foreground Color | ![#1f1d2a](https://via.placeholder.com/10/1f1d2a?text=+) #1f1d2a |
+| Primary Color    | ![#ff6347](https://via.placeholder.com/10/ff6347?text=+) #ff6347 |
+| Secondary Color  | ![#fcf1ef](https://via.placeholder.com/10/fcf1ef?text=+) #fcf1ef |
 
 <!-- BOOKMARKS -->
 
