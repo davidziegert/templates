@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "66ab86a6acd9eba5a041d879"
+  },
+  "title": "The Godfather: Part II",
+  "year": 1974,
+  "description": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+  "createdAt": {
+    "$date": "2024-08-01T12:59:18.057Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T12:59:18.057Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab86beacd9eba5a041d87c"
+  },
+  "title": "Il no bueno",
+  "year": 2000,
+  "description": "A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.",
+  "createdAt": {
+    "$date": "2024-08-01T12:59:42.292Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T12:59:42.292Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab86ddacd9eba5a041d87f"
+  },
+  "title": "Pups Fiction",
+  "year": 1999,
+  "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+  "createdAt": {
+    "$date": "2024-08-01T13:00:13.281Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T13:00:13.281Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab86ecacd9eba5a041d882"
+  },
+  "title": "Inception",
+  "year": 2010,
+  "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+  "createdAt": {
+    "$date": "2024-08-01T13:00:28.493Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T13:00:28.493Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab8701acd9eba5a041d885"
+  },
+  "title": "12 Angry Men",
+  "year": 1957,
+  "description": "The film tells the story of a jury of 12 men as they deliberate the conviction or acquittal of a teenager charged with murder on the basis of reasonable doubt.",
+  "createdAt": {
+    "$date": "2024-08-01T13:00:49.059Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T13:00:49.059Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab8719acd9eba5a041d888"
+  },
+  "title": "Nosferatu",
+  "year": 1922,
+  "description": "Murnau and starring Max Schreck as Count Orlok, a vampire who preys on the wife (Greta Schröder) of his estate agent (Gustav von Wangenheim) and brings the plague to their town.",
+  "createdAt": {
+    "$date": "2024-08-01T13:01:13.513Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T13:01:13.513Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ab874dacd9eba5a041d88b"
+  },
+  "title": "Metropolis",
+  "year": 1927,
+  "description": "Made in Germany during the Weimar period, Metropolis is set in a futuristic urban dystopia and follows the attempts of Freder, the wealthy son of the city master, and Maria, a saintly figure to the workers, to overcome the vast gulf separating the classes in their city and bring the workers together.",
+  "createdAt": {
+    "$date": "2024-08-01T13:02:05.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-01T13:02:05.465Z"
+  },
+  "__v": 0
+}]
