@@ -1,1 +1,14 @@
 {% extends 'partials/base.html.twig' %}
+
+{% block main %}
+	<section class="hero-section">
+		{% block hero %}
+			{% include 'modular/hero.html.twig' %}
+		{% endblock %}
+	</section>
+	<section>
+		{% block content %}
+			{{ page.content|raw }}
+		{% endblock content %}
+	</section>
+{% endblock main %}

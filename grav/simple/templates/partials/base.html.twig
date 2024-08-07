@@ -30,14 +30,15 @@
 
             <!-- Styles-Reference -->
             {% block stylesheets %}
-                {% do assets.addCss('theme://css/reset.css', 100) %}
-                {% do assets.addCss('theme://css/skeleton.css', 99) %}
-                {% do assets.addCss('theme://css/style.css', 98) %}
+                {% do assets.addCss('theme://css/reset.css', {'priority':100}) %}
+                {% do assets.addCss('theme://css/skeleton.css', {'priority':99}) %}
+                {% do assets.addCss('theme://css/style.css', {'priority':98}) %}
             {% endblock %}
 
             <!-- Scripts-Reference -->
             {% block javascripts %}
-                {% do assets.addJs('theme://js/jquery.min.js', 100) %}
+                {% do assets.addJs('theme://js/jquery.min.js', {'priority':100}) %}
+                {% do assets.addJs('theme://js/script.js', {'priority':99, 'group':'bottom'}) %}
             {% endblock %}
 
             {% block assets deferred %}
@@ -65,13 +66,13 @@
             </nav>
 
             <main>
-                <section>
-                    {% block body %}
+                {% block main %}
+                    <section>
                         {% block content %}
                             {{ page.content|raw }}
                         {% endblock content %}
-                    {% endblock body %}
-                </section>
+                    </section>
+                {% endblock main %}
             </main>
 
             <aside>
@@ -88,7 +89,9 @@
         </div>
 
         <!-- Scripts -->
-        <script src="./js/script.js"></script>
+        {% block bottom %}
+            {{ assets.js('bottom')|raw }}
+        {% endblock %}
     </body>
 </html>
 
