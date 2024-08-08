@@ -1,0 +1,37 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block main %}
+	<section>
+		{% block content %}
+
+			<h1>{{ page.title }}</h1>
+
+			{# blog post collection #}
+			{% set collection = page.collection() %}
+			{# date format #}
+			{% set dateformat = admin.page.dateformat ?: config.system.pages.dateformat.short ?: "F d, Y" %}
+			{# number of items per page #}
+			{% set limit = 5 %}
+			{# pagination #}
+			{% do paginate( collection, limit ) %}
+
+			<div class="blog-item-collection">
+				{% for item in collection %}
+					<div class="blog-item">
+						<span class="blog-item-date">{{ item.date|date(dateformat) }}</span>
+						<span class="blog-item-title">{{ item.title }}</span>
+						<span class="blog-item-link">
+							<a href="{{ item.url }}">read more</a>
+						</span>
+					</div>
+				{% endfor %}
+			</div>
+
+			{# include the pagination bar #}
+			{% if config.plugins.pagination.enabled and collection.params.pagination %}
+				{% include 'modular/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+			{% endif %}
+
+		{% endblock content %}
+	</section>
+{% endblock main %}
