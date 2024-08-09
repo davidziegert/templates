@@ -18,11 +18,23 @@
 			<div class="blog-item-collection">
 				{% for item in collection %}
 					<div class="blog-item">
-						<span class="blog-item-date">{{ item.date|date(dateformat) }}</span>
-						<span class="blog-item-title">{{ item.title }}</span>
-						<span class="blog-item-link">
-							<a href="{{ item.url }}">read more</a>
-						</span>
+						<a href="{{ item.url }}">
+
+							<span class="blog-item-date">{{ item.date|date(dateformat) }}</span>
+
+							{% set image = item.media.images|first %}
+
+							{# page media as thumbnail #}
+
+							{% if image %}
+								<span class="blog-item-image">{{ image.html|raw }}</span>
+							{% else %}
+								<span class="blog-item-image"><img src="https://placehold.co/400x225/" alt="No image found!" loading="lazy"></span>
+							{% endif %}
+
+							<span class="blog-item-title">{{ item.title }}</span>
+
+						</a>
 					</div>
 				{% endfor %}
 			</div>
