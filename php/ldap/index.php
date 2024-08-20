@@ -15,15 +15,15 @@ function ldap_Connection()
     try {
       if ($bind) {
         ldap_close($ldap_con);
-        print '<code class="success">Login successful!</code>';
+        print "<code class='success'>Login successful!</code>";
       } else {
-        print '<code class="warning">LDAP Error: ' . ldap_error($ldap_con) . '</code>';
+        print "<code class='warning'>LDAP Error: " . ldap_error($ldap_con) . "</code>";
       }
     } catch (Exception $e) {
-      print '<code class="warning">LDAP Error: ' . ldap_error($ldap_con) . "/" . $e->getMessage() . '</code>';
+      print "<code class='warning'>LDAP Error: " . ldap_error($ldap_con) . "/" . $e->getMessage() . "</code>";
     }
   } catch (Error $e) {
-    print '<code class="warning">Error: Something went completely wrong! - ' . $e->getMessage() . '</code>';
+    print "<code class='warning'>Error: Something went completely wrong! - " . $e->getMessage() . "</code>";
   }
 }
 ?>
@@ -43,13 +43,6 @@ function ldap_Connection()
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
   <title>ldap.tmp</title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />

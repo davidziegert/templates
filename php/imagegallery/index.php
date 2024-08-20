@@ -3,13 +3,13 @@ function load_Images()
 {
   $images = glob("images/*.webp");
 
-  print '<div class="gallery">';
+  print "<div class='gallery'>";
 
   foreach ($images as $image) {
-    print '<div class="item"><img src="' . $image . '" loading="lazy" alt="image loading"/></div>';
+    print "<div class='item'><img src='" . $image . "' loading='lazy' alt='image loading'/></div>";
   }
 
-  print '</div>';
+  print "</div>";
 }
 ?>
 
@@ -28,13 +28,6 @@ function load_Images()
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
   <title>imagegallery.tmp</title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />

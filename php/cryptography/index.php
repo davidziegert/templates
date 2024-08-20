@@ -1,21 +1,33 @@
 <?php
-function cryptography_OpenSSL()
+
+function Cryptography()
 {
-  $cleartxt = $_POST["input"];
+  $formInput = $_POST["input"];
 
-  $password = "Password123";
-  $vectorstring = "my_Vector_123";
+  $secretKey = "my_secret_key_123";
+  $secretVector = "my_secret_vector_123";
+  $encryptMethod = "AES-256-CBC";
 
-  $hashkey = hash("sha256", $password);
-  $initializationvector = substr(hash("sha256", $vectorstring), 0, 16);
+  function encrypt($input, $secretKey, $secretVector, $encryptMethod)
+  {
+    $key = hash("sha256", $secretKey);
+    $vector = substr(hash("sha256", $secretVector), 0, 16);
+    $result = openssl_encrypt($input, $encryptMethod, $key, 0, $vector);
+    return $result = base64_encode($result);
+  }
 
-  $encrypttxt = openssl_encrypt($cleartxt, "AES-256-CBC", $hashkey, 0, $initializationvector);
-  $decrypttxt = openssl_decrypt($encrypttxt, "AES-256-CBC", $hashkey, 0, $initializationvector);
+  function decrypt($input, $secretKey, $secretVector, $encryptMethod)
+  {
+    $key = hash("sha256", $secretKey);
+    $vector = substr(hash("sha256", $secretVector), 0, 16);
+    $result = openssl_decrypt(base64_decode($input), $encryptMethod, $key, 0, $vector);
+    return $result;
+  }
 
   echo "<code>";
-  echo "<p>Input: " . $cleartxt . "</p>";
-  echo "<p>Encrypted: " . $encrypttxt . "</p>";
-  echo "<p>Decrypted: " . $decrypttxt . "</p>";
+  echo "<p>Input: " . $formInput . "</p>";
+  echo "<p>Encrypted: " . encrypt($formInput, $secretKey, $secretVector, $encryptMethod) . "</p>";
+  echo "<p>Decrypted: " . decrypt(encrypt($formInput, $secretKey, $secretVector, $encryptMethod), $secretKey, $secretVector, $encryptMethod) . "</p>";
   echo "</code>";
 }
 ?>
@@ -35,13 +47,6 @@ function cryptography_OpenSSL()
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
   <title>cryptography.tmp</title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
@@ -67,8 +72,8 @@ function cryptography_OpenSSL()
         </fieldset>
       </form>
 
-      <?php if (isset($_POST['button'])) {
-        cryptography_OpenSSL();
+      <?php if (isset($_POST["button"])) {
+        Cryptography();
       } ?>
     </main>
   </div>

@@ -1,7 +1,7 @@
 <?php
-if (isset($_POST['button'])) {
-  $from_email = 'from@me.de'; //from mail, sender email address
-  $recipient_email = 'to@me.de'; //recipient email address
+if (isset($_POST["button"])) {
+  $from_email = "from@me.de"; //from mail, sender email address
+  $recipient_email = "to@me.de"; //recipient email address
 
   //Load POST data from HTML form
   $sender_name = $_POST["sender_name"]; //sender name
@@ -11,19 +11,19 @@ if (isset($_POST['button'])) {
 
   // Email message
   $data =
-    '
-            Name: ' . $sender_name . '
-            Email: ' . $reply_to_email . '
-            Subject: ' . $subject . '
-            Message: ' . $message . '
-        ';
+    "
+    Name: ' . $sender_name . '
+    Email: ' . $reply_to_email . '
+    Subject: ' . $subject . '
+    Message: '' . $message . '
+  ";
 
   //Get uploaded file data using $_FILES array
-  $tmp_name = $_FILES['attachment']['tmp_name']; // get the temporary file name of the file on the server
-  $name = $_FILES['attachment']['name']; // get the name of the file
-  $size = $_FILES['attachment']['size']; // get size of the file for size validation
-  $type = $_FILES['attachment']['type']; // get type of the file
-  $error = $_FILES['attachment']['error']; // get the error (if any)
+  $tmp_name = $_FILES["attachment"]["tmp_name"]; // get the temporary file name of the file on the server
+  $name = $_FILES["attachment"]["name"]; // get the name of the file
+  $size = $_FILES["attachment"]["size"]; // get size of the file for size validation
+  $type = $_FILES["attachment"]["type"]; // get type of the file
+  $error = $_FILES["attachment"]["error"]; // get the error (if any)
 
   //validate form field for attaching the file
   if ($error > 0) {
@@ -84,13 +84,6 @@ if (isset($_POST['button'])) {
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
   <title>formmailer.tmp</title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />

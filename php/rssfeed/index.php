@@ -6,15 +6,15 @@ function printRSSFeed($SELECTED_URL)
   $FEED = simplexml_load_file($URL);
 
   if (!$FEED) {
-    echo '<code class="warning">';
-    echo '<strong>An error occured while connecting to the RSS-Feed:</strong>';
-    echo '<br>';
+    echo "<code class='warning'>";
+    echo "<strong>An error occured while connecting to the RSS-Feed:</strong>";
+    echo "<br>";
     foreach (libxml_get_errors() as $ERROR) {
       echo $ERROR;
     }
-    echo '</code>';
+    echo "</code>";
     libxml_clear_errors();
-    exit;
+    exit();
   } else {
     foreach ($FEED->channel as $CHANNEL) {
       $TITLE = $CHANNEL->title;
@@ -22,9 +22,9 @@ function printRSSFeed($SELECTED_URL)
       $LINK = $CHANNEL->link;
       $LASTBUILDDATE = $CHANNEL->lastBuildDate;
 
-      echo '<h2>' . $TITLE . '</h2>';
-      echo '<em>Last update: ' . $LASTBUILDDATE . '</em>';
-      echo '<hr>';
+      echo "<h2>" . $TITLE . "</h2>";
+      echo "<em>Last update: " . $LASTBUILDDATE . "</em>";
+      echo "<hr>";
     }
 
     foreach ($FEED->channel->item as $ITEM) {
@@ -33,11 +33,11 @@ function printRSSFeed($SELECTED_URL)
       $LINK = $ITEM->link;
       $PUBDATE = $ITEM->pubDate;
 
-      echo '<div class="feed">';
-      echo '<h3><a href="' . $LINK . '" target="_blank">' . $TITLE . '</a></h3>';
-      echo '<em>Author: Unknown | ' . $PUBDATE . '</em>';
-      echo '<p>' . $DESCRIPTION . '</p>';
-      echo '</div>';
+      echo "<div class='feed'>";
+      echo "<h3><a href='" . $LINK . "' target='_blank'>" . $TITLE . "</a></h3>";
+      echo "<em>Author: Unknown | " . $PUBDATE . "</em>";
+      echo "<p>" . $DESCRIPTION . "</p>";
+      echo "</div>";
     }
   }
 }
@@ -58,13 +58,6 @@ function printRSSFeed($SELECTED_URL)
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
   <title>rssfeed.tmp</title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
@@ -96,9 +89,9 @@ function printRSSFeed($SELECTED_URL)
         </form>
       </div>
       <div class="feed-results">
-        <?php if (isset($_POST['btn-search'])) {
-          if (isset($_POST['sel-search'])) {
-            printRSSFeed($_POST['sel-search']);
+        <?php if (isset($_POST["btn-search"])) {
+          if (isset($_POST["sel-search"])) {
+            printRSSFeed($_POST["sel-search"]);
           }
         } ?>
       </div>

@@ -1,7 +1,7 @@
 <?php include "config.php"; ?>
 
 <!DOCTYPE html>
-<html lang="<?php echo $_SESSION['lang']; ?>">
+<html lang="<?php echo $_SESSION["lang"]; ?>">
 
 <head>
   <meta charset="utf-8" />
@@ -14,14 +14,7 @@
   <meta name="description" content="DESCRIPTION" />
   <meta name="keywords" content="KEYWORD, KEYWORD" />
 
-  <title><?php echo $lang['title']; ?></title>
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="TITLE" />
-  <meta property="og:description" content="DESCRIPTION" />
-  <meta property="og:image" content="1.200 x 630 pixels" />
-  <meta property="og:site_name" content="SITENAME" />
-  <meta property="og:url" content="URL" />
+  <title><?php echo $lang["title"]; ?></title>
 
   <!-- Icons -->
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
@@ -49,13 +42,13 @@
     </nav>
     <main>
       <div class="row">
-        <h1><?php echo $lang['h1']; ?></h1>
+        <h1><?php echo $lang["h1"]; ?></h1>
         <p>
-          <?php echo $lang['text']; ?>
+          <?php echo $lang["text"]; ?>
           <?php echo ": "; ?>
-          <?php echo $_SESSION['lang']; ?>
+          <?php echo $_SESSION["lang"]; ?>
           <?php echo " - "; ?>
-          <?php echo $lang['icon']; ?>
+          <?php echo $lang["icon"]; ?>
         </p>
     </main>
   </div>
