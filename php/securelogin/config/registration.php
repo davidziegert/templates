@@ -1,6 +1,6 @@
 <?php
 
-require_once("./connection.php");
+require_once("connection.php");
 
 $username = $_POST["username"];
 $email = $_POST["email"];

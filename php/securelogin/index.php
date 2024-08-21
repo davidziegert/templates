@@ -1,3 +1,41 @@
+<?php
+
+session_start();
+
+require_once("./config/connection.php");
+
+check_have_session();
+
+function print_session()
+{
+    echo "<table>";
+    echo "<tbody>";
+    echo "<tr>";
+    echo "<td>ID</td>";
+    echo "<td>" . $_SESSION['ID'] . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>STATUS</td>";
+    echo "<td>" . $_SESSION['STATUS'] . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>TIMESTAMP</td>";
+    echo "<td>" . $_SESSION['TIMESTAMP'] . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>AGENT</td>";
+    echo "<td>" . $_SESSION['AGENT'] . "</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<td>IP</td>";
+    echo "<td>" . $_SESSION['IP'] . "</td>";
+    echo "</tr>";
+    echo "</tbody>";
+    echo "</table>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,13 +70,14 @@
     <div class="wrapper">
         <nav>
             <section>
-                <span><i class="fa fa-user-circle" aria-hidden="true"></i> USERNAME</span>
+                <span><i class="fa fa-user-circle" aria-hidden="true"></i> <?php echo htmlspecialchars($_SESSION["USER"]); ?></span>
                 <a href="./config/logout.php" rel="noopener noreferrer"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></a>
             </section>
         </nav>
         <main>
             <section>
-
+                <h1>Dashboard</h1>
+                <p><?php print_session(); ?></p>
             </section>
         </main>
     </div>

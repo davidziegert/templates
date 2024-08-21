@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+require_once("./config/connection.php");
+
+check_is_login();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

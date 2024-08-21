@@ -97,7 +97,7 @@ body svg {
     z-index: 2;
 }
 
-/* LOGIN */
+/* LOGIN , REGISTER */
 
 main form {
     max-width: 650px;
@@ -122,9 +122,13 @@ main input[type="submit"] {
     margin: 2rem 0;
 }
 
-/* REGISTER */
 
 /* NAV */
+
+nav {
+    background-color: var(--secondary);
+    color: var(--background);
+}
 
 nav section {
     padding: 2rem 4rem;
@@ -134,7 +138,6 @@ nav section {
     justify-content: space-between;
     align-items: center;
 }
-
 
 /* MAIN */
 
@@ -151,5 +154,6 @@ html {
 
 main .note,
 main .error {
-    color: #FF8F8F;
+    color: var(--shadow-1);
+    font-size: small;
 }
