@@ -175,16 +175,6 @@ main .inner-box .right {
     align-items: flex-end;
 }
 
-main .flex-1,
-main .flex-2,
-main .flex-3,
-main .flex-4 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 1rem;
-}
-
 main .inner-box.it table {
     width: 100%;
 }
@@ -254,6 +244,16 @@ footer .box {
 
     main .inner-box {
         padding: 1rem;
+    }
+
+    main .flex-1,
+    main .flex-2,
+    main .flex-3,
+    main .flex-4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
     }
 
     main .grid-2 .box:nth-of-type(1) {
@@ -384,6 +384,16 @@ footer .box {
 
     main .inner-box {
         padding: 2rem;
+    }
+
+    main .flex-1,
+    main .flex-2,
+    main .flex-3,
+    main .flex-4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2rem;
     }
 
     main .grid-2 {
@@ -520,6 +530,28 @@ footer .box {
         padding: 2rem;
     }
 
+    main .flex-1,
+    main .flex-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    main .flex-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    main .flex-4 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
     main .grid-2 {
         display: grid;
         grid-template-columns: auto auto;
@@ -563,11 +595,19 @@ footer .box {
 
     main .grid-4 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
             "training1 training2 ."
-            ". language1 language2";
+            ". language1 language1"
+            "language2 language2 language2";
+    }
+
+    main .inner-box.language {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
     }
 
     main .grid-4 .training-1 {
@@ -599,12 +639,11 @@ footer .box {
 
     main .grid-4 .box:nth-of-type(2) {
         border-right: 1px solid red;
-        border-bottom: 1px solid red;
     }
 
     main .grid-4 .box:nth-of-type(3) {
+        border-top: 1px solid red;
         border-left: 1px solid red;
-        border-right: 1px solid red;
     }
 
     main .grid-4 .box:nth-of-type(4) {
@@ -682,24 +721,46 @@ footer .box {
         padding: 2rem;
     }
 
-    main .grid-2 {
+    main .flex-1,
+    main .flex-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    main .flex-3 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
-        border-right: 1px solid red;
+        gap: 2rem;
+    }
+
+    main .flex-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    main .grid-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
     }
 
     main .grid-2 .box:nth-of-type(1) {
         border-left: 1px solid red;
         border-right: 1px solid red;
+        border-bottom: 1px solid red;
     }
 
     main .grid-2 .box:nth-of-type(2) {
         border-right: 1px solid red;
+        border-bottom: 1px solid red;
     }
 
     main .grid-3 .box:nth-of-type(1) {
-        border-top: 1px solid red;
         border-left: 1px solid red;
         border-right: 1px solid red;
         border-bottom: 1px solid red;
@@ -725,11 +786,19 @@ footer .box {
 
     main .grid-4 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
-            "training1 . training2"
-            "language1 . language2";
+            "training1 training2 ."
+            ". language1 language1"
+            "language2 language2 language2";
+    }
+
+    main .inner-box.language {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
     }
 
     main .grid-4 .training-1 {
@@ -754,22 +823,20 @@ footer .box {
         border-bottom: 1px solid red;
     }
 
-    main .grid-4 .box:nth-of-type(1) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
-    }
+    main .grid-4 .box:nth-of-type(1) {}
 
     main .grid-4 .box:nth-of-type(2) {
         border-left: 1px solid red;
-        border-bottom: 1px solid red;
-    }
-
-    main .grid-4 .box:nth-of-type(3) {
         border-right: 1px solid red;
     }
 
-    main .grid-4 .box:nth-of-type(4) {
+    main .grid-4 .box:nth-of-type(3) {
+        border-top: 1px solid red;
         border-left: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(4) {
+        border-top: 1px solid red;
     }
 
     main .grid-5 .box:nth-of-type(1) {
