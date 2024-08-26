@@ -1,0 +1,677 @@
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    line-height: 1.4;
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    border-bottom: 1px solid red;
+}
+
+/* NAV */
+
+nav .box {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 1rem;
+    height: 4rem;
+}
+
+nav .box.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .box.menu button {
+    border: 1px solid red;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid red;
+}
+
+header .box span {
+    display: block;
+}
+
+/* MAIN */
+
+main {
+    border-bottom: 1px solid red;
+}
+
+main .box p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+
+footer .box {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    padding: 1rem;
+    height: 4rem;
+}
+
+/* phones */
+@media (width <=767px) {
+    section {
+        margin: 0 5vw;
+    }
+
+    /* HEADER */
+
+    header .box {
+        padding: 1rem;
+    }
+
+    header .grid-1 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(2) {
+        border: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    /* MAIN */
+
+    main .box {
+        padding: 1rem;
+    }
+
+    main .grid-2 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-2 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+}
+
+/* tablets */
+@media (768px <=width <=1279px) {
+    section {
+        margin: 0 10vw;
+    }
+
+    /* HEADER */
+
+    header .box {
+        padding: 1rem;
+    }
+
+    header .grid-1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "name name"
+            "address contact";
+    }
+
+    header .grid-1 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    header .box.name {
+        grid-area: name;
+    }
+
+    header .box.address {
+        grid-area: address;
+    }
+
+    header .box.contact {
+        grid-area: contact;
+    }
+
+    /* MAIN */
+
+    main .box {
+        padding: 1rem;
+    }
+
+    main .grid-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+    main .grid-2 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-2 .box:nth-of-type(2) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+}
+
+/* laptops */
+@media (1280px <=width <=1919px) {
+    section {
+        margin: 0 15vw;
+    }
+
+    /* HEADER */
+
+    header .box {
+        padding: 1rem;
+    }
+
+    header .grid-1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "name address"
+            "name contact";
+    }
+
+    header .grid-1 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(2) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(3) {
+        border-right: 1px solid red;
+    }
+
+    header .box.name {
+        grid-area: name;
+    }
+
+    header .box.address {
+        grid-area: address;
+    }
+
+    header .box.contact {
+        grid-area: contact;
+    }
+
+    /* MAIN */
+
+    main .box {
+        padding: 1rem;
+    }
+
+    main .grid-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+
+    main .grid-2 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-2 .box:nth-of-type(2) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "training1 training2 ."
+            ". language1 language2";
+    }
+
+    main .grid-4 .training-1 {
+        grid-area: training1;
+    }
+
+    main .grid-4 .training-2 {
+        grid-area: training2;
+    }
+
+    main .grid-4 .language-1 {
+        grid-area: language1;
+    }
+
+    main .grid-4 .language-2 {
+        grid-area: language2;
+    }
+
+    main .grid-4 {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(1) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(2) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(4) {
+        border-top: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+}
+
+/* desktops */
+@media (width >=1920px) {
+    section {
+        margin: 0 20vw;
+    }
+
+    /* HEADER */
+
+    header .box {
+        padding: 1rem;
+    }
+
+    header .grid-1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "name . address"
+            "name . contact";
+    }
+
+    header .grid-1 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    header .grid-1 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    header .box.name {
+        grid-area: name;
+    }
+
+    header .box.address {
+        grid-area: address;
+    }
+
+    header .box.contact {
+        grid-area: contact;
+    }
+
+    /* MAIN */
+
+    main .box {
+        padding: 1rem;
+    }
+
+    main .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        border-right: 1px solid red;
+    }
+
+    main .grid-2 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    main .grid-2 .box:nth-of-type(2) {
+        border-right: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(1) {
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(3) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-3 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "training1 . training2"
+            "language1 . language2";
+    }
+
+    main .grid-4 .training-1 {
+        grid-area: training1;
+    }
+
+    main .grid-4 .training-2 {
+        grid-area: training2;
+    }
+
+    main .grid-4 .language-1 {
+        grid-area: language1;
+    }
+
+    main .grid-4 .language-2 {
+        grid-area: language2;
+    }
+
+    main .grid-4 {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(1) {
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(3) {
+        border-right: 1px solid red;
+    }
+
+    main .grid-4 .box:nth-of-type(4) {
+        border-left: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(1) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    main .grid-5 .box:nth-of-type(2) {
+        border-left: 1px solid red;
+        border-right: 1px solid red;
+    }
+}
+
+main .box .work {
+    background-color: lightblue;
+}
+
+main .box .education {
+    background-color: lightcoral;
+}
+
+main .box .training {
+    background-color: lightgreen;
+}
+
+main .box .language {
+    background-color: lightgray;
+}
+
+main .box .it {
+    background-color: lightsalmon;
+}
+
+main .grid-3 .flex-1 {
+    color: white;
+}
+
+main .grid-3 .flex-2 {
+    color: white;
+}
+
+main .grid-4 .training-2 {
+    color: white;
+}
+
+main .grid-4 .language-2 {
+    color: white;
+}
+
+main .grid-5 .flex-3 {
+    color: white;
+}

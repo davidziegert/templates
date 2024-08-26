@@ -12,6 +12,9 @@
 html {
     font-size: calc(14px + 0.390625vw);
     line-height: 1.4;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 main h1 {

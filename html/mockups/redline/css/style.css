@@ -16,6 +16,9 @@
 html {
   font-size: calc(14px + 0.390625vw);
   line-height: 1.4;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header .header-title {
@@ -94,7 +97,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
   }
 
   header .header-hamburger {
@@ -206,7 +209,7 @@ footer {
     padding: 1rem 2rem;
   }
 
-  nav .menu .menu-item-has-children > a {
+  nav .menu .menu-item-has-children>a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -215,7 +218,7 @@ footer {
     pointer-events: none;
   }
 
-  nav .menu .menu-item-has-children > a:after {
+  nav .menu .menu-item-has-children>a:after {
     content: "▾";
     font-size: 1rem;
     font-style: normal;
@@ -223,7 +226,7 @@ footer {
     transition: 0.25s all ease-in-out;
   }
 
-  nav .menu .menu-item-has-children.active > a:after {
+  nav .menu .menu-item-has-children.active>a:after {
     transform: rotate(180deg);
   }
 
@@ -241,7 +244,7 @@ footer {
     padding: 1rem 2rem 1rem 3rem;
   }
 
-  nav .menu .active > .sub-menu {
+  nav .menu .active>.sub-menu {
     display: block;
     height: auto;
     transition: 0.25s all ease-in-out;
@@ -345,7 +348,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
   }
 
   header section .header-hamburger {
@@ -457,7 +460,7 @@ footer {
     padding: 1rem 2rem;
   }
 
-  nav .menu .menu-item-has-children > a {
+  nav .menu .menu-item-has-children>a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -466,7 +469,7 @@ footer {
     pointer-events: none;
   }
 
-  nav .menu .menu-item-has-children > a:after {
+  nav .menu .menu-item-has-children>a:after {
     content: "▾";
     font-size: 1rem;
     font-style: normal;
@@ -474,7 +477,7 @@ footer {
     transition: 0.25s all ease-in-out;
   }
 
-  nav .menu .menu-item-has-children.active > a:after {
+  nav .menu .menu-item-has-children.active>a:after {
     transform: rotate(180deg);
   }
 
@@ -492,7 +495,7 @@ footer {
     padding: 1rem 2rem 1rem 3rem;
   }
 
-  nav .menu .active > .sub-menu {
+  nav .menu .active>.sub-menu {
     display: block;
     height: auto;
     transition: 0.25s all ease-in-out;
@@ -604,7 +607,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 
   header section .header-hamburger {
@@ -627,7 +630,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 
   nav .menu {
@@ -672,24 +675,24 @@ footer {
     padding: 0.5rem 1rem;
   }
 
-  nav .menu .menu-item:hover > .sub-menu {
+  nav .menu .menu-item:hover>.sub-menu {
     left: 0;
     opacity: 1;
     z-index: 333;
   }
 
-  nav .sub-menu .menu-item:hover > .sub-menu {
+  nav .sub-menu .menu-item:hover>.sub-menu {
     top: 0;
     left: 100%;
   }
 
-  nav .menu .menu-item-has-children > a:after {
+  nav .menu .menu-item-has-children>a:after {
     content: "▾";
     font-style: normal;
     float: right;
   }
 
-  nav .sub-menu .menu-item-has-children > a:after {
+  nav .sub-menu .menu-item-has-children>a:after {
     content: "▸";
     font-style: normal;
     float: right;
@@ -806,7 +809,7 @@ footer {
     padding: 1rem 0;
   }
 
-  nav .menu .menu-item-has-children > a {
+  nav .menu .menu-item-has-children>a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -815,7 +818,7 @@ footer {
     pointer-events: none;
   }
 
-  nav .menu .menu-item-has-children > a:after {
+  nav .menu .menu-item-has-children>a:after {
     content: "▾";
     font-size: 1rem;
     font-style: normal;
@@ -823,7 +826,7 @@ footer {
     transition: 0.25s all ease-in-out;
   }
 
-  nav .menu .menu-item-has-children.active > a:after {
+  nav .menu .menu-item-has-children.active>a:after {
     transform: rotate(180deg);
   }
 
@@ -841,7 +844,7 @@ footer {
     padding: 1rem 0 1rem 1rem;
   }
 
-  nav .menu .active > .sub-menu {
+  nav .menu .active>.sub-menu {
     display: block;
     height: auto;
     transition: 0.25s all ease-in-out;

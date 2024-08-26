@@ -4,7 +4,7 @@
     --lightblue: #c7eafc;
     --darkblue: #06a7e1;
     --orange: #fec97d;
-    --darkorange: #eea451;
+    --brown: #a86652;
     --pink: #ee4c95;
 }
 
@@ -13,7 +13,9 @@
 html {
     font-size: calc(14px + 0.390625vw);
     line-height: 1.4;
-    font-family: 'Comic Neue', cursive;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* TAGS */
@@ -21,7 +23,7 @@ html {
 html {
     scroll-behavior: smooth;
     background-color: var(--orange);
-    color: var(--darkorange);
+    color: var(--brown);
 }
 
 body {

@@ -1,23 +1,25 @@
 /* THEME */
 
 :root {
-  --background-color: #0a0a0a;
-  --background-opacity-color: rgb(10, 10, 10, 0.9);
-
-  --foreground-color: #ffffff;
-
-  --primary-color: red;
-  --secondary-color: orange;
-
-  --shadow-1-color: #212121;
-  --shadow-2-color: #bfbfbf;
+  --background-color: #222831;
+  --background-opacity-color: rgb(34, 40, 49, 0.96);
+  --foreground-color: #EEEEEE;
+  --primary-color: #FFD369;
+  --primary-opacity-color: rgb(255, 211, 105, 0.96);
+  --shadow-color: #393E46;
+  --shadow-opacity-color: rgb(57, 62, 70, 0.96);
+  --secondary-color: #A9333A;
 }
 
 /* FONTS */
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
+
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
@@ -88,6 +90,7 @@ body {
 }
 
 @media (width >=1001px) {
+
   nav section,
   main section,
   aside section,
@@ -459,10 +462,18 @@ html {
 }
 
 nav,
-main,
-aside,
 footer {
+  background-color: var(--primary-opacity-color);
+  color: var(--background-color);
+}
+
+main {
   background-color: var(--background-opacity-color);
+  color: var(--foreground-color);
+}
+
+aside {
+  background-color: var(--shadow-opacity-color);
   color: var(--foreground-color);
 }
 
@@ -483,9 +494,7 @@ h6 {
   color: var(--primary-color);
 }
 
-nav a,
-main a,
-footer a {
+main a {
   color: var(--primary-color);
 }
 
@@ -497,6 +506,7 @@ main .times,
 main .price,
 main .career {
   border: 1px solid var(--primary-color);
+  background-color: var(--shadow-color);
 }
 
 main .times svg,
@@ -523,8 +533,6 @@ footer .footer-button span {
   color: var(--primary-color);
 }
 
-@media (width <=1000px) {
-}
+@media (width <=1000px) {}
 
-@media (width >=1000px) {
-}
+@media (width >=1000px) {}
