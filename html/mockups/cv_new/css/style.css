@@ -1,9 +1,31 @@
+/* THEME */
+
+:root {
+    --light-background: #fcfcfc;
+    --light-foreground: #030303;
+    --light-shadow-1: #e3e3e3;
+    --light-shadow-2: #f0f0f0;
+
+    --dark-background: #030303;
+    --dark-foreground: #fcfcfc;
+    --dark-shadow-1: #1c1c1c;
+    --dark-shadow-2: #0f0f0f;
+
+    --special-background: #452e7e;
+    --special-foreground: #f7d652;
+    --special-shadow-1: #ab6fb7;
+    --special-shadow-2: #713c94;
+}
+
+
 /* FONTS */
 
 html {
     font-size: calc(14px + 0.390625vw);
     line-height: 1.4;
-    font-family: system-ui;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
@@ -11,12 +33,52 @@ a {
     cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* laptops */
+@media (1280px <=width <=1919px) {
+    .big {
+        font-size: 2.8rem;
+    }
+}
+
+/* desktops */
+@media (width >=1920px) {
+    .big {
+        font-size: 2.8rem;
+    }
+}
+
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+main .inner-box.language span:first-of-type {
+    font-weight: bold;
+}
+
+main .inner-box.work .left {
+    font-size: 2.0rem;
     font-weight: bold;
 }
 
@@ -38,15 +100,15 @@ body {
     width: 100%;
 }
 
-nav {
-    border-bottom: 1px solid red;
-}
-
 /* NAV */
 
+nav {
+    border-bottom: 1px solid;
+}
+
 nav .box {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-left: 1px solid;
+    border-right: 1px solid;
     padding: 1rem;
     height: 4rem;
 }
@@ -61,7 +123,7 @@ nav .box.menu {
 }
 
 nav .box.menu button {
-    border: 1px solid red;
+    border: 1px solid;
     width: 2rem;
     height: 2rem;
     text-align: center;
@@ -71,7 +133,7 @@ nav .box.menu button {
 /* HEADER */
 
 header {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid;
 }
 
 header .box span {
@@ -85,7 +147,7 @@ header .box.contact span .fa {
 /* MAIN */
 
 main {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid;
 }
 
 main .box p:last-of-type {
@@ -97,7 +159,7 @@ main .box ul {
 }
 
 main .inner-box {
-    border: 1px solid currentColor;
+    border: 1px solid;
     border-radius: 5px;
 }
 
@@ -163,7 +225,7 @@ main .inner-box.language .dot {
     height: 1rem;
     width: 1rem;
     display: inline-block;
-    border: 1px solid currentColor;
+    border: 1px solid;
     border-radius: 50%;
 }
 
@@ -198,14 +260,13 @@ main .inner-box.it table td:nth-child(2) {
 main .inner-box.it table progress {
     border: 1px solid;
     border-radius: 5px;
-    color: currentColor;
 }
 
 /* FOOTER */
 
 footer .box {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-left: 1px solid;
+    border-right: 1px solid;
     padding: 1rem;
     height: 4rem;
 }
@@ -223,17 +284,17 @@ footer .box {
     }
 
     header .grid-1 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(2) {
-        border: 1px solid red;
+        border: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     /* MAIN */
@@ -257,74 +318,74 @@ footer .box {
     }
 
     main .grid-2 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-2 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 }
 
@@ -350,18 +411,18 @@ footer .box {
     }
 
     header .grid-1 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(2) {
-        border-left: 1px solid red;
+        border-left: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     header .box.name {
@@ -403,73 +464,73 @@ footer .box {
     }
 
     main .grid-2 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-2 .box:nth-of-type(2) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 }
 
@@ -495,17 +556,17 @@ footer .box {
     }
 
     header .grid-1 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(2) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(3) {
-        border-right: 1px solid red;
+        border-right: 1px solid;
     }
 
     header .box.name {
@@ -559,38 +620,38 @@ footer .box {
     }
 
     main .grid-2 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-2 .box:nth-of-type(2) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 {
@@ -627,38 +688,38 @@ footer .box {
     }
 
     main .grid-4 {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(1) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(2) {
-        border-right: 1px solid red;
+        border-right: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(3) {
-        border-top: 1px solid red;
-        border-left: 1px solid red;
+        border-top: 1px solid;
+        border-left: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(4) {
-        border-top: 1px solid red;
+        border-top: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 }
 
@@ -684,19 +745,19 @@ footer .box {
     }
 
     header .grid-1 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     header .grid-1 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     header .box.name {
@@ -750,38 +811,38 @@ footer .box {
     }
 
     main .grid-2 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-2 .box:nth-of-type(2) {
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(3) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-3 .box:nth-of-type(4) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-4 {
@@ -818,35 +879,1264 @@ footer .box {
     }
 
     main .grid-4 {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
-    main .grid-4 .box:nth-of-type(1) {}
-
     main .grid-4 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(3) {
-        border-top: 1px solid red;
-        border-left: 1px solid red;
+        border-top: 1px solid;
+        border-left: 1px solid;
     }
 
     main .grid-4 .box:nth-of-type(4) {
-        border-top: 1px solid red;
+        border-top: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(1) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
-        border-bottom: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
     }
 
     main .grid-5 .box:nth-of-type(2) {
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+}
+
+/* COLORS */
+
+html[data-theme='light'] {
+    body {
+        background-color: var(--light-background);
+        color: var(--light-foreground);
+    }
+
+    nav {
+        border-bottom: 1px solid var(--light-shadow-1);
+    }
+
+    nav .box {
+        border-left: 1px solid var(--light-shadow-1);
+        border-right: 1px solid var(--light-shadow-1);
+    }
+
+    nav .box.menu button {
+        border: 1px solid var(--light-shadow-1);
+        background-color: var(--light-shadow-2);
+    }
+
+    main .inner-box.it table progress {
+        color: var(--light-foreground);
+    }
+
+    header {
+        border-bottom: 1px solid var(--light-shadow-1);
+    }
+
+    main {
+        border-bottom: 1px solid var(--light-shadow-1);
+    }
+
+    main .inner-box {
+        border: 1px solid var(--light-shadow-1);
+        background-color: var(--light-shadow-2);
+    }
+
+    main .dots .dark {
+        background-color: var(--light-foreground);
+    }
+
+    footer .box {
+        border-left: 1px solid var(--light-shadow-1);
+        border-right: 1px solid var(--light-shadow-1);
+    }
+
+    h1,
+    .big {
+        background-color: var(--light-foreground);
+        color: var(--light-background);
+        width: max-content;
+        padding: 0.5rem;
+    }
+
+    /* phones */
+    @media (width <=767px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+    }
+
+    /* tablets */
+    @media (768px <=width <=1279px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+    }
+
+    /* laptops */
+    @media (1280px <=width <=1919px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--light-shadow-1);
+            border-left: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+    }
+
+    /* desktops */
+    @media (width >=1920px) {
+
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--light-shadow-1);
+            border-left: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+            border-bottom: 1px solid var(--light-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--light-shadow-1);
+            border-right: 1px solid var(--light-shadow-1);
+        }
+    }
+}
+
+html[data-theme='dark'] {
+    body {
+        background-color: var(--dark-background);
+        color: var(--dark-foreground);
+    }
+
+    nav {
+        border-bottom: 1px solid var(--dark-shadow-1);
+    }
+
+    nav .box {
+        border-left: 1px solid var(--dark-shadow-1);
+        border-right: 1px solid var(--dark-shadow-1);
+    }
+
+    nav .box.menu button {
+        border: 1px solid var(--dark-shadow-1);
+        background-color: var(--dark-shadow-2);
+    }
+
+    main .inner-box.it table progress {
+        color: var(--dark-foreground);
+    }
+
+    header {
+        border-bottom: 1px solid var(--dark-shadow-1);
+    }
+
+    main {
+        border-bottom: 1px solid var(--dark-shadow-1);
+    }
+
+    main .inner-box {
+        border: 1px solid var(--dark-shadow-1);
+        background-color: var(--dark-shadow-2);
+    }
+
+    main .dots .dark {
+        background-color: var(--dark-foreground);
+    }
+
+    footer .box {
+        border-left: 1px solid var(--dark-shadow-1);
+        border-right: 1px solid var(--dark-shadow-1);
+    }
+
+    h1,
+    .big {
+        background-color: var(--dark-foreground);
+        color: var(--dark-background);
+        width: max-content;
+        padding: 0.5rem;
+    }
+
+    /* phones */
+    @media (width <=767px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+    }
+
+    /* tablets */
+    @media (768px <=width <=1279px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+    }
+
+    /* laptops */
+    @media (1280px <=width <=1919px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--dark-shadow-1);
+            border-left: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+    }
+
+    /* desktops */
+    @media (width >=1920px) {
+
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--dark-shadow-1);
+            border-left: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+            border-bottom: 1px solid var(--dark-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--dark-shadow-1);
+            border-right: 1px solid var(--dark-shadow-1);
+        }
+    }
+}
+
+html[data-theme='special'] {
+    body {
+        background: rgb(69, 46, 126);
+        background: linear-gradient(90deg, rgba(69, 46, 126, 1) 0%, rgba(113, 60, 148, 1) 100%);
+        color: var(--special-foreground);
+    }
+
+    nav {
+        border-bottom: 1px solid var(--special-shadow-1);
+    }
+
+    nav .box {
+        border-left: 1px solid var(--special-shadow-1);
+        border-right: 1px solid var(--special-shadow-1);
+    }
+
+    nav .box.menu button {
+        border: 1px solid var(--special-shadow-1);
+        background-color: var(--special-shadow-2);
+    }
+
+    main .inner-box.it table progress {
+        color: var(--special-foreground);
+    }
+
+    header {
+        border-bottom: 1px solid var(--special-shadow-1);
+    }
+
+    main {
+        border-bottom: 1px solid var(--special-shadow-1);
+    }
+
+    main .inner-box {
+        border: 1px solid var(--special-shadow-1);
+        background: rgb(171, 111, 183);
+        background: linear-gradient(90deg, rgba(171, 111, 183, 1) 0%, rgba(113, 60, 148, 1) 100%);
+    }
+
+    main .dots .dark {
+        background-color: var(--special-foreground);
+    }
+
+    footer .box {
+        border-left: 1px solid var(--special-shadow-1);
+        border-right: 1px solid var(--special-shadow-1);
+    }
+
+    h1,
+    .big {
+        background-color: var(--special-foreground);
+        color: var(--special-background);
+        width: max-content;
+        padding: 0.5rem;
+    }
+
+    /* phones */
+    @media (width <=767px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+    }
+
+    /* tablets */
+    @media (768px <=width <=1279px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+    }
+
+    /* laptops */
+    @media (1280px <=width <=1919px) {
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(1) {
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--special-shadow-1);
+            border-left: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+    }
+
+    /* desktops */
+    @media (width >=1920px) {
+
+        header .grid-1 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        header .grid-1 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+
+        main .grid-2 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-2 .box:nth-of-type(2) {
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(3) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-3 .box:nth-of-type(4) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(3) {
+            border-top: 1px solid var(--special-shadow-1);
+            border-left: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-4 .box:nth-of-type(4) {
+            border-top: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(1) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+            border-bottom: 1px solid var(--special-shadow-1);
+        }
+
+        main .grid-5 .box:nth-of-type(2) {
+            border-left: 1px solid var(--special-shadow-1);
+            border-right: 1px solid var(--special-shadow-1);
+        }
     }
 }

@@ -24,6 +24,11 @@
   <link rel="stylesheet" href="./css/skeleton.css" media="screen" />
   <link rel="stylesheet" href="./css/style.css" media="screen" />
 
+  <!-- GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+
   <!-- ForkAwesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" />
 </head>
@@ -33,9 +38,9 @@
     <nav>
       <section>
         <div class="box menu">
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button onclick="setThemeLight()"><i class="fa fa-sun" aria-hidden="true"></i></button>
+          <button onclick="setThemeDark()"><i class="fa fa-moon" aria-hidden="true"></i></button>
+          <button onclick="setThemeSpecial()"><i class="fa fa-trophy" aria-hidden="true"></i></button>
         </div>
       </section>
     </nav>
@@ -43,7 +48,7 @@
       <section class="grid-1">
         <div class="box name">
           <h1>Max Mustermann</h1>
-          <h2>IT-Administrator</h2>
+          <h4>IT-Administrator</h4>
         </div>
         <div class="box address">
           <h2>Address:</h2>
@@ -63,7 +68,7 @@
           <img src="https://thispersondoesnotexist.com/" loading="lazy" />
         </div>
         <div class="box about">
-          <h2>About me</h2>
+          <h2 class="big">About me</h2>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
       </section>
@@ -166,7 +171,7 @@
       </section>
       <section class="grid-4">
         <div class="box training-1">
-          <h2>Additional Training</h2>
+          <h2 class="big">Additional Training</h2>
         </div>
         <div class="box training-2">
           <div class="inner-box training">
@@ -220,24 +225,24 @@
         </div>
         <div class="box flex-4">
           <div class="inner-box it">
-            <h2>Operating Systems</h2>
+            <h3>Operating Systems</h3>
             <table>
               <tr>
                 <td>Windows</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="80">80%</progress></td>
               </tr>
               <tr>
                 <td>Linux</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="60">60%</progress></td>
               </tr>
               <tr>
                 <td>macOS</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="40">40%</progress></td>
               </tr>
             </table>
           </div>
           <div class="inner-box it">
-            <h2>Databases</h2>
+            <h3>Databases</h3>
             <table>
               <tr>
                 <td>MySQL</td>
@@ -249,28 +254,28 @@
               </tr>
               <tr>
                 <td>SQLite</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="60">60%</progress></td>
               </tr>
               <tr>
                 <td>Microsoft Access</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="90">90%</progress></td>
               </tr>
               <tr>
                 <td>MongoDB</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="30">30%</progress></td>
               </tr>
             </table>
           </div>
           <div class="inner-box it">
-            <h2>Content Management Systems</h2>
+            <h3>Content Management Systems</h3>
             <table>
               <tr>
                 <td>WordPress</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="80">80%</progress></td>
               </tr>
               <tr>
                 <td>Typo3</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="50">50%</progress></td>
               </tr>
               <tr>
                 <td>Grav</td>
@@ -279,56 +284,56 @@
             </table>
           </div>
           <div class="inner-box it">
-            <h2>Virtualization</h2>
+            <h3>Virtualization</h3>
             <table>
               <tr>
                 <td>VMware ESXi</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="60">60%</progress></td>
               </tr>
               <tr>
                 <td>Hyper-V Manager</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="60">60%</progress></td>
               </tr>
               <tr>
                 <td>Proxmox VE</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="50">50%</progress></td>
               </tr>
               <tr>
                 <td>Docker</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="30">30%</progress></td>
               </tr>
             </table>
           </div>
           <div class="inner-box it">
-            <h2>Software Development</h2>
+            <h3>Software Development</h3>
             <table>
               <tr>
                 <td>HTML</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="90">90%</progress></td>
               </tr>
               <tr>
                 <td>CSS</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="80">80%</progress></td>
               </tr>
               <tr>
                 <td>JavaScript</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="60">60%</progress></td>
               </tr>
               <tr>
                 <td>PHP</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="50">50%</progress></td>
               </tr>
               <tr>
                 <td>Node.js</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="20">20%</progress></td>
               </tr>
               <tr>
                 <td>C#</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="30">30%</progress></td>
               </tr>
               <tr>
                 <td>Python</td>
-                <td><progress max="100" value="70">70%</progress></td>
+                <td><progress max="100" value="20">20%</progress></td>
               </tr>
             </table>
           </div>
@@ -341,6 +346,9 @@
       </section>
     </footer>
   </div>
+
+  <!-- Scripts -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
