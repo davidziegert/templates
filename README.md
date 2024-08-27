@@ -24,6 +24,7 @@
   - [Project](/templates/php/languagechanger/)
   - [Project](/templates/php/ldap/)
   - [Project](/templates/php/rssfeed/)
+  - [Project](/templates/php/securelogin/)
 - Python
   - [Project](/templates/python/xyz/)
 - C#
