@@ -1,0 +1,24 @@
+/* phones */
+@media (width <=767px) {}
+
+/* tablets */
+@media (768px <=width <=1279px) {}
+
+/* laptops */
+@media (1280px <=width <=1919px) {}
+
+/* desktops */
+@media (width >=1920px) {}
+
+
+/* THEMES */
+
+:root {
+    --background-color: #ffffff;
+    --foreground-color: #000000;
+
+    --primary-color: #ff5a79;
+    --secondary-color: #ac0020;
+
+    --shadow-1-color: #808080;
+}
