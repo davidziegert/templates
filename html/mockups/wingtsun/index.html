@@ -43,7 +43,32 @@
       <section></section>
     </header>
     <nav>
-      <section></section>
+      <section>
+        <button class="btn-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="main-menu" id="menu">
+          <li class="menu-item"><a href="#">Item</a></li>
+          <li class="menu-item"><a href="#">Item</a></li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Sub-Menu</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Item</a></li>
+              <li class="menu-item"><a href="#">Item</a></li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Sub-Menu</a>
+                <ul class="sub-menu">
+                  <li class="menu-item current-page-item"><a href="#">Current-Item</a></li>
+                  <li class="menu-item"><a href="#">Item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Item</a></li>
+        </ul>
+      </section>
     </nav>
     <main>
       <section>

@@ -40,19 +40,41 @@
 <body>
   <div class="wrapper">
     <header>
-      <section></section>
+      <section>
+        <img class="header-logo" src="./img/logo.png" loading="lazy" alt="no logo found" />
+      </section>
     </header>
     <nav>
-      <section></section>
+      <section>
+        <button class="btn-hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="main-menu" id="menu">
+          <li class="menu-item"><a href="#">Item</a></li>
+          <li class="menu-item"><a href="#">Item</a></li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#">Sub-Menu</a>
+            <ul class="sub-menu">
+              <li class="menu-item"><a href="#">Item</a></li>
+              <li class="menu-item"><a href="#">Item</a></li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Sub-Menu</a>
+                <ul class="sub-menu">
+                  <li class="menu-item current-page-item"><a href="#">Current-Item</a></li>
+                  <li class="menu-item"><a href="#">Item</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#">Item</a></li>
+        </ul>
+      </section>
     </nav>
     <main>
       <section>
         <h1>Headline Level 1</h1>
-        <h2>Headline Level 2</h2>
-        <h3>Headline Level 3</h3>
-        <h4>Headline Level 4</h4>
-        <h5>Headline Level 5</h5>
-        <h6>Headline Level 6</h6>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
       </section>
@@ -61,9 +83,14 @@
       <section></section>
     </aside>
     <footer>
-      <section></section>
+      <section>
+        <span>&copy; LINE FRIENDS - The original Line characters were created by Kang Byeongmok (A South Korean Designer), also known as "Mogi" in 2011.</span>
+      </section>
     </footer>
   </div>
+
+  <img class="icon-brown" src="./img/brown.png" loading="lazy" alt="no logo found" />
+  <img class="icon-cony" src="./img/cony.png" loading="lazy" alt="no logo found" />
 
   <!-- Scripts -->
   <script src="./js/script.js"></script>
