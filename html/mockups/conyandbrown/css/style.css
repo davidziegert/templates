@@ -22,3 +22,62 @@
     --shadow-1-color: #c7eafc;
     --shadow-2-color: #06a7e1;
 }
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    line-height: 1.4;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
+
+main h2 {
+    font-size: 2.0rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
+
+main h3 {
+    font-size: 1.75rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
+
+main h5 {
+    font-size: 1.25rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
+
+main h6 {
+    font-size: 1.125rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.0rem;
+}
