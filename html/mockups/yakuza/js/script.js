@@ -1,3 +1,7 @@
+if (window.matchMedia("(max-width: 1279px)").matches) {
+  document.getElementById("logo").src = "./img/red.svg";
+}
+
 function toggleMobileMenu() {
   if (window.matchMedia("(max-width: 1279px)").matches) {
     const hamburger = document.getElementById("hamburger");
