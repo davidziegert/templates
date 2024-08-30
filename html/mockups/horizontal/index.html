@@ -35,34 +35,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rye&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <section></section>
-    </header>
-    <nav>
-      <section></section>
-    </nav>
     <main>
-      <section>
-        <h1>Headline Level 1</h1>
-        <h2>Headline Level 2</h2>
-        <h3>Headline Level 3</h3>
-        <h4>Headline Level 4</h4>
-        <h5>Headline Level 5</h5>
-        <h6>Headline Level 6</h6>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      <section class="slide">
+        <div class="left">
+          <img src="./img/cut.png" alt="image loading" loading="lazy" />
+        </div>
+        <div class="right">
+          <h2>Let your hair do the talking.</h2>
+          <p>For me, the working of hair is architecture with a human element. So if your hair is done properly and you're wearing good shoes, you can get away with anything.</p>
+          <p>Price: 19$</p>
+        </div>
       </section>
+      <section class="slide">
+        <div class="left">
+          <img src="./img/shave.png" alt="image loading" loading="lazy" />
+        </div>
+        <div class="right">
+          <h2>Smooth shaves every time.</h2>
+          <p>In today’s world, keeping your beard has become the style icon of the 21st century. Keeping a beard also signifies your manhood and makes you charming in front of the opposite sex.</p>
+          <p>Price: 15$</p>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="left">
+          <img src="./img/shop.png" alt="image loading" loading="lazy" />
+        </div>
+        <div class="right">
+          <h2>The gentlemen’s lounge.</h2>
+          <ul>
+            <li>good hair</li>
+            <li>good mood</li>
+            <li>good day</li>
+          </ul>
+          <p>Opening Hours: 10am to 5pm</p>
+        </div>
+      </section>
+      <nav>
+        <section class="menu">
+          <button class="btn-minus" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="btn-plus" onclick="plusDivs(1)">&#10095;</button>
+        </section>
+      </nav>
     </main>
-    <aside>
-      <section></section>
-    </aside>
-    <footer>
-      <section></section>
-    </footer>
   </div>
 
   <!-- Scripts -->

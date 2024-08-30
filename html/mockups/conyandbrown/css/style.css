@@ -1,22 +1,12 @@
-/* phones */
-@media (width <=767px) {}
-
-/* tablets */
-@media (768px <=width <=1279px) {}
-
-/* laptops */
-@media (1280px <=width <=1919px) {}
-
-/* desktops */
-@media (width >=1920px) {}
-
 /* THEMES */
 
 :root {
     --background-color: #fec97d;
     --foreground-color: #a86652;
 
-    --primary-color: #ee4c95;
+    --primary-color: #ffffff;
+    --secondary-color: #eea451;
+    --tertiary-color: #ee4c95;
 
     --shadow-1-color: #c7eafc;
     --shadow-2-color: #06a7e1;
@@ -39,6 +29,7 @@ main h1 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 main h2 {
@@ -47,6 +38,7 @@ main h2 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 main h3 {
@@ -55,6 +47,7 @@ main h3 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 main h4 {
@@ -63,6 +56,7 @@ main h4 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 main h5 {
@@ -71,6 +65,7 @@ main h5 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 main h6 {
@@ -79,6 +74,7 @@ main h6 {
     font-weight: 600;
     font-style: normal;
     margin-bottom: 1.0rem;
+    text-align: center;
 }
 
 /* TAGS */
@@ -250,10 +246,76 @@ section {
         display: block;
         text-align: center;
     }
+
+    /* COLORS */
+
+    html {
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+    }
+
+    nav {
+        background-color: var(--shadow-1-color);
+        color: var(--shadow-2-color);
+    }
+
+    nav .main-menu .menu-item {
+        border-top: 1px solid var(--shadow-2-color);
+    }
+
+    nav .sub-menu .menu-item {
+        border-top: 1px solid var(--shadow-1-color);
+    }
+
+    nav .main-menu>.menu-item:first-of-type {
+        border-top: 1px solid var(--shadow-2-color);
+    }
+
+    nav .main-menu>.menu-item:last-of-type {
+        border-bottom: 1px solid var(--shadow-2-color);
+    }
+
+    nav .sub-menu .menu-item {
+        background-color: var(--shadow-2-color);
+        color: var(--shadow-1-color);
+    }
+
+    /* PADDINGS */
+
+    nav .btn-hamburger {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    nav .main-menu .menu-item a {
+        padding: 1rem;
+    }
+
+    nav .sub-menu .menu-item a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    nav .sub-menu .sub-menu .menu-item a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    footer section {
+        padding: 1rem;
+    }
 }
 
 /* tablets */
-@media (768px <=width <=1279px) {
+@media (768px <=width <=1024px) {
     .wrapper {
         min-height: 100vh;
         display: grid;
@@ -386,10 +448,76 @@ section {
         display: block;
         text-align: center;
     }
+
+    /* COLORS */
+
+    html {
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+    }
+
+    nav {
+        background-color: var(--shadow-1-color);
+        color: var(--shadow-2-color);
+    }
+
+    nav .main-menu .menu-item {
+        border-top: 1px solid var(--shadow-2-color);
+    }
+
+    nav .sub-menu .menu-item {
+        border-top: 1px solid var(--shadow-1-color);
+    }
+
+    nav .main-menu>.menu-item:first-of-type {
+        border-top: 1px solid var(--shadow-2-color);
+    }
+
+    nav .main-menu>.menu-item:last-of-type {
+        border-bottom: 1px solid var(--shadow-2-color);
+    }
+
+    nav .sub-menu .menu-item {
+        background-color: var(--shadow-2-color);
+        color: var(--shadow-1-color);
+    }
+
+    /* PADDINGS */
+
+    nav .btn-hamburger {
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    nav .main-menu .menu-item a {
+        padding: 1rem;
+    }
+
+    nav .sub-menu .menu-item a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    nav .sub-menu .sub-menu .menu-item a {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    footer section {
+        padding: 1rem;
+    }
 }
 
 /* laptops */
-@media (1280px <=width <=1919px) {
+@media (1025px <=width <=1919px) {
     .wrapper {
         min-height: 100vh;
         display: grid;
@@ -500,6 +628,48 @@ section {
     footer span {
         display: block;
         text-align: center;
+    }
+
+    /* COLORS */
+
+    html {
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+    }
+
+    nav {
+
+        border-image: linear-gradient(to right, rgba(254, 201, 125, 1) 0, rgba(238, 164, 81, 1) 50%, rgba(238, 164, 81, 1) 50%, rgba(254, 201, 125, 1)) 1;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    nav .main-menu .menu-item:hover {
+        color: var(--primary-color);
+    }
+
+    nav .sub-menu .menu-item {
+        background-color: var(--foreground-color);
+        color: var(--background-color);
+    }
+
+    /* PADDINGS */
+
+    nav .main-menu .menu-item {
+        padding: 0.5rem 1rem;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after,
+    nav .sub-menu .menu-item-has-children>a:after {
+        padding-left: 0.5rem;
+    }
+
+    main section {
+        padding: 2rem 1rem;
+    }
+
+    footer section {
+        padding: 1rem;
     }
 }
 
@@ -615,5 +785,47 @@ section {
     footer span {
         display: block;
         text-align: center;
+    }
+
+    /* COLORS */
+
+    html {
+        background-color: var(--background-color);
+        color: var(--foreground-color);
+    }
+
+    nav {
+
+        border-image: linear-gradient(to right, rgba(254, 201, 125, 1) 0, rgba(238, 164, 81, 1) 50%, rgba(238, 164, 81, 1) 50%, rgba(254, 201, 125, 1)) 1;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    nav .main-menu .menu-item:hover {
+        color: var(--primary-color);
+    }
+
+    nav .sub-menu .menu-item {
+        background-color: var(--foreground-color);
+        color: var(--background-color);
+    }
+
+    /* PADDINGS */
+
+    nav .main-menu .menu-item {
+        padding: 0.5rem 1rem;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after,
+    nav .sub-menu .menu-item-has-children>a:after {
+        padding-left: 0.5rem;
+    }
+
+    main section {
+        padding: 2rem 1rem;
+    }
+
+    footer section {
+        padding: 1rem;
     }
 }

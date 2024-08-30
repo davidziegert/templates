@@ -1,5 +1,5 @@
 function toggleMobileMenu() {
-  if (window.matchMedia("(max-width: 1279px)").matches) {
+  if (window.matchMedia("(max-width: 1024px)").matches) {
     const hamburger = document.getElementById("hamburger");
     const menu = document.getElementById("menu");
     hamburger.classList.toggle("open");
@@ -7,7 +7,7 @@ function toggleMobileMenu() {
   }
 }
 
-if (window.matchMedia("(max-width: 1279px)").matches) {
+if (window.matchMedia("(max-width: 1024px)").matches) {
   let list = document.querySelectorAll(".menu-item-has-children");
   let crawler = document.querySelector(".current-page-item");
 
