@@ -22,8 +22,8 @@
   <meta property="og:url" content="URL" />
 
   <!-- Icons -->
-  <link rel="shortcut icon" type="image/x-icon" href="./img/touch.svg" />
-  <link rel="apple-touch-icon" href="./img/touch.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+  <link rel="apple-touch-icon" href="./img/touch.png" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="./css/print.css" media="print" />
@@ -35,13 +35,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <section></section>
-    </header>
     <nav>
       <section>
         <button class="btn-hamburger" id="hamburger" onclick="toggleMobileMenu()">
@@ -70,6 +70,11 @@
         </ul>
       </section>
     </nav>
+    <header>
+      <section>
+        <img class="header-logo" src="./img/header.jpg" loading="lazy" />
+      </section>
+    </header>
     <main>
       <section>
         <h1>Headline Level 1</h1>
@@ -78,10 +83,14 @@
       </section>
     </main>
     <aside>
-      <section></section>
+      <section>
+        <img class="aside-logo" src="./img/top.svg" loading="lazy" />
+      </section>
     </aside>
     <footer>
-      <section></section>
+      <section>
+        <span>Swap meat for chrome, live a BD fantasy, whatever, but at the end of it all, it's the code you live by that defines who you are.</span>
+      </section>
     </footer>
   </div>
 
