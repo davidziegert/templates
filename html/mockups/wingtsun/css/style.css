@@ -1120,6 +1120,7 @@ footer {
         color: var(--primary-color);
     }
 
+    header,
     main section,
     aside,
     footer {
@@ -1151,7 +1152,7 @@ footer {
     main .times,
     main .price,
     main .career {
-        gap: 2rem;
+        gap: 1rem;
         padding: 2rem;
     }
 
@@ -1442,6 +1443,7 @@ footer {
         color: var(--primary-color);
     }
 
+    header,
     main section,
     aside,
     footer {
@@ -1473,7 +1475,7 @@ footer {
     main .times,
     main .price,
     main .career {
-        gap: 2rem;
+        gap: 1rem;
         padding: 2rem;
     }
 
