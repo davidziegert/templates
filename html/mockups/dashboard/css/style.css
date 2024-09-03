@@ -1,0 +1,170 @@
+/* THEMES */
+
+:root {
+    --background-color: #fec97d;
+    --foreground-color: #a86652;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(14px + 0.390625vw);
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.0rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1.125rem;
+    margin-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+/* TAGS */
+
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+main section {
+    min-height: 100vh;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* phones */
+@media (width <=767px) {
+    .wrapper {
+        min-height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        grid-template-areas:
+            "header aside"
+            "main main"
+            "footer footer"
+            "nav nav";
+    }
+}
+
+/* tablets */
+@media (768px <=width <=1279px) {
+    .wrapper {
+        min-height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        grid-template-areas:
+            "header aside"
+            "nav main"
+            "nav footer";
+    }
+}
+
+/* laptops */
+@media (1280px <=width <=1919px) {
+    .wrapper {
+        min-height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        grid-template-areas:
+            "header aside"
+            "nav main"
+            "nav footer";
+    }
+}
+
+/* desktops */
+@media (width >=1920px) {
+    .wrapper {
+        min-height: 100vh;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        grid-template-areas:
+            "header aside"
+            "nav main"
+            "nav footer";
+    }
+}
+
+/* HEADER */
+
+/* ASIDE */
+
+/* NAV */
+
+/* MAIN */
+
+/* FOOTER */
+
+/* COLORS */
+
+/* PADDING */
