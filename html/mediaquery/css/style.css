@@ -97,6 +97,18 @@ footer {
     section {
         padding: 2vh 3vw;
     }
+
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    header,
+    nav,
+    main,
+    aside {
+        border-bottom: 1px dotted;
+    }
 }
 
 /* tablets */
@@ -113,6 +125,18 @@ footer {
 
     section {
         padding: 2vh 3vw;
+    }
+
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    header,
+    nav,
+    main,
+    aside {
+        border-bottom: 1px dotted;
     }
 }
 
@@ -136,6 +160,21 @@ footer {
     section {
         padding: 2vh 3vw;
     }
+
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    header,
+    main,
+    aside {
+        border-bottom: 1px dotted;
+    }
+
+    nav {
+        border-right: 1px dotted;
+    }
 }
 
 /* desktops */
@@ -158,6 +197,21 @@ footer {
     section {
         padding: 2vh 3vw;
     }
+
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    header,
+    main,
+    aside {
+        border-bottom: 1px dotted;
+    }
+
+    nav {
+        border-right: 1px dotted;
+    }
 }
 
 /* full-hd */
@@ -179,6 +233,22 @@ footer {
     section {
         padding: 2vh 3vw;
     }
+
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
+
+    header,
+    main,
+    aside {
+        border-bottom: 1px dotted;
+    }
+
+    nav,
+    main {
+        border-right: 1px dotted;
+    }
 }
 
 /* 2K up */
@@ -188,26 +258,33 @@ footer {
         margin: auto;
 
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
         gap: 0;
         grid-template-areas:
-            "nav . header"
-            "main . aside"
-            ". footer footer";
+            "header main aside"
+            "nav main aside"
+            "footer main aside";
     }
 
     section {
         padding: 2vh 3vw;
     }
-}
 
-/* COLORS */
+    .wrapper {
+        border-left: 1px solid;
+        border-right: 1px solid;
+    }
 
-body {
-    background-color: lightcoral;
-}
+    header,
+    nav,
+    footer,
+    main {
+        border-right: 1px dotted;
+    }
 
-.wrapper {
-    background-color: lightcyan;
+    header,
+    nav {
+        border-bottom: 1px dotted;
+    }
 }
