@@ -32,22 +32,24 @@
   <link rel="stylesheet" href="./css/style.css" media="screen" />
 
   <!-- MaterialDesign -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 
-  <!-- Datatables -->
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.1.5/css/dataTables.dataTables.css" />
-  <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header>
-      <section>LOGO</section>
+      <section>
+        <img class="header-logo" src="https://placehold.co/96x96/" alt="No image found!" loading="lazy" />
+      </section>
     </header>
     <aside>
       <section>
@@ -55,233 +57,175 @@
       </section>
     </aside>
     <nav>
-      <ul class="main-menu">
-        <li class="menu-item current"><a href="#Dashboard"><span class="material-symbols-outlined">home</span><span class="menu-item-name">Dashboard</span></a></li>
-        <li class="menu-item"><a href="#Orders"><span class="material-symbols-outlined">shopping_cart</span><span class="menu-item-name">Orders</span></a></li>
-        <li class="menu-item"><a href="#Tickets"><span class="material-symbols-outlined">quick_reference</span><span class="menu-item-name">Tickets</span></a></li>
-        <li class="menu-item"><a href="#Users"><span class="material-symbols-outlined">person</span><span class="menu-item-name">Users</span></a></li>
-        <li class="menu-item"><a href="#Inventory"><span class="material-symbols-outlined">computer</span><span class="menu-item-name">Inventory</span></a></li>
-        <li class="menu-item"><a href="#Recycling"><span class="material-symbols-outlined">delete</span><span class="menu-item-name">Recycling</span></a></li>
-      </ul>
+      <section>
+        <ul class="main-menu">
+          <li class="menu-item current-menu-item"><a href="index.html"><span class="material-symbols-outlined">home</span><span class="menu-item-name">Dashboard</span></a></li>
+          <li class="menu-item"><a href="orders.html"><span class="material-symbols-outlined">shopping_cart</span><span class="menu-item-name">Orders</span></a></li>
+          <li class="menu-item"><a href="tickets.html"><span class="material-symbols-outlined">quick_reference</span><span class="menu-item-name">Tickets</span></a></li>
+          <li class="menu-item"><a href="users.html"><span class="material-symbols-outlined">person</span><span class="menu-item-name">Users</span></a></li>
+          <li class="menu-item"><a href="inventory.html"><span class="material-symbols-outlined">computer</span><span class="menu-item-name">Inventory</span></a></li>
+          <li class="menu-item"><a href="recycling.html"><span class="material-symbols-outlined">delete</span><span class="menu-item-name">Recycling</span></a></li>
+        </ul>
+      </section>
     </nav>
     <main>
-      <section id="Dashboard">
+      <section>
         <h2><span class="material-symbols-outlined">home</span> Dashboard</h2>
 
-      </section>
-      <section id="Orders">
-        <h2><span class="material-symbols-outlined">shopping_cart</span> Orders</h2>
-        <table class="display datatable" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011-04-25</td>
-              <td>$320,800</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-              <td>2011-07-25</td>
-              <td>$170,750</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-              <td>2009-01-12</td>
-              <td>$86,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="Tickets">
-        <h2><span class="material-symbols-outlined">quick_reference</span> Tickets</h2>
-        <table class="display datatable" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011-04-25</td>
-              <td>$320,800</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-              <td>2011-07-25</td>
-              <td>$170,750</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-              <td>2009-01-12</td>
-              <td>$86,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="Users">
-        <h2><span class="material-symbols-outlined">person</span> Users</h2>
-        <table class="display datatable" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011-04-25</td>
-              <td>$320,800</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-              <td>2011-07-25</td>
-              <td>$170,750</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-              <td>2009-01-12</td>
-              <td>$86,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="Inventory">
-        <h2><span class="material-symbols-outlined">computer</span> Inventory</h2>
-        <table class="display datatable" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011-04-25</td>
-              <td>$320,800</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-              <td>2011-07-25</td>
-              <td>$170,750</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-              <td>2009-01-12</td>
-              <td>$86,000</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="Recycling">
-        <h2><span class="material-symbols-outlined">delete</span> Recycling</h2>
-        <table class="display datatable" style="width:100%">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011-04-25</td>
-              <td>$320,800</td>
-            </tr>
-            <tr>
-              <td>Garrett Winters</td>
-              <td>Accountant</td>
-              <td>Tokyo</td>
-              <td>63</td>
-              <td>2011-07-25</td>
-              <td>$170,750</td>
-            </tr>
-            <tr>
-              <td>Ashton Cox</td>
-              <td>Junior Technical Author</td>
-              <td>San Francisco</td>
-              <td>66</td>
-              <td>2009-01-12</td>
-              <td>$86,000</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="dashboard">
+          <div class="dashboard-item">
+            <div class="dashboard-left">
+              <h6>Open orders:</h6>
+              <span>Latest: X</span>
+            </div>
+            <div class="dashboard-right">
+              <span>from: X</span>
+            </div>
+          </div>
+          <div class="dashboard-item">
+            <div class="dashboard-left">
+              <h6>Open tickets:</h6>
+              <span>Latest: X</span>
+            </div>
+            <div class="dashboard-right">
+              <span>from: X</span>
+            </div>
+          </div>
+          <div class="dashboard-item">
+            <div class="dashboard-left">
+              <h6>Open registrations:</h6>
+              <span>Latest: X</span>
+            </div>
+            <div class="dashboard-right">
+              <span>from: X</span>
+            </div>
+          </div>
+
+          <div class="statistic-item">
+            <div class="dashboard-left">
+              <h6>Total orders this year: X</h6>
+            </div>
+            <div class="dashboard-right">
+              <canvas id="orderChart"></canvas>
+            </div>
+          </div>
+          <div class="statistic-item">
+            <div class="dashboard-left">
+              <h6>Total tickets this year: X</h6>
+            </div>
+            <div class="dashboard-right">
+              <canvas id="ticketChart"></canvas>
+            </div>
+          </div>
+          <div class="statistic-item">
+            <div class="dashboard-left">
+              <h6>Total users this year: X</h6>
+            </div>
+            <div class="dashboard-right">
+              <canvas id="userChart"></canvas>
+            </div>
+          </div>
+
+          <script>
+            const orders = document.getElementById("orderChart");
+
+            new Chart(orders, {
+              type: "line",
+              data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+                datasets: [{
+                  data: [12, 19, 3, 5, 2, 3, 19, 3, 5, 2, 3, 0],
+                  borderWidth: 1,
+                  borderColor: "rgb(75, 192, 192)"
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                },
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                }
+              }
+            });
+          </script>
+          <script>
+            const tickets = document.getElementById("ticketChart");
+
+            new Chart(tickets, {
+              type: "bar",
+              data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+                datasets: [{
+                  data: [12, 19, 3, 5, 2, 3, 19, 3, 5, 2, 3, 0],
+                  borderWidth: 1,
+                  backgroundColor: [
+                    "rgba(255, 99, 132, 0.2)",
+                    "rgba(255, 205, 86, 0.2)",
+                    "rgba(75, 192, 192, 0.2)",
+                    "rgba(54, 162, 235, 0.2)",
+                    "rgba(153, 102, 255, 0.2)",
+                    "rgba(201, 203, 207, 0.2)"
+                  ],
+                  borderColor: [
+                    "rgb(255, 99, 132)",
+                    "rgb(255, 205, 86)",
+                    "rgb(75, 192, 192)",
+                    "rgb(54, 162, 235)",
+                    "rgb(153, 102, 255)",
+                    "rgb(201, 203, 207)"
+                  ]
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                },
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                }
+              }
+            });
+          </script>
+          <script>
+            const users = document.getElementById("userChart");
+
+            new Chart(users, {
+              type: "line",
+              data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"],
+                datasets: [{
+                  data: [12, 19, 3, 5, 2, 3, 19, 3, 5, 2, 3, 0],
+                  borderWidth: 1,
+                  borderColor: "rgb(153, 102, 255)"
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                },
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                }
+              }
+            });
+          </script>
+        </div>
       </section>
     </main>
-    <footer>
-      <section>FOOTER</section>
-    </footer>
   </div>
-
-  <!-- Scripts -->
-  <script src="./js/script.js"></script>
 </body>
 
 </html>

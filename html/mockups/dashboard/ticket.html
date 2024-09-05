@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="DESCRIPTION" />
+    <meta name="keywords" content="KEYWORD, KEYWORD" />
+
+    <title>dashboard.tmp</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:description" content="DESCRIPTION" />
+    <meta property="og:image" content="1.200 x 630 pixels" />
+    <meta property="og:site_name" content="SITENAME" />
+    <meta property="og:url" content="URL" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./img/touch.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="./css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./css/skeleton.css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+
+    <!-- MaterialDesign -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab-navigator">
+                <button class="btn-tab active" onclick="openTab('Account', this)">Account</button>
+                <button class="btn-tab" onclick="openTab('Ticket', this)">Ticket</button>
+                <button class="btn-tab" onclick="openTab('Order', this)">Order</button>
+            </div>
+            <div id="Account" class="tab">
+                <h2>I want an account!</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <label>First name (required):</label>
+                        <input type="text" id="account_firstname" name="text" placeholder="Enter your first name" required />
+                        <label>Last name (required):</label>
+                        <input type="text" id="account_lastname" name="text" placeholder="Enter your last name" required />
+                        <label>E-mail (required):</label>
+                        <input type="email" id="account_email" name="email" pattern="[*$&%^#@!\(\)\-_*+A-Za-z0-9]+" placeholder="Enter your e-mail address" required />
+                        <label>Department / Project (required)</label>
+                        <select id="account_department" name="select" required>
+                            <option value="" selected disabled hidden>Select your department or project</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <input type="submit" name="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="Ticket" class="tab" style="display:none">
+                <h2>I have a problem!</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <label>E-mail (required):</label>
+                        <input type="email" id="ticket_email" name="email" pattern="[*$&%^#@!\(\)\-_*+A-Za-z0-9]+" placeholder="Enter your e-mail address" required />
+                        <label>Office:</label>
+                        <input type="text" id="ticket_office" name="text" placeholder="Enter your office number" />
+                        <label>Area of problem (required):</label>
+                        <select id="ticket_problem" name="select" required>
+                            <option value="" selected disabled hidden>Select your area of problem</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Problem description:</label>
+                        <textarea id="ticket_description" name="textarea" rows="5" cols="33">It was a dark and stormy night...</textarea>
+                        <input type="submit" name="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="Order" class="tab" style="display:none">
+                <h2>I want to buy something!</h2>
+                <form action="#" method="post">
+                    <form action="#" method="post">
+                        <fieldset class="multiset">
+                            <h6>Payment information</h6>
+                            <label>First name (required):</label>
+                            <input type="text" id="order_firstname" name="text" placeholder="Enter your first name" required />
+                            <label>Last name (required):</label>
+                            <input type="text" id="order_lastname" name="text" placeholder="Enter your last name" required />
+                            <label>E-mail (required):</label>
+                            <input type="email" id="order_email" name="email" pattern="[*$&%^#@!\(\)\-_*+A-Za-z0-9]+" placeholder="Enter your e-mail address" required />
+                            <label>Department / Project (required)</label>
+                            <select id="order_department" name="select" required>
+                                <option value="" selected disabled hidden>Select your department or project</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Account ID (required):</label>
+                            <input type="text" id="order_account" name="text" placeholder="Enter your account ID" required />
+                        </fieldset>
+                        <fieldset class="multiset">
+                            <h6>Product information</h6>
+                            <label>What product (required):</label>
+                            <select id="order_department" name="select" required>
+                                <option value="" selected disabled hidden>Select your product</option>
+                                <option value="Desktop">Desktop</option>
+                                <option value="Notebook">Notebook (Windows)</option>
+                                <option value="MacBook">MacBook (macOS)</option>
+                                <option value="Monitor">Monitor</option>
+                                <option value="Printer">Printer</option>
+                                <option value="Printer with Scanner">Printer with Scanner</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label>Amount (required):</label>
+                            <input type="number" id="order_amount" name="number" min="1" max="99" required />
+                            <div class="flexfield">
+                                <div>
+                                    <label>Storage size:</label>
+                                    <select id="order_hdd" name="select">
+                                        <option value="" selected disabled hidden>Select your storage size</option>
+                                        <option value="256 GB">256 GB</option>
+                                        <option value="512 GB">512 GB</option>
+                                        <option value="1 TB">1 TB</option>
+                                        <option value="2 TB">2 TB</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>RAM Size:</label>
+                                    <select id="order_ram" name="select">
+                                        <option value="" selected disabled hidden>Select your RAM size</option>
+                                        <option value="8 GB">8 GB</option>
+                                        <option value="16 GB">16 GB</option>
+                                        <option value="32 GB">32 GB</option>
+                                        <option value="64 GB">64 GB</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label>Monitor size:</label>
+                                    <select id="order_monitorsize" name="select">
+                                        <option value="" selected disabled hidden>Select your monitor size</option>
+                                        <optgroup label="for Notebooks">
+                                            <option value="13-inch">13-inch</option>
+                                            <option value="15-inch">15-inch</option>
+                                            <option value="17-inch">17-inch</option>
+                                        </optgroup>
+                                        <optgroup label="for Desktops">
+                                            <option value="21-inch">21-inch</option>
+                                            <option value="24-inch">24-inch</option>
+                                            <option value="27-inch">27-inch</option>
+                                            <option value="32-inch">32-inch</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="multiset">
+                            <h6>Additional information</h6>
+                            <textarea id="order_info" name="textarea" rows="5" cols="33">Do you extra additional peripherals? ... Add links here ...</textarea>
+                            <input type="submit" name="submit">
+                        </fieldset>
+                    </form>
+                </form>
+            </div>
+            <script>
+                function openTab(tabName, tabButton) {
+                    let i;
+                    const x = document.getElementsByClassName("tab");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(tabName).style.display = "block";
+
+                    let j;
+                    const y = document.getElementsByClassName("btn-tab");
+                    for (j = 0; j < y.length; j++) {
+                        y[j].classList.remove('active');
+                    }
+                    tabButton.classList.add('active');
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
