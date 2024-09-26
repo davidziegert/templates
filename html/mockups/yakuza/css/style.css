@@ -293,7 +293,7 @@ footer {
     }
 
     nav .main-menu>.menu-item:first-of-type {
-        border-top: 1px solid var(--foreground-color);
+        border-top: none;
     }
 
     nav .sub-menu .menu-item {
@@ -548,7 +548,7 @@ footer {
     }
 
     nav .main-menu>.menu-item:first-of-type {
-        border-top: 1px solid var(--foreground-color);
+        border-top: none;
     }
 
     nav .sub-menu .menu-item {
