@@ -1,4 +1,4 @@
-/* MAIN ELEMENTS */
+/* elements */
 
 main p {
     margin-bottom: 1rem;
@@ -15,14 +15,16 @@ main a:focus {
 
 main ul {
     list-style-type: square;
-    list-style-position: inside;
+    list-style-position: outside;
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 main ol {
     list-style-type: upper-roman;
-    list-style-position: inside;
+    list-style-position: outside;
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 main dl {
@@ -50,90 +52,6 @@ main dl dd::before {
 
 main dl dd::after {
     content: "\201D";
-}
-
-main blockquote {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    font-style: italic;
-    border-left: 2px solid;
-    position: relative;
-    padding: 1rem 1rem 1rem calc(1rem*4);
-}
-
-main blockquote::before {
-    content: "\201D";
-    font-size: 2rem;
-    position: absolute;
-    left: 1rem;
-    top: calc(1rem*2);
-}
-
-main blockquote p {
-    margin-bottom: 0rem;
-}
-
-main blockquote cite {
-    display: block;
-    font-style: normal;
-    opacity: 0.5;
-    font-size: .83rem;
-}
-
-main details {
-    width: 100%;
-    overflow: hidden;
-    margin-top: auto;
-    margin-bottom: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid;
-}
-
-main details summary:before {
-    content: '\2023';
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    transform: rotate(0);
-    transform-origin: .2rem 50%;
-    transition: .25s transform ease;
-}
-
-main details[open]>summary:before {
-    transform: rotate(90deg);
-}
-
-main details summary {
-    padding: 1rem;
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding-left: calc(1rem * 2);
-}
-
-main details p {
-    padding: 1rem;
-    margin-bottom: 0rem;
-}
-
-main details summary::-webkit-details-marker {
-    display: none;
-}
-
-main code {
-    width: 100%;
-    font-family: monospace;
-    font-size: 0.83rem;
-    display: block;
-    border: 1px solid;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    word-wrap: break-word;
-    line-height: normal;
 }
 
 main table {
@@ -346,7 +264,6 @@ main button:hover {
 main label {
     font-style: italic;
 }
-
 
 main meter {
     display: block;
@@ -621,4 +538,97 @@ main input[type=url] {
     padding: calc(1rem / 2);
     border: 1px solid;
     font-style: italic;
+}
+
+main code {
+    width: 100%;
+    font-family: monospace;
+    font-size: 0.83rem;
+    display: block;
+    border: 1px solid;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    line-height: normal;
+    padding: 1rem;
+}
+
+main blockquote {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-style: italic;
+    border-left: 5px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    position: relative;
+    padding: 1rem 1rem 1rem calc(1rem*3);
+}
+
+main blockquote::before {
+    content: "\201D";
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: calc(1rem*2);
+}
+
+main blockquote p {
+    margin-bottom: 0rem;
+}
+
+main blockquote cite {
+    display: block;
+    font-style: normal;
+    opacity: 0.5;
+    font-size: .83rem;
+}
+
+main details {
+    width: 100%;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid;
+}
+
+main details summary:before {
+    content: '\2023';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+}
+
+main details[open]>summary:before {
+    transform: rotate(90deg);
+}
+
+main details summary {
+    padding: 1rem 1rem 1rem calc(1rem * 2);
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+main details summary::-webkit-details-marker {
+    display: none;
+}
+
+main details p {
+    padding: 0 1rem;
+}
+
+main details ul {
+    padding: 0 1rem;
+}
+
+main details ol {
+    padding: 0 1rem;
 }
