@@ -1,0 +1,457 @@
+/* grid */
+
+body {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto auto;
+}
+
+/* phones */
+
+@media (width <=767px) {
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 1rem;
+    }
+
+    header .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 1rem;
+    }
+
+    header .header-logo {
+        height: 32px;
+        width: auto;
+    }
+
+    header .header-title {
+        display: none;
+    }
+
+    header .header-hamburger {
+        cursor: pointer;
+        height: 32px;
+        width: auto;
+    }
+
+    /* nav */
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav .main-menu .current-page-item {
+        font-weight: bold;
+    }
+
+    nav .main-menu .menu-item a {
+        display: block;
+        width: 100%;
+    }
+
+    nav .main-menu .menu-item-has-children>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 1rem;
+        pointer-events: none;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after {
+        content: "+";
+        font-size: 1rem;
+        font-style: normal;
+    }
+
+    nav .main-menu .menu-item-has-children.active>a:after {
+        content: "-";
+        font-size: 1rem;
+        font-style: normal;
+    }
+
+    nav .main-menu .sub-menu {
+        display: none;
+        font-size: 0.85em;
+    }
+
+    nav .main-menu .active>.sub-menu {
+        display: block;
+    }
+
+    /* aside */
+
+    aside address {
+        font-style: italic;
+    }
+}
+
+/* tablets */
+
+@media (768px <=width <=1279px) {
+    .wrapper {
+        position: relative;
+    }
+
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 1rem;
+
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+    }
+
+    header .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 1rem;
+    }
+
+    header .header-logo {
+        height: 48px;
+        width: auto;
+    }
+
+    header .header-hamburger {
+        cursor: pointer;
+        height: 48px;
+        width: auto;
+    }
+
+    /* nav */
+
+    nav {
+        display: none;
+        z-index: 222;
+    }
+
+    nav.open {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    nav .main-menu {
+        position: sticky;
+        top: 0;
+        align-self: start;
+    }
+
+    nav .main-menu .current-page-item {
+        font-weight: bold;
+    }
+
+    nav .main-menu .menu-item a {
+        display: block;
+        width: 100%;
+    }
+
+    nav .main-menu .menu-item-has-children>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 1rem;
+        pointer-events: none;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after {
+        content: "+";
+        font-size: 1rem;
+        font-style: normal;
+    }
+
+    nav .main-menu .menu-item-has-children.active>a:after {
+        content: "-";
+        font-size: 1rem;
+        font-style: normal;
+    }
+
+    nav .main-menu .sub-menu {
+        display: none;
+        font-size: 0.85em;
+    }
+
+    nav .main-menu .active>.sub-menu {
+        display: block;
+    }
+
+    /* aside */
+
+    aside address {
+        font-style: italic;
+    }
+}
+
+/* laptops */
+
+@media (1280px <=width <=1919px) {
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 1rem;
+    }
+
+    header .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 1rem;
+    }
+
+    header .header-logo {
+        height: 64px;
+        width: auto;
+    }
+
+    header .header-hamburger {
+        display: none;
+        pointer-events: none;
+    }
+
+    /* nav */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav .main-menu {
+        display: block;
+    }
+
+    nav .main-menu .menu-item {
+        display: block;
+        position: relative;
+        float: left;
+        white-space: nowrap;
+    }
+
+    nav .main-menu .current-page-item {
+        font-weight: bold;
+    }
+
+    nav .main-menu .menu-item a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .main-menu .sub-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -9999px;
+        font-size: 0.85em;
+    }
+
+    nav .main-menu .menu-item-has-children:hover>.sub-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 222;
+    }
+
+    nav .sub-menu .menu-item-has-children:hover>.sub-menu {
+        top: 0;
+        left: 100%;
+    }
+
+    nav .main-menu .sub-menu .menu-item {
+        float: none;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after {
+        content: "▾";
+        font-size: 1em;
+        font-style: normal;
+        float: right;
+        padding-left: calc(1rem/2);
+    }
+
+    nav .sub-menu .menu-item-has-children>a:after {
+        content: "▸";
+        font-size: 0.85em;
+        font-style: normal;
+        float: right;
+        padding-left: calc(1rem/2);
+    }
+
+    nav .main-menu .current-page-item {
+        font-weight: bold;
+    }
+
+    /* aside */
+
+    aside address {
+        font-style: italic;
+    }
+}
+
+/* desktops */
+
+@media (width >=1920px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "aside aside"
+            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    /* header */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 1rem;
+    }
+
+    header .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 1rem;
+    }
+
+    header .header-logo {
+        height: 64px;
+        width: auto;
+    }
+
+    header .header-hamburger {
+        display: none;
+        pointer-events: none;
+    }
+
+    /* nav */
+
+    nav .main-menu {
+        position: sticky;
+        top: 0;
+        align-self: start;
+    }
+
+    nav .main-menu .current-page-item {
+        font-weight: bold;
+    }
+
+    nav .main-menu .menu-item a {
+        display: block;
+        width: 100%;
+    }
+
+    nav .main-menu .menu-item-has-children>a {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 1rem;
+        pointer-events: none;
+    }
+
+    nav .main-menu .menu-item-has-children>a:after {
+        content: "+";
+        font-size: 1em;
+        font-style: normal;
+    }
+
+    nav .main-menu .menu-item-has-children.active>a:after {
+        content: "-";
+        font-size: 1em;
+        font-style: normal;
+    }
+
+    nav .main-menu .sub-menu {
+        display: none;
+        font-size: 0.85em;
+    }
+
+    nav .main-menu .active>.sub-menu {
+        display: block;
+    }
+
+    /* aside */
+
+    aside address {
+        font-style: italic;
+    }
+}
