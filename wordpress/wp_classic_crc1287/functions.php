@@ -4,7 +4,7 @@
 /* Register Custom Theme */
 /* ********************* */
 
-if (!function_exists('my_theme_setup')) :
+if (!function_exists('my_theme_setup')):
     function my_theme_setup()
     {
         /* Make theme available for translation. Translations can be placed in the /languages/ directory. */
@@ -22,10 +22,6 @@ if (!function_exists('my_theme_setup')) :
 endif;
 
 add_action('after_setup_theme', 'my_theme_setup');
-
-/* ********************* */
-/* Register Custom Menus */
-/* ********************* */
 
 /* ********************* */
 /* Register Custom Menus */
@@ -125,7 +121,9 @@ function insert_meta_description()
 
 function insert_author()
 {
-    if (have_posts()) : while (have_posts()) : the_post();
+    if (have_posts()):
+        while (have_posts()):
+            the_post();
             echo get_the_author();
         endwhile;
     endif;
@@ -140,7 +138,8 @@ function insert_blog_pagination($pages, $range)
     $showitems = ($range * 2) + 1;
 
     global $paged;
-    if (empty($paged)) $paged = 1;
+    if (empty($paged))
+        $paged = 1;
 
     if ($pages == '') {
         global $wp_query;
