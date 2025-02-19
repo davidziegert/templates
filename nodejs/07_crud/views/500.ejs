@@ -1,0 +1,11 @@
+<%- include("./partials/head.ejs"); %> <%- include("./partials/header.ejs"); %> <%- include("./partials/nav.ejs"); %>
+
+<main>
+  <section>
+    <h1 class="error-title"><%= txt_title %></h1>
+    <img class="error-image" src="https://placehold.co/500x500/" alt="image loading" loading="lazy" />
+    <p>The <strong class="error-status"><%= txt_title %></strong> indicates that the server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+  </section>
+</main>
+
+<%- include("./partials/aside.ejs"); %> <%- include("./partials/footer.ejs"); %>

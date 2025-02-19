@@ -1,0 +1,37 @@
+/* grid */
+
+html,
+body,
+.wrapper {
+    height: auto;
+    width: 100vw;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper>main {
+    grid-area: main;
+}
+
+/* grid */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "main";
+}
+
+/* main */
+
+.wrapper>main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

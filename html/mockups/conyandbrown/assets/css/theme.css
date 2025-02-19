@@ -1,0 +1,382 @@
+:root {
+    --background: #fec97d;
+    --color: #a86652;
+    --primary: #c7eafc;
+    --secondary: #eea451;
+}
+
+/* mobile */
+
+@media (0px <=width <=480px) {
+
+    /* fonts */
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h4 {
+        font-size: 1.56rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    a {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /* spacing */
+
+    .wrapper>nav {
+        padding: 1rem 4vw;
+    }
+
+    .wrapper>main {
+        padding: 2rem 4vw;
+    }
+
+    .wrapper>aside {
+        padding: 2rem 4vw;
+    }
+
+    .wrapper>footer {
+        padding: 2rem 4vw 0 4vw;
+    }
+}
+
+/* tablet */
+
+@media (481px <=width <=768px) {
+
+    /* fonts */
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h4 {
+        font-size: 1.56rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    a {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /* spacing */
+
+    .wrapper>nav {
+        padding: 1rem 6vw;
+    }
+
+    .wrapper>main {
+        padding: 2rem 6vw;
+    }
+
+    .wrapper>aside {
+        padding: 2rem 6vw;
+    }
+
+    .wrapper>footer {
+        padding: 2rem 6vw 0 6vw;
+    }
+}
+
+/* laptop */
+
+@media (769px <=width <=1279px) {
+
+    /* fonts */
+
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h4 {
+        font-size: 1.56rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    a {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /* spacing */
+
+    .wrapper>nav {
+        padding: 1rem 6vw;
+    }
+
+    .wrapper>main {
+        padding: 2rem 6vw;
+    }
+
+    .wrapper>aside {
+        padding: 2rem 6vw;
+    }
+
+    .wrapper>footer {
+        padding: 2rem 6vw 0 6vw;
+    }
+}
+
+/* desktops */
+
+@media (width >=1280px) {
+
+    /* fonts */
+
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h2 {
+        font-size: 2.1875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h3 {
+        font-size: 1.875rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h4 {
+        font-size: 1.56rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.4;
+        margin-bottom: 1.0rem;
+    }
+
+    a {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    /* spacing */
+
+    .wrapper>nav {
+        padding: 1rem 0;
+    }
+
+    .wrapper>main {
+        padding: 2rem 0;
+    }
+
+    .wrapper>aside {
+        padding: 2rem 0;
+    }
+
+    .wrapper>footer {
+        padding: 2rem 0 0 0;
+    }
+}
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--background);
+        color: var(--color);
+    }
+
+    .wrapper>nav {
+        border-top: 1px solid var(--secondary);
+        border-bottom: 1px solid var(--secondary);
+    }
+
+    .wrapper>aside {
+        border-top: 1px solid var(--secondary);
+        border-bottom: 1px solid var(--secondary);
+    }
+
+    @media (width >=1024px) {
+        header {
+            background-image: url("../images/back.png");
+            background-repeat: repeat-x;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--background);
+        color: var(--color);
+    }
+
+    .wrapper>nav {
+        border-top: 1px solid var(--secondary);
+        border-bottom: 1px solid var(--secondary);
+    }
+
+    .wrapper>aside {
+        border-top: 1px solid var(--secondary);
+        border-bottom: 1px solid var(--secondary);
+    }
+
+    @media (width >=1024px) {
+        header {
+            background-image: url("../images/back.png");
+            background-repeat: repeat-x;
+        }
+    }
+}

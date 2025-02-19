@@ -1,0 +1,104 @@
+:root {
+    --light-background: #ffffff;
+    --light-color: #3a3b44;
+    --light-scale-1: #fafafc;
+    --light-scale-2: #eaeaed;
+    --light-scale-3: #aaaaaf;
+
+    --dark-background: #1a1a23;
+    --dark-color: #fafafc;
+    --dark-scale-1: #2a2b35;
+    --dark-scale-2: #5a5b63;
+    --dark-scale-3: #aaaaaf;
+
+    --youtube-color: #FF0000;
+    --twitch-color: #9146FF;
+    --instagram-color: #FF0069;
+    --twitter-color: #000000;
+}
+
+/* fonts */
+
+body {
+    font-size: calc(14px + 0.390625vw);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1.0rem;
+}
+
+/* spacing */
+
+.wrapper>main {
+    padding: 2rem 10vw;
+}
+
+.wrapper>main .follower-board .follower {
+    padding: 1rem;
+}
+
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--light-background);
+        color: var(--light-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(1) {
+        background-color: var(--youtube-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(2) {
+        background-color: var(--twitch-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(3) {
+        background-color: var(--instagram-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(4) {
+        background-color: var(--twitter-color);
+    }
+
+    .wrapper>main .follower-board .follower .follower-icon img {
+        filter: invert(0.9);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--dark-background);
+        color: var(--dark-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(1) {
+        background-color: var(--youtube-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(2) {
+        background-color: var(--twitch-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(3) {
+        background-color: var(--instagram-color);
+    }
+
+    .wrapper>main .follower-board .follower:nth-of-type(4) {
+        background-color: var(--twitter-color);
+    }
+
+    .wrapper>main .follower-board .follower .follower-icon img {
+        filter: invert(0.9);
+    }
+}

@@ -1,0 +1,51 @@
+/* grid */
+
+html,
+body,
+.wrapper {
+    height: auto;
+    width: 100vw;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    max-width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.wrapper>nav {
+    grid-area: nav;
+}
+
+.wrapper>main {
+    grid-area: main;
+}
+
+/* grid */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "nav"
+        "main";
+}
+
+.wrapper>nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapper>nav .main-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}

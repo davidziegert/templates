@@ -1,0 +1,25 @@
+<%- include("./partials/head.ejs"); %> <%- include("./partials/header.ejs"); %> <%- include("./partials/nav.ejs"); %>
+
+<main>
+  <section>
+    <h1>
+      <%= txt_title %>
+      <a href="/mysql/add"><i class="fa fa-plus" aria-hidden="true"></i></a>
+    </h1>
+
+    <div class="box">
+      <% if (data.length) { for (let entry of data) { %>
+      <code>
+        <p><%= entry.year %></p>
+        <p><%= entry.title %></p>
+        <p><%= entry.description %></p>
+        <a href="/mysql/<%= entry.id %>"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+      </code>
+      <% } } else { %>
+      <p>No data found!</p>
+      <% } %>
+    </div>
+  </section>
+</main>
+
+<%- include("./partials/aside.ejs"); %> <%- include("./partials/footer.ejs"); %>

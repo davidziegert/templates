@@ -1,0 +1,73 @@
+:root {
+    --light-background: #ffffff;
+    --light-color: #3a3b44;
+    --light-scale-1: #fafafc;
+    --light-scale-2: #eaeaed;
+    --light-scale-3: #aaaaaf;
+
+    --dark-background: #1a1a23;
+    --dark-color: #fafafc;
+    --dark-scale-1: #2a2b35;
+    --dark-scale-2: #5a5b63;
+    --dark-scale-3: #aaaaaf;
+}
+
+/* fonts */
+
+body {
+    font-size: calc(14px + 0.390625vw);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1.0rem;
+}
+
+h2 {
+    font-size: 2.1875rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 1.0rem;
+}
+
+/* spacing */
+
+.wrapper>main {
+    padding: 2rem 10vw;
+}
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--light-background);
+        color: var(--light-color);
+    }
+
+    .wrapper>main .row code {
+        background-color: var(--light-scale-1);
+        color: var(--light-color);
+        border: 1px solid var(--light-scale-3);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body,
+    .wrapper {
+        background-color: var(--dark-background);
+        color: var(--dark-color);
+    }
+
+    .wrapper>main .row code {
+        background-color: var(--dark-scale-1);
+        color: var(--dark-color);
+        border: 1px solid var(--dark-scale-3);
+    }
+}
