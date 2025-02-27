@@ -37,12 +37,12 @@ for (i = 0; i < list.length; i++) {
   list[i].addEventListener("click", accordion);
 }
 
-crawler.parentNode.parentNode.classList.add("active");
-crawler.parentNode.parentNode.parentNode.classList.add("active");
+if (crawler < 0) {
+  crawler.parentNode.parentNode.classList.add("active");
+  crawler.parentNode.parentNode.parentNode.classList.add("active");
+}
 
 // GoTop
-
-const scroller = document.getElementById("scroller");
 
 function GoTop() {
   document.body.scrollTop = 0;
