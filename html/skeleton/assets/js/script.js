@@ -37,10 +37,8 @@ for (i = 0; i < list.length; i++) {
   list[i].addEventListener("click", accordion);
 }
 
-if (crawler < 0) {
-  crawler.parentNode.parentNode.classList.add("active");
-  crawler.parentNode.parentNode.parentNode.classList.add("active");
-}
+crawler.parentNode.parentNode.classList.add("active");
+crawler.parentNode.parentNode.parentNode.parentNode.classList.add("active");
 
 // GoTop
 
