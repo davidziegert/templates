@@ -1,7 +1,7 @@
-// Hamburger
+// Hamburger-Button
 
 function ToggleMenu() {
-  const mediaquery = window.matchMedia("(max-width: 768px)");
+  const mediaquery = window.matchMedia("(max-width: 1279px)");
   const hamburger = document.getElementById("hamburger");
   const nav = document.getElementById("nav");
 
@@ -11,10 +11,21 @@ function ToggleMenu() {
   }
 }
 
-// Menu
+// Main-Menu
 
 let list = document.querySelectorAll(".menu-item-has-children");
 let crawler = document.querySelector(".current-page-item");
+
+// Current-Menu-Item
+
+crawler.parentNode.parentNode.classList.add("active");
+crawler.parentNode.parentNode.parentNode.parentNode.classList.add("active");
+
+// Events Click on Sub-Menu
+
+for (i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", accordion);
+}
 
 function accordion(e) {
   e.stopPropagation();
@@ -23,22 +34,15 @@ function accordion(e) {
     this.classList.remove("active");
   } else {
     if (this.parentElement.parentElement.classList.contains("active")) {
-      this.classList.add("active");
-    } else {
       for (i = 0; i < list.length; i++) {
         list[i].classList.remove("active");
       }
+
+      this.parentElement.parentElement.classList.add("active");
       this.classList.add("active");
     }
   }
 }
-
-for (i = 0; i < list.length; i++) {
-  list[i].addEventListener("click", accordion);
-}
-
-crawler.parentNode.parentNode.classList.add("active");
-crawler.parentNode.parentNode.parentNode.parentNode.classList.add("active");
 
 // GoTop
 

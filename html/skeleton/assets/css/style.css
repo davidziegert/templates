@@ -445,6 +445,10 @@ body,
         gap: 0.5rem;
     }
 
+    .wrapper>nav .main-menu .menu-item-has-children>a {
+        pointer-events: none;
+    }
+
     .wrapper>nav .main-menu .sub-menu .menu-item a {
         display: flex;
         align-items: center;
