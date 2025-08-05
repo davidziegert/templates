@@ -1,0 +1,750 @@
+/* fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/source-sans.woff2") format("woff2");
+}
+
+body {
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.15rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+main h1 {
+  margin-bottom: 2rem;
+}
+
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+main .conduct h2 {
+  margin-top: 0;
+}
+
+header .header-title {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+header .header-subtitle {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+}
+
+.contact h4,
+footer h4 {
+  margin-bottom: 2rem;
+}
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --text: #333333;
+
+    --orange-1: #f69b2d;
+
+    --blue-1: #cfdae3;
+    --blue-2: #225c75;
+    --blue-3: #003f60;
+
+    --grey-1: #ededed;
+    --grey-2: #cccccc;
+    --grey-3: #dedede;
+    --grey-4: #666666;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --text: #333333;
+
+    --orange-1: #f69b2d;
+
+    --blue-1: #cfdae3;
+    --blue-2: #225c75;
+    --blue-3: #003f60;
+
+    --grey-1: #ededed;
+    --grey-2: #cccccc;
+    --grey-3: #dedede;
+    --grey-4: #666666;
+  }
+}
+
+/* mobile */
+
+@media (0px <=width <=767px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--grey-1);
+    color: var(--blue-3);
+  }
+
+  header .box.hamburger i,
+  header .box.languages i,
+  header .box.search i {
+    font-size: 1.25rem;
+  }
+
+  header .box.hamburger,
+  header .box.languages,
+  header .box.search {
+    background-color: var(--blue-1);
+  }
+
+  header #hamburger.open {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  header .box.search form input {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--blue-3);
+  }
+
+  header .box.search form button {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--blue-3);
+  }
+
+  .breadcrumb {
+    background-color: var(--grey-1);
+    color: var(--grey-4);
+  }
+
+  nav {
+    background-color: var(--background);
+    color: var(--blue-3);
+  }
+
+  nav .main-menu .menu-item {
+    border-top: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu .current-page-item > a {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  main h1 {
+    color: var(--blue-3);
+  }
+
+  main a,
+  .contact a {
+    color: var(--blue-3);
+  }
+
+  main details {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--grey-2);
+  }
+
+  aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .contact {
+    background-color: var(--grey-1);
+    color: var(--text);
+  }
+
+  .contact .box.logo img,
+  .contact .box.map iframe {
+    border: 1px solid var(--grey-2);
+  }
+
+  .contact .box.address {
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  footer {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  footer .box.board,
+  footer .box.internal,
+  footer .box.institutes,
+  footer .box.dfg,
+  footer .box.up {
+    border-bottom: 1px solid var(--blue-2);
+  }
+}
+
+/* tablet */
+
+@media (768px <=width <=1023px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--grey-1);
+    color: var(--blue-3);
+  }
+
+  header .box.hamburger i,
+  header .box.languages i,
+  header .box.search i {
+    font-size: 1.25rem;
+  }
+
+  header .box.hamburger,
+  header .box.languages,
+  header .box.search {
+    background-color: var(--blue-1);
+  }
+
+  header #hamburger.open {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  header .box.search form input {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--blue-3);
+  }
+
+  header .box.search form button {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--blue-3);
+  }
+
+  .breadcrumb {
+    background-color: var(--grey-1);
+    color: var(--grey-4);
+  }
+
+  nav {
+    background-color: var(--background);
+    color: var(--blue-3);
+  }
+
+  nav .main-menu .menu-item {
+    border-top: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu .current-page-item > a {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  main h1 {
+    color: var(--blue-3);
+  }
+
+  main a,
+  .contact a {
+    color: var(--blue-3);
+  }
+
+  main details {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--grey-2);
+  }
+
+  aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .contact {
+    background-color: var(--grey-1);
+    color: var(--text);
+  }
+
+  .contact .box.logo img,
+  .contact .box.map iframe {
+    border: 1px solid var(--grey-2);
+  }
+
+  .contact .box.address {
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  footer {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  footer .box.board,
+  footer .box.internal,
+  footer .box.institutes,
+  footer .box.dfg,
+  footer .box.up {
+    border-bottom: 1px solid var(--blue-2);
+  }
+}
+
+/* laptop */
+
+@media (1024px <=width <=1439px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--grey-1);
+    color: var(--blue-3);
+  }
+
+  header .row:nth-of-type(1) {
+    background-color: var(--orange-1);
+  }
+
+  header .box.hamburger i,
+  header .box.languages i,
+  header .box.search i {
+    font-size: 1.25rem;
+  }
+
+  header .box.search form input {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--blue-3);
+  }
+
+  header .box.search form button {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--blue-3);
+  }
+
+  .breadcrumb {
+    background-color: var(--grey-1);
+    color: var(--grey-4);
+  }
+
+  nav {
+    background-color: var(--background);
+    color: var(--blue-3);
+  }
+
+  nav .main-menu .menu-item {
+    border-top: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu .current-page-item > a {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  main h1 {
+    color: var(--blue-3);
+  }
+
+  main a,
+  .contact a {
+    color: var(--blue-3);
+  }
+
+  main details {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--grey-2);
+  }
+
+  aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .contact {
+    background-color: var(--grey-1);
+    color: var(--text);
+  }
+
+  .contact .box.logo img,
+  .contact .box.map iframe {
+    border: 1px solid var(--grey-2);
+  }
+
+  .contact .box.address {
+    border-left: 1px solid var(--grey-2);
+    border-right: 1px solid var(--grey-2);
+  }
+
+  footer {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  footer .box.internal,
+  footer .box.up {
+    border-left: 1px solid var(--blue-2);
+    border-right: 1px solid var(--blue-2);
+  }
+}
+
+/* desktops */
+
+@media (width >=1440px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  header {
+    background-color: var(--grey-1);
+    color: var(--blue-3);
+  }
+
+  header .row:nth-of-type(1) {
+    background-color: var(--orange-1);
+  }
+
+  header .box.hamburger i,
+  header .box.languages i,
+  header .box.search i {
+    font-size: 1.25rem;
+  }
+
+  header .box.search form input {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--blue-3);
+  }
+
+  header .box.search form button {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--blue-3);
+  }
+
+  .breadcrumb {
+    background-color: var(--grey-1);
+    color: var(--grey-4);
+  }
+
+  nav {
+    background-color: var(--background);
+    color: var(--blue-3);
+  }
+
+  nav .main-menu .menu-item {
+    border-top: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  nav .main-menu .current-page-item > a {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  main h1 {
+    color: var(--blue-3);
+  }
+
+  main a,
+  .contact a {
+    color: var(--blue-3);
+  }
+
+  main details {
+    background-color: var(--blue-3);
+    color: var(--background);
+    border: 1px solid var(--grey-2);
+  }
+
+  aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .contact {
+    background-color: var(--grey-1);
+    color: var(--text);
+  }
+
+  .contact .box.logo img,
+  .contact .box.map iframe {
+    border: 1px solid var(--grey-2);
+  }
+
+  .contact .box.address {
+    border-left: 1px solid var(--grey-2);
+    border-right: 1px solid var(--grey-2);
+  }
+
+  footer {
+    background-color: var(--blue-3);
+    color: var(--background);
+  }
+
+  footer .box.internal,
+  footer .box.up {
+    border-left: 1px solid var(--blue-2);
+    border-right: 1px solid var(--blue-2);
+  }
+}
+
+/* specials */
+
+aside .box.news,
+aside .box.paper,
+aside .box.appear {
+  background-color: var(--grey-3);
+}
+
+aside .box.news .news-item,
+aside .box.paper .paper-item,
+aside .box.appear .appear-item {
+  background-color: var(--grey-1);
+  color: var(--blue-3);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+aside .box.news .news-item:last-of-type,
+aside .box.paper .paper-item:last-of-type,
+aside .box.appear .appear-item:last-of-type {
+  border-bottom: none;
+}
+
+aside .box.news .news-item .news-left {
+  background-color: var(--blue-3);
+  color: var(--background);
+}
+
+aside .box.paper .paper-item span:last-of-type {
+  color: var(--text);
+}
+
+aside .box.appear .appear-item span:last-of-type {
+  color: var(--text);
+}
+
+aside .box.projectlist {
+  background-color: var(--blue-3);
+  color: var(--background);
+}
+
+aside .box.projectlist .projectlist-group {
+  background-color: var(--grey-3);
+  color: var(--text);
+}
+
+aside .box.projectlist .projectlist-item {
+  background-color: var(--grey-1);
+  color: var(--blue-3);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+aside .box.projectlist .projectlist-item:last-of-type {
+  border-bottom: none;
+}
+
+main .box.cards .card-item {
+  border: 1px solid var(--grey-2);
+}
+
+main .box.cards .card-item .card-left {
+  background-color: var(--blue-1);
+  border-right: 1px solid var(--grey-2);
+}
+
+main .box.cards .card-item .card-right {
+  background-color: var(--grey-1);
+}
+
+main .box.cards .card-item .card-image {
+  border: 1px solid var(--grey-2);
+}
+
+main .conduct {
+  background-color: var(--blue-1);
+  border: 1px solid var(--grey-2);
+}
+
+main .box.archive:nth-of-type(even) details,
+main .box.dissertation:nth-of-type(even) details,
+main .box.findings:nth-of-type(even) details {
+  background-color: var(--blue-3);
+  color: var(--background);
+  border: 1px solid var(--grey-2);
+}
+
+main .box.archive:nth-of-type(odd) details,
+main .box.dissertation:nth-of-type(odd) details,
+main .box.findings:nth-of-type(odd) details {
+  background-color: var(--blue-1);
+  color: var(--text);
+  border: 1px solid var(--grey-2);
+}
+
+main .box.archive .archive-item,
+main .box.dissertation .dissertation-item,
+main .box.findings .findings-item {
+  background-color: var(--background);
+  color: var(--text);
+  border-bottom: 1px solid var(--grey-2);
+}
+
+main .box.archive .archive-item:nth-of-type(odd),
+main .box.dissertation .dissertation-item:nth-of-type(odd),
+main .box.findings .findings-item:nth-of-type(odd) {
+  background-color: var(--background);
+}
+
+main .box.archive .archive-item:nth-of-type(even),
+main .box.dissertation .dissertation-item:nth-of-type(even),
+main .box.findings .findings-item:nth-of-type(even) {
+  background-color: var(--grey-1);
+}
+
+main .box.archive .archive-item:last-of-type,
+main .box.dissertation .dissertation-item:last-of-type,
+main .box.findings .findings-item:last-of-type {
+  border-bottom: none;
+}
+
+main .box.links .link-item:nth-of-type(odd),
+main .box.projects .project-item:nth-of-type(odd) {
+  background-color: var(--blue-3);
+  color: var(--background);
+  border: 1px solid var(--grey-2);
+}
+
+main .box.links .link-item:nth-of-type(even),
+main .box.projects .project-item:nth-of-type(even) {
+  background-color: var(--blue-1);
+  color: var(--text);
+  border: 1px solid var(--grey-2);
+}
+
+main .box.links .link-item a,
+main .box.projects .project-item a {
+  color: var(--background) !important;
+}
+
+main .box.links .link-item:nth-of-type(even) a,
+main .box.projects .project-item:nth-of-type(even) a {
+  color: var(--text) !important;
+}

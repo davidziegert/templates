@@ -1,0 +1,650 @@
+/* fonts  */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/nunito.woff2");
+}
+
+body {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+h1 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+aside h3 {
+  margin: 0rem 0 1.5rem 0;
+}
+
+.wrapper > main .bigger,
+.wrapper > aside .bigger {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --headline: #18181b;
+    --text: #3f3f46;
+    --border: #e4e4e7;
+    --box: #f4f4f5;
+    --primary: #e40613;
+    --secondary: #fdb9bd;
+  }
+
+  .wrapper > footer .footer-scroller {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+
+  .wrapper > main .akademie .info .right {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #18181b;
+    --headline: #ffffff;
+    --text: #e4e4e7;
+    --border: #3f3f46;
+    --box: #27272a;
+    --primary: #fc0;
+    --secondary: #fff5cc;
+  }
+
+  .wrapper > footer .footer-scroller {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+
+  .wrapper > main .akademie .info .right {
+    background-color: var(--primary);
+    color: var(--box);
+  }
+}
+
+@media (0px <=width <=767px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-logo {
+    fill: currentColor;
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .menu-item {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  .wrapper > nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--primary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--primary);
+  }
+
+  .wrapper > main details {
+    border: 1px solid var(--primary);
+    background-color: var(--box);
+  }
+
+  .wrapper > main details summary {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main blockquote {
+    border-bottom: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main code {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset input[type="reset"],
+  .wrapper > main form fieldset input[type="submit"],
+  .wrapper > main form fieldset input[type="button"],
+  .wrapper > main form fieldset button {
+    border: 1px solid var(--border);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main form fieldset input {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--primary);
+  }
+}
+
+@media (768px <=width <=1279px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-logo {
+    fill: currentColor;
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .menu-item {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  .wrapper > nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--primary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--primary);
+  }
+
+  .wrapper > main details {
+    border: 1px solid var(--primary);
+    background-color: var(--box);
+  }
+
+  .wrapper > main details summary {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main blockquote {
+    border-bottom: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main code {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset input[type="reset"],
+  .wrapper > main form fieldset input[type="submit"],
+  .wrapper > main form fieldset input[type="button"],
+  .wrapper > main form fieldset button {
+    border: 1px solid var(--border);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main form fieldset input {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--primary);
+  }
+}
+
+@media (1280px <=width <=1439px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-logo {
+    fill: currentColor;
+  }
+
+  .wrapper > nav {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item a {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item:first-of-type a {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--primary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--primary);
+  }
+
+  .wrapper > main details {
+    border: 1px solid var(--primary);
+    background-color: var(--box);
+  }
+
+  .wrapper > main details summary {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main blockquote {
+    border-bottom: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main code {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset input[type="reset"],
+  .wrapper > main form fieldset input[type="submit"],
+  .wrapper > main form fieldset input[type="button"],
+  .wrapper > main form fieldset button {
+    border: 1px solid var(--border);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main form fieldset input {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--primary);
+  }
+}
+
+@media (width >=1440px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-logo {
+    fill: currentColor;
+  }
+
+  .wrapper > nav {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item a {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item:first-of-type a {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--primary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--primary);
+  }
+
+  .wrapper > main details {
+    border: 1px solid var(--primary);
+    background-color: var(--box);
+  }
+
+  .wrapper > main details summary {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main blockquote {
+    border-bottom: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main code {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset {
+    border: 1px solid var(--border);
+    background-color: var(--box);
+  }
+
+  .wrapper > main form fieldset input[type="reset"],
+  .wrapper > main form fieldset input[type="submit"],
+  .wrapper > main form fieldset input[type="button"],
+  .wrapper > main form fieldset button {
+    border: 1px solid var(--border);
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+
+  .wrapper > main form fieldset input {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--primary);
+  }
+}
+
+/* special */
+
+a {
+  color: var(--primary);
+}
+
+.wrapper > main #banner {
+  border-bottom: 1px solid var(--border);
+}
+
+.wrapper > aside .map {
+  opacity: 0.75;
+}
+
+.wrapper > main .card {
+  border: 1px solid var(--border);
+}
+
+.wrapper > main .card .left {
+  background-color: var(--primary);
+}
+
+.wrapper > main .card .right {
+  background: var(--box);
+}
+
+.wrapper > main .akademie .info {
+  background: var(--box);
+  border: 1px solid var(--border);
+}
+
+.wrapper > main .gallery img {
+  background-color: var(--box);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.wrapper > main .instagram iframe {
+  background-color: var(--box);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}

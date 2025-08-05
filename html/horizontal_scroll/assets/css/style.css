@@ -1,0 +1,213 @@
+/* grid */
+
+html,
+body {
+  height: auto;
+  width: 100vw;
+
+  min-height: 100vh;
+  min-width: 100vw;
+
+  max-width: 100vw;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* mobile */
+
+@media (0px <=width <=767px) {
+  /* main */
+
+  .wrapper > main .row {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper > main .row section {
+    height: 100vh;
+    min-width: 100vw;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+
+  .wrapper > main .row section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper > main .row section img {
+    height: 35vh;
+  }
+
+  .wrapper > main .row section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* spacing */
+
+  .wrapper > main .row section .left {
+    padding: 2rem 2rem 0.5rem 2rem;
+  }
+
+  .wrapper > main .row section .right {
+    padding: 0.5rem 2rem 2rem 2rem;
+  }
+}
+
+/* tablet */
+
+@media (768px <=width <=1023px) {
+  /* main */
+
+  .wrapper > main .row {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper > main .row section {
+    height: 100vh;
+    min-width: 100vw;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+
+  .wrapper > main .row section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper > main .row section img {
+    height: 50vh;
+  }
+
+  .wrapper > main .row section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* spacing */
+
+  .wrapper > main .row section .left {
+    padding: 2.5rem 2.5rem 0.75rem 2.5rem;
+  }
+
+  .wrapper > main .row section .right {
+    padding: 0.75rem 2.5rem 2.5rem 2.5rem;
+  }
+}
+
+/* laptop */
+
+@media (1024px <=width <=1439px) {
+  /* main */
+
+  .wrapper > main .row {
+    overflow-x: hidden;
+    display: flex;
+  }
+
+  .wrapper > main .row section {
+    height: 100vh;
+    min-width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .wrapper > main .row section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper > main .row section img {
+    height: 50vh;
+  }
+
+  .wrapper > main .row section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* spacing */
+
+  .wrapper > main .row section .left {
+    padding: 2.5rem 1.25rem 2.5rem 2.5rem;
+  }
+
+  .wrapper > main .row section .right {
+    padding: 2.5rem 2.5rem 2.5rem 1.25rem;
+  }
+}
+
+/* desktops */
+
+@media (width >=1440px) {
+  /* main */
+
+  .wrapper > main .row {
+    overflow-x: hidden;
+    display: flex;
+  }
+
+  .wrapper > main .row section {
+    height: 100vh;
+    min-width: 100vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .wrapper > main .row section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper > main .row section img {
+    height: 65vh;
+  }
+
+  .wrapper > main .row section .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* spacing */
+
+  .wrapper > main .row section .left {
+    padding: 3rem 1.5rem 3rem 3rem;
+  }
+
+  .wrapper > main .row section .right {
+    padding: 3rem 3rem 3rem 1.5rem;
+  }
+}

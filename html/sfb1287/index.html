@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Title Tag -->
+    <title>sfb1287.tmp</title>
+
+    <!-- Site Meta Tags -->
+    <meta name="author" content="XYZ" />
+    <meta name="description" content="XYZ" />
+    <meta name="keywords" content="XYZ" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="XYZ" />
+    <meta property="og:description" content="XYZ" />
+    <meta property="og:image" content="XYZ" />
+    <meta property="og:site_name" content="XYZ" />
+    <meta property="og:url" content="XYZ" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/images/touch.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/skeleton.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/theme.css" media="screen" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="row">
+                <div class="column">
+                    <div class="box indicator"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="box hamburger" id="hamburger">
+                        <button class="header-hamburger" onclick="ToggleMenu()"><i class="bi bi-list"></i></button>
+                    </div>
+                    <div class="box languages">
+                        <i class="bi bi-globe-americas"></i>
+                        <ul>
+                            <li class="active"><a href="https://www.sfb1287.uni-potsdam.de/de/ueber-uns/team/mitarbeiterinnen" hreflang="de">Deutsch</a></li>
+                            <li><a href="https://www.sfb1287.uni-potsdam.de/en/about-us/team/members" hreflang="en">English</a></li>
+                        </ul>
+                    </div>
+                    <div class="box search">
+                        <form action="https://www.sfb1287.uni-potsdam.de/de/search">
+                            <input type="search" name="q" value="">
+                            <button type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="box icon">
+                        <img class="header-logo" src="./assets/images/logo.svg" loading="lazy" alt="Logo HWF">
+                    </div>
+                    <div class="box title">
+                        <a href="https://www.sfb1287.uni-potsdam.de/de/">
+                            <div class="header-title">Sonderforschungsbereich 1287</div>
+                            <div class="header-subtitle">Die Grenzen der Variabilität in der Sprache: Kognitive, komputationale und grammatische Aspekte</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumb">
+            <div class="row">
+                <div class="column">
+                    <div class="box breadcrumbs">
+                        <ol>
+                            <li>
+                                <a href="https://www.sfb1287.uni-potsdam.de/de">SFB 1287</a>
+                            </li>
+                            <li>
+                                <a href="https://www.sfb1287.uni-potsdam.de/de/ueber-uns">Über uns</a>
+                            </li>
+                            <li>
+                                <a href="https://www.sfb1287.uni-potsdam.de/de/ueber-uns/team">Team</a>
+                            </li>
+                            <li>
+                                <a href="https://www.sfb1287.uni-potsdam.de/de/ueber-uns/team/mitarbeiterinnen" aria-current="page">MitarbeiterInnen</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav id="nav">
+                <menu class="main-menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Über uns</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Team</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item current-page-item"><a href="#">MitarbeiterInnen</a></li>
+                                    <li class="menu-item"><a href="#">Ehemalige MitarbeiterInnen</a></li>
+                                    <li class="menu-item"><a href="#">Assoziierte Personen</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="#">Boards</a></li>
+                            <li class="menu-item"><a href="#">Teilnehmende Institutionen</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Projekte</a></li>
+                    <li class="menu-item"><a href="#">Nachwuchs</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Publikationen</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Papers</a></li>
+                            <li class="menu-item"><a href="#">Talks</a></li>
+                            <li class="menu-item"><a href="#">Im Erscheinen</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Netzwerk</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Mercator Fellows</a></li>
+                            <li class="menu-item"><a href="#">Short-Term Fellows</a></li>
+                            <li class="menu-item"><a href="#">SFB-Netzwerktreffen</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Veranstaltungen</a></li>
+                    <li class="menu-item"><a href="#">Mediathek</a></li>
+                    <li class="menu-item"><a href="#">Stellenausschreibungen</a></li>
+                    <li class="menu-item"><a href="#">News-Archiv</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Datenmanagementpläne</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Phase 1 (2017-2021)</a></li>
+                            <li class="menu-item"><a href="#">Phase 2 (2021-2025)</a></li>
+                        </ul>
+                    </li>
+                </menu>
+            </nav>
+            <main>
+                <div class="row">
+                    <div class="column">
+                        <div class="box links">
+                            <div class="link-item">
+                                <a href="xyz">
+                                    <span>MGK</span>
+                                    <span>Integriertes Graduiertenkolleg</span>
+                                </a>
+                            </div>
+                            <div class="link-item">
+                                <a href="xyz">
+                                    <span><i class="bi bi-journals"></i></span>
+                                    <span>Qualifikationsarbeiten</span>
+                                </a>
+                            </div>
+                            <div class="link-item">
+                                <a href="xyz">
+                                    <span><i class="bi bi-calendar-week-fill"></i></span>
+                                    <span>Veranstaltungen</span>
+                                </a>
+                            </div>
+                            <div class="link-item">
+                                <a href="xyz">
+                                    <span><i class="bi bi-megaphone-fill"></i></span>
+                                    <span>Öffentlichkeitsarbeit</span>
+                                </a>
+                            </div>
+                            <div class="link-item">
+                                <a href="xyz">
+                                    <span><i class="bi bi-people-fill"></i></span>
+                                    <span>Women in Research Group (WiR)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box projects">
+                            <div class="project-item">
+                                <a href="xyz">
+                                    <span>B01</span>
+                                    <span>"(In)Variabilität prosodischer Cues in Perzeption, Produktion und Interaktion"</span>
+                                    <span>Wartenburger, Tuomainen &amp; Hanne-Kloth</span>
+                                </a>
+                            </div>
+                            <div class="project-item">
+                                <a href="xyz">
+                                    <span>B02</span>
+                                    <span>"Der Zusammenhang von Produktion und Verständnis. Erkenntnisse aus der Aphasie"</span>
+                                    <span>Burchert &amp; Stadie</span>
+                                </a>
+                            </div>
+                            <div class="project-item">
+                                <a href="xyz">
+                                    <span>B03</span>
+                                    <span>"Modellierung der Relation von Blicksteuerung, syntaktischer Verarbeitung und Hirnsignalen"</span>
+                                    <span>Vasishth, Engbert &amp; Rabovsky-Schad</span>
+                                </a>
+                            </div>
+                            <div class="project-item">
+                                <a href="xyz">
+                                    <span>B04</span>
+                                    <span>"Bilinguale Sprachverarbeitung als ein Prädiktor für das Erlernen einer Sprache"</span>
+                                    <span>Clahsen &amp; Felser</span>
+                                </a>
+                            </div>
+                            <div class="project-item">
+                                <a href="xyz">
+                                    <span>B05</span>
+                                    <span>"(Begrenzte) Variabilität in der Sprechplanung"</span>
+                                    <span>Bürki-Foschini</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box cards">
+                            <div class="card-item">
+                                <div class="card-left">
+                                    <img decoding="async" class="card-image" src="https://www.sfb1287.uni-potsdam.de/ueber-uns/team/mitarbeiterinnen/zimmermann.jpg" alt="no photo" loading="lazy">
+                                </div>
+                                <div class="card-right">
+                                    <span class="card-name">Prof. Dr. Malte Zimmermann</span>
+                                    <span><i class="bi bi-telephone-fill"></i> (+49) 331 977-2319</span>
+                                    <span><i class="bi bi-envelope-fill"></i> <a href="mailto:malte.zimmermann@uni-potsdam.de">malte.zimmermann@uni-potsdam.de</a></span>
+                                    <span class="card-links"><span><i class="bi bi-box-arrow-up-right"></i> <a target="_blank" rel="noopener noreferrer" href="https://www.ling.uni-potsdam.de/~zimmermann/">Homepage</a></span><span><i class="bi bi-mortarboard-fill"></i> <a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/professuren/professur-fuer-allgemeine-sprachwissenschaft-grammatiktheorie-mit-dem-schwerpunkt-semantik">Universität</a></span><span><i class="ai ai-orcid ai-1x"></i> <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0001-5972-3463">ORCID</a></span></span>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <div class="card-left">
+                                    <img decoding="async" class="card-image" src="https://www.sfb1287.uni-potsdam.de/ueber-uns/team/mitarbeiterinnen/struck.jpg" alt="no photo" loading="lazy">
+                                </div>
+                                <div class="card-right">
+                                    <span class="card-name">Anna Struck</span>
+                                    <span></span>
+                                    <span><i class="bi bi-envelope-fill"></i> <a href="mailto:anna.struck@uni-potsdam.de">anna.struck@uni-potsdam.de</a></span>
+                                    <span class="card-links"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box archive">
+                            <details>
+                                <summary>2025</summary>
+                                <div class="archive-item">
+                                    <span>26. Nov. - 27. Nov.</span>
+                                    <span>7. SFB-Netzwerktreffen (Potsdam, Köln, Saarbrücken, Berlin, Frankfurt, Bielefeld).</span>
+                                    <span></span>
+                                </div>
+                                <div class="archive-item">
+                                    <span>25. Aug. - 29. Aug.</span>
+                                    <span>9. Summer School on Statistical Methods for Linguistics and Psychology (SMLP).</span>
+                                    <span><a target="_blank" rel="noopener noreferrer" href="https://vasishth.github.io/smlp2025/"><i class="bi bi-box-arrow-up-right"></i></a></span>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="box dissertation">
+                            <details>
+                                <summary>PhD Thesis</summary>
+                                <div class="dissertation-item">
+                                    <span>Paape, Dario. 2018. Antecedent complexity effects on ellipsis processing. (C02)</span>
+                                </div>
+                                <div class="dissertation-item">
+                                    <span>Schumann, Kathleen. 2018. Nicht-kanonische Elemente im Sprachgebrauch und in der Sprachverarbeitung - Der Fokusmarker so als Ausnahmeelement. (A01)</span>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="box findings">
+                            <details>
+                                <summary>Phase 2 (2021-2025)</summary>
+                                <div class="findings-item">
+                                    <span>B01 - (In)Variabilität prosodischer Cues in Perzeption, Produktion und Interaktion WP1 - Eyetracking [ Download] WP2 - Behavioral Tasks and Cognitive Test Battery [ Download] WP3 - Prosody Production in Interactive Setting [ Download] B02 - Der …</span>
+                                    <span><a href="https://www.sfb1287.uni-potsdam.de/de/data-management-plans/phase-2">weiterlesen</a></span>
+                                </div>
+                            </details>
+                        </div>
+                        <code class="conduct">
+                            <h2>Code of Conduct</h2>
+                            <p>We are dedicated to providing a harassment-free summer school experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment of our participants in any form. Sexual language and imagery is not appropriate for any summer school venue, including workshops, social events and poster presentations. Our participants violating these rules may be expelled from the event without a refund at the discretion of the conference organisers.</p>
+                            <p>If you experience or witness inappropriate behaviour or feel like you or someone around you may need support, please reach out to the organisers in person or via email.</p>
+                            <p>Harassment includes, but is not limited to:</p>
+                            <ul>
+                                <li>verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion</li>
+                                <li>sexual images in public spaces</li>
+                                <li>deliberate intimidation, stalking, or following</li>
+                                <li>harassing photography or recording</li>
+                                <li>sustained disruption of workshops or other events</li>
+                                <li>inappropriate physical contact</li>
+                                <li>unwelcome sexual attention</li>
+                                <li>advocating for, or encouraging, any of the above behaviour</li>
+                            </ul>
+                        </code>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <div class="row">
+                    <div class="column">
+                        <div class="box news">
+                            <h4><i class="bi bi-calendar-week"></i> Neueste Meldungen</h4>
+                            <div class="news-item">
+                                <div class="news-left">
+                                    <span>26</span>
+                                    <span>Nov.</span>
+                                </div>
+                                <div class="news-right">
+                                    <span>7. SFB-Netzwerktreffen (Potsdam, Köln, Saarbrücken, Berlin, Frankfurt, Bielefeld).</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-left">
+                                    <span>25</span>
+                                    <span>Aug.</span>
+                                </div>
+                                <div class="news-right">
+                                    <span><a target="_blank" rel="noopener noreferrer" href="https://vasishth.github.io/smlp2025/">9. Summer School on Statistical Methods for Linguistics and Psychology (SMLP).</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box appear">
+                            <h4><i class="bi bi-bookmark-fill"></i> Im Erscheinen</h4>
+                            <div class="appear-item">
+                                <span>Los relativos locativos en el español yucateco monolingüe y bilingüe.</span>
+                                <span>Auhagen, P.</span>
+                            </div>
+                            <div class="appear-item">
+                                <span>A typology of positional differential argument marking.</span>
+                                <span>Seržant, I. A., Say, S., Hölzl, A., Zakirova, A., Gao, X., &amp; Pregla, A.</span>
+                            </div>
+                        </div>
+                        <div class="box paper">
+                            <h4><i class="bi bi-book-half"></i> Neueste Papers</h4>
+                            <div class="paper-item">
+                                <span><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.3389/fcomm.2025.1558540">Prosodic cue use for identifying interrogative and declarative structures with wide and narrow focus in individuals with and without aphasia.</a></span>
+                                <span>Schneider, K., Tuomainen, O., Wartenburger, I., &amp; Hanne, S.</span>
+                            </div>
+                            <div class="paper-item">
+                                <span><a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.3389/fnins.2025.1611651">Refined analysis of the Speech-to-Speech Synchronization task reveals subharmonic synchronization.</a></span>
+                                <span>Bross, S., Hofmann, A., Schneider, K., &amp; Wartenburger, I.</span>
+                            </div>
+                        </div>
+                        <div class="box projectlist">
+                            <h4><i class="bi bi-card-heading"></i> Projektliste</h4>
+                            <div class="projectlist-group"><span>Cluster B</span></div>
+                            <div class="projectlist-item"><a href="https://www.sfb1287.uni-potsdam.de/de/projekte/projekt-b01">B01 - Wartenburger, Tuomainen &amp; Hanne-Kloth</a></div>
+                            <div class="projectlist-item"><a href="https://www.sfb1287.uni-potsdam.de/de/projekte/projekt-b02">B02 - Burchert &amp; Stadie</a></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <div class="contact">
+            <div class="row">
+                <div class="column">
+                    <div class="box logo">
+                        <img class="footer-logo" src="./assets/images/sfb.jpg" loading="lazy" alt="Logo SFB 1287">
+                    </div>
+                    <div class="box address">
+                        <h4>Kontakt</h4>
+                        <address>
+                            Universität Potsdam<br>
+                            Department Linguistik<br>
+                            Prof. Dr. Doreen Georgi<br>
+                            Karl-Liebknecht-Strasse 24-25<br>
+                            Haus 14, Raum 3.33<br>
+                            14476 Potsdam<br>
+                            <br>
+                            <i class="bi bi-telephone-fill"></i> <a title="hier anrufen" href="tel:493319772968">(+49) 331 977-2968</a><br>
+                            <i class="bi bi-envelope-fill"></i> <a title="eine E-Mail senden" href="mailto:doreen.georgi@uni-potsdam.de">doreen.georgi@uni-potsdam.de</a>
+                        </address>
+                    </div>
+                    <div class="box map">
+                        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=12.968952655792238%2C52.40620217754354%2C12.97791123390198%2C52.40884309768354&amp;layer=mapnik"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="column">
+                    <div class="box board">
+                        <h4>Vorstand</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/professuren/professur-variation-und-variabilitaet-in-morphosyntaktischen-/-morphologischen-systemen">Prof. Dr. Doreen Georgi (Sprecherin)</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/professuren/professur-fuer-allgemeine-sprachwissenschaft-grammatiktheorie-mit-dem-schwerpunkt-semantik">Prof. Dr. Malte Zimmermann (Vizesprecher)</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/romanistik-uth/uth">Prof. Dr. Melanie Uth</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/professuren/professur-fuer-entwicklungsbedingte-sprachstoerungen">Prof. Dr. Outi Tuomainen</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/professuren/professur-fuer-patholinguistik/-neurokognition-der-sprache">Prof. Dr. Isabell Wartenburger</a></li>
+                        </ul>
+                    </div>
+                    <div class="box internal">
+                        <h4>Internes</h4>
+                        <ul>
+                            <li><a href="https://www.sfb1287.uni-potsdam.de/de/impressum">Impressum</a></li>
+                            <li><a href="https://www.sfb1287.uni-potsdam.de/de/datenschutzerklaerung">Datenschutzerklärung</a></li>
+                            <li><a href="https://www.sfb1287.uni-potsdam.de/de/sitemap">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="box institutes">
+                        <h4>Teilnehmende Institutionen</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/ling/index">Potsdam - Department Linguistik</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/germanistik">Potsdam - Institut für Germanistik</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/department-psychologie/index">Potsdam - Department Psychologie</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/prim/uebersicht">Potsdam - PRIM</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/romanistik">Potsdam - Institut für Romanistik</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/de/slavistik">Potsdam - Institut für Slavistik</a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" href="https://germanistik.blogs.ruhr-uni-bochum.de/">Bochum - Germanistisches Institut</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="box dfg">
+                        <h4>Gefördert Durch</h4>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.dfg.de/">
+                            <img class="footer-logo" src="./assets/images/dfg.png" loading="lazy" alt="Logo DFG">
+                        </a>
+                    </div>
+                    <div class="box up">
+                        <h4>Koordiniert Durch</h4>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de/">
+                            <img class="footer-logo" src="./assets/images/potsdam.png" loading="lazy" alt="Logo UP">
+                        </a>
+                    </div>
+                    <div class="box bochum">
+                        <h4>In Zusammenarbeit Mit</h4>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.ruhr-uni-bochum.de">
+                            <img class="footer-logo" src="./assets/images/bochum.png" loading="lazy" alt="Logo RUB">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/menu.js"></script>
+</body>
+
+</html>

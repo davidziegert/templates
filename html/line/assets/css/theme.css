@@ -1,0 +1,368 @@
+/* fonts  */
+
+body {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+  text-align: center;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* colors */
+
+:root {
+  --background: #fec97d;
+  --headline: #a86652;
+  --text: #a86652;
+  --border: #a86652;
+  --box: #eea451;
+  --primary: #06a7e1;
+  --secondary: #ee4c95;
+}
+
+@media (0px <=width <=767px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-hamburger span {
+    background-color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .menu-item {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  .wrapper > nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--secondary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--secondary);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--secondary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--secondary);
+  }
+}
+
+@media (768px <=width <=1023px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-hamburger span {
+    background-color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .menu-item {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu > .menu-item:first-of-type {
+    border-top: none;
+  }
+
+  .wrapper > nav .main-menu > .menu-item:last-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--secondary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--secondary);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--secondary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--secondary);
+  }
+}
+
+@media (1024px <=width <=1439px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-image: url("../images/back.png");
+    background-repeat: repeat-x;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-hamburger span {
+    background-color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item a {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item:first-of-type a {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--secondary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--secondary);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--secondary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--secondary);
+  }
+}
+
+@media (width >=1440px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-image: url("../images/back.png");
+    background-repeat: repeat-x;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > header .header-hamburger span {
+    background-color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu {
+    background-color: var(--box);
+    color: var(--text);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item a {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .sub-menu .menu-item:first-of-type a {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > nav .main-menu .current-page-item > a {
+    color: var(--secondary);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main a {
+    color: var(--secondary);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    color: var(--secondary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer a {
+    color: var(--secondary);
+  }
+}

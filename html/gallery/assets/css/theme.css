@@ -1,0 +1,306 @@
+/* fonts  */
+
+body {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* colors */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --headline: #18181b;
+    --text: #3f3f46;
+    --border: #e4e4e7;
+    --box: #f4f4f5;
+    --primary: #2563eb;
+    --secondary: #eff6ff;
+
+    /*
+    --primary: #dc2626;
+    --secondary: #fef2f2;
+    --primary: #16a34a;
+    --secondary: #f0fdf4;
+    */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #18181b;
+    --headline: #ffffff;
+    --text: #e4e4e7;
+    --border: #3f3f46;
+    --box: #27272a;
+    --primary: #ca8a04;
+    --secondary: #fefce8;
+  }
+}
+
+@media (0px <=width <=767px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .flex-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .wrapper > main .flex-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+
+  .wrapper > main .grid-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  .wrapper > main .grid-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  .wrapper > main .masonry-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: sepia(1) hue-rotate(120deg);
+    filter: sepia(1) hue-rotate(120deg);
+  }
+
+  .wrapper > main .masonry-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: sepia(0) hue-rotate(0);
+    filter: sepia(0) hue-rotate(0);
+  }
+}
+
+@media (768px <=width <=1023px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .flex-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .wrapper > main .flex-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+
+  .wrapper > main .grid-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  .wrapper > main .grid-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  .wrapper > main .masonry-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: sepia(1) hue-rotate(120deg);
+    filter: sepia(1) hue-rotate(120deg);
+  }
+
+  .wrapper > main .masonry-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: sepia(0) hue-rotate(0);
+    filter: sepia(0) hue-rotate(0);
+  }
+}
+
+@media (1024px <=width <=1439px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .flex-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .wrapper > main .flex-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+
+  .wrapper > main .grid-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  .wrapper > main .grid-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  .wrapper > main .masonry-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: sepia(1) hue-rotate(120deg);
+    filter: sepia(1) hue-rotate(120deg);
+  }
+
+  .wrapper > main .masonry-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: sepia(0) hue-rotate(0);
+    filter: sepia(0) hue-rotate(0);
+  }
+}
+
+@media (width >=1440px) {
+  html,
+  body,
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .flex-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
+
+  .wrapper > main .flex-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+
+  .wrapper > main .grid-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  .wrapper > main .grid-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  .wrapper > main .masonry-gallery .item img {
+    border: 2px solid var(--border);
+    -webkit-filter: sepia(1) hue-rotate(120deg);
+    filter: sepia(1) hue-rotate(120deg);
+  }
+
+  .wrapper > main .masonry-gallery .item:hover > img {
+    border: 2px solid var(--primary);
+    -webkit-filter: sepia(0) hue-rotate(0);
+    filter: sepia(0) hue-rotate(0);
+  }
+}
