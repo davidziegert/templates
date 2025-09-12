@@ -1,0 +1,196 @@
+/* fonts  */
+
+body {
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* colors */
+
+/* lighten or darken to headline */
+/* text = 10%, border = 40%, box = 80 % */
+/* lighten or darken to primary */
+/* secondary = 20% */
+
+[data-theme="theme_1"] {
+  --background: #f5f5f5;
+
+  --headline: #121212;
+  --text: #2c2c2c;
+
+  --border: #787878;
+  --box: #dedede;
+
+  --primary: #f05454;
+  --secondary: #f8b2b2;
+}
+
+[data-theme="theme_2"] {
+  --background: #040404;
+
+  --headline: #ececec;
+  --text: #d3d3d3;
+
+  --border: #868686;
+  --box: #202020;
+
+  --primary: #898ac4;
+  --secondary: #4d4e9a;
+}
+
+[data-theme="theme_3"] {
+  --background: #FFFFFA;
+
+  --headline: #101314;
+  --text: #272e30;
+
+  --border: #6b7f85;
+  --box: #dae0e2;
+
+  --primary: #36454F;
+  --secondary: #5f7a8c;
+}
+
+[data-theme="theme_4"] {
+  --background: #000000;
+
+  --headline: #B1DDF1;
+  --text: #86cae9;
+
+  --border: #2187b5;
+  --box: #020608;
+
+  --primary: #FCCB06;
+  --secondary: #9a7c02;
+}
+
+[data-theme="theme_5"] {
+  --background: #E5F4E3;
+
+  --headline: #272727;
+  --text: #414141;
+
+  --border: #8d8d8d;
+  --box: #f3f3f3;
+
+  --primary: #CA2C92;
+  --secondary: #e27abd;
+}
+
+[data-theme="theme_6"] {
+  --background: #1A1615;
+
+  --headline: #F5F1ED;
+  --text: #e3d7cc;
+
+  --border: #ac8b6a;
+  --box: #30251a;
+
+  --primary: #ae7b6a;
+  --secondary: #734C3F;
+}
+
+html,
+body,
+.wrapper {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.wrapper > header .switch {
+  background-color: var(--box);
+
+  border: 2px solid var(--border);
+  border-radius: 16px;
+}
+
+.wrapper > main .item-box .item {
+  background-color: var(--box);
+
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  border-left: 4px solid var(--text);
+}
+
+.wrapper > main .item-box .item a {
+  color: var(--primary);
+}
+
+.wrapper > header .switch input[type="radio"] {
+  background-color: var(--secondary);
+}
+
+.wrapper > header .switch input[type="radio"]:checked {
+  background-color: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headline);
+}
