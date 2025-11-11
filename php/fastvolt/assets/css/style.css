@@ -1,0 +1,146 @@
+/* grid */
+
+html,
+body {
+  height: auto;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper > header {
+  grid-area: header;
+}
+
+.wrapper > nav {
+  grid-area: nav;
+}
+
+.wrapper > main {
+  grid-area: main;
+}
+
+.wrapper > footer {
+  grid-area: footer;
+}
+
+/* all */
+
+@media (width >=0px) {
+  .wrapper {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header nav"
+      "main main"
+      "footer footer";
+  }
+
+  /* header */
+
+  .wrapper > header {
+    padding: 1rem 1rem;
+  }
+
+  .wrapper > header .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .wrapper > header .row .column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .wrapper > header .header-logo {
+    height: 100px;
+    width: auto;
+  }
+
+  @media (0px <=width <=767px) {
+    .wrapper > header .header-logo {
+      height: 60px;
+      width: auto;
+    }
+  }
+
+  @media (768px <=width <=1023px) {
+    .wrapper > header .header-logo {
+      height: 80px;
+      width: auto;
+    }
+  }
+
+  /* nav */
+
+  .wrapper > nav {
+    padding: 1rem 1rem;
+  }
+
+  .wrapper > nav .row {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .wrapper > nav .row .column {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .wrapper > nav .row .column .main-menu {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item a {
+    display: block;
+    text-align: center;
+  }
+
+  /* main */
+
+  .wrapper > main {
+    padding: 2rem 1rem;
+  }
+
+  /* footer */
+
+  .wrapper > footer {
+    padding: 1rem 1rem;
+  }
+
+  .wrapper > footer .row .column span {
+    display: block;
+  }
+}

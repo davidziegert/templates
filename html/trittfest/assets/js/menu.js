@@ -1,4 +1,4 @@
-const mediaquery = window.matchMedia("(max-width: 1023px)");
+const mediaquery = window.matchMedia("(max-width: 1279px)");
 
 // Hamburger-Button
 

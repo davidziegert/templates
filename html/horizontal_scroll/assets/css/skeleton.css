@@ -1,7 +1,3 @@
-aside address {
-  font-style: italic;
-}
-
 main a {
   text-decoration: underline;
 }
@@ -18,7 +14,7 @@ main blockquote {
   border-top: 1px solid currentColor;
   font-style: italic;
   margin: 1rem auto;
-  padding: 1rem 1rem 1rem calc(1rem * 3);
+  padding: 1rem;
   position: relative;
   width: 100%;
 }
@@ -30,23 +26,15 @@ main blockquote cite {
   opacity: 0.75;
 }
 
-main blockquote p {
+main blockquote > :last-child {
   margin-bottom: 0;
-}
-
-main blockquote::before {
-  content: "\201D";
-  font-size: 2rem;
-  left: 1rem;
-  position: absolute;
-  top: calc(1rem * 2);
 }
 
 main code {
   border: 1px solid currentColor;
   display: block;
   font-family: monospace;
-  font-size: 83%;
+  font-size: 0.75rem;
   line-height: normal;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -56,51 +44,44 @@ main code {
 
 main details {
   border: 1px solid currentColor;
-  margin: auto auto 1rem;
-  overflow: hidden;
+  display: block;
+  margin-bottom: 1rem;
   width: 100%;
-}
-
-main details ol {
-  padding: 0 1rem;
-}
-
-main details p {
-  padding: 0 1rem;
+  overflow: hidden;
 }
 
 main details summary {
   cursor: pointer;
-  display: block;
   font-weight: 700;
-  padding: 1rem 1rem 1rem 2rem;
-  position: relative;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
 }
 
-main details summary + * {
-  margin-top: 1rem;
+main details summary::after {
+  content: url("../images/chevron-down.svg");
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
-main details summary::-webkit-details-marker {
-  display: none;
+main details[open] summary::after {
+  content: url("../images/chevron-up.svg");
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
-main details summary:before {
-  content: "\2023";
-  left: 1rem;
-  position: absolute;
-  top: 1rem;
-  transform: rotate(0);
-  transform-origin: 0.2rem 50%;
-  transition: 0.25s transform ease;
-}
-
-main details ul {
+main details > * {
   padding: 0 1rem;
 }
 
-main details[open] > summary:before {
-  transform: rotate(90deg);
+main details > :nth-child(2) {
+  padding-top: 1rem;
+  border-top: 1px solid currentColor;
 }
 
 main dl {
@@ -142,10 +123,11 @@ main figure {
 
 main figure audio {
   width: 100%;
+  border: 1px solid currentColor;
 }
 
 main figure figcaption {
-  font-size: 83%;
+  font-size: 0.75rem;
   font-style: italic;
   margin-bottom: 1rem;
   opacity: 0.75;
@@ -154,10 +136,10 @@ main figure figcaption {
 
 main figure iframe {
   aspect-ratio: 16 / 9;
-  border: none;
   height: 100%;
   overflow: hidden;
   width: 100%;
+  border: 1px solid currentColor;
 }
 
 main figure img {
@@ -167,75 +149,42 @@ main figure img {
   font-style: italic;
   height: auto;
   max-width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   vertical-align: middle;
   width: 100%;
+  border: 1px solid currentColor;
 }
 
 main figure video {
   aspect-ratio: 16 / 9;
   height: 100%;
   width: 100%;
+  border: 1px solid currentColor;
 }
 
 main form {
   margin-bottom: 1rem;
 }
 
-main form .checkbox-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  justify-content: flex-start;
-}
-
-main form .checkbox-label {
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  user-select: none;
-}
-
-main form .color-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  justify-content: flex-start;
-}
-
-main form .color-label {
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  user-select: none;
-}
-
-main form .radio-container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  justify-content: flex-start;
-}
-
-main form .radio-label {
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  user-select: none;
-}
-
 main form ::-ms-input-placeholder {
-  opacity: 0.5;
+  opacity: 0.75;
+}
+
+main form ::-webkit-input-placeholder {
+  opacity: 0.75;
+}
+
+main form ::-moz-placeholder {
+  opacity: 0.75;
+}
+
+main form :-ms-input-placeholder {
+  opacity: 0.75;
 }
 
 main form ::placeholder {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 main form button {
@@ -252,12 +201,22 @@ main form button:hover {
 }
 
 main form fieldset {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   border: 1px solid currentColor;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   gap: 1rem;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -269,6 +228,7 @@ main form fieldset:last-of-type {
 
 main form input {
   display: block;
+  accent-color: currentColor;
 }
 
 main form input[type="button"] {
@@ -285,52 +245,35 @@ main form input[type="button"]:hover {
 }
 
 main form input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: 1px solid currentColor;
   cursor: pointer;
   height: 2rem;
-  outline: 0;
-  position: relative;
   width: 2rem;
-}
-
-main form input[type="checkbox"]::before {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjZmZmZmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPmljb25fYnlfUG9zaGx5YWtvdjEwPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyBmaWxsPSIjZmZmZmZmIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4wMDAwMDAsIDI2LjAwMDAwMCkiPjxwYXRoIGQ9Ik0xNy45OTk5ODc4LDMyLjQgTDEwLjk5OTk4NzgsMjUuNCBDMTAuMjI2Nzg5MSwyNC42MjY4MDE0IDguOTczMTg2NDQsMjQuNjI2ODAxNCA4LjE5OTk4Nzc5LDI1LjQgTDguMTk5OTg3NzksMjUuNCBDNy40MjY3ODkxNCwyNi4xNzMxOTg2IDcuNDI2Nzg5MTQsMjcuNDI2ODAxNCA4LjE5OTk4Nzc5LDI4LjIgTDE2LjU4NTc3NDIsMzYuNTg1Nzg2NCBDMTcuMzY2ODIyOCwzNy4zNjY4MzUgMTguNjMzMTUyOCwzNy4zNjY4MzUgMTkuNDE0MjAxNCwzNi41ODU3ODY0IEw0MC41OTk5ODc4LDE1LjQgQzQxLjM3MzE4NjQsMTQuNjI2ODAxNCA0MS4zNzMxODY0LDEzLjM3MzE5ODYgNDAuNTk5OTg3OCwxMi42IEw0MC41OTk5ODc4LDEyLjYgQzM5LjgyNjc4OTEsMTEuODI2ODAxNCAzOC41NzMxODY0LDExLjgyNjgwMTQgMzcuNzk5OTg3OCwxMi42IEwxNy45OTk5ODc4LDMyLjQgWiI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: calc(1rem * 4);
-  content: "";
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  outline: 0;
 }
 
 main form input[type="checkbox"]:checked {
-  background-color: currentColor;
-}
-
-main form input[type="checkbox"]:checked::before {
-  opacity: 1;
+  background: currentColor;
 }
 
 main form input[type="checkbox"]:disabled {
   cursor: not-allowed;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 main form input[type="color"] {
-  -moz-appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  background: none;
-  border: 0;
-  cursor: pointer;
+  cursor: crosshair;
   height: 2rem;
-  padding: 0;
   width: 2rem;
+  outline: 0;
+  background-color: transparent;
+  border: none;
 }
 
 main form input[type="date"] {
@@ -369,6 +312,8 @@ main form input[type="password"] {
 }
 
 main form input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: 1px solid currentColor;
   border-radius: 50%;
@@ -379,15 +324,17 @@ main form input[type="radio"] {
 }
 
 main form input[type="radio"]:checked {
-  background-color: currentcolor;
+  background: currentColor;
 }
 
 main form input[type="radio"]:disabled {
   cursor: not-allowed;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 main form input[type="range"] {
+  appearance: none;
+  background-color: currentColor;
   border: 1px solid currentColor;
   height: 1rem;
   opacity: 1;
@@ -396,6 +343,7 @@ main form input[type="range"] {
 }
 
 main form input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
   height: 2rem;
@@ -403,6 +351,7 @@ main form input[type="range"]::-moz-range-thumb {
 }
 
 main form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
   height: 2rem;
@@ -411,6 +360,10 @@ main form input[type="range"]::-webkit-slider-thumb {
 
 main form input[type="range"]:hover {
   opacity: 0.75;
+}
+
+main form input[type="range"]:focus {
+  outline: none;
 }
 
 main form input[type="reset"] {
@@ -519,8 +472,8 @@ main form textarea {
 }
 
 main hr {
-  border-top: 1px dotted;
-  margin: calc(1rem * 2) 0;
+  border-top: 1px dotted currentColor;
+  margin: 2rem 0;
 }
 
 main ol {
@@ -540,6 +493,7 @@ main picture {
 main picture img {
   margin-bottom: 1rem;
   max-width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
   vertical-align: middle;
   width: 100%;
@@ -583,7 +537,7 @@ main table {
 }
 
 main table caption {
-  font-size: 83%;
+  font-size: 0.75rem;
   font-style: italic;
   margin-bottom: 1rem;
   opacity: 0.75;
@@ -612,7 +566,7 @@ main table tbody tr:nth-child(odd) {
 
 main table tfoot tr th {
   border-top: 1px solid currentColor;
-  font-size: 83%;
+  font-size: 0.75rem;
   font-weight: 700;
   padding: 0.5rem;
   text-align: left;
@@ -620,7 +574,7 @@ main table tfoot tr th {
 
 main table thead tr th {
   border-bottom: 1px solid currentColor;
-  font-size: 83%;
+  font-size: 0.75rem;
   font-weight: 700;
   padding: 0.5rem;
   text-align: left;
@@ -631,4 +585,8 @@ main ul {
   list-style-type: square;
   margin-bottom: 1rem;
   margin-left: 1rem;
+}
+
+aside address {
+  font-style: italic;
 }

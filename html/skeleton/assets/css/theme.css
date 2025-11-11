@@ -1,6 +1,9 @@
 /* fonts  */
 
 body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   letter-spacing: normal;
   line-height: 150%;
@@ -78,18 +81,1134 @@ a {
   :root {
     --background: #ffffff;
     --headline: #18181b;
-    --text: #3f3f46;
-    --border: #e4e4e7;
-    --box: #f4f4f5;
-    --primary: #2563eb;
-    --secondary: #eff6ff;
+    --text: #484851;
+    --border: #787887;
+    --box: #aeaeb7;
+    --primary: #306a9f;
+  }
 
-    /*
-    --primary: #dc2626;
-    --secondary: #fef2f2;
-    --primary: #16a34a;
-    --secondary: #f0fdf4;
-    */
+  /* mobile */
+
+  @media (0px <=width <=767px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-hamburger-icon {
+      filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(543%) hue-rotate(202deg) brightness(94%) contrast(101%);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:last-of-type a {
+      border-bottom: none;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      background-color: var(--box);
+      color: var(--text);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      background-color: var(--headline);
+      color: var(--background);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2%) hue-rotate(245deg) brightness(109%) contrast(101%);
+    }
+  }
+
+  /* tablet */
+
+  @media (768px <=width <=1023px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-hamburger-icon {
+      filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(543%) hue-rotate(202deg) brightness(94%) contrast(101%);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:last-of-type a {
+      border-bottom: none;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      background-color: var(--box);
+      color: var(--text);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      background-color: var(--headline);
+      color: var(--background);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2%) hue-rotate(245deg) brightness(109%) contrast(101%);
+    }
+  }
+
+  /* laptop */
+
+  @media (1024px <=width <=1439px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-subtitle {
+      color: var(--headline);
+    }
+
+    /* nav */
+
+    .wrapper > nav {
+      border-right: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(49%) sepia(3%) saturate(1221%) hue-rotate(202deg) brightness(95%) contrast(89%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      border-top: 1px solid var(--box);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2%) hue-rotate(245deg) brightness(109%) contrast(101%);
+    }
+  }
+
+  /* desktops */
+
+  @media (width >=1440px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .wrapper {
+      border-left: 1px solid var(--box);
+      border-right: 1px solid var(--box);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-subtitle {
+      color: var(--headline);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item a {
+      border-left: 1px solid var(--box);
+      border-right: 1px solid var(--box);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .sub-menu .menu-item {
+      margin-left: 1px;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(26%) sepia(2%) saturate(2212%) hue-rotate(202deg) brightness(93%) contrast(83%);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(26%) sepia(2%) saturate(2212%) hue-rotate(202deg) brightness(93%) contrast(83%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(25%) sepia(3%) saturate(1608%) hue-rotate(202deg) brightness(102%) contrast(88%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      border-top: 1px solid var(--box);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(2%) hue-rotate(245deg) brightness(109%) contrast(101%);
+    }
   }
 }
 
@@ -97,473 +1216,1133 @@ a {
   :root {
     --background: #18181b;
     --headline: #ffffff;
-    --text: #e4e4e7;
-    --border: #3f3f46;
-    --box: #27272a;
-    --primary: #ca8a04;
-    --secondary: #fefce8;
-  }
-}
-
-@media (0px <=width <=767px) {
-  html,
-  body,
-  .wrapper {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > header {
-    background-color: var(--background);
-    color: var(--text);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > header .header-logo {
-    fill: currentColor;
-  }
-
-  .wrapper > nav {
-    background-color: var(--box);
-    color: var(--text);
-  }
-
-  .wrapper > nav .main-menu .menu-item {
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu > .menu-item:first-of-type {
-    border-top: none;
-  }
-
-  .wrapper > nav .main-menu > .menu-item:last-of-type {
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .current-page-item > a {
-    color: var(--primary);
-  }
-
-  .wrapper > main {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > main a {
-    color: var(--primary);
-  }
-
-  .wrapper > main details {
-    border: 1px solid var(--primary);
-    background-color: var(--box);
-  }
-
-  .wrapper > main details summary {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main blockquote {
-    border-bottom: 1px solid var(--border);
-    border-left: 5px solid var(--primary);
-    border-right: 1px solid var(--border);
-    border-top: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main code {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset input[type="reset"],
-  .wrapper > main form fieldset input[type="submit"],
-  .wrapper > main form fieldset input[type="button"],
-  .wrapper > main form fieldset button {
-    border: 1px solid var(--border);
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main form fieldset input {
-    border: 1px solid var(--border);
-    background-color: var(--background);
-  }
-
-  .wrapper > aside {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > aside a {
-    color: var(--primary);
-  }
-
-  .wrapper > footer {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > footer a {
-    color: var(--primary);
-  }
-
-  .wrapper > footer .footer-scroller {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-}
-
-@media (768px <=width <=1023px) {
-  html,
-  body,
-  .wrapper {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > header {
-    background-color: var(--background);
-    color: var(--text);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > header .header-logo {
-    fill: currentColor;
-  }
-
-  .wrapper > nav {
-    background-color: var(--box);
-    color: var(--text);
-  }
-
-  .wrapper > nav .main-menu .menu-item {
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu > .menu-item:first-of-type {
-    border-top: none;
-  }
-
-  .wrapper > nav .main-menu > .menu-item:last-of-type {
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .current-page-item > a {
-    color: var(--primary);
-  }
-
-  .wrapper > main {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > main a {
-    color: var(--primary);
-  }
-
-  .wrapper > main details {
-    border: 1px solid var(--primary);
-    background-color: var(--box);
-  }
-
-  .wrapper > main details summary {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main blockquote {
-    border-bottom: 1px solid var(--border);
-    border-left: 5px solid var(--primary);
-    border-right: 1px solid var(--border);
-    border-top: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main code {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset input[type="reset"],
-  .wrapper > main form fieldset input[type="submit"],
-  .wrapper > main form fieldset input[type="button"],
-  .wrapper > main form fieldset button {
-    border: 1px solid var(--border);
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main form fieldset input {
-    border: 1px solid var(--border);
-    background-color: var(--background);
-  }
-
-  .wrapper > aside {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > aside a {
-    color: var(--primary);
-  }
+    --text: #cccccc;
+    --border: #999999;
+    --box: #666666;
+    --primary: #deb038;
+  }
+
+  /* mobile */
+
+  @media (0px <=width <=767px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-hamburger-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2409%) hue-rotate(217deg) brightness(120%) contrast(100%);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:last-of-type a {
+      border-bottom: none;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
 
-  .wrapper > footer {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > footer a {
-    color: var(--primary);
-  }
-
-  .wrapper > footer .footer-scroller {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-}
-
-@media (1024px <=width <=1439px) {
-  html,
-  body,
-  .wrapper {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > header {
-    background-color: var(--background);
-    color: var(--text);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > header .header-logo {
-    fill: currentColor;
-  }
-
-  .wrapper > nav {
-    background-color: var(--box);
-    color: var(--text);
-    border-right: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .menu-item {
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu > .menu-item:first-of-type {
-    border-top: none;
-  }
-
-  .wrapper > nav .main-menu .current-page-item > a {
-    color: var(--primary);
-  }
-
-  .wrapper > main {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > main a {
-    color: var(--primary);
-  }
-
-  .wrapper > main details {
-    border: 1px solid var(--primary);
-    background-color: var(--box);
-  }
-
-  .wrapper > main details summary {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main blockquote {
-    border-bottom: 1px solid var(--border);
-    border-left: 5px solid var(--primary);
-    border-right: 1px solid var(--border);
-    border-top: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main code {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset input[type="reset"],
-  .wrapper > main form fieldset input[type="submit"],
-  .wrapper > main form fieldset input[type="button"],
-  .wrapper > main form fieldset button {
-    border: 1px solid var(--border);
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main form fieldset input {
-    border: 1px solid var(--border);
-    background-color: var(--background);
-  }
-
-  .wrapper > aside {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > aside a {
-    color: var(--primary);
-  }
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
 
-  .wrapper > footer {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > footer a {
-    color: var(--primary);
-  }
-
-  .wrapper > footer .footer-scroller {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-}
-
-@media (width >=1440px) {
-  html,
-  body,
-  .wrapper {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > header {
-    background-color: var(--background);
-    color: var(--text);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > header .header-logo {
-    fill: currentColor;
-  }
-
-  .wrapper > nav {
-    background-color: var(--background);
-    color: var(--text);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .sub-menu {
-    background-color: var(--box);
-    color: var(--text);
-  }
-
-  .wrapper > nav .main-menu .sub-menu .menu-item a {
-    border-bottom: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .sub-menu .menu-item:first-of-type a {
-    border-top: 1px solid var(--border);
-  }
-
-  .wrapper > nav .main-menu .current-page-item > a {
-    color: var(--primary);
-  }
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
 
-  .wrapper > main {
-    background-color: var(--background);
-    color: var(--text);
-  }
-
-  .wrapper > main a {
-    color: var(--primary);
-  }
-
-  .wrapper > main details {
-    border: 1px solid var(--primary);
-    background-color: var(--box);
-  }
-
-  .wrapper > main details summary {
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
-
-  .wrapper > main blockquote {
-    border-bottom: 1px solid var(--border);
-    border-left: 5px solid var(--primary);
-    border-right: 1px solid var(--border);
-    border-top: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main code {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset {
-    border: 1px solid var(--border);
-    background-color: var(--box);
-  }
-
-  .wrapper > main form fieldset input[type="reset"],
-  .wrapper > main form fieldset input[type="submit"],
-  .wrapper > main form fieldset input[type="button"],
-  .wrapper > main form fieldset button {
-    border: 1px solid var(--border);
-    background-color: var(--primary);
-    color: var(--secondary);
-  }
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
 
-  .wrapper > main form fieldset input {
-    border: 1px solid var(--border);
-    background-color: var(--background);
-  }
-
-  .wrapper > aside {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
 
-  .wrapper > aside a {
-    color: var(--primary);
-  }
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
 
-  .wrapper > footer {
-    background-color: var(--background);
-    color: var(--text);
-    border-top: 1px solid var(--border);
-  }
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
 
-  .wrapper > footer a {
-    color: var(--primary);
-  }
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
 
-  .wrapper > footer .footer-scroller {
-    background-color: var(--primary);
-    color: var(--secondary);
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      background-color: var(--box);
+      color: var(--text);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      background-color: var(--headline);
+      color: var(--background);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(4%) sepia(9%) saturate(1240%) hue-rotate(202deg) brightness(94%) contrast(88%);
+    }
+  }
+
+  /* tablet */
+
+  @media (768px <=width <=1023px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-hamburger-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2409%) hue-rotate(217deg) brightness(120%) contrast(100%);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu > .menu-item:last-of-type a {
+      border-bottom: none;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      background-color: var(--box);
+      color: var(--text);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      background-color: var(--headline);
+      color: var(--background);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(4%) sepia(9%) saturate(1240%) hue-rotate(202deg) brightness(94%) contrast(88%);
+    }
+  }
+
+  /* laptop */
+
+  @media (1024px <=width <=1439px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-subtitle {
+      color: var(--headline);
+    }
+
+    /* nav */
+
+    .wrapper > nav {
+      border-right: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      color: var(--border);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children.active > a:after {
+      filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(75%) hue-rotate(264deg) brightness(84%) contrast(85%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      border-top: 1px solid var(--box);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(4%) sepia(9%) saturate(1240%) hue-rotate(202deg) brightness(94%) contrast(88%);
+    }
+  }
+
+  /* desktops */
+
+  @media (width >=1440px) {
+    body {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .wrapper {
+      border-left: 1px solid var(--box);
+      border-right: 1px solid var(--box);
+    }
+
+    /* header */
+
+    .wrapper > header .row .column .header-title {
+      color: var(--headline);
+    }
+
+    .wrapper > header .row .column .header-subtitle {
+      color: var(--headline);
+    }
+
+    /* nav */
+
+    .wrapper > nav .row .column .main-menu .menu-item a {
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item a {
+      border-left: 1px solid var(--box);
+      border-right: 1px solid var(--box);
+      border-bottom: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item:first-of-type a {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .sub-menu .menu-item {
+      margin-left: 1px;
+    }
+
+    .wrapper > nav .row .column .main-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1469%) hue-rotate(348deg) brightness(112%) contrast(60%);
+    }
+
+    .wrapper > nav .row .column .main-menu .sub-menu .menu-item-has-children > a:after {
+      filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(1469%) hue-rotate(348deg) brightness(112%) contrast(60%);
+    }
+
+    /* main */
+
+    .wrapper > main {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > main .row .column h1,
+    .wrapper > main .row .column h2,
+    .wrapper > main .row .column h3,
+    .wrapper > main .row .column h4,
+    .wrapper > main .row .column h5,
+    .wrapper > main .row .column h6 {
+      color: var(--headline);
+    }
+
+    .wrapper > main .row .column a {
+      color: var(--primary);
+    }
+
+    .wrapper > main .row .column blockquote {
+      border-bottom: 1px solid var(--border);
+      border-left: 5px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column code {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column details summary {
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column details summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details[open] summary::after {
+      filter: brightness(0) saturate(100%) invert(90%) sepia(43%) saturate(0%) hue-rotate(162deg) brightness(83%) contrast(96%);
+    }
+
+    .wrapper > main .row .column details > :nth-child(2) {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column figure audio {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure iframe {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column figure video {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form button {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form fieldset {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="button"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="checkbox"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="date"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="email"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="file"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="number"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="password"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="radio"]:checked {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="range"] {
+      background-color: var(--box);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-moz-range-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="range"]::-webkit-slider-thumb {
+      background-color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="reset"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="search"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="submit"] {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    .wrapper > main .row .column form input[type="tel"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="text"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form input[type="url"] {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form meter::-moz-meter-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form meter::-webkit-meter-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form progress::-moz-progress-bar {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form progress::-webkit-progress-value {
+      background: var(--box);
+    }
+
+    .wrapper > main .row .column form select {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column form textarea {
+      border: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column hr {
+      border-top: 1px dotted var(--border);
+    }
+
+    .wrapper > main .row .column table tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table tfoot tr th {
+      border-top: 1px solid var(--border);
+    }
+
+    .wrapper > main .row .column table thead tr th {
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* aside */
+
+    .wrapper > aside {
+      border-top: 1px solid var(--box);
+    }
+
+    .wrapper > aside .row .column figure img {
+      border: 1px solid var(--border);
+      background-color: var(--box);
+    }
+
+    /* footer */
+
+    .wrapper > footer {
+      border-top: 1px solid var(--box);
+    }
+
+    /* special */
+
+    .scroller {
+      background-color: var(--headline);
+    }
+
+    .scroller-icon {
+      filter: brightness(0) saturate(100%) invert(4%) sepia(9%) saturate(1240%) hue-rotate(202deg) brightness(94%) contrast(88%);
+    }
   }
 }

@@ -1,0 +1,123 @@
+/* fonts  */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 150%;
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  margin: 1.25rem 0;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  text-wrap: balance;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* colors */
+
+:root {
+  --background: #ffffff;
+  --headline: #18181b;
+  --text: #484851;
+  --border: #cccccc;
+  --box: #e6e6e6;
+  --primary: #ff7d00;
+}
+
+/* theme */
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@media (width >=1002px) {
+  .wrapper {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headline);
+}
+
+a {
+  color: var(--primary);
+}
+
+.wrapper > main {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.wrapper > main code {
+  border: 1px solid var(--border);
+  background-color: var(--box);
+}
