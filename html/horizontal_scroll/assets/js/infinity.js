@@ -6,4 +6,4 @@ if (mediaquery.matches) {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
   });
-} 
+}

@@ -1037,7 +1037,7 @@ body {
   }
 
   .wrapper > main .akademie .info {
-width: 100%;
+    width: 100%;
     height: 100%;
     max-width: 650px;
     display: grid;
@@ -1121,7 +1121,7 @@ width: 100%;
   }
 
   .wrapper > main .akademie .info {
-width: 100%;
+    width: 100%;
     height: 100%;
     max-width: 650px;
     display: grid;
