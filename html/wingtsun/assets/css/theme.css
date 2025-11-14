@@ -658,3 +658,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 5px;
 }
+
+.wrapper > main figure video {
+  border: 1px solid var(--border);
+}
