@@ -102,7 +102,12 @@ h1 {
   hyphens: auto;
 }
 
-aside h3 {
+aside address > * {
+  margin-bottom: 0.5rem;
+}
+
+aside address > h3 {
+  font-style: normal !important;
   margin: 0rem 0 1.5rem 0;
 }
 
@@ -641,6 +646,11 @@ a {
   background-color: var(--box);
   border: 1px solid var(--border);
   border-radius: 5px;
+}
+
+.wrapper > main .gallery figcaption {
+  background-color: var(--primary);
+  color: var(--background);
 }
 
 .wrapper > main .instagram iframe {

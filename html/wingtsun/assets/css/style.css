@@ -412,6 +412,7 @@ body {
       gap: 1.25rem;
     }
   }
+
   .wrapper > aside address > * {
     display: block;
   }
@@ -827,20 +828,17 @@ body {
 .wrapper > main .trainer .card {
   width: 100%;
   height: 100%;
-  max-width: 650px;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-
-  border-radius: 5px;
 }
 
 .wrapper > main .trainer .card .left {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1rem;
 
   border-top-left-radius: 5px;
@@ -858,8 +856,8 @@ body {
 
 .wrapper > main .trainer .card .left img {
   width: auto;
-  height: 10rem;
-  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .wrapper > main .trainer .card .right span {
@@ -927,6 +925,7 @@ body {
 }
 
 .wrapper > main .gallery img {
+  aspect-ratio: unset !important;
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -1017,6 +1016,7 @@ body {
   }
 
   .wrapper > main .gallery img {
+    aspect-ratio: unset !important;
     display: block;
     width: 100%;
     margin-bottom: 1.25rem;
@@ -1100,7 +1100,9 @@ body {
     gap: 1.25rem;
     padding-top: 1.25rem;
   }
+
   .wrapper > main .gallery img {
+    aspect-ratio: unset !important;
     display: block;
     width: 100%;
     margin-bottom: 1.25rem;
@@ -1186,6 +1188,7 @@ body {
   }
 
   .wrapper > main .gallery img {
+    aspect-ratio: unset !important;
     display: block;
     width: 100%;
     margin-bottom: 1.5rem;

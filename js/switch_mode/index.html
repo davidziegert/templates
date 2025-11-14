@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Title Tag -->
+    <title>switch mode.tmp</title>
+
+    <!-- Site Meta Tags -->
+    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="DESCRIPTION" />
+    <meta name="keywords" content="KEYWORD, KEYWORD" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:description" content="DESCRIPTION" />
+    <meta property="og:image" content="https://placehold.co/1200x630/" />
+    <meta property="og:site_name" content="SITENAME" />
+    <meta property="og:url" content="URL" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/icon.svg" />
+    <link rel="apple-touch-icon" href="./assets/images/icon.svg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/skeleton.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/theme.css" media="screen" />
+  </head>
+
+  <body onload="checkColors()">
+    <div class="wrapper">
+      <header>
+        <div class="row">
+          <div class="switch">
+            <button aria-pressed="false" id="light" name="light" value="light" onclick="switchColor(this)">Light</button>
+            <button aria-pressed="false" id="auto" name="auto" value="auto" onclick="switchColor(this)">Auto</button>
+            <button aria-pressed="false" id="dark" name="dark" value="dark" onclick="switchColor(this)">Dark</button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="row">
+          <h1>Color-Switcher</h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+          <h2>Some boxes here</h2>
+          <div class="item-box">
+            <div class="item">
+              <h5>A short title</h5>
+              <p>Voluptatem excepturi tempore quo recusandae sunt ullam earum optio cum?</p>
+              <a href="#">read more</a>
+            </div>
+            <div class="item">
+              <h5>A short title</h5>
+              <p>Voluptatem excepturi tempore quo recusandae sunt ullam earum optio cum?</p>
+              <a href="#">read more</a>
+            </div>
+            <div class="item">
+              <h5>A medium-length title</h5>
+              <p>Voluptatem excepturi tempore quo recusandae sunt ullam earum optio cum?</p>
+              <a href="#">read more</a>
+            </div>
+            <div class="item">
+              <h5>A much longer title than the others</h5>
+              <p>Voluptatem excepturi tempore quo recusandae sunt ullam earum optio cum?</p>
+              <a href="#">read more</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/switch.js"></script>
+  </body>
+</html>
