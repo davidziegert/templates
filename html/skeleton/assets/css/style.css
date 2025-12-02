@@ -70,20 +70,20 @@ body {
     gap: 1rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 40px;
     width: auto;
   }
 
-  .wrapper > header .header-title {
+  .wrapper > header .row .header-title {
     display: none;
   }
 
-  .wrapper > header .header-subtitle {
+  .wrapper > header .row .header-subtitle {
     display: none;
   }
 
-  .wrapper > header .header-hamburger-icon {
+  .wrapper > header .row .header-hamburger-icon {
     height: 40px;
     width: auto;
   }

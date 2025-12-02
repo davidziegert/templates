@@ -69,11 +69,11 @@ body {
     gap: 1rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 3rem;
   }
 
-  .wrapper > header .header-subtitle {
+  .wrapper > header .row .header-subtitle {
     display: none;
   }
 
@@ -291,11 +291,11 @@ body {
     gap: 1.25rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 3.75rem;
   }
 
-  .wrapper > header .header-subtitle {
+  .wrapper > header .row .header-subtitle {
     display: none;
   }
 
@@ -530,11 +530,11 @@ body {
     gap: 1.5rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 3.75rem;
   }
 
-  .wrapper > header .header-subtitle {
+  .wrapper > header .row .header-subtitle {
     display: block;
   }
 
@@ -686,11 +686,11 @@ body {
     gap: 1.5rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 3.75rem;
   }
 
-  .wrapper > header .header-subtitle {
+  .wrapper > header .row .header-subtitle {
     display: block;
   }
 

@@ -67,20 +67,20 @@ body {
     gap: 1rem;
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     height: 100px;
     width: auto;
   }
 
   @media (0px <=width <=767px) {
-    .wrapper > header .header-logo {
+    .wrapper > header .row .header-logo {
       height: 60px;
       width: auto;
     }
   }
 
   @media (768px <=width <=1023px) {
-    .wrapper > header .header-logo {
+    .wrapper > header .row .header-logo {
       height: 80px;
       width: auto;
     }

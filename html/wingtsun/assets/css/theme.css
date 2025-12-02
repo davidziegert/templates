@@ -177,7 +177,7 @@ aside address > h3 {
     border-bottom: 1px solid var(--border);
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     fill: currentColor;
   }
 
@@ -288,7 +288,7 @@ aside address > h3 {
     border-bottom: 1px solid var(--border);
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     fill: currentColor;
   }
 
@@ -399,7 +399,7 @@ aside address > h3 {
     border-bottom: 1px solid var(--border);
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     fill: currentColor;
   }
 
@@ -512,7 +512,7 @@ aside address > h3 {
     border-bottom: 1px solid var(--border);
   }
 
-  .wrapper > header .header-logo {
+  .wrapper > header .row .header-logo {
     fill: currentColor;
   }
 
